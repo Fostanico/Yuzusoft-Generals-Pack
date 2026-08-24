@@ -202,3 +202,9 @@ music = {
 		factor = 0.33
 	}
 }
+music = {
+	song = "Dear_Moments"
+	chance = {
+		factor = 0.33
+	}
+}

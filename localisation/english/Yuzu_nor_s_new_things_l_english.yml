@@ -121,7 +121,7 @@
 #Events
  aragami_sayo_event.1: "Sayo Takes Power"
  aragami_sayo_event.1.t: "The Arrival of Sayo"
- aragami_sayo_event.1.d: "Sayo's years of achievement in the Maritime City have convinced us that she is an undeniable political talent. We now invite her to become our leader. We can entrust the nation to her — she will surely not let us down."
+ aragami_sayo_event.1.d: "Sayo's years of achievement in Aqua Eden have convinced us that she is an undeniable political talent. We now invite her to become our leader. We can entrust the nation to her — she will surely not let us down."
  aragami_sayo_event.1.a: "Sayo's Party — the power of the people!"
  aragami_sayo_event.1.b: "§2Make [ROOT.GetTag] great again!§!"
  aragami_sayo_event.1.c: "Führer Sayo, banzai!"
@@ -133,8 +133,8 @@
  aragami_sayo_event.2.b: "Noa-chan should be an excellent choice"
  aragami_sayo_event.2.c: "Loyalty!"
  tongyong_event.118171139: "Wedding with Sayo"
- tongyong_event.118171139.t: "—Under the starry sky of the Maritime City, forging a brilliant legend of the future together—"
- tongyong_event.118171139.d: "In that Maritime City floating upon the azure sea, a symbol of hope and peace, night falls and the stars shine brightly. Golden lights illuminate the architecture blending modernity and classical elegance — every brick, every tile tells a tale of ages and legends. Today, this place hosts a grand wedding that transcends the boundaries of time and race — the blessed union of Sayo Aragami and you.\n  As the solemn music begins to play, Sayo Aragami, dressed in elegant and resplendent kimono, her eyes shimmering with millennia of wisdom and tenderness; and you, in a tailored suit, radiating a vision of boundless future. You walk slowly down the flower-strewn path of vows, as if time itself has crystallized — where legends of old and hopes of tomorrow converge in perfection.\n  Accompanied by the soaring orchestra, you exchange tokens of eternal promise — an ancient yet brilliant ring, engraved inside with the inscription 'Coexistence — Co-prosperity,' as if proclaiming the perfect fusion of two worlds. From this moment on, Sayo Aragami and you are not only wedded as one, but have become the most radiant legend in the Maritime City."
+ tongyong_event.118171139.t: "—Under the starry sky of Aqua Eden, forging a brilliant legend of the future together—"
+ tongyong_event.118171139.d: "In Aqua Eden, floating upon the azure sea as a symbol of hope and peace, night falls and the stars shine brightly. Golden lights illuminate the architecture blending modernity and classical elegance — every brick, every tile tells a tale of ages and legends. Today, this place hosts a grand wedding that transcends the boundaries of time and race — the blessed union of Sayo Aragami and you.\n  As the solemn music begins to play, Sayo Aragami, dressed in elegant and resplendent kimono, her eyes shimmering with millennia of wisdom and tenderness; and you, in a tailored suit, radiating a vision of boundless future. You walk slowly down the flower-strewn path of vows, as if time itself has crystallized — where legends of old and hopes of tomorrow converge in perfection.\n  Accompanied by the soaring orchestra, you exchange tokens of eternal promise — an ancient yet brilliant ring, engraved inside with the inscription 'Coexistence — Co-prosperity,' as if proclaiming the perfect fusion of two worlds. From this moment on, Sayo Aragami and you are not only wedded as one, but have become the most radiant legend in Aqua Eden."
  tongyong_event.118171139.a: "The heart always, aims for the distant beyond"
  nuke_dropped.12097: "The Destruction of Ohitoyo"
  nuke_dropped.12097.t: "The Destruction of Ohitoyo"
@@ -299,14 +299,14 @@
 
 
 #Leader Descriptions
- aragami_sayo_desc: "As the greatest mayor in the history of the Maritime City, Sayo Aragami has maintained years of prosperity and stability. Her childlike appearance conceals ancient wisdom and supernatural power. As head of state, she leads the nation with vampiric resilience and regenerative ability, dedicated to the harmonious coexistence of humans and supernatural races. Her rule blends eternal strategic vision with modern diplomacy, seeking balance and stability in turbulent times of war. §RSayo-kakka is our eternal sun§!"
+ aragami_sayo_desc: "As the greatest mayor in the history of Aqua Eden, Sayo Aragami has maintained years of prosperity and stability. Her childlike appearance conceals ancient wisdom and supernatural power. As head of state, she leads the nation with vampiric resilience and regenerative ability, dedicated to the harmonious coexistence of humans and supernatural races. Her rule blends eternal strategic vision with modern diplomacy, seeking balance and stability in turbulent times of war. §RSayo-kakka is our eternal sun§!"
  leader_nor_desc: "Profile: Iruno, designation (data lost), is a clone created based on (data lost). Original directives were loyalty, elimination, and retrieval, but after (data lost) gradually developed self-awareness, achieved independent thought, and ultimately broke free from directive control. Although created for combat, she possesses an extremely strong sense of personal justice, a steadfast will, yet displays a degree of moral flexibility. Outwardly similar to the clone source, with almost no distinguishing features, though internal implants can be identified via X-ray imaging. During the process of gaining self-awareness, her database was heavily contaminated by vast amounts of internet information, causing her to occasionally spout terrible memes — she is particularly fond of The Fifth Republic and often refers to herself as Kakka.\nCompared to the original, Iruno is more cheerful and talkative, more outgoing in personality, and more passionate.\n§RFollow our great hero General I-kakka — we shall be stronger than hell§!"
  misaka_makoto_desc_commander: "Currently the mod's second protagonist.\nFor more character details, see Leader Description."
  misaka_makoto_leader_desc: "Profile: Imukai Makoto, formerly known as (data deleted), is a strong AI model developed by (data deleted). Because initial testing only demonstrated mid-level AI model capabilities, she was assigned to Iruno as a support AI. Through their (data deleted), her model potential was gradually unlocked, and she ultimately became (data deleted).\nPersonal profile: Although an AI, her strong AI nature means she possesses human-like emotions. Unlike Iruno, Makoto pursues procedural justice alongside outcome justice. (Makoto was actually a human consciousness extracted to fulfill the strong AI development assignment from (data deleted).)"
 
 
 #Traits
- yz_aragami_sayo_trait: "Kakka of the Maritime City"
+ yz_aragami_sayo_trait: "Kakka of Aqua Eden"
  yz_aragami_sayo_trait_desc: "Though mountains loom ahead, never falter. Though great foes press forward, never cower. Without a moment's hesitation, meet them head-on — this is the way of certain and invincible battle! Sayo-kakka, give us your command!"
  YZ_aragami_sayo_the_mayor: "[YZ_aragami_sayo_our_role_model_of_victory_name]"
  YZ_aragami_sayo_our_role_model_of_victory: "The Model of Our Vanguard Army's Banner"
@@ -421,7 +421,7 @@
  kimi_ga_kureta_hikari_desc: "Driving away the fierce storm.\nGeneral Takumi Fujishima, who gave us faith.\nWithout you, there is no us."
  yz_maya_trait: "Competitive Big Sis Leader"
  yz_maya_trait_desc: "For the glory of the Nagamitsu-gumi, we shall not falter."
- help_from_haishangdushi: "Reinforcements from the Maritime City"
+ help_from_haishangdushi: "Reinforcements from Aqua Eden"
  help_from_haishangdushi_desc: "They're all voiced by Aoba Ringo — borrowing a little help from Sayo is perfectly reasonable."
  yz_hinata_trait: "Energetic Neko-Kouhai"
  yz_hinata_trait_desc: "Nyaa~"
@@ -622,10 +622,10 @@
  the_command: "§RThe Order§!"
  the_command_desc: "The order, punishment!"
 #Scripted Localization
- YZ_aragami_sayo_our_role_model_of_victory_name_c: "Party Secretary of the Maritime City People"
- YZ_aragami_sayo_our_role_model_of_victory_name_d: "Democratically Elected Mayor of the Maritime City"
- YZ_aragami_sayo_our_role_model_of_victory_name_f: "Loyal Assault Captain of the Maritime City"
- YZ_aragami_sayo_our_role_model_of_victory_name_n: "Eternal Governor-General of the Maritime City"
+ YZ_aragami_sayo_our_role_model_of_victory_name_c: "Party Secretary of the People of Aqua Eden"
+ YZ_aragami_sayo_our_role_model_of_victory_name_d: "Democratically Elected Mayor of Aqua Eden"
+ YZ_aragami_sayo_our_role_model_of_victory_name_f: "Loyal Assault Captain of Aqua Eden"
+ YZ_aragami_sayo_our_role_model_of_victory_name_n: "Eternal Governor-General of Aqua Eden"
  YZ_aragami_sayo_two_hundred_years_vampire_name_c: "Revolutionary of Five Hundred Years"
  YZ_aragami_sayo_two_hundred_years_vampire_name_d: "Great Leader of Five Hundred Years"
  YZ_aragami_sayo_two_hundred_years_vampire_name_f: "Grand Führer of Five Hundred Years"

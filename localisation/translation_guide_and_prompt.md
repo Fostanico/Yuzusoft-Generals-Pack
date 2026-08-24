@@ -91,6 +91,7 @@
 | 事件标题、描述和选项 | 将同一事件的 `.t/.d/.a` 成组翻译 |
 | 角色对白、信件、日记 | 服从 `VOICE_CARDS` 与相邻已批准对白 |
 | 宣传文、恶搞口号和网络梗 | 保留原文的修辞功能、强度和讽刺关系 |
+| 加载名言 | 面向 `900x200` 固定文本框压缩句式；只在语义边界使用少量 `\n`，避免英文自动换行溢出 |
 | 制作人员、更新日志和调试信息 | 准确直接，保留账号、URL、版本和技术名词 |
 | scripted localisation 返回值 | 根据真实消费者决定；机器值不得翻译 |
 | GFX、路径、事件 ID 和资源映射 | 整值视为机器标识，除非有证据证明其中包含可见文本 |
@@ -170,6 +171,7 @@
 | 酸柚子（自然语言中指品牌） | Yuzusoft Sour | ゆずソフトSOUR | `CONTEXT_SPLIT`，不覆盖昵称或双关 |
 | YUZUSOFTSOUR | YUZUSOFTSOUR | YUZUSOFTSOUR | `DO_NOT_TRANSLATE`，官方品牌标识 |
 | PARQUET | PARQUET | PARQUET | `LOCKED`，标题大小写固定 |
+| 海上都市（DRACU-RIOT! 舞台） | Aqua Eden | アクア·エデン | `LOCKED`，正式地名；不得泛译为 Maritime City、Floating City 或海上都市 |
 | 城门翼 / 城門翼 | Kido Tsubasa | 城門ツバサ | `LOCKED`，PARQUET |
 | 茨木梨乃 | Ibaraki Rino | 茨木リノ | `LOCKED`，PARQUET |
 | 伊吹协人 / 伊吹協人 | Ibuki Kanato | 伊吹カナト | `LOCKED`，PARQUET |
@@ -179,6 +181,7 @@
 | 稳定度 | Stability | 安定度 | `LOCKED`，当前 HOI4 |
 | 战争支持度 | War Support | 戦争協力度 | `LOCKED`，当前 HOI4 |
 | 排名有可能不分先后 | ranking may possibly be in no particular order | 順不同かもしれない | `LOCKED`，鸣谢名单玩笑；不得压成确定的 in no particular order / 順不同 |
+| 芝士XX（谐音「这是」） | Dis iz XX | これわXX | `CONTEXT_SPLIT`：可爱谐音「这是」时用 Dis iz / これわ，不得译 cheese / チーズ。真奶酪（如马斯卡彭芝士）仍译 cheese / チーズ |
 
 PARQUET 的标题、英文姓名顺序和日文姓名可用以下官方商店页复核：
 

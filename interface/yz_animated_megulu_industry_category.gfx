@@ -1,0 +1,14 @@
+# Prebuilt runtime asset; the one-off generator is intentionally not shipped.
+spriteTypes = {
+
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_megulu_industry_category_bg"
+		texturefile = "gfx/animated_textures/yz_megulu_industry_category/spritesheet-0-0.dds"
+		noOfFrames = 20
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+}

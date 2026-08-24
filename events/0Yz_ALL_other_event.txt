@@ -1,29 +1,7 @@
 add_namespace = start_event     #开始事件和杂项事件
 
-country_event= {
-    id = start_event.1
-    picture = GFX_yz_start_qrcode
-    title = start_event.1.t
-    desc = start_event.1.d
-    is_triggered_only = yes
-
-    # 要点：启动 UI 入口已迁移到 common/decisions/Start_Yz_decision.txt；此处只保留旧写法注释，避免 start_event.1 与 GUI 重复触发。 [2026-06-20] [伊尔诺/GPT5.5]
-    # immediate = {
-    #     set_country_flag = YZ_start_ui_visible
-    #     set_country_flag = YZ_start_ui_tab_update
-    #     clr_country_flag = YZ_start_ui_tab_guide
-    #     clr_country_flag = YZ_start_ui_tab_credits
-    # }
-
-    option = {
-        name = start_event.1.a
-        hidden_effect = {
-            #country_event = { id = start_event.8  days = 0 }
-        }
-    }
-
-
-}
+# 要点：旧的开场弹窗事件 start_event.1 已随三语文本一并删除；启动界面入口是
+# common/decisions/Start_Yz_decision.txt 里直接设置的 GUI flag。 [2026-08-21] [伊尔诺/Claude]
 country_event= {
     id = start_event.8           #更新日志，写在开始事件后面了——VAN 修改日期2025.5.3
     picture = GFX_2026_new_year
@@ -38,10 +16,7 @@ country_event= {
     }
     option = {
         name = start_event.8.b
-        hidden_effect = {
-            # 内容：旧更新日志事件不再回跳 start_event.1，启动界面现在只保留 GUI 入口。 [2026-06-20] [伊尔诺/GPT5.5]
-            # country_event = { id = start_event.1  days = 0 }
-        }
+        # 内容：原本回跳开场弹窗，现在启动界面只保留 GUI 入口，本选项只关闭窗口。 [2026-08-21] [伊尔诺/Claude]
     }
 }
 
@@ -545,6 +520,66 @@ country_event= {           #娜娜米的意识形态宣传
         add_timed_idea = {
             idea = nanami_ideology_4
             days = 180
+        }
+    }
+}
+country_event= {           #娜娜米的他国意识形态宣传
+    id = start_event.221
+    title = start_event.221.t
+    desc = start_event.221.d
+    picture = GFX_nanami_2
+    is_triggered_only = yes
+    trigger = {
+        any_country = {
+            has_country_flag = YzOpreative_have_chosen
+        }
+    }
+    option = {
+        name = start_event.22.a     # 共产主义
+        every_country = {
+            limit = {
+                has_country_flag = YzOpreative_have_chosen
+            }
+            add_timed_idea = {
+                idea = nanami_ideology_1
+                days = 30
+            }
+        }
+    }
+    option = {
+        name = start_event.22.b     # 自由主义
+        every_country = {
+            limit = {
+                has_country_flag = YzOpreative_have_chosen
+            }
+            add_timed_idea = {
+                idea = nanami_ideology_2
+                days = 30
+            }
+        }
+    }
+    option = {
+        name = start_event.22.c     # 专制主义
+        every_country = {
+            limit = {
+                has_country_flag = YzOpreative_have_chosen
+            }
+            add_timed_idea = {
+                idea = nanami_ideology_3
+                days = 30
+            }
+        }
+    }
+    option = {
+        name = start_event.22.e     # 法西斯主义
+        every_country = {
+            limit = {
+                has_country_flag = YzOpreative_have_chosen
+            }
+            add_timed_idea = {
+                idea = nanami_ideology_4
+                days = 30
+            }
         }
     }
 }

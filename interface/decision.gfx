@@ -205,10 +205,6 @@ spriteTypes = {
 		texturefile = "gfx/decision/megulu.png"
 	}
 	spriteType = {
-		name = "GFX_megulu_2"
-		texturefile = "gfx/decision/megulu_2.png"
-	}
-	spriteType = {
 		name = "GFX_chou2"
 		texturefile = "gfx/decision/chou2.png"
 	}

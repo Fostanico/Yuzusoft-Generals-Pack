@@ -306,6 +306,7 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        enable_ability = ayase_ability
     }
     ##七海
     #治愈之风

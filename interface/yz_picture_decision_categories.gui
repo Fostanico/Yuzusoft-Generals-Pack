@@ -12,6 +12,20 @@ guiTypes = {
             quadTextureSprite = "GFX_yz_roka_koharu_category_bg_brightness_50"
             position = { x = 5 y = -18 }
         }
+        # The aligned strips cover the static fallback while preserving the
+        # category's existing centred text layout.
+        iconType = {
+            name = "yz_roka_koharu_category_background_left"
+            spriteType = "GFX_yz_animated_roka_koharu_category_left"
+            position = { x = 5 y = -18 }
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "yz_roka_koharu_category_background_right"
+            spriteType = "GFX_yz_animated_roka_koharu_category_right"
+            position = { x = 257 y = -18 }
+            alwaystransparent = yes
+        }
         instantTextBoxType = {
             name = "yz_roka_koharu_category_text"
             position = { x = 15 y = 0 }
@@ -37,6 +51,20 @@ guiTypes = {
             quadTextureSprite = "GFX_yz_recruit_category_bg_brightness_50"
             position = { x = 5 y = -18 }
         }
+        # Two synchronized strips cover the static fallback. Their source crop
+        # fills 500x220 without transparent side padding.
+        iconType = {
+            name = "yz_add_general_category_background_left"
+            spriteType = "GFX_yz_animated_recruit_category_left"
+            position = { x = 5 y = -18 }
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "yz_add_general_category_background_right"
+            spriteType = "GFX_yz_animated_recruit_category_right"
+            position = { x = 257 y = -18 }
+            alwaystransparent = yes
+        }
         instantTextBoxType = {
             name = "yz_add_general_category_text"
             position = { x = 15 y = 0 }
@@ -57,10 +85,13 @@ guiTypes = {
         size = { width = 500 height = 200 }
         clipping = no
 
-        background = {
-            name = "yz_cultural_department_category_background"
-            quadTextureSprite = "GFX_yz_cultural_department_category_bg_brightness_25"
+        # The animation directly owns the full description area; the former
+        # static background is intentionally not layered below it.
+        iconType = {
+            name = "yz_cultural_department_category_animated_background"
+            spriteType = "GFX_yz_animated_cultural_department_category_bg"
             position = { x = 5 y = -18 }
+            alwaystransparent = yes
         }
         instantTextBoxType = {
             name = "yz_cultural_department_category_text"
@@ -78,32 +109,40 @@ guiTypes = {
 
     containerWindowType = {
         name = "yz_megulu_industry_category_window"
-        position = { x = 0 y = -22 }
-        size = { width = 500 height = 255 }
+        position = { x = 0 y = -15 }
+        size = { width = 500 height = 200 }
         clipping = no
 
-        background = {
-            name = "yz_megulu_industry_category_background"
-            quadTextureSprite = "GFX_meigulu_2"
-            position = { x = 4 y = -11 }
+        # The opaque animation directly owns the full description area. Do not
+        # add the former 173x255 image below it: its extra height remains visible.
+        iconType = {
+            name = "yz_megulu_industry_category_animated_background"
+            spriteType = "GFX_yz_animated_megulu_industry_category_bg"
+            position = { x = 5 y = -18 }
+            alwaystransparent = yes
         }
+        # Two full-height side columns preserve the central Meguru action.
         instantTextBoxType = {
             name = "yz_megulu_industry_category_text"
-            position = { x = 190 y = 0 }
+            position = { x = 15 y = -8 }
             font = "hoi_16mbs"
             text = "Megulu_industry_category_gui_desc"
-            maxWidth = 305
-            maxHeight = 125
+            maxWidth = 175
+            maxHeight = 220
+            format = left
+            vertical_alignment = center
             fixedsize = yes
             alwaystransparent = yes
         }
         instantTextBoxType = {
             name = "yz_megulu_industry_category_progress"
-            position = { x = 190 y = 128 }
+            position = { x = 330 y = -8 }
             font = "hoi_16mbs"
             text = "Megulu_industry_category_gui_progress"
-            maxWidth = 305
-            maxHeight = 125
+            maxWidth = 165
+            maxHeight = 220
+            format = left
+            vertical_alignment = center
             fixedsize = yes
             alwaystransparent = yes
         }
@@ -325,8 +364,8 @@ guiTypes = {
 		}
     }
 
-    # 721 Research Institute: read the existing facility scale directly so the
-    # category header never needs a polling or mirrored display variable.
+    # 721 Research Institute: the moving subject is the small figure on the
+    # right, so the compact status copy stays in the left-hand column.
     containerWindowType = {
         name = "yz_721_research_category_window"
         position = { x = 0 y = -15 }
@@ -338,20 +377,33 @@ guiTypes = {
             quadTextureSprite = "GFX_yz_721_research_category_bg_brightness_50"
             position = { x = 5 y = -18 }
         }
+        # 252+248 keeps every frame boundary aligned to BC1's 4-pixel blocks.
+        iconType = {
+            name = "yz_721_research_category_animated_background_left"
+            spriteType = "GFX_yz_animated_721_research_category_left"
+            position = { x = 5 y = -18 }
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "yz_721_research_category_animated_background_right"
+            spriteType = "GFX_yz_animated_721_research_category_right"
+            position = { x = 257 y = -18 }
+            alwaystransparent = yes
+        }
         instantTextBoxType = {
             name = "yz_721_research_category_text"
-            position = { x = 245 y = 12 }
+            position = { x = 15 y = -8 }
             font = "hoi_16mbs"
             text = "yz_721_research_category_gui_desc"
-            maxWidth = 248
-            maxHeight = 188
+            maxWidth = 275
+            maxHeight = 220
             fixedsize = yes
             alwaystransparent = yes
         }
     }
 
-    # C.I.A.L.L.O Bureau: the portrait occupies the centre-right, leaving the
-    # left intelligence display as a stable text region.
+    # C.I.A.L.L.O Bureau: the animated subject now occupies the left half, so
+    # the intelligence summary stays in the right-hand column.
     containerWindowType = {
         name = "yz_ciallo_category_window"
         position = { x = 0 y = -15 }
@@ -363,13 +415,20 @@ guiTypes = {
             quadTextureSprite = "GFX_yz_ciallo_category_bg_brightness_50"
             position = { x = 5 y = -18 }
         }
+        # The static illustration remains as a fallback beneath the short loop.
+        iconType = {
+            name = "yz_ciallo_category_animated_background"
+            spriteType = "GFX_yz_animated_ciallo_category_bg"
+            position = { x = 5 y = -18 }
+            alwaystransparent = yes
+        }
         instantTextBoxType = {
             name = "yz_ciallo_category_text"
-            position = { x = 18 y = 13 }
+            position = { x = 400 y = -8 }
             font = "hoi_16mbs"
             text = "yz_ciallo_category_gui_desc"
-            maxWidth = 210
-            maxHeight = 187
+            maxWidth = 95
+            maxHeight = 220
             fixedsize = yes
             alwaystransparent = yes
         }
@@ -400,7 +459,8 @@ guiTypes = {
         }
     }
 
-    # 角色铺满画面，正文放左栏。覆盖图仍是 500x220，放在 x=5 y=-18。
+    # 人物占据中部：短规则放左上，动态状态放右上，中央不覆盖文字。
+    # 覆盖图仍是 500x220，放在 x=5 y=-18。
     # 旧 COS 立绘 GUI YZ_miliatry_party_ui 保持注释，不要接回这个分类。
     containerWindowType = {
         name = "yz_military_academy_category_window"
@@ -413,13 +473,30 @@ guiTypes = {
             quadTextureSprite = "GFX_yz_military_academy_category_bg_brightness_50"
             position = { x = 5 y = -18 }
         }
+        # The static illustration remains as a fallback beneath the short loop.
+        iconType = {
+            name = "yz_military_academy_category_animated_background"
+            spriteType = "GFX_yz_animated_military_academy_category_bg"
+            position = { x = 5 y = -18 }
+            alwaystransparent = yes
+        }
         instantTextBoxType = {
-            name = "yz_military_academy_category_text"
-            position = { x = 18 y = 8 }
+            name = "yz_military_academy_category_rules_text"
+            position = { x = 15 y = -8 }
             font = "hoi_16mbs"
             text = "YZS_military_academy_category_gui_desc"
-            maxWidth = 240
-            maxHeight = 184
+            maxWidth = 110
+            maxHeight = 220
+            fixedsize = yes
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "yz_military_academy_category_status_text"
+            position = { x = 300 y = -8 }
+            font = "hoi_16mbs"
+            text = "YZS_military_academy_category_gui_status"
+            maxWidth = 195
+            maxHeight = 125
             fixedsize = yes
             alwaystransparent = yes
         }

@@ -88,8 +88,7 @@ qiyong_youzi_general_category = {
         complete_effect = {
             set_country_flag = qiyong_youzi_2
             set_country_flag = open_traot
-            # 要点：完全版不再弹出 start_event.1，改为由决议直接设置 GUI flag 打开启动界面。 [2026-06-20] [伊尔诺/GPT5.5]
-            # country_event = start_event.1
+            # 要点：完全版由本决议直接设置 GUI flag 打开启动界面；旧的开场弹窗事件已删除。 [2026-08-21] [伊尔诺/Claude]
             set_country_flag = YZ_start_ui_visible
             set_country_flag = YZ_start_ui_tab_update
             clr_country_flag = YZ_start_ui_tab_guide

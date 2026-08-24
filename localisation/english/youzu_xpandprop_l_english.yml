@@ -53,6 +53,8 @@
  nanami_ideology_2: "§YNanami§!'s §4Democratic§! Propaganda"
  nanami_ideology_3: "§YNanami§!'s Authoritarian Propaganda"
  nanami_ideology_4: "§YNanami§!'s Fascist Propaganda"
+ start_event.221.t: "Nanami's Foreign Ideological Dissemination Plan"
+ start_event.221.d: "Nanami can propagate our chosen ideology in enemy nations through various channels—newspapers, radio broadcasts, pamphlets, television, the internet (if they have it), or even graffiti on the walls. We only need to select the desired ideology, and it will be disseminated across the target nation."
  yzposter_1: "Revitalize the Nation through Science and Education, Strengthen It with Talent"
 
  tech_yz_works_equipment: "Yuzusoft Games"

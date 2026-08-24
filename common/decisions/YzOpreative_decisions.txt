@@ -698,6 +698,32 @@ YzOpreative_category = {
 			}
 		}
 	}
+	YzOpreative_add_enemy_party_popularity = {
+		icon = GFX_decision_SWI_expand_covert_operations
+		days_re_enable = 30
+		cost = 250
+		visible = {
+			has_country_flag = YzOpreative_open
+		}
+		available = {			#我tm真是傻逼啊，我真tm不是人类了，能加个CD解决的事我tm写nmb一堆条件我真是有病啊，然后tm这堆判定条件还没鸟用啊，我不活了，我把我遗留的代码贴在这供后人嘲笑了，我真不是人类了 ——huhu 2026.8.24 4:45
+			#any_country = { 
+				#NOT = {
+					#OR = {
+						#has_idea = nanami_ideology_1 
+						#has_idea = nanami_ideology_2
+						#has_idea = nanami_ideology_3
+						#has_idea = nanami_ideology_4
+					#}
+				#}
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+                ROOT = {
+                    country_event = start_event.221
+                }
+            }
+		}
 
-	
+	}
 }

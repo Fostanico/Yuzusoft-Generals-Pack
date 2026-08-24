@@ -47,10 +47,6 @@ spriteTypes = {
         texturefile = "gfx/decision/yz_author_manbo.png"
     }
     spriteType = {
-        name = "GFX_meigulu_2"
-        texturefile = "gfx/decision/megulu_2.png"
-    }
-    spriteType = {
         name = "GFX_traits_power_of_fox_fairy"
         texturefile = "gfx/traits/power_of_fox_fairy.PNG"
     }

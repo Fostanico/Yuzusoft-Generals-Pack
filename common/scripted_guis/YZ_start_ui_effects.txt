@@ -1,5 +1,5 @@
 scripted_gui = {
-	# 要点：启动 GUI 只由国家 flag 控制显示，入口目前来自启动决议而不是 start_event.1。 [2026-06-20] [伊尔诺/GPT5.5]
+	# 要点：启动 GUI 只由国家 flag 控制显示，唯一入口是启动决议；旧的开场弹窗事件已删除。 [2026-08-21] [伊尔诺/Claude]
 	YZ_start_ui_gui = {
 		window_name = "YZ_start_ui"
 		context_type = player_context

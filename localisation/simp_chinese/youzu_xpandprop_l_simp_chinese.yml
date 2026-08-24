@@ -49,6 +49,8 @@
  start_event.22.b: "蓝线"
  start_event.22.c: "灰线"
  start_event.22.e: "黑线"
+ start_event.221.t: "七海的他国意识形态宣传方案"
+ start_event.221.d: "七海可以通过各种渠道在他国宣传我们想要宣传的意识形态，报纸、广播、传单、电视、网络（如果真的有的话）、甚至墙上的涂鸦，我们只需要选择想要宣传的意识形态，就可以在目标国家宣传我们想要的意识形态了"
  nanami_ideology_1: "§Y七海§!§t共产主义§!宣传"
  nanami_ideology_2: "§Y七海§!§4民主主义§!宣传"
  nanami_ideology_3: "§Y七海§!专制主义宣传"

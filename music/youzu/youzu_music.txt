@@ -531,3 +531,12 @@ music = {
 		}
 	}
 }
+music = {
+	song = "Dear_Moments"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}

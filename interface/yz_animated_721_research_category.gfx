@@ -1,0 +1,26 @@
+# Prebuilt runtime asset; the one-off generator is intentionally not shipped.
+# Two synchronized strips reconstruct the 500x220 research background.
+spriteTypes = {
+
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_721_research_category_left"
+		texturefile = "gfx/animated_textures/yz_721_research_category/spritesheet-0-0.dds"
+		noOfFrames = 48
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_721_research_category_right"
+		texturefile = "gfx/animated_textures/yz_721_research_category/spritesheet-1-0.dds"
+		noOfFrames = 48
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+}
