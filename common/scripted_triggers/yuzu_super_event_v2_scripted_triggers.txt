@@ -1,0 +1,76 @@
+# Classifies payloads with source artwork rebuilt for the 720x610 UI.
+# Caller scope is the player country used by both scripted GUI windows.
+# Keep this list in sync with yuzu_super_event_v2.gui; missing-source payloads
+# must stay absent so they continue to use the legacy 600x510 window.
+
+yz_super_event_payload_uses_v2 = {
+	OR = {
+			has_country_flag = we_marry_with_airi
+			has_country_flag = we_marry_with_akari
+			has_country_flag = we_marry_with_amane
+			has_country_flag = we_marry_with_aoi
+			has_country_flag = we_marry_with_ayase
+			has_country_flag = we_marry_with_azusa
+			has_country_flag = we_marry_with_erina
+			has_country_flag = we_marry_with_fumika
+			has_country_flag = we_marry_with_hazuki
+			has_country_flag = we_marry_with_hinata
+			has_country_flag = we_marry_with_itsukishishihimenomikoto
+			has_country_flag = we_marry_with_kaguya
+			has_country_flag = we_marry_with_kanna
+			has_country_flag = we_marry_with_koharu
+			has_country_flag = we_marry_with_konoka
+			has_country_flag = we_marry_with_kurumi
+			has_country_flag = we_marry_with_mahiro
+			has_country_flag = we_marry_with_mako
+			has_country_flag = we_marry_with_murasame
+			has_country_flag = we_marry_with_masaki
+			has_country_flag = we_marry_with_maya
+			has_country_flag = we_marry_with_meguru
+			has_country_flag = we_marry_with_mei
+			has_country_flag = we_marry_with_mibu
+			has_country_flag = we_marry_with_miu
+			has_country_flag = we_marry_with_nanami
+			has_country_flag = we_marry_with_nanao
+			has_country_flag = we_marry_with_natsume
+			has_country_flag = we_marry_with_nene
+			has_country_flag = we_marry_with_nikora
+			has_country_flag = we_marry_with_noa
+			has_country_flag = we_marry_with_nozomi
+			has_country_flag = we_marry_with_orie
+			has_country_flag = we_marry_with_rena
+			has_country_flag = we_marry_with_rino
+			has_country_flag = we_marry_with_rio
+			has_country_flag = we_marry_with_roka
+			has_country_flag = we_marry_with_ruri
+			has_country_flag = we_marry_with_sakuyahime
+			has_country_flag = we_marry_with_sayo
+			has_country_flag = we_marry_with_sena
+			has_country_flag = we_marry_with_shaarii
+			has_country_flag = we_marry_with_shizuru
+			has_country_flag = we_marry_with_suzune
+			has_country_flag = we_marry_with_tia
+			has_country_flag = we_marry_with_tsubasa
+			has_country_flag = we_marry_with_tsumugi
+			has_country_flag = we_marry_with_wakana
+			has_country_flag = we_marry_with_yoshino
+			has_country_flag = we_marry_with_yune
+			has_country_flag = SCP_come_here
+			has_country_flag = we_forward_with_irno_flag
+			has_country_flag = we_unite_the_world_c
+			has_country_flag = we_unite_the_world_d
+			OR = {
+				has_country_flag = show_nuke_hoori_spevt
+				has_global_flag = show_nuke_hoori_spevt
+			}
+			has_country_flag = we_marry_with_daozhu
+			has_country_flag = we_forward_with_makoto_flag
+			has_country_flag = we_marry_with_takashiro_maya
+			has_country_flag = we_unite_the_world_n
+			has_country_flag = we_marry_with_hotaru
+			has_country_flag = we_marry_with_mayu
+			has_country_flag = we_marry_with_suou
+			has_country_flag = we_unite_with_ilro_flag
+			has_country_flag = we_unite_with_makoto_flag
+		}
+}

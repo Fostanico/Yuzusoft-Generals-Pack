@@ -85,8 +85,13 @@ guiTypes = {
         size = { width = 500 height = 200 }
         clipping = no
 
-        # The animation directly owns the full description area; the former
-        # static background is intentionally not layered below it.
+        background = {
+            name = "yz_cultural_department_category_background"
+            quadTextureSprite = "GFX_yz_cultural_department_category_bg_brightness_25"
+            position = { x = 5 y = -18 }
+        }
+        # The animation covers the restored original static fallback. The
+        # category toggle hides only this layer, leaving text and layout intact.
         iconType = {
             name = "yz_cultural_department_category_animated_background"
             spriteType = "GFX_yz_animated_cultural_department_category_bg"
@@ -113,8 +118,13 @@ guiTypes = {
         size = { width = 500 height = 200 }
         clipping = no
 
-        # The opaque animation directly owns the full description area. Do not
-        # add the former 173x255 image below it: its extra height remains visible.
+        background = {
+            name = "yz_megulu_industry_category_background"
+            quadTextureSprite = "GFX_yz_megulu_industry_category_bg_brightness_50"
+            position = { x = 5 y = -18 }
+        }
+        # The new 500x220 static fallback replaces the deleted 173x255 image;
+        # the toggle hides only this opaque animation layer.
         iconType = {
             name = "yz_megulu_industry_category_animated_background"
             spriteType = "GFX_yz_animated_megulu_industry_category_bg"

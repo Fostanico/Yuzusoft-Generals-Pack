@@ -66,6 +66,10 @@
  yz_works_equipment_0_desc: "Games from various Yuzusoft works"
 
  YuzuSongUndDanceTroupe_modifier: "§YYuzu Song & Dance Troupe Touring...§!"
+ yidian_modifier: "Eden"
+ atri_s_yidian_desc: "After returning from Eden, Atri came to understand its operational principles. As long as eligible states remain, she can continue applying this knowledge to our construction efforts."
+ atri_s_yidian: "Atri's Eden"
+ atri_edan: "This plan will turn up to two states that we own, control, and consider cores into §YEden§!.\n§YState Effects:§!\nLocal Construction Speed: §G+30%§!\nLocal Resources: §G+50%§!\nLocal Building Slots: §G+4§!\nLocal Building Slots Factor: §G+25%§!\nOur Attack and Defense on Core Territory in the State: §G+15%§!\nLocal Energy Consumption: §G-20%§!\nEnergy Consumption per Infrastructure Level: §G-15%§!"
 
  start_event.201.t: "Yuzu Song & Dance Troupe: Wartime Life Chronicle"
  start_event.201.d: "[YuzuSongUndDanceTroupe_event_text]"

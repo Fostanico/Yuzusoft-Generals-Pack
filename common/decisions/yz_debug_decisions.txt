@@ -115,7 +115,24 @@ debug_yuzu_they_will_know_fear = {
             is_debug = yes
         }
         complete_effect = {
-            clr_country_flag = havent_married
+            # Persistent country-local debug mode. Keep the legacy marriage lock
+            # intact so disabling this flag from the console restores normal rules.
+            set_country_flag = yz_debug_allow_all_marriages
+        }
+    }
+
+    debug_recruit_all_yuzu_characters = {
+        priority = 1000000
+        visible = {
+            is_debug = yes
+        }
+        complete_effect = {
+            # The shared effect guards every registered recruit by its stable
+            # ownership flag, so this debug decision is safe to click again.
+            yz_debug_recruit_all_registered_characters = yes
+        }
+        ai_will_do = {
+            factor = 0
         }
     }
 
@@ -764,6 +781,30 @@ debug_yuzu_they_will_know_fear = {
                 add_attack = 99
                 promote_leader = yes
             }
+        }
+    }
+
+    debug_test_akari_super_event_v2 = {
+        icon = GFX_akari
+        priority = 1000000
+
+        visible = {
+            is_debug = yes
+        }
+
+        available = {
+            is_debug = yes
+        }
+
+        fire_only_once = no
+        cost = 0
+
+        complete_effect = {
+            yz_show_akari_super_event_v2 = yes
+        }
+
+        ai_will_do = {
+            base = 0
         }
     }
 

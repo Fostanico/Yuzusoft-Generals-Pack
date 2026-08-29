@@ -14,9 +14,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_ningning
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -52,9 +50,7 @@ general_married_decision_category = {
 				not = {
 					has_idea = chose_noa
 				}
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -86,9 +82,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_meigulu
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -120,9 +114,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_murasame
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -154,9 +146,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_chou
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -188,9 +178,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_mako
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -222,9 +210,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_yoshino
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -240,7 +226,7 @@ general_married_decision_category = {
 			country_event = {
 				id = tongyong_event.9
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_yoshino
 		}
 	}
@@ -258,9 +244,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_0nai
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -292,9 +276,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_nanami
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -326,9 +308,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_kanna
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -360,9 +340,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_sana
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -406,9 +384,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_zaozi
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -468,9 +444,7 @@ general_married_decision_category = {
 				}
 				has_country_flag = have_chihaya
 				has_country_flag = chihaya_love
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -502,9 +476,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_hazuki
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -536,9 +508,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_fumika
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -570,9 +540,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_nozomi
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -604,9 +572,7 @@ general_married_decision_category = {
 					}
 				}
 				has_country_flag = have_wakana
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -636,9 +602,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_toko
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -668,9 +632,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_masaki
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -700,9 +662,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_miu
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -732,9 +692,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_Mayu
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -764,9 +722,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_suzune
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -796,9 +752,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_shirley
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -828,9 +782,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_kurumi
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -839,11 +791,16 @@ general_married_decision_category = {
 		available = {
 			if = {
 				limit = {
-					has_country_flag = kurumi_line
+					hidden_trigger = {
+						has_country_flag = kurumi_line
+					}
 				}
-				any_unit_leader = {
-					#has_trait = yz_amane_trait_2       2025.3.25,15:50,伊尔诺——牢八怎么你来海（くるみ）和天音（あまね）都没分清
-					has_trait = yz_kurumi_trait_2
+				custom_trigger_tooltip = {
+					tooltip = kurumi_personal_story_completed_tt
+					any_unit_leader = {
+						#has_trait = yz_amane_trait_2       2025.3.25,15:50,伊尔诺——牢八怎么你来海（くるみ）和天音（あまね）都没分清
+						has_trait = yz_kurumi_trait_2
+					}
 				}
 			}
 		}
@@ -871,9 +828,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_airi
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -904,9 +859,7 @@ general_married_decision_category = {
 			and = {
 				has_country_flag = have_roka
 				has_country_flag = roko_all_marry
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -954,9 +907,7 @@ general_married_decision_category = {
 		icon = GFX_roka
 		visible = {
 			has_country_flag = have_roka
-			not = {
-				has_country_flag = havent_married
-			}
+			yz_can_start_another_marriage = yes
 			not = {
 				has_country_flag = roko_all_marry
 			}
@@ -985,9 +936,7 @@ general_married_decision_category = {
 		icon = GFX_koharu
 		visible = {
 			has_country_flag = have_koharu
-			not = {
-				has_country_flag = havent_married
-			}
+			yz_can_start_another_marriage = yes
 			not = {
 				has_country_flag = roko_all_marry
 			}
@@ -1020,9 +969,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_lena
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1052,9 +999,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_chisaki
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1070,7 +1015,7 @@ general_married_decision_category = {
 			country_event = {
 				id = tongyong_event.34
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_mibu
 		}
 	}
@@ -1086,9 +1031,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_yuki
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1118,9 +1061,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_sumi
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1150,9 +1091,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_noriko
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1182,9 +1121,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_tae
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1214,9 +1151,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_nicola
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1246,9 +1181,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_orie
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1278,9 +1211,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_tia
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1310,9 +1241,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_mei
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1342,9 +1271,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_mahiro
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1374,9 +1301,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_konoka
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1406,9 +1331,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_yukari
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1427,6 +1350,36 @@ general_married_decision_category = {
 		}
 	}
 	#神秘标记点@@
+	get_married_aoi = {
+		##山吹葵。事件号由 ConsoleApplication16 对「山吹葵」的系统 ANSI（CP936）字节做 std::hash 后 % 1e8。
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		icon = GFX_aoi
+		visible = {
+			and = {
+				check_variable = {
+					love_depth > 98
+				}
+				has_country_flag = have_aoi
+				yz_can_start_another_marriage = yes
+				not = {
+					has_country_flag = amane_special_wedding
+				}
+			}
+		}
+		complete_effect = {
+			country_event = {
+				id = tongyong_event.2
+			}
+			set_country_flag = havent_married
+		}
+		remove_effect = {
+			country_event = {
+				id = tongyong_event.99756858
+			}
+		}
+	}
 	get_married_ebihara_minase = {
 		#海老原水濑
 		cost = 10
@@ -1439,9 +1392,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_ebihara_minase
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1471,9 +1422,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_elina_owen
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1503,9 +1452,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_mera_azusa
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1535,9 +1482,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_aragami_sayo
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1584,9 +1529,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_ruri
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1612,9 +1555,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_kaguya
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1641,9 +1582,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = parquet_started
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1669,9 +1608,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = parquet_started
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1697,9 +1634,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_yune
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1725,9 +1660,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_sakuyahime
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1753,9 +1686,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_akari
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1781,9 +1712,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_sena
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1809,9 +1738,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_shizuru
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1837,9 +1764,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_hinata
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1865,9 +1790,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_maya
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1893,9 +1816,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_ena
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1921,9 +1842,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_anju
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1949,9 +1868,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_tsukimi
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -1977,9 +1894,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_ririko
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -2005,9 +1920,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_miku
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -2033,9 +1946,7 @@ general_married_decision_category = {
 					love_depth > 98
 				}
 				has_country_flag = have_nayuka
-				not = {
-					has_country_flag = havent_married
-				}
+				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
 				}
@@ -2072,7 +1983,7 @@ general_married_decision_category = {
 				add_to_variable = {
 					marry_love_bonus = 100
 				}
-				set_country_flag = yuzu_super_event_private_visible_flag
+				yz_prepare_private_super_event = yes
 				set_country_flag = we_unite_with_ilro_flag
 				random_army_leader = {
 					limit = {
@@ -2108,7 +2019,7 @@ general_married_decision_category = {
 				add_to_variable = {
 					marry_love_bonus = 100
 				}
-				set_country_flag = yuzu_super_event_private_visible_flag
+				yz_prepare_private_super_event = yes
 				set_country_flag = we_unite_with_makoto_flag
 				random_army_leader = {
 					limit = {
@@ -2147,7 +2058,7 @@ general_married_decision_category = {
 				}
 				add_unit_leader_trait = married_trait
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_daozhu
 			hidden_effect = {
 				play_song = Michael_Jackson_Bad
@@ -2181,7 +2092,7 @@ general_married_decision_category = {
 				}
 				add_unit_leader_trait = married_trait
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_scp
 			hidden_effect = {
 				play_song = scp_dear_you
@@ -2215,7 +2126,7 @@ general_married_decision_category = {
 				}
 				add_unit_leader_trait = married_trait
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_napoleon_vi
 			hidden_effect = {
 				play_song = napoleon_dark_night
@@ -2249,7 +2160,7 @@ general_married_decision_category = {
 				}
 				add_unit_leader_trait = married_trait
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_huhu
 			hidden_effect = {
 				play_song = ReAliZe_Piano_ver
@@ -2315,7 +2226,7 @@ general_married_decision_category = {
 				}
 				add_unit_leader_trait = married_trait
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_takashiro_maya
 			hidden_effect = {
 				play_song = sing_our_qingchun
@@ -2359,7 +2270,7 @@ general_married_decision_category = {
 				}
 				add_unit_leader_trait = married_trait
 			}
-			set_country_flag = yuzu_super_event_private_visible_flag
+			yz_prepare_private_super_event = yes
 			set_country_flag = we_marry_with_hotaru
 			hidden_effect = {
 				play_song = give_me_a_alwyas_lie
@@ -2384,6 +2295,66 @@ general_married_decision_category = {
 			hidden_effect = {
 				play_song = Dear_Moments
 			}
+		}
+	}
+	get_married_rio = {
+		# 稻丛莉音；事件 ID 为名称“稻丛莉音”的项目哈希。
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		icon = GFX_liyin
+		visible = {
+			check_variable = { love_depth > 98 }
+			has_country_flag = have_rio
+			yz_can_start_another_marriage = yes
+			NOT = { has_country_flag = amane_special_wedding }
+		}
+		complete_effect = {
+			country_event = tongyong_event.2
+			set_country_flag = havent_married
+		}
+		remove_effect = {
+			country_event = tongyong_event.63984002
+		}
+	}
+	get_married_itsukishishihimenomikoto = {
+		# 市杵宍姬命；事件 ID 为名称“市杵宍姬命”的项目哈希。
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		icon = GFX_itsukishishihimenomikoto
+		visible = {
+			check_variable = { love_depth > 98 }
+			has_country_flag = have_itsukishishihimenomikoto
+			yz_can_start_another_marriage = yes
+			NOT = { has_country_flag = amane_special_wedding }
+		}
+		complete_effect = {
+			country_event = tongyong_event.2
+			set_country_flag = havent_married
+		}
+		remove_effect = {
+			country_event = tongyong_event.83444139
+		}
+	}
+	get_married_wataru = {
+		# 山吹涉；事件 ID 为名称“山吹涉”的项目哈希。
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		icon = GFX_yamabuki_wataru
+		visible = {
+			check_variable = { love_depth > 98 }
+			has_country_flag = have_yamabuki_wataru
+			yz_can_start_another_marriage = yes
+			NOT = { has_country_flag = amane_special_wedding }
+		}
+		complete_effect = {
+			country_event = tongyong_event.2
+			set_country_flag = havent_married
+		}
+		remove_effect = {
+			country_event = tongyong_event.51484895
 		}
 	}
 }

@@ -66,6 +66,10 @@
  yz_works_equipment_0_desc: "ゆずソフト各作品のゲーム"
 
  YuzuSongUndDanceTroupe_modifier: "§Yゆず歌舞団ツアー中...§!"
+ yidian_modifier: "エデン"
+ atri_edan: "この計画により、我が国が領有・支配し、中核州としている地域のうち最大2州を§Yエデン§!として整備します。\n§Y州効果：§!\n現地の建造速度：§G+30%§!\n現地の資源量：§G+50%§!\n現地の建築スロット：§G+4§!\n現地の建築スロット係数：§G+25%§!\n我が国による当該中核州での攻撃・防御：§G+15%§!\n現地のエネルギー消費：§G-20%§!\nインフラレベルごとのエネルギー消費：§G-15%§!"
+ atri_s_yidian: "アトリのエデン"
+ atri_s_yidian_desc: "エデンから帰還したアトリは、その運用原理を理解した。条件を満たす州が残っている限り、その知識を我が国の建設事業へ繰り返し導入できる。"
 
  start_event.201.t: "ゆず歌舞団・戦時生活誌"
  start_event.201.d: "[YuzuSongUndDanceTroupe_event_text]"

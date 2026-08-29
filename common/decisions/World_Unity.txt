@@ -46,7 +46,7 @@ World_Unity = {
             }
             drop_cosmetic_tag = yes
             set_faction_name = yuzu_Community_international
-            set_global_flag = yuzu_super_event_visible_flag
+            yz_prepare_private_super_event = yes
             set_country_flag = we_unite_the_world_c
             every_state = {
                 limit = {
@@ -108,7 +108,7 @@ World_Unity = {
             }
             drop_cosmetic_tag = yes
             set_faction_name = yuzu_fascism_international
-            set_global_flag = yuzu_super_event_visible_flag
+            yz_prepare_private_super_event = yes
             set_country_flag = we_unite_the_world_f
             every_state = {
                 limit = {
@@ -178,7 +178,7 @@ World_Unity = {
                 }
                 add_core_of = ROOT
             }
-            set_global_flag = yuzu_super_event_visible_flag
+            yz_prepare_private_super_event = yes
             set_country_flag = we_unite_the_world_d
             hidden_effect = {
                 play_song = yuzu_tsubasawokudasai
@@ -245,7 +245,7 @@ World_Unity = {
                 set_cosmetic_tag = Unity_neutrality_World
                 play_song = yuzu_unite_world_n
             }
-            set_global_flag = yuzu_super_event_visible_flag
+            yz_prepare_private_super_event = yes
             set_country_flag = we_unite_the_world_n
         }
     }

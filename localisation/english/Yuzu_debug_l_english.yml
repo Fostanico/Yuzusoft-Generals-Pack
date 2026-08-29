@@ -32,6 +32,8 @@
  test_yz_yanjiuyuan_1: "Debug: Research the Type-90"
  test_yz_yanjiuyuan_2: "Debug: Create the Type-90"
  remove_training: "Remove Training"
+ debug_test_akari_super_event_v2: "Marry Akari Kanemoto to Test the New Super-Event GUI"
+ debug_test_akari_super_event_v2_desc: "Opens Akari Kanemoto's 720×610 prototype wedding super event without changing the actual marriage state, for checking the new GUI, taller quotation area, concave corners, and close button."
  debug_recruit_suou_kyouhei_operative: "Recruit Operative: Suou Kyouhei"
  debug_recruit_suou_kyouhei_operative_desc: "Recruits Suou Kyouhei directly with the designated portrait and custom trait, to verify that the operative portrait, icons, and modifiers work correctly."
  yz_operative_secret_order_ace: "Secret Order Ace"

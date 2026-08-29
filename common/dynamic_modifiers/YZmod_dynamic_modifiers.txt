@@ -315,3 +315,17 @@ YZ_noa_event_103_consumer_goods_modifier = {
 	enable = { always = yes }
 	consumer_goods_factor = -0.01
 }
+
+# 亚托莉“伊甸”计划：由国家决议添加到两个本国核心州。
+# 核心攻防留在州级动态修正中，使其只在被选中的核心州内结算。
+yidian_modifier = {
+	enable = { always = yes }
+	local_resources = 0.5
+	local_building_slots = 4
+	local_building_slots_factor = 0.25
+	army_core_attack_factor = 0.15
+	army_core_defence_factor = 0.15
+	local_factory_energy_consumption_per_infrastructure = -0.15
+	local_factory_energy_consumption = -0.2
+	state_production_speed_buildings_factor = 0.3
+}

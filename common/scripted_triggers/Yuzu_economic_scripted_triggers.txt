@@ -26,3 +26,23 @@ Yuzu_can_repay_bonds_by_yzmoney = {        #我们可以偿还
 	}
 }
 
+# 债券线中长期投资的月扣款入口。现金线中长期建设不走月结算。
+Yoshino_monthly_industry_program_active = {
+	has_country_flag = Yoshino_industry_long_term_invest_now_start
+}
+
+# 仅不以债券启动并完成芳乃工业计划后，在穗织振兴组解锁地图建设与专项建设。
+# 旧存档：现金线曾误写 _by_loan，因此同时接受现金自动线与仍保留的 five_year_yes。
+Yoshino_cash_midterm_construction_unlocked = {
+	has_country_flag = finished_yoshino_industry
+	NOT = { has_country_flag = doing_Yoshino_industry_by_bonds }
+	NOT = { has_country_flag = industry_industrial_complex_line_by_bonds }
+	OR = {
+		has_country_flag = Yoshino_industry_cash_plan_completed
+		has_country_flag = Yoshino_industry_started_without_bonds
+		has_country_flag = industry_industrial_complex_line
+		has_country_flag = Yoshino_industry_five_year_yes
+		NOT = { has_country_flag = Yoshino_industry_five_year_yes_by_loan }
+	}
+}
+

@@ -1,0 +1,110 @@
+# Shared lifecycle owner for the single Yuzu super-event window.
+# Caller scope is the human player country that will receive the window.
+# Stable payload flags are preserved for save compatibility; opening a new
+# private event clears stale payloads so image and defined_text cannot diverge.
+
+yz_clear_super_event_state = {
+	# Legacy global display state remains readable for old saves, but new callers
+	# use country-local state so one player cannot close another player's window.
+	clr_global_flag = yuzu_super_event_visible_flag
+	clr_global_flag = show_nuke_hoori_spevt
+	clr_global_flag = show_nuke_washizu_spevt
+
+	clr_country_flag = yuzu_super_event_private_visible_flag
+	# Retired V2 prototype state may survive in an old debug save.
+	clr_country_flag = yz_super_event_v2_akari_visible
+	clr_country_flag = show_nuke_hoori_spevt
+	clr_country_flag = show_nuke_washizu_spevt
+	clr_country_flag = huhu_come_here
+	clr_country_flag = SCP_come_here
+	clr_country_flag = we_forward_with_irno_flag
+	clr_country_flag = we_forward_with_makoto_flag
+	clr_country_flag = we_have_fukai_omo
+	clr_country_flag = we_unite_the_world_c
+	clr_country_flag = we_unite_the_world_d
+	clr_country_flag = we_unite_the_world_f
+	clr_country_flag = we_unite_the_world_n
+	clr_country_flag = we_unite_with_ilro_flag
+	clr_country_flag = we_unite_with_makoto_flag
+
+	clr_country_flag = we_marry_with_airi
+	clr_country_flag = we_marry_with_akari
+	clr_country_flag = we_marry_with_amane
+	clr_country_flag = we_marry_with_aoi
+	clr_country_flag = we_marry_with_ayase
+	clr_country_flag = we_marry_with_azusa
+	clr_country_flag = we_marry_with_daozhu
+	clr_country_flag = we_marry_with_erina
+	clr_country_flag = we_marry_with_fumika
+	clr_country_flag = we_marry_with_hazuki
+	clr_country_flag = we_marry_with_hinata
+	clr_country_flag = we_marry_with_hotaru
+	clr_country_flag = we_marry_with_huhu
+	clr_country_flag = we_marry_with_itsukishishihimenomikoto
+	clr_country_flag = we_marry_with_kaguya
+	clr_country_flag = we_marry_with_kanna
+	clr_country_flag = we_marry_with_koharu
+	clr_country_flag = we_marry_with_konoka
+	clr_country_flag = we_marry_with_kurumi
+	clr_country_flag = we_marry_with_mahiro
+	clr_country_flag = we_marry_with_mako
+	clr_country_flag = we_marry_with_masaki
+	clr_country_flag = we_marry_with_maya
+	clr_country_flag = we_marry_with_mayu
+	clr_country_flag = we_marry_with_meguru
+	clr_country_flag = we_marry_with_mei
+	clr_country_flag = we_marry_with_mibu
+	clr_country_flag = we_marry_with_miu
+	clr_country_flag = we_marry_with_murasame
+	clr_country_flag = we_marry_with_nanami
+	clr_country_flag = we_marry_with_nanao
+	clr_country_flag = we_marry_with_napoleon_vi
+	clr_country_flag = we_marry_with_natsume
+	clr_country_flag = we_marry_with_nene
+	clr_country_flag = we_marry_with_nikora
+	clr_country_flag = we_marry_with_noa
+	clr_country_flag = we_marry_with_nozomi
+	clr_country_flag = we_marry_with_orie
+	clr_country_flag = we_marry_with_rena
+	clr_country_flag = we_marry_with_rino
+	clr_country_flag = we_marry_with_rio
+	clr_country_flag = we_marry_with_roka
+	clr_country_flag = we_marry_with_ruri
+	clr_country_flag = we_marry_with_sakuyahime
+	clr_country_flag = we_marry_with_sana
+	clr_country_flag = we_marry_with_sayo
+	clr_country_flag = we_marry_with_scp
+	clr_country_flag = we_marry_with_sena
+	clr_country_flag = we_marry_with_shaarii
+	clr_country_flag = we_marry_with_shizuru
+	clr_country_flag = we_marry_with_suou
+	clr_country_flag = we_marry_with_suzune
+	clr_country_flag = we_marry_with_takashiro_maya
+	clr_country_flag = we_marry_with_tia
+	clr_country_flag = we_marry_with_touko
+	clr_country_flag = we_marry_with_tsubasa
+	clr_country_flag = we_marry_with_tsumugi
+	clr_country_flag = we_marry_with_wakana
+	clr_country_flag = we_marry_with_wataru
+	clr_country_flag = we_marry_with_yoshino
+	clr_country_flag = we_marry_with_yukari
+	clr_country_flag = we_marry_with_yune
+	clr_country_flag = we_restore_8620
+
+	# Scripted GUIs otherwise update every tick. Every supported open/close path
+	# changes this country variable so the window refreshes only when needed.
+	add_to_variable = { yz_super_event_dirty = 1 }
+}
+
+yz_prepare_private_super_event = {
+	yz_clear_super_event_state = yes
+	set_country_flag = yuzu_super_event_private_visible_flag
+}
+
+# Ready for the production team's future 8620 story-chain caller. Intentionally
+# has no caller in this revision: it owns the requested music and display state.
+yz_show_8620_super_event = {
+	play_song = youzu30
+	yz_prepare_private_super_event = yes
+	set_country_flag = we_restore_8620
+}

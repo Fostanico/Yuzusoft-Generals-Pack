@@ -1573,9 +1573,11 @@ add_youzi_general_category = {
             factor = 0
         }
     }
-    huhu = {
+    huhu_zhaomu = {
+        icon = GFX_youzi_huhu
         visible = {
             is_ai = no
+            NOT = { has_country_flag = have_huhu }
             or = {
                 has_country_flag = qiyong_youzi_1
                 has_country_flag = qiyong_youzi_2
@@ -1592,7 +1594,7 @@ add_youzi_general_category = {
                     limit = {
                         is_ai = no
                     }
-                    set_country_flag = yuzu_super_event_private_visible_flag
+                    yz_prepare_private_super_event = yes
                     set_country_flag = huhu_come_here
                 }
                 play_song = mile_likelihood
@@ -1662,7 +1664,6 @@ add_youzi_general_category = {
         }
     }
     youzi_zhaomu = {
-        icon = GFX_youzi_huhu
         visible = {
             is_ai = no
             has_country_flag = have_huhu
@@ -1812,7 +1813,7 @@ add_youzi_general_category = {
         cost = 10
         fire_only_once = yes
         complete_effect = {
-            set_country_flag = yuzu_super_event_private_visible_flag
+            yz_prepare_private_super_event = yes
             set_country_flag = SCP_come_here
             hidden_effect = {
                 set_country_flag = have_unscientific_scp
@@ -2385,9 +2386,9 @@ add_youzi_general_category = {
         complete_effect = {
             hidden_effect = {
                 play_song = battle_carry_on_violet_ver
+                yz_prepare_private_super_event = yes
                 set_country_flag = have_fukai_omo
                 set_country_flag = we_have_fukai_omo
-                set_country_flag = yuzu_super_event_private_visible_flag
                 meta_effect = {
                     text = {
                         generate_character = {

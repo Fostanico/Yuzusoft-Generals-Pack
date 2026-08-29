@@ -17,7 +17,7 @@
  autonomy_no_more_close_economy_tt: "従属国が閉鎖経済または輸出制限を採用している場合、輸出重視へ切り替える"
  Yuzu_has_fund_available_tt: "使用可能なゆず金がある"
  Yuzu_fund_subtract_tt: "ゆず金を一つ消費し、[FROM.GetName]でゆず文化を広める"
- play_the_song_of_best_yuzu_descision_effect_tooltip: "§R最高のゆず！§!を再生"
+ play_the_song_of_best_yuzu_descision_effect_tooltip: "§Rバトルフィールド4 オリジナルサウンドトラック§!を再生"
  play_the_song_of_zuonai_descision_effect_tooltip: "§Ywith you!§!を再生"
  play_the_song_of_linglai_descision_effect_tooltip: "§tastral ability§!を再生"
  yuzu_super_vip: "ゆずクラウド・スーパー会員"

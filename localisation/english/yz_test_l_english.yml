@@ -1,0 +1,3 @@
+﻿l_english:
+ # Unique filename. Vanilla decisions_l_english.yml must not be overridden.
+ new_decision: "Test New Plugin Decision"

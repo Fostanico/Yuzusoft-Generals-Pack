@@ -716,7 +716,6 @@ YzOpreative_category = {
 					#}
 				#}
 			}
-		}
 		remove_effect = {
 			hidden_effect = {
                 ROOT = {
@@ -724,6 +723,5 @@ YzOpreative_category = {
                 }
             }
 		}
-
 	}
 }

@@ -1,0 +1,9 @@
+# Compatibility-named debug helper for the production 720x610 route.
+# It opens only the display payload and does not grant marriage state or traits.
+
+yz_show_akari_super_event_v2 = {
+	yz_prepare_private_super_event = yes
+	set_country_flag = we_marry_with_akari
+	play_song = noble_works_ed
+}
+

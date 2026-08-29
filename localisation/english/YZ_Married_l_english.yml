@@ -25,6 +25,7 @@
  get_married_24: "Prepare the Wedding with §RShioyama Suzune§!"
  get_married_25: "Prepare the Wedding with §YShirley Warwick§!"
  get_married_26: "Prepare the Wedding with §4Kohibari Kurume§!"
+ kurumi_personal_story_completed_tt: "Completed §YKurume's§! personal story"
  get_married_27: "Prepare the Wedding with §4Shiraga Airi§!"
  get_married_28: "Prepare the Wedding with Roka" #双飞
  get_married_29: "Prepare the Wedding with Koharu" #双飞
@@ -47,6 +48,7 @@
 
 
 #神秘标记点@@
+ get_married_aoi: "Prepare the Wedding with §RYamabuki Aoi§!"
  get_married_ebihara_minase: "Prepare the Wedding with Ebihara Minase"
 
  get_married_elina_owen: "Prepare the Wedding with Elina Owen"
@@ -195,6 +197,9 @@
  tongyong_event.73719911.a: "\"Until the day this sea connects us once more.\""
 
 #神秘标记点@@
+ tongyong_event.99756858.t: "Wedding with Yamabuki Aoi"
+ tongyong_event.99756858.d: "Half an hour before the ceremony, Yamabuki Aoi is not in the bride's room.\nYou find her at the side door of the hall. The white dress is already on; the ponytail is still the everyday one. She is crouched, setting a fallen flower basket upright for a guest, smiling as she always does. \"It's fine, I've got it.\"\n\"The bride is not allowed to work—\" Wataru hauls her up, dress and all, phone already raised. \"Aoi, today you just stand there and get photographed. Haruki, watch her. Don't let her run off to move chairs for the student council again.\"\nSomething stiff pokes from her sleeve. When you pinch it, her ears go red first.\n\"Another charm?\"\n\"The curse is gone already... but it's a habit.\" She tucks the little pouch back, as earnest as if she were keeping a promise. \"It won't hurt to keep it, will it? In case you trip over a chair today...\"\nYou don't call her on it. She once asked for a hundred of them, and not one stopped the bad luck from landing on you. She knows they do nothing. She still brought one.\nThe dressing-room mirror shows only one of her. You remember two identical faces on the rooftop: one that said she liked you outright, one that hid it in a joke. In the wind they recognized the same words, and became one Yamabuki Aoi again. This Aoi is trying to even her breathing. Her palm is hot.\n\"Let's go.\" She takes your hand, tighter than any promise she ever made. \"We said we'd carry it together. Today counts too.\"\nThe aisle is not long. For the first time, the smile she gives equally to everyone leans—toward you. In the seats are the clubs she helped, the regulars from Robin, the Chitose table. Shinichiro polishes his glasses. Sana claps her hands red. Honoka, in the back row, wrings a tissue into a ball.\nWhen the ring goes on, she whispers \"Haruki,\" then shakes her head.\n\"That's not it.\"\nShe bites her lip, as if finally letting out a line she has practiced for a long time. Her eyes are too bright for someone who was ever dense about love.\n\"From now on, we'll be calling each other something different.\"\nThat night she puts the charm in the back of a drawer. She leans on your shoulder, tries the new name, then hides her face in your sleeve, leaving only the heat of her ears.\nA promise is still a promise. From today, it no longer has to be said in hiding."
+ tongyong_event.99756858.a: "From now on, we'll be calling each other something different!"
  tongyong_event.11304845.a: "Ebihara Minase, you are the most important person to me"
  tongyong_event.11304845.t: "Wedding with Ebihara Minase"
  tongyong_event.11304845.d: "Today is the wedding of you and Shrimp-chan. All your old classmates from back then have come, holding a special wedding for the two of you. Hibarigaoka Yuki elegantly waves her baton, and then the clarinet, trombone, and timpani sound the Wedding March flawlessly. You see a small, familiar figure in a wedding dress walking toward you. Under everyone's gaze, you make your vows and present the diamond ring. Just then, your music-sensitive ear notices the trombone's breath is a little unsteady — but even so, this is still the best Wedding March you've ever heard, because the beloved before you is now lip to lip with you."

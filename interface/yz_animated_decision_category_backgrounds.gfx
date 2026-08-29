@@ -1,0 +1,121 @@
+# Prebuilt decision-category animation registry. One-off generators and their
+# manifests are intentionally kept outside the runtime mod tree.
+spriteTypes = {
+
+	# Recruitment: two synchronized, BC1-aligned strips.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_recruit_category_left"
+		texturefile = "gfx/animated_textures/yz_recruit_category/spritesheet-0-0.dds"
+		noOfFrames = 42
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_recruit_category_right"
+		texturefile = "gfx/animated_textures/yz_recruit_category/spritesheet-1-0.dds"
+		noOfFrames = 42
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	# Roka and Koharu: two synchronized, BC1-aligned strips.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_roka_koharu_category_left"
+		texturefile = "gfx/animated_textures/yz_roka_koharu_category/spritesheet-0-0.dds"
+		noOfFrames = 48
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_roka_koharu_category_right"
+		texturefile = "gfx/animated_textures/yz_roka_koharu_category/spritesheet-1-0.dds"
+		noOfFrames = 48
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	# Yuzusoft Cultural Department.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_cultural_department_category_bg"
+		texturefile = "gfx/animated_textures/yz_cultural_department_category/spritesheet-0-0.dds"
+		noOfFrames = 26
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	# Meguru's industrial upgrade plan.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_megulu_industry_category_bg"
+		texturefile = "gfx/animated_textures/yz_megulu_industry_category/spritesheet-0-0.dds"
+		noOfFrames = 20
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	# 721 Research Institute: two synchronized, BC1-aligned strips.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_721_research_category_left"
+		texturefile = "gfx/animated_textures/yz_721_research_category/spritesheet-0-0.dds"
+		noOfFrames = 48
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_721_research_category_right"
+		texturefile = "gfx/animated_textures/yz_721_research_category/spritesheet-1-0.dds"
+		noOfFrames = 48
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	# C.I.A.L.L.O Bureau.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_ciallo_category_bg"
+		texturefile = "gfx/animated_textures/yz_ciallo_category/spritesheet-0-0.dds"
+		noOfFrames = 29
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
+	# Yuzusoft Military Academy.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_animated_military_academy_category_bg"
+		texturefile = "gfx/animated_textures/yz_military_academy_category/spritesheet-0-0.dds"
+		noOfFrames = 24
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+}

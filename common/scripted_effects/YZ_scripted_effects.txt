@@ -126,7 +126,7 @@ yz_recalculate_monthly_money_ledger = {
 
 	set_variable = { monthly_YZ_money_industry_outcome = 0 }
 	if = {
-		limit = { has_country_flag = Yoshino_industry_long_term_invest_now_start }
+		limit = { Yoshino_monthly_industry_program_active = yes }
 		set_variable = { monthly_YZ_money_industry_outcome = basic_additional_yz_money_spend }
 		clamp_variable = {
 			var = monthly_YZ_money_industry_outcome
@@ -1901,7 +1901,7 @@ yz_bond_full_auto_assess_country = {
 		limit = {
 			check_variable = { var = yz_bond_credit_score value = 50 compare = greater_than_or_equals }
 			OR = {
-				has_country_flag = Yoshino_industry_long_term_invest_now_start
+				Yoshino_monthly_industry_program_active = yes
 				check_variable = { yz_bond_last_credit_growth > 0 }
 			}
 		}
@@ -2324,7 +2324,7 @@ yz_bond_run_full_automation = {
 		}
 		else_if = {
 			limit = {
-				has_country_flag = Yoshino_industry_long_term_invest_now_start
+				Yoshino_monthly_industry_program_active = yes
 				check_variable = { var = yz_bond_credit_score value = 50 compare = greater_than_or_equals }
 				check_variable = {
 					var = yz_money

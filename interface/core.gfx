@@ -707,7 +707,150 @@ spriteTypes = {
 	#	noOfFrames = 7
 	#}
 
+	# Shared GUI compatibility definitions used by audited total conversions.
+	# Their textures remain supplied by the active game/mod.
+	corneredTileSpriteType = {
+		name = "GFX_tiled_header"
+		size = { x=77 y=38 }
+		textureFile = "gfx/interface/tiles/tiled_header_1.dds"
+		borderSize = { x=8 y=8 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 
+	spriteType = {
+		name = "steam_workshop"
+		texturefile = "gfx/interface/icon_steam_workshop.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "reddit"
+		texturefile = "gfx/interface/icon_reddit.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "bluesky_menu"
+		texturefile = "gfx/interface/icon_bluesky.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "github"
+		texturefile = "gfx/interface/icon_github.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "youtube2"
+		texturefile = "gfx/interface/icon_youtube2.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_production_line_arrow_right"
+		textureFile = "gfx/interface/production_line_arrow_right.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_223x32"
+		texturefile = "gfx/interface/button_223x32.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_button_148x20"
+		texturefile = "gfx/interface/button_148x20.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_button_372x43"
+		texturefile = "gfx/interface/button_372x43.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	SpriteType = {
+		name = "GFX_generic_box_96"
+		texturefile = "gfx/interface/generic_box_96.dds"
+	}
+
+	spriteType = {
+		name = "gitlab"
+		texturefile = "gfx/interface/icon_gitlab.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "discord2"
+		texturefile = "gfx/interface/icon_discord2.dds"
+	}
+
+	spriteType = {
+		name = "imd_collective"
+		texturefile = "gfx/interface/icon_imd_collective.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sort_button_288x29_button"
+		texturefile = "gfx/interface/sort_button_288x29.tga"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_Info_Button_37x37"
+		texturefile = "gfx/interface/Info_Button_37x37.png"
+		legacy_lazy_load = no
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_1b_thin_border_2"
+		size = { x=192 y=192 }
+		textureFile = "gfx/interface/tiles/tiled_window_1b_thin_border_2.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_vhs_overlay"
+		texturefile = "gfx/interface/scripted_gui/vhs_overlay.dds"
+		size = { x=1600 y=1200 }
+		alwaystransparent = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_shield_small_animated"
+		texturefile = "gfx/interface/flag_overlay_but_animated.dds"
+		noOfFrames = 11
+		legacy_lazy_load = yes
+		transparencecheck = yes
+		animation_rate_fps = 5
+		pause_on_loop = 0.0
+		looping = yes
+		play_on_show = yes
+	}
+
+	spriteType = {
+		name = "GFX_TEASER_country_iran"
+		texturefile = "gfx/interface/teaser_country_iran.dds"
+	}
+
+	spriteType = {
+		name = "GFX_TEASER_country_prc"
+		texturefile = "gfx/interface/teaser_country_prc.dds"
+	}
+
+	maskedShieldType = {
+		name = "GFX_minishield_cube_digital"
+		textureFile1 = "gfx/interface/scripted_gui/cube_flag.dds"
+		textureFile2 = "gfx/interface/scripted_gui/cube_flag_mask.dds"
+		effectFile = "gfx/FX/maskedflag.lua"
+	}
 }
 
 objectTypes = {

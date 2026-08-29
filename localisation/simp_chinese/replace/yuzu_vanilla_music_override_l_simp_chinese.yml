@@ -1,0 +1,4 @@
+﻿l_simp_chinese:
+ # 只覆盖两首原版曲名。不要恢复 localisation/simp_chinese/music_l_simp_chinese.yml。
+ axis_peace_2: "PERFECT GIRL(Ins Ver)"
+ axis_war_3: "PERFECT GIRL"

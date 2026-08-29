@@ -3,13 +3,19 @@ defined_text = {      #超事件名言
 	name = get_yuzu_super_event_quote
 	text = {
 		trigger = {
-			has_global_flag = show_nuke_hoori_spevt
+			OR = {
+				has_country_flag = show_nuke_hoori_spevt
+				has_global_flag = show_nuke_hoori_spevt
+			}
 		}
 		localization_key = we_nuke_hoori_quote
 	}
 	text = {
 		trigger = {
-			has_global_flag = show_nuke_washizu_spevt
+			OR = {
+				has_country_flag = show_nuke_washizu_spevt
+				has_global_flag = show_nuke_washizu_spevt
+			}
 		}
 		localization_key = we_nuke_washizu_quote
 	}
@@ -189,6 +195,12 @@ defined_text = {      #超事件名言
 	}
 	text = {
 		trigger = {
+			has_country_flag = we_marry_with_nanao
+		}
+		localization_key = we_marry_with_nanao_quote
+	}
+	text = {
+		trigger = {
 			has_country_flag = we_marry_with_shizuru
 		}
 		localization_key = we_marry_with_shizuru_quote
@@ -241,6 +253,74 @@ defined_text = {      #超事件名言
 		}
 		localization_key = we_marry_with_hotaru_quote
 	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_airi
+		}
+		localization_key = we_marry_with_airi_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_nanami
+		}
+		localization_key = we_marry_with_nanami_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_aoi
+		}
+		localization_key = we_marry_with_aoi_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_miu
+		}
+		localization_key = we_marry_with_miu_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_masaki
+		}
+		localization_key = we_marry_with_masaki_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_amane
+		}
+		localization_key = we_marry_with_amane_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_touko
+		}
+		localization_key = we_marry_with_touko_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_mahiro
+		}
+		localization_key = we_marry_with_mahiro_quote
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_konoka
+		}
+		localization_key = we_marry_with_konoka_quote
+	}
+	text = { trigger = { has_country_flag = we_marry_with_azusa } localization_key = we_marry_with_azusa_quote }
+	text = { trigger = { has_country_flag = we_marry_with_rio } localization_key = we_marry_with_rio_quote }
+	text = { trigger = { has_country_flag = we_marry_with_erina } localization_key = we_marry_with_erina_quote }
+	text = { trigger = { has_country_flag = we_marry_with_nikora } localization_key = we_marry_with_nikora_quote }
+	text = { trigger = { has_country_flag = we_marry_with_shaarii } localization_key = we_marry_with_shaarii_quote }
+	text = { trigger = { has_country_flag = we_marry_with_kurumi } localization_key = we_marry_with_kurumi_quote }
+	text = { trigger = { has_country_flag = we_marry_with_fumika } localization_key = we_marry_with_fumika_quote }
+	text = { trigger = { has_country_flag = we_marry_with_orie } localization_key = we_marry_with_orie_quote }
+	text = { trigger = { has_country_flag = we_marry_with_itsukishishihimenomikoto } localization_key = we_marry_with_itsukishishihimenomikoto_quote }
+	text = { trigger = { has_country_flag = we_marry_with_yukari } localization_key = we_marry_with_yukari_quote }
+	text = { trigger = { has_country_flag = we_marry_with_wataru } localization_key = we_marry_with_wataru_quote }
+	text = { trigger = { has_country_flag = we_marry_with_suzune } localization_key = we_marry_with_suzune_quote }
+	text = { trigger = { has_country_flag = we_marry_with_akari } localization_key = we_marry_with_akari_quote }
+	text = { trigger = { has_country_flag = we_marry_with_hinata } localization_key = we_marry_with_hinata_quote }
 	text = {
 		trigger = {
 			has_country_flag = we_unite_the_world_n
@@ -307,6 +387,10 @@ defined_text = {      #超事件名言
 		}
 		localization_key = we_unite_with_makoto_quote
 	}
+	text = {
+		trigger = { has_country_flag = we_restore_8620 }
+		localization_key = we_restore_8620_quote
+	}
 	#后面的都按照我的模板写就行——伊尔诺，2025.8.4，18：02
 	#text = {
 	#	trigger = {
@@ -314,18 +398,25 @@ defined_text = {      #超事件名言
 	#	}
 	#	localization_key = <your 名言>
 	#}
+	text = { localization_key = yuzu_super_event_missing_quote }
 }
 defined_text = {       #超事件标题
 	name = get_yuzu_super_event_title
 	text = {
 		trigger = {
-			has_global_flag = show_nuke_hoori_spevt
+			OR = {
+				has_country_flag = show_nuke_hoori_spevt
+				has_global_flag = show_nuke_hoori_spevt
+			}
 		}
 		localization_key = we_nuke_hoori_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = show_nuke_washizu_spevt
+			OR = {
+				has_country_flag = show_nuke_washizu_spevt
+				has_global_flag = show_nuke_washizu_spevt
+			}
 		}
 		localization_key = we_nuke_washizu_title
 	}
@@ -505,6 +596,12 @@ defined_text = {       #超事件标题
 	}
 	text = {
 		trigger = {
+			has_country_flag = we_marry_with_nanao
+		}
+		localization_key = we_marry_with_nanao_title
+	}
+	text = {
+		trigger = {
 			has_country_flag = we_marry_with_shizuru
 		}
 		localization_key = we_marry_with_shizuru_title
@@ -557,6 +654,74 @@ defined_text = {       #超事件标题
 		}
 		localization_key = we_marry_with_hotaru_title
 	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_airi
+		}
+		localization_key = we_marry_with_airi_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_nanami
+		}
+		localization_key = we_marry_with_nanami_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_aoi
+		}
+		localization_key = we_marry_with_aoi_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_miu
+		}
+		localization_key = we_marry_with_miu_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_masaki
+		}
+		localization_key = we_marry_with_masaki_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_amane
+		}
+		localization_key = we_marry_with_amane_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_touko
+		}
+		localization_key = we_marry_with_touko_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_mahiro
+		}
+		localization_key = we_marry_with_mahiro_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_konoka
+		}
+		localization_key = we_marry_with_konoka_title
+	}
+	text = { trigger = { has_country_flag = we_marry_with_azusa } localization_key = we_marry_with_azusa_title }
+	text = { trigger = { has_country_flag = we_marry_with_rio } localization_key = we_marry_with_rio_title }
+	text = { trigger = { has_country_flag = we_marry_with_erina } localization_key = we_marry_with_erina_title }
+	text = { trigger = { has_country_flag = we_marry_with_nikora } localization_key = we_marry_with_nikora_title }
+	text = { trigger = { has_country_flag = we_marry_with_shaarii } localization_key = we_marry_with_shaarii_title }
+	text = { trigger = { has_country_flag = we_marry_with_kurumi } localization_key = we_marry_with_kurumi_title }
+	text = { trigger = { has_country_flag = we_marry_with_fumika } localization_key = we_marry_with_fumika_title }
+	text = { trigger = { has_country_flag = we_marry_with_orie } localization_key = we_marry_with_orie_title }
+	text = { trigger = { has_country_flag = we_marry_with_itsukishishihimenomikoto } localization_key = we_marry_with_itsukishishihimenomikoto_title }
+	text = { trigger = { has_country_flag = we_marry_with_yukari } localization_key = we_marry_with_yukari_title }
+	text = { trigger = { has_country_flag = we_marry_with_wataru } localization_key = we_marry_with_wataru_title }
+	text = { trigger = { has_country_flag = we_marry_with_suzune } localization_key = we_marry_with_suzune_title }
+	text = { trigger = { has_country_flag = we_marry_with_akari } localization_key = we_marry_with_akari_title }
+	text = { trigger = { has_country_flag = we_marry_with_hinata } localization_key = we_marry_with_hinata_title }
 	text = {
 		trigger = {
 			has_country_flag = we_unite_the_world_n
@@ -623,6 +788,10 @@ defined_text = {       #超事件标题
 		}
 		localization_key = we_have_fukai_omo_title
 	}
+	text = {
+		trigger = { has_country_flag = we_restore_8620 }
+		localization_key = we_restore_8620_title
+	}
 	#后面的都按照我的模板写就行——伊尔诺，2025.8.4，18：10
 	#text = {
 	#	trigger = {
@@ -630,18 +799,25 @@ defined_text = {       #超事件标题
 	#	}
 	#	localization_key = <your 标题>
 	#}
+	text = { localization_key = yuzu_super_event_missing_title }
 }
 defined_text = {     #关闭按钮文字
 	name = get_yuzu_super_event_remark
 	text = {
 		trigger = {
-			has_global_flag = show_nuke_hoori_spevt
+			OR = {
+				has_country_flag = show_nuke_hoori_spevt
+				has_global_flag = show_nuke_hoori_spevt
+			}
 		}
 		localization_key = we_nuke_hoori_close_buttom
 	}
 	text = {
 		trigger = {
-			has_global_flag = show_nuke_washizu_spevt
+			OR = {
+				has_country_flag = show_nuke_washizu_spevt
+				has_global_flag = show_nuke_washizu_spevt
+			}
 		}
 		localization_key = we_nuke_washizu_close_buttom
 	}
@@ -821,6 +997,12 @@ defined_text = {     #关闭按钮文字
 	}
 	text = {
 		trigger = {
+			has_country_flag = we_marry_with_nanao
+		}
+		localization_key = we_marry_with_nanao_close_buttom
+	}
+	text = {
+		trigger = {
 			has_country_flag = we_marry_with_shizuru
 		}
 		localization_key = we_marry_with_shizuru_close_buttom
@@ -873,6 +1055,74 @@ defined_text = {     #关闭按钮文字
 		}
 		localization_key = we_marry_with_hotaru_close_buttom
 	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_airi
+		}
+		localization_key = we_marry_with_airi_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_nanami
+		}
+		localization_key = we_marry_with_nanami_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_aoi
+		}
+		localization_key = we_marry_with_aoi_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_miu
+		}
+		localization_key = we_marry_with_miu_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_masaki
+		}
+		localization_key = we_marry_with_masaki_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_amane
+		}
+		localization_key = we_marry_with_amane_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_touko
+		}
+		localization_key = we_marry_with_touko_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_mahiro
+		}
+		localization_key = we_marry_with_mahiro_close_buttom
+	}
+	text = {
+		trigger = {
+			has_country_flag = we_marry_with_konoka
+		}
+		localization_key = we_marry_with_konoka_close_buttom
+	}
+	text = { trigger = { has_country_flag = we_marry_with_azusa } localization_key = we_marry_with_azusa_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_rio } localization_key = we_marry_with_rio_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_erina } localization_key = we_marry_with_erina_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_nikora } localization_key = we_marry_with_nikora_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_shaarii } localization_key = we_marry_with_shaarii_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_kurumi } localization_key = we_marry_with_kurumi_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_fumika } localization_key = we_marry_with_fumika_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_orie } localization_key = we_marry_with_orie_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_itsukishishihimenomikoto } localization_key = we_marry_with_itsukishishihimenomikoto_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_yukari } localization_key = we_marry_with_yukari_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_wataru } localization_key = we_marry_with_wataru_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_suzune } localization_key = we_marry_with_suzune_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_akari } localization_key = we_marry_with_akari_close_buttom }
+	text = { trigger = { has_country_flag = we_marry_with_hinata } localization_key = we_marry_with_hinata_close_buttom }
 	text = {
 		trigger = {
 			has_country_flag = we_unite_the_world_n
@@ -939,6 +1189,10 @@ defined_text = {     #关闭按钮文字
 		}
 		localization_key = we_have_fukai_omo_close_buttom
 	}
+	text = {
+		trigger = { has_country_flag = we_restore_8620 }
+		localization_key = we_restore_8620_close_buttom
+	}
 	#后面的都按照我的模板写就行——伊尔诺，2025.8.4，18：12
 	#text = {
 	#	trigger = {
@@ -946,5 +1200,6 @@ defined_text = {     #关闭按钮文字
 	#	}
 	#	localization_key = <your 关闭按钮文字>
 	#}
+	text = { localization_key = yuzu_super_event_missing_close }
 }
 

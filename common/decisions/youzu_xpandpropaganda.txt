@@ -341,7 +341,6 @@ X_youzu_propaganda_category = {
 		}
 		available = {
 			yz_poster_slot_available = yes
-			has_country_flag = have_youzu_army_1
 			check_variable = {
 				yzc_manpower_factor > 0.1
 				tooltip = yzc_manpower_factor_more_than_tt

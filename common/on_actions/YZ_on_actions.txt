@@ -154,7 +154,7 @@ on_actions = {
                     clr_country_flag = monly_yz_money_spent_too_much
                     if = {
                         limit = {
-                            has_country_flag = Yoshino_industry_long_term_invest_now_start
+                            Yoshino_monthly_industry_program_active = yes
                         }
                         if = {
                             limit = {

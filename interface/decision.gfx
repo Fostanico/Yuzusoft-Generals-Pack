@@ -459,6 +459,10 @@ spriteTypes = {
 		texturefile = "gfx/decision/yamabuki_wataru.png"
 	}
 	spriteType = {
+		name = "GFX_itsukishishihimenomikoto"
+		texturefile = "gfx/leader/itsukishishishihimenomikoto_small.png"
+	}
+	spriteType = {
 		name = "GFX_akagi"
 		texturefile = "gfx/decision/akagi_descision.png"
 	}

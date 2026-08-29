@@ -1,0 +1,4 @@
+﻿l_japanese:
+ # 原版サウンドトラック名の狭い上書き。music_l_japanese.yml を復元しない。
+ axis_peace_2: "PERFECT GIRL(Ins Ver)"
+ axis_war_3: "PERFECT GIRL"

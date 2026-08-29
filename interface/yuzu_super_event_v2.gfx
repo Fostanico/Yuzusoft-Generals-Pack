@@ -1,0 +1,13 @@
+spriteTypes = {
+	# Event artwork reuses GFX_super_event_* registrations from
+	# interface/yuzu_super_event.gfx. This file owns only V2 shared overlays.
+	spriteType = {
+		name = "GFX_yuzu_super_event_v2_underlay"
+		textureFile = "gfx/super_event/Yuzu_Super_Event_Underlay_720.png"
+	}
+	spriteType = {
+		name = "GFX_yuzu_super_event_v2_close_button"
+		textureFile = "gfx/super_event/Yuzu_Super_Event_Close_Button_720.png"
+	}
+}
+

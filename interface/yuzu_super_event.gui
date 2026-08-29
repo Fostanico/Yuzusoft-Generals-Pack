@@ -335,6 +335,148 @@ guiTypes = {
 			}
 		}
 		iconType = {
+			name = "Super_event_marry_airi"
+			spriteType = "GFX_super_event_marry_airi"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_nanami"
+			spriteType = "GFX_super_event_marry_nanami"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_aoi"
+			spriteType = "GFX_super_event_marry_aoi"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_miu"
+			spriteType = "GFX_super_event_marry_miu"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_masaki"
+			spriteType = "GFX_super_event_marry_masaki"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_amane"
+			spriteType = "GFX_super_event_marry_amane"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_touko"
+			spriteType = "GFX_super_event_marry_touko"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_mahiro"
+			spriteType = "GFX_super_event_marry_mahiro"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_konoka"
+			spriteType = "GFX_super_event_marry_konoka"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Super_event_marry_azusa"
+			spriteType = "GFX_super_event_marry_azusa"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_rio"
+			spriteType = "GFX_super_event_marry_rio"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_erina"
+			spriteType = "GFX_super_event_marry_erina"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_nikora"
+			spriteType = "GFX_super_event_marry_nikora"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_shaarii"
+			spriteType = "GFX_super_event_marry_shaarii"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_kurumi"
+			spriteType = "GFX_super_event_marry_kurumi"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_fumika"
+			spriteType = "GFX_super_event_marry_fumika"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_orie"
+			spriteType = "GFX_super_event_marry_orie"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_itsukishishihimenomikoto"
+			spriteType = "GFX_super_event_marry_itsukishishihimenomikoto"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_yukari"
+			spriteType = "GFX_super_event_marry_yukari"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_wataru"
+			spriteType = "GFX_super_event_marry_wataru"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_suzune"
+			spriteType = "GFX_super_event_marry_suzune"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_akari"
+			spriteType = "GFX_super_event_marry_akari"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_hinata"
+			spriteType = "GFX_super_event_marry_hinata"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
 			name = "Super_event_unite_the_world_n"
 			spriteType = "GFX_Super_event_unite_the_world_n"
 			position = {
@@ -421,6 +563,11 @@ guiTypes = {
 				x = 0
 				y = 0
 			}
+		}
+		iconType = {
+			name = "Super_event_restore_8620"
+			spriteType = "GFX_super_event_restore_8620"
+			position = { x = 0 y = 0 }
 		}
 		#就这样：
 		#iconType = {

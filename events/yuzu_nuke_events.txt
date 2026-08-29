@@ -16,8 +16,11 @@ news_event = {
 		hidden_effect = {
 			play_song = yuzu_Dies_irae
 		}
-		set_global_flag = yuzu_super_event_visible_flag
-		set_global_flag  = show_nuke_hoori_spevt
+		every_country = {
+			limit = { is_ai = no }
+			yz_prepare_private_super_event = yes
+			set_country_flag = show_nuke_hoori_spevt
+		}
 		custom_effect_tooltip = des_non_vult_what_we_do_on_yuzu
 	}
 	option = {
@@ -28,8 +31,11 @@ news_event = {
 		hidden_effect = {
 			play_song = yuzu_Dies_irae
 		}
-		set_global_flag = yuzu_super_event_visible_flag
-		set_global_flag =  show_nuke_hoori_spevt
+		every_country = {
+			limit = { is_ai = no }
+			yz_prepare_private_super_event = yes
+			set_country_flag = show_nuke_hoori_spevt
+		}
 		custom_effect_tooltip = des_non_vult_what_we_do_on_yuzu
 	}
 }
@@ -51,8 +57,11 @@ news_event = {
 		hidden_effect = {
 			play_song = non_vult
 		}
-		set_global_flag = yuzu_super_event_visible_flag
-		set_global_flag  = show_nuke_washizu_spevt
+		every_country = {
+			limit = { is_ai = no }
+			yz_prepare_private_super_event = yes
+			set_country_flag = show_nuke_washizu_spevt
+		}
 		custom_effect_tooltip = des_non_vult_what_we_do_on_yuzu
 		add_to_variable = { 
 			astral_breakthrough_point_total = 1 
@@ -74,8 +83,11 @@ news_event = {
 		hidden_effect = {
 			play_song = non_vult
 		}
-		set_global_flag = yuzu_super_event_visible_flag
-		set_global_flag  = show_nuke_washizu_spevt
+		every_country = {
+			limit = { is_ai = no }
+			yz_prepare_private_super_event = yes
+			set_country_flag = show_nuke_washizu_spevt
+		}
 		custom_effect_tooltip = des_non_vult_what_we_do_on_yuzu
 		add_to_variable = { 
 			astral_breakthrough_point_total = 1 

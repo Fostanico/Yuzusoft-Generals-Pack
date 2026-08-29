@@ -1104,10 +1104,8 @@ general_develpomen_decision_category = {
                 yz_money > 500
                 tooltip = yz_money_tooltip_compare
             }
-            has_country_flag = have_masaki
             has_country_flag = qiyong_youzi_2
             not = { has_country_flag = yz_bad_end }
-            not = { has_country_flag = masaki_prepared }
         }
         modifier = {
             consumer_goods_factor = 0.1
@@ -1149,11 +1147,8 @@ general_develpomen_decision_category = {
             }
         }
         available = {
-            has_country_flag = have_masaki
             has_country_flag = qiyong_youzi_2
-            has_country_flag = masaki_prepared
             not = { has_country_flag = yz_bad_end }
-            not = { has_country_flag = masaki_activating }
             check_variable = {
                 yz_money > 500
                 tooltip = yz_money_tooltip_compare
@@ -1189,11 +1184,8 @@ general_develpomen_decision_category = {
             has_government = democratic
         }
         available = {
-            has_country_flag = have_masaki
             has_country_flag = qiyong_youzi_2
-            has_country_flag = masaki_prepared
             not = { has_country_flag = yz_bad_end }
-            not = { has_country_flag = masaki_activating }
             check_variable = {
                 yz_money > 500
                 tooltip = yz_money_tooltip_compare
@@ -1229,11 +1221,8 @@ general_develpomen_decision_category = {
             has_government = fascism
         }
         available = {
-            has_country_flag = have_masaki
             has_country_flag = qiyong_youzi_2
-            has_country_flag = masaki_prepared
             not = { has_country_flag = yz_bad_end }
-            not = { has_country_flag = masaki_activating }
             check_variable = {
                 yz_money > 500
                 tooltip = yz_money_tooltip_compare
@@ -1949,8 +1938,11 @@ general_develpomen_decision_category = {
                     check_variable = {
                         date_counter < 179
                     }
-                    NOT = {
-                        has_country_flag = sana_birthday_succeed
+                    custom_trigger_tooltip = {
+                        tooltip = sana_birthday_not_celebrated_this_year_tt
+                        NOT = {
+                            has_country_flag = sana_birthday_succeed
+                        }
                     }
                 }
                 has_country_flag = debug_love_sana_everyday
@@ -2454,6 +2446,5 @@ Roka_Koharu_decision_category = {
         }
     }
 }
-
 
 

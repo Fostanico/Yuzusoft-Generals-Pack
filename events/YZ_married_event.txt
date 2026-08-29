@@ -61,7 +61,7 @@ country_event= {            ###宁宁的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_nene
         random_army_leader = {
             limit = {
@@ -90,7 +90,7 @@ country_event= {            ###乃爱的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_noa
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -120,7 +120,7 @@ country_event= {            ###meigulu的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_meguru
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -151,7 +151,7 @@ country_event= {            ###murasame的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_murasame
         random_army_leader = {
             limit = {
@@ -180,7 +180,7 @@ country_event= {            ###chou的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_tsumugi
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -209,7 +209,7 @@ country_event= {            ###mako的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_mako
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -265,7 +265,7 @@ country_event= {            ###cuodao的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_ayase
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -295,6 +295,9 @@ country_event= {            ###nanami的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：私有可见 + 角色旗标；关闭按钮在 yuzu_super_event_gui 里成对清除。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_nanami
         random_army_leader = {
             limit = {
                 has_trait = maid_qihai_trait
@@ -321,7 +324,7 @@ country_event= {            ###kanna的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_kanna
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -351,7 +354,7 @@ country_event= {            ###sana的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_sana
         random_army_leader = {
             limit = {
@@ -379,7 +382,7 @@ country_event= {            ###枣子姐的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_natsume
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -457,7 +460,7 @@ country_event= {            ###hazuki的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_hazuki
         random_army_leader = {
             limit = {
@@ -486,6 +489,8 @@ country_event= {            ###风实花的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_fumika
         random_army_leader = {
             limit = {
                 has_trait = maid_fumika_trait
@@ -513,7 +518,7 @@ country_event= {            ###石墨烯的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_nozomi
         random_army_leader = {
             limit = {
@@ -542,7 +547,7 @@ country_event= {            ###和奏的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_wakana
         random_army_leader = {
             limit = {
@@ -571,6 +576,9 @@ country_event= {            ###toko的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：私有可见 + 角色旗标；关闭按钮在 yuzu_super_event_gui 里成对清除。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_touko
         random_army_leader = {
             limit = {
                 has_trait = maid_toko_trait
@@ -598,6 +606,9 @@ country_event= {            ###真咲的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：婚礼选项同时打开私有窗口并选择真咲的图文分支。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_masaki
         random_army_leader = {
             limit = {
                 has_trait = maid_masaki_trait
@@ -625,6 +636,9 @@ country_event= {            ###美羽的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：婚礼选项同时打开私有窗口并选择美羽的图文分支。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_miu
         random_army_leader = {
             limit = {
                 has_trait = maid_miu_trait
@@ -652,7 +666,7 @@ country_event= {            ###茉优的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_mayu
         random_army_leader = {
             limit = {
@@ -680,6 +694,9 @@ country_event= {            ###天音的婚礼
         add_war_support = 0.025
         add_ideas = Married
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：婚礼选项同时打开私有窗口并选择天音的图文分支。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_amane
         random_army_leader = {
             limit = {
                 has_trait = yz_amane_trait_1
@@ -709,6 +726,8 @@ country_event= {            ###凉音的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_suzune
         random_army_leader = {
             limit = {
                 has_trait = maid_suzune_trait
@@ -736,6 +755,8 @@ country_event= {            ##夏莉的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_shaarii
         random_army_leader = {
             limit = {
                 has_trait = maid_shirley_trait
@@ -763,6 +784,8 @@ country_event= {            ##来海的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_kurumi
         random_army_leader = {
             limit = {
                 or = {
@@ -791,6 +814,9 @@ country_event= {            ##爱莉的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：私有可见 + 角色旗标；关闭按钮在 yuzu_super_event_gui 里成对清除。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_airi
         random_army_leader = {
             limit = {
                 has_trait = yz_airi_trait
@@ -815,7 +841,7 @@ country_event= {            ##芦花的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_roka
         random_army_leader = {
             limit = {
@@ -841,7 +867,7 @@ country_event= {            ##小春的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_koharu
         random_army_leader = {
             limit = {
@@ -866,7 +892,7 @@ country_event= {            ##蕾娜的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_rena
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -1016,6 +1042,8 @@ country_event= {            ##千咲的婚礼    <-尼古拉
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_nikora
         random_army_leader = {
             limit = {
                 has_trait = yz_nicola_trait
@@ -1040,6 +1068,8 @@ country_event= {            ##千咲的婚礼     <-奥莉叶
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_orie
         random_army_leader = {
             limit = {
                 has_trait = yz_orie_trait
@@ -1063,7 +1093,7 @@ country_event= {            ##缇娅的婚礼
         add_war_support = 0.025
         add_ideas = Married
         remove_ideas = Married_preparing
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_tia
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
@@ -1093,7 +1123,7 @@ country_event= {            ##爱衣的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_mei
         random_army_leader = {
             limit = {
@@ -1103,7 +1133,7 @@ country_event= {            ##爱衣的婚礼
         }
     }
 }
-country_event= {            ##千咲的婚礼
+country_event= {            ##真寻的婚礼
     id = tongyong_event.43
     picture = GFX_mahiro_wedding
     title = tongyong_event.43.t
@@ -1119,15 +1149,18 @@ country_event= {            ##千咲的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：私有可见 + 角色旗标；关闭按钮在 yuzu_super_event_gui 里成对清除。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_mahiro
         random_army_leader = {
             limit = {
-                has_trait = maid_mahiro_trait
+                has_trait = yz_mahiro_trait
             }
             add_unit_leader_trait = married_trait
         }
     }
 }
-country_event= {            ##千咲的婚礼
+country_event= {            ##木乃香的婚礼
     id = tongyong_event.44
     picture = GFX_konoka_wedding
     title = tongyong_event.44.t
@@ -1143,9 +1176,12 @@ country_event= {            ##千咲的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：私有可见 + 角色旗标；关闭按钮在 yuzu_super_event_gui 里成对清除。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_konoka
         random_army_leader = {
             limit = {
-                has_trait = maid_konoka_trait
+                has_trait = yz_konoka_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -1167,6 +1203,8 @@ country_event= {            ##乌羽紫的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_yukari
         random_army_leader = {
             limit = {
                 has_trait = maid_yukari_trait
@@ -1177,6 +1215,32 @@ country_event= {            ##乌羽紫的婚礼
 }
 
 #神秘标记点@@
+country_event= {            ##山吹葵的婚礼。ID 由 ConsoleApplication16 对「山吹葵」哈希得到，不要改成顺序号。
+    id = tongyong_event.99756858
+    title = tongyong_event.99756858.t
+    desc = tongyong_event.99756858.d
+    is_triggered_only = yes
+
+    option = {
+        name = tongyong_event.99756858.a
+        custom_effect_tooltip = get_married
+        add_political_power = 15
+        add_stability = 0.025
+        add_war_support = 0.025
+        add_ideas = Married
+        remove_ideas = Married_preparing
+        add_to_variable = { marry_love_bonus = 100 }
+        # 结婚超事件：私有可见 + 角色旗标；关闭按钮在 yuzu_super_event_gui 里成对清除。
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_aoi
+        random_army_leader = {
+            limit = {
+                has_trait = yz_aoi_trait
+            }
+            add_unit_leader_trait = married_trait
+        }
+    }
+}
 country_event = { ## 海老原水濑 marrige
     id = tongyong_event.11304845
     picture = GFX_ebihara_minase_wedding
@@ -1220,6 +1284,8 @@ country_event = { ## 艾莉娜·欧文 marrige
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_erina
         random_army_leader = {
             limit = {
                 has_trait = yz_elina_owen_trait
@@ -1248,6 +1314,8 @@ country_event = { ## 布良梓 marrige
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_azusa
         random_army_leader = {
             limit = {
                 has_trait = yz_mera_azusa_trait
@@ -1274,7 +1342,7 @@ country_event = { #荒神小夜
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_sayo
         random_army_leader = {
             limit = {
@@ -1302,7 +1370,7 @@ country_event = { #琉璃的婚礼——2025.11.30，20：12，伊尔诺
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_ruri
         random_army_leader = {
             limit = {
@@ -1330,7 +1398,7 @@ country_event = { #苏芳的婚礼——2025.12.11，23：25，伊尔诺
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_suou
         random_army_leader = {
             limit = {
@@ -1358,7 +1426,7 @@ country_event = { #辉耶的婚礼——2025.12.3，20：20，伊尔诺
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_kaguya
         random_army_leader = {
             limit = {
@@ -1399,7 +1467,7 @@ country_event = { #城门翼的婚礼——2025.12.15，22：12，伊尔诺
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_tsubasa
         random_army_leader = {
             limit = {
@@ -1427,7 +1495,7 @@ country_event = { #茨木梨乃的婚礼——2025.12.15，22：20，伊尔诺
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_rino
         random_army_leader = {
             limit = {
@@ -1455,7 +1523,7 @@ country_event = { #天雾夕音的婚礼——2025.12.16，15：25，伊尔诺
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_yune
         random_army_leader = {
             limit = {
@@ -1483,7 +1551,7 @@ country_event = { #卯花之佐久夜姬的婚礼——2026.1.18，19：52，伊
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_sakuyahime
         random_army_leader = {
             limit = {
@@ -1511,7 +1579,7 @@ country_event = { #兼元灯里的婚礼——2026.3.4，20：23，伊尔诺
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        #set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_akari
         random_army_leader = {
             limit = {
@@ -1541,7 +1609,7 @@ country_event = { #濑奈的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_sena
         random_army_leader = {
             limit = {
@@ -1570,7 +1638,7 @@ country_event = { #静流的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_shizuru
         random_army_leader = {
             limit = {
@@ -1600,7 +1668,7 @@ country_event = { #日向的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        #set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_hinata
         random_army_leader = {
             limit = {
@@ -1628,7 +1696,7 @@ country_event = { #麻夜的婚礼
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_marry_with_maya
         random_army_leader = {
             limit = {
@@ -1852,7 +1920,7 @@ country_event = {
         add_ideas = Married
         remove_ideas = Married_preparing
         add_to_variable = { marry_love_bonus = 100 }
-        set_country_flag = yuzu_super_event_private_visible_flag
+        yz_prepare_private_super_event = yes
         set_country_flag = we_unite_with_ilro_flag 
         random_army_leader = {
             limit = {
@@ -1892,4 +1960,79 @@ country_event = {
         }
     }
     
+}
+
+# 神秘标记点后的婚礼事件 ID 沿用项目名称哈希规则，避免占用顺序号。
+country_event = { # 稻丛莉音的婚礼
+    id = tongyong_event.63984002
+    title = tongyong_event.63984002.t
+    desc = tongyong_event.63984002.d
+    is_triggered_only = yes
+    option = {
+        name = tongyong_event.63984002.a
+        custom_effect_tooltip = get_married
+        add_political_power = 15
+        add_stability = 0.025
+        add_war_support = 0.025
+        add_ideas = Married
+        remove_ideas = Married_preparing
+        add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_rio
+        random_army_leader = {
+            limit = {
+                OR = {
+                    has_trait = maid_rio_trait_1
+                    has_trait = maid_rio_trait_2
+                }
+            }
+            add_unit_leader_trait = married_trait
+        }
+    }
+}
+
+country_event = { # 市杵宍姬命的婚礼
+    id = tongyong_event.83444139
+    title = tongyong_event.83444139.t
+    desc = tongyong_event.83444139.d
+    is_triggered_only = yes
+    option = {
+        name = tongyong_event.83444139.a
+        custom_effect_tooltip = get_married
+        add_political_power = 15
+        add_stability = 0.025
+        add_war_support = 0.025
+        add_ideas = Married
+        remove_ideas = Married_preparing
+        add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_itsukishishihimenomikoto
+        random_army_leader = {
+            limit = { has_trait = super_shake_sm }
+            add_unit_leader_trait = married_trait
+        }
+    }
+}
+
+country_event = { # 山吹涉的婚礼
+    id = tongyong_event.51484895
+    title = tongyong_event.51484895.t
+    desc = tongyong_event.51484895.d
+    is_triggered_only = yes
+    option = {
+        name = tongyong_event.51484895.a
+        custom_effect_tooltip = get_married
+        add_political_power = 15
+        add_stability = 0.025
+        add_war_support = 0.025
+        add_ideas = Married
+        remove_ideas = Married_preparing
+        add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_wataru
+        random_army_leader = {
+            limit = { has_trait = haru_katayaga_sister }
+            add_unit_leader_trait = married_trait
+        }
+    }
 }

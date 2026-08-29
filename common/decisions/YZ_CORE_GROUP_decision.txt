@@ -49,7 +49,6 @@ YZ_CORE_GROUP = {
             NOT = { has_country_flag = have_yz_robocop }
         }
         available = {
-            has_country_flag = this_country_in_nor_mode
             has_country_flag = have_kakka_nor
             has_country_flag = have_misaka_makoto
         }

@@ -4,18 +4,44 @@ scripted_gui = {
     yz_roka_koharu_category_gui = {
         context_type = decision_category
         window_name = "yz_roka_koharu_category_window"
+        triggers = {
+            yz_roka_koharu_category_background_left_visible = {
+                NOT = { has_country_flag = yz_roka_koharu_category_static_background }
+            }
+            yz_roka_koharu_category_background_right_visible = {
+                NOT = { has_country_flag = yz_roka_koharu_category_static_background }
+            }
+        }
     }
     yz_add_general_category_gui = {
         context_type = decision_category
         window_name = "yz_add_general_category_window"
+        triggers = {
+            yz_add_general_category_background_left_visible = {
+                NOT = { has_country_flag = yz_recruit_category_static_background }
+            }
+            yz_add_general_category_background_right_visible = {
+                NOT = { has_country_flag = yz_recruit_category_static_background }
+            }
+        }
     }
     yz_cultural_department_category_gui = {
         context_type = decision_category
         window_name = "yz_cultural_department_category_window"
+        triggers = {
+            yz_cultural_department_category_animated_background_visible = {
+                NOT = { has_country_flag = yz_cultural_department_category_static_background }
+            }
+        }
     }
     yz_megulu_industry_category_gui = {
         context_type = decision_category
         window_name = "yz_megulu_industry_category_window"
+        triggers = {
+            yz_megulu_industry_category_animated_background_visible = {
+                NOT = { has_country_flag = yz_megulu_industry_category_static_background }
+            }
+        }
     }
     yz_yoshino_industry_category_gui = {
         context_type = decision_category
@@ -24,10 +50,23 @@ scripted_gui = {
     yz_721_research_category_gui = {
         context_type = decision_category
         window_name = "yz_721_research_category_window"
+        triggers = {
+            yz_721_research_category_animated_background_left_visible = {
+                NOT = { has_country_flag = yz_721_research_category_static_background }
+            }
+            yz_721_research_category_animated_background_right_visible = {
+                NOT = { has_country_flag = yz_721_research_category_static_background }
+            }
+        }
     }
     yz_ciallo_category_gui = {
         context_type = decision_category
         window_name = "yz_ciallo_category_window"
+        triggers = {
+            yz_ciallo_category_animated_background_visible = {
+                NOT = { has_country_flag = yz_ciallo_category_static_background }
+            }
+        }
     }
     yz_married_category_gui = {
         context_type = decision_category
@@ -36,6 +75,11 @@ scripted_gui = {
     yz_military_academy_category_gui = {
         context_type = decision_category
         window_name = "yz_military_academy_category_window"
+        triggers = {
+            yz_military_academy_category_animated_background_visible = {
+                NOT = { has_country_flag = yz_military_academy_category_static_background }
+            }
+        }
     }
     yz_world_unity_category_gui = {
         context_type = decision_category

@@ -32,6 +32,8 @@
  test_yz_yanjiuyuan_1: "デバッグ：Type-90を研究"
  test_yz_yanjiuyuan_2: "デバッグ：Type-90を生成"
  remove_training: "訓練を削除"
+ debug_test_akari_super_event_v2: "兼元灯里と結婚して新しいスーパーイベントGUIをテスト"
+ debug_test_akari_super_event_v2_desc: "実際の結婚状態を変更せず、兼元灯里の720×610試作版結婚スーパーイベントを直接開き、新GUI、拡張した名言欄、内側へ窪んだ四隅、閉じるボタンを確認する。"
  debug_recruit_suou_kyouhei_operative: "工作員を募集：周防恭平"
  debug_recruit_suou_kyouhei_operative_desc: "指定された肖像と専用特性を持つ周防恭平を直接募集し、工作員の肖像・アイコン・修正が正しく機能するかを検証する。"
  yz_operative_secret_order_ace: "密令エース"

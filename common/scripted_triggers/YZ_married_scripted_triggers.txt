@@ -7,3 +7,14 @@ yuzu_married_wife_id_is_registered = {
 		# check_variable = { wife_id = 新角色ID }
 	}
 }
+
+# Country-scope gate shared by ordinary marriage decisions. The historical
+# `havent_married` flag is actually the already-married lock; preserve its name
+# for save compatibility. Debug polygamy bypasses only that lock, not character,
+# affection, route, or special-wedding requirements.
+yz_can_start_another_marriage = {
+	OR = {
+		NOT = { has_country_flag = havent_married }
+		has_country_flag = yz_debug_allow_all_marriages
+	}
+}

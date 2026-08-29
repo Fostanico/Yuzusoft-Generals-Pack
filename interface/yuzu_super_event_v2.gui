@@ -1,0 +1,377 @@
+guiTypes = {
+	containerWindowType = {
+		name = "yuzu_super_event_v2"
+		position = { x = 0 y = 0 }
+		size = { width = 720 height = 610 }
+		orientation = center
+		origo = center
+		# Left-drag the title plate or outer frame to reposition the window.
+		moveable = yes
+		click_to_front = no
+		clipping = no
+
+		# Every migrated event image already contains its CG and the V2 frame.
+		iconType = {
+			name = "Super_event_marry_airi"
+			spriteType = "GFX_super_event_marry_airi"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_akari"
+			spriteType = "GFX_super_event_marry_akari"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_amane"
+			spriteType = "GFX_super_event_marry_amane"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_aoi"
+			spriteType = "GFX_super_event_marry_aoi"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_ayase"
+			spriteType = "GFX_super_event_marry_ayase"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_azusa"
+			spriteType = "GFX_super_event_marry_azusa"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_erina"
+			spriteType = "GFX_super_event_marry_erina"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_fumika"
+			spriteType = "GFX_super_event_marry_fumika"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_hazuki"
+			spriteType = "GFX_super_event_marry_hazuki"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_hinata"
+			spriteType = "GFX_super_event_marry_hinata"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_itsukishishihimenomikoto"
+			spriteType = "GFX_super_event_marry_itsukishishihimenomikoto"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_kaguya"
+			spriteType = "GFX_super_event_marry_kaguya"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_kanna"
+			spriteType = "GFX_super_event_marry_kanna"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_koharu"
+			spriteType = "GFX_super_event_marry_koharu"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_konoka"
+			spriteType = "GFX_super_event_marry_konoka"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_kurumi"
+			spriteType = "GFX_super_event_marry_kurumi"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_mahiro"
+			spriteType = "GFX_super_event_marry_mahiro"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_mako"
+			spriteType = "GFX_super_event_marry_mako"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_murasame"
+			spriteType = "GFX_super_event_marry_murasame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_masaki"
+			spriteType = "GFX_super_event_marry_masaki"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_maya"
+			spriteType = "GFX_super_event_marry_maya"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_meguru"
+			spriteType = "GFX_super_event_marry_meguru"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_mei"
+			spriteType = "GFX_super_event_marry_mei"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_mibu"
+			spriteType = "GFX_super_event_marry_mibu"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_miu"
+			spriteType = "GFX_super_event_marry_miu"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_nanami"
+			spriteType = "GFX_super_event_marry_nanami"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_nanao"
+			spriteType = "GFX_super_event_marry_nanao"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_natsume"
+			spriteType = "GFX_super_event_marry_natsume"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_nene"
+			spriteType = "GFX_super_event_marry_nene"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_nikora"
+			spriteType = "GFX_super_event_marry_nikora"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_noa"
+			spriteType = "GFX_super_event_marry_noa"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_nozomi"
+			spriteType = "GFX_super_event_marry_nozomi"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_orie"
+			spriteType = "GFX_super_event_marry_orie"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_rena"
+			spriteType = "GFX_super_event_marry_rena"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_rino"
+			spriteType = "GFX_super_event_marry_rino"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_rio"
+			spriteType = "GFX_super_event_marry_rio"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_roka"
+			spriteType = "GFX_super_event_marry_roka"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_ruri"
+			spriteType = "GFX_super_event_marry_ruri"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_sakuyahime"
+			spriteType = "GFX_super_event_marry_sakuyahime"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_sayo"
+			spriteType = "GFX_super_event_marry_sayo"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_sena"
+			spriteType = "GFX_super_event_marry_sena"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_shaarii"
+			spriteType = "GFX_super_event_marry_shaarii"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_shizuru"
+			spriteType = "GFX_super_event_marry_shizuru"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_suzune"
+			spriteType = "GFX_super_event_marry_suzune"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_tia"
+			spriteType = "GFX_super_event_marry_tia"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_tsubasa"
+			spriteType = "GFX_super_event_marry_tsubasa"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_tsumugi"
+			spriteType = "GFX_super_event_marry_tsumugi"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_wakana"
+			spriteType = "GFX_super_event_marry_wakana"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_yoshino"
+			spriteType = "GFX_super_event_marry_yoshino"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_yune"
+			spriteType = "GFX_super_event_marry_yune"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_SCP_come_here"
+			spriteType = "GFX_super_event_SCP_come_here"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_we_forward_with_irno"
+			spriteType = "GFX_super_event_we_forward_with_irno"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_unite_the_world_c"
+			spriteType = "GFX_super_event_unite_the_world_c"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_unite_the_world_d"
+			spriteType = "GFX_super_event_unite_the_world_d"
+			position = { x = 0 y = 0 }
+		}
+
+		# Recovered source artwork migrated to the 720x610 frame on 2026-08-29.
+		iconType = {
+			name = "Super_event_destruction_of_hoori"
+			spriteType = "GFX_super_event_destruction_of_hoori"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_daozhu"
+			spriteType = "GFX_super_event_marry_daozhu"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_we_forward_with_makoto"
+			spriteType = "GFX_super_event_we_forward_with_makoto"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_takashiro_maya"
+			spriteType = "GFX_super_event_marry_takashiro_maya"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_unite_the_world_n"
+			spriteType = "GFX_Super_event_unite_the_world_n"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_hotaru"
+			spriteType = "GFX_super_event_marry_hotaru"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_mayu"
+			spriteType = "GFX_super_event_marry_mayu"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_suou"
+			spriteType = "GFX_super_event_marry_suou"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_we_unite_with_ilno"
+			spriteType = "GFX_super_event_we_unite_with_ilno"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_we_unite_with_makoto"
+			spriteType = "GFX_super_event_we_unite_with_makoto"
+			position = { x = 0 y = 0 }
+		}
+
+		# The quote gradient remains a shared overlay so event images stay reusable.
+		iconType = {
+			name = "yuzu_super_event_v2_quote_underlay"
+			spriteType = "GFX_yuzu_super_event_v2_underlay"
+			position = { x = 195 y = 345 }
+		}
+
+		instantTextBoxType = {
+			name = "yuzu_super_event_v2_quote"
+			position = { x = 215 y = 350 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "[get_yuzu_super_event_quote]"
+			maxWidth = 460
+			maxHeight = 180
+			fixedsize = yes
+			format = right
+		}
+
+		instantTextBoxType = {
+			name = "yuzu_super_event_v2_title"
+			position = { x = 200 y = 31 }
+			font = "hoi_24header"
+			format = center
+			borderSize = { x = 0 y = 0 }
+			text = "[get_yuzu_super_event_title]"
+			maxWidth = 320
+			maxHeight = 34
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "yuzu_super_event_v2_close_button"
+			spriteType = "GFX_yuzu_super_event_v2_close_button"
+			position = { x = 138 y = 548 }
+			clicksound = click_close
+			buttonText = "[get_yuzu_super_event_remark]"
+			buttonFont = "hoi_20b"
+		}
+	}
+}

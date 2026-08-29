@@ -1,0 +1,225 @@
+scripted_gui = {
+	yuzu_super_event_v2_gui = {
+		window_name = yuzu_super_event_v2
+		context_type = player_context
+		dirty = yz_super_event_dirty
+
+		# The shared master flag controls lifetime; the classification trigger
+		# guarantees that exactly one of the legacy and V2 windows is visible.
+		visible = {
+			AND = {
+				OR = {
+					has_global_flag = yuzu_super_event_visible_flag
+					has_country_flag = yuzu_super_event_private_visible_flag
+				}
+				yz_super_event_payload_uses_v2 = yes
+			}
+		}
+
+		triggers = {
+			Super_event_marry_airi_visible = {
+				has_country_flag = we_marry_with_airi
+			}
+			Super_event_marry_akari_visible = {
+				has_country_flag = we_marry_with_akari
+			}
+			Super_event_marry_amane_visible = {
+				has_country_flag = we_marry_with_amane
+			}
+			Super_event_marry_aoi_visible = {
+				has_country_flag = we_marry_with_aoi
+			}
+			Super_event_marry_ayase_visible = {
+				has_country_flag = we_marry_with_ayase
+			}
+			Super_event_marry_azusa_visible = {
+				has_country_flag = we_marry_with_azusa
+			}
+			Super_event_marry_erina_visible = {
+				has_country_flag = we_marry_with_erina
+			}
+			Super_event_marry_fumika_visible = {
+				has_country_flag = we_marry_with_fumika
+			}
+			Super_event_marry_hazuki_visible = {
+				has_country_flag = we_marry_with_hazuki
+			}
+			Super_event_marry_hinata_visible = {
+				has_country_flag = we_marry_with_hinata
+			}
+			Super_event_marry_itsukishishihimenomikoto_visible = {
+				has_country_flag = we_marry_with_itsukishishihimenomikoto
+			}
+			Super_event_marry_kaguya_visible = {
+				has_country_flag = we_marry_with_kaguya
+			}
+			Super_event_marry_kanna_visible = {
+				has_country_flag = we_marry_with_kanna
+			}
+			Super_event_marry_koharu_visible = {
+				has_country_flag = we_marry_with_koharu
+			}
+			Super_event_marry_konoka_visible = {
+				has_country_flag = we_marry_with_konoka
+			}
+			Super_event_marry_kurumi_visible = {
+				has_country_flag = we_marry_with_kurumi
+			}
+			Super_event_marry_mahiro_visible = {
+				has_country_flag = we_marry_with_mahiro
+			}
+			Super_event_marry_mako_visible = {
+				has_country_flag = we_marry_with_mako
+			}
+			Super_event_marry_murasame_visible = {
+				has_country_flag = we_marry_with_murasame
+			}
+			Super_event_marry_masaki_visible = {
+				has_country_flag = we_marry_with_masaki
+			}
+			Super_event_marry_maya_visible = {
+				has_country_flag = we_marry_with_maya
+			}
+			Super_event_marry_meguru_visible = {
+				has_country_flag = we_marry_with_meguru
+			}
+			Super_event_marry_mei_visible = {
+				has_country_flag = we_marry_with_mei
+			}
+			Super_event_marry_mibu_visible = {
+				has_country_flag = we_marry_with_mibu
+			}
+			Super_event_marry_miu_visible = {
+				has_country_flag = we_marry_with_miu
+			}
+			Super_event_marry_nanami_visible = {
+				has_country_flag = we_marry_with_nanami
+			}
+			Super_event_marry_nanao_visible = {
+				has_country_flag = we_marry_with_nanao
+			}
+			Super_event_marry_natsume_visible = {
+				has_country_flag = we_marry_with_natsume
+			}
+			Super_event_marry_nene_visible = {
+				has_country_flag = we_marry_with_nene
+			}
+			Super_event_marry_nikora_visible = {
+				has_country_flag = we_marry_with_nikora
+			}
+			Super_event_marry_noa_visible = {
+				has_country_flag = we_marry_with_noa
+			}
+			Super_event_marry_nozomi_visible = {
+				has_country_flag = we_marry_with_nozomi
+			}
+			Super_event_marry_orie_visible = {
+				has_country_flag = we_marry_with_orie
+			}
+			Super_event_marry_rena_visible = {
+				has_country_flag = we_marry_with_rena
+			}
+			Super_event_marry_rino_visible = {
+				has_country_flag = we_marry_with_rino
+			}
+			Super_event_marry_rio_visible = {
+				has_country_flag = we_marry_with_rio
+			}
+			Super_event_marry_roka_visible = {
+				has_country_flag = we_marry_with_roka
+			}
+			Super_event_marry_ruri_visible = {
+				has_country_flag = we_marry_with_ruri
+			}
+			Super_event_marry_sakuyahime_visible = {
+				has_country_flag = we_marry_with_sakuyahime
+			}
+			Super_event_marry_sayo_visible = {
+				has_country_flag = we_marry_with_sayo
+			}
+			Super_event_marry_sena_visible = {
+				has_country_flag = we_marry_with_sena
+			}
+			Super_event_marry_shaarii_visible = {
+				has_country_flag = we_marry_with_shaarii
+			}
+			Super_event_marry_shizuru_visible = {
+				has_country_flag = we_marry_with_shizuru
+			}
+			Super_event_marry_suzune_visible = {
+				has_country_flag = we_marry_with_suzune
+			}
+			Super_event_marry_tia_visible = {
+				has_country_flag = we_marry_with_tia
+			}
+			Super_event_marry_tsubasa_visible = {
+				has_country_flag = we_marry_with_tsubasa
+			}
+			Super_event_marry_tsumugi_visible = {
+				has_country_flag = we_marry_with_tsumugi
+			}
+			Super_event_marry_wakana_visible = {
+				has_country_flag = we_marry_with_wakana
+			}
+			Super_event_marry_yoshino_visible = {
+				has_country_flag = we_marry_with_yoshino
+			}
+			Super_event_marry_yune_visible = {
+				has_country_flag = we_marry_with_yune
+			}
+			Super_event_SCP_come_here_visible = {
+				has_country_flag = SCP_come_here
+			}
+			Super_event_we_forward_with_irno_visible = {
+				has_country_flag = we_forward_with_irno_flag
+			}
+			Super_event_unite_the_world_c_visible = {
+				has_country_flag = we_unite_the_world_c
+			}
+			Super_event_unite_the_world_d_visible = {
+				has_country_flag = we_unite_the_world_d
+			}
+
+			# Recovered source artwork now uses the V2 presentation path.
+			Super_event_destruction_of_hoori_visible = {
+				OR = {
+					has_country_flag = show_nuke_hoori_spevt
+					has_global_flag = show_nuke_hoori_spevt
+				}
+			}
+			Super_event_marry_daozhu_visible = {
+				has_country_flag = we_marry_with_daozhu
+			}
+			Super_event_we_forward_with_makoto_visible = {
+				has_country_flag = we_forward_with_makoto_flag
+			}
+			Super_event_marry_takashiro_maya_visible = {
+				has_country_flag = we_marry_with_takashiro_maya
+			}
+			Super_event_unite_the_world_n_visible = {
+				has_country_flag = we_unite_the_world_n
+			}
+			Super_event_marry_hotaru_visible = {
+				has_country_flag = we_marry_with_hotaru
+			}
+			Super_event_marry_mayu_visible = {
+				has_country_flag = we_marry_with_mayu
+			}
+			Super_event_marry_suou_visible = {
+				has_country_flag = we_marry_with_suou
+			}
+			Super_event_we_unite_with_ilno_visible = {
+				has_country_flag = we_unite_with_ilro_flag
+			}
+			Super_event_we_unite_with_makoto_visible = {
+				has_country_flag = we_unite_with_makoto_flag
+			}
+		}
+
+		effects = {
+			yuzu_super_event_v2_close_button_click = {
+				yz_clear_super_event_state = yes
+			}
+		}
+	}
+}

@@ -261,7 +261,7 @@ country_event= {           #小隐藏2
                 limit = {
                     is_ai = no
                 }
-                set_country_flag = yuzu_super_event_private_visible_flag
+                yz_prepare_private_super_event = yes
                 set_country_flag = we_forward_with_irno_flag
             }
             play_song = a_voice_from_best_future

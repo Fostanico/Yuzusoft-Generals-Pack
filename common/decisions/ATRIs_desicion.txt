@@ -148,10 +148,7 @@ atri_heading_utopia = {
 				yz_money > 100
 				tooltip = yz_money_tooltip_compare
 			}
-			has_country_flag = have_ATRI
-			has_country_flag = atri_start_plan
 			has_country_flag = finished_yoshino_industry
-			has_country_flag = finished_megulu_industry
 			has_equipment = { atri_equipment_1 > 4 }
 			num_of_civilian_factories_available_for_projects > 9
 		}
@@ -233,10 +230,7 @@ atri_heading_utopia = {
 				yz_money > 100
 				tooltip = yz_money_tooltip_compare
 			}
-			has_country_flag = have_ATRI
-			has_country_flag = atri_start_plan
 			has_country_flag = finished_yoshino_industry
-			has_country_flag = finished_megulu_industry
 			has_equipment = { atri_equipment_1 > 4 }
 			num_of_civilian_factories_available_for_projects > 9
 		}

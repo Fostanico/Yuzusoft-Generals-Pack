@@ -24,7 +24,7 @@ country_event= {           #抽到真琴
                 limit = {
                     is_ai = no
                 }
-                set_country_flag = yuzu_super_event_private_visible_flag
+                yz_prepare_private_super_event = yes
                 set_country_flag = we_forward_with_makoto_flag
             }
             play_song = time_forward

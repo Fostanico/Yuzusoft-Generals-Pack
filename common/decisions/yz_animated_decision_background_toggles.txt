@@ -1,0 +1,172 @@
+# Player-side presentation preferences for every decision category with an
+# animated description background. Absent flags preserve the existing dynamic
+# default for new and old saves; each zero-cost decision flips only its owner.
+
+add_youzi_general_category = {
+    yz_toggle_recruit_category_background = {
+        name = yz_toggle_animated_decision_background
+        desc = yz_toggle_animated_decision_background_desc
+        icon = GFX_Category_decision
+        priority = 1000000
+        cost = 0
+        visible = {
+            is_ai = no
+            or = {
+                has_country_flag = qiyong_youzi_1
+                has_country_flag = qiyong_youzi_2
+                has_country_flag = qiyong_youzi_3
+            }
+        }
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = yz_recruit_category_static_background }
+                clr_country_flag = yz_recruit_category_static_background
+            }
+            else = { set_country_flag = yz_recruit_category_static_background }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+Roka_Koharu_decision_category = {
+    yz_toggle_roka_koharu_category_background = {
+        name = yz_toggle_animated_decision_background
+        desc = yz_toggle_animated_decision_background_desc
+        icon = GFX_Category_decision
+        priority = 1000000
+        cost = 0
+        visible = {
+            is_ai = no
+            has_country_flag = start_roko
+        }
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = yz_roka_koharu_category_static_background }
+                clr_country_flag = yz_roka_koharu_category_static_background
+            }
+            else = { set_country_flag = yz_roka_koharu_category_static_background }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+yuzu_cultural_department_category = {
+    yz_toggle_cultural_department_category_background = {
+        name = yz_toggle_animated_decision_background
+        desc = yz_toggle_animated_decision_background_desc
+        icon = GFX_Category_decision
+        priority = 1000000
+        cost = 0
+        visible = {
+            is_ai = no
+            has_country_flag = qiyong_youzi_2
+            has_country_flag = qiyong_yuzu_culture_department
+        }
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = yz_cultural_department_category_static_background }
+                clr_country_flag = yz_cultural_department_category_static_background
+            }
+            else = { set_country_flag = yz_cultural_department_category_static_background }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+Megulu_industry_category = {
+    yz_toggle_megulu_industry_category_background = {
+        name = yz_toggle_animated_decision_background
+        desc = yz_toggle_animated_decision_background_desc
+        icon = GFX_Category_decision
+        priority = 1000000
+        cost = 0
+        visible = {
+            is_ai = no
+            not = { has_country_flag = yz_bad_end }
+            not = { has_country_flag = finished_megulu_industry }
+            or = {
+                and = {
+                    has_country_flag = have_meigulu
+                    has_country_flag = qiyong_youzi_2
+                    has_country_flag = megulu_industry_start
+                }
+                has_country_flag = Megulu_industry_five_year_yes
+                has_country_flag = doing_Megulu_industry
+            }
+        }
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = yz_megulu_industry_category_static_background }
+                clr_country_flag = yz_megulu_industry_category_static_background
+            }
+            else = { set_country_flag = yz_megulu_industry_category_static_background }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+YZS_scientist_category = {
+    yz_toggle_721_research_category_background = {
+        name = yz_toggle_animated_decision_background
+        desc = yz_toggle_animated_decision_background_desc
+        icon = GFX_Category_decision
+        priority = 1000000
+        cost = 0
+        visible = {
+            is_ai = no
+            has_country_flag = YZS_scientist_category_show
+        }
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = yz_721_research_category_static_background }
+                clr_country_flag = yz_721_research_category_static_background
+            }
+            else = { set_country_flag = yz_721_research_category_static_background }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+YzOpreative_category = {
+    yz_toggle_ciallo_category_background = {
+        name = yz_toggle_animated_decision_background
+        desc = yz_toggle_animated_decision_background_desc
+        icon = GFX_Category_decision
+        priority = 1000000
+        cost = 0
+        visible = {
+            is_ai = no
+            has_country_flag = YzOpreative_open
+        }
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = yz_ciallo_category_static_background }
+                clr_country_flag = yz_ciallo_category_static_background
+            }
+            else = { set_country_flag = yz_ciallo_category_static_background }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+YZS_military_academy_category = {
+    yz_toggle_military_academy_category_background = {
+        name = yz_toggle_animated_decision_background
+        desc = yz_toggle_animated_decision_background_desc
+        icon = GFX_Category_decision
+        priority = 1000000
+        cost = 0
+        visible = {
+            is_ai = no
+            has_country_flag = open_YZS_military_academy
+        }
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = yz_military_academy_category_static_background }
+                clr_country_flag = yz_military_academy_category_static_background
+            }
+            else = { set_country_flag = yz_military_academy_category_static_background }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

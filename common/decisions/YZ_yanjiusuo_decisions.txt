@@ -965,7 +965,6 @@ YZS_scientist_category = {
         }
         available = {
             industrial_complex > 4
-            has_country_flag = have_air_department
             has_air_experience > 99.99
 
 
@@ -1027,7 +1026,6 @@ YZS_scientist_category = {
         }
         available = {
             industrial_complex > 4
-            has_country_flag = shirayuki_noa_air_1
             has_air_experience > 99.99
 
         }
@@ -1060,7 +1058,6 @@ YZS_scientist_category = {
         }
         available = {
             industrial_complex > 4
-            has_country_flag = shirayuki_noa_air_2
             has_air_experience > 99.99
 
         }
@@ -1275,6 +1272,53 @@ YZS_scientist_category = {
         remove_effect = {
             set_country_flag = kkr_MIO_1
             custom_effect_tooltip = kkr_military_industrial_organization_0
+        }
+    }
+    atri_s_yidian = {
+        icon = "GFX_ATRI_1"
+        days_remove = 30
+        cost = 50
+
+        visible = {
+            has_country_flag = have_ATRI
+        }
+        available = {
+            # 可重复执行，但至少要剩余一个符合条件的州，避免空耗政治点与30天。
+            any_owned_state = {
+                is_controlled_by = ROOT
+                is_core_of = ROOT
+                NOT = { has_state_flag = Edan }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = atri_edan
+            hidden_effect = {
+                # 第一次抽取立即写入州旗标，保证第二次不会重复选中同一州。
+                random_owned_state = {
+                    limit = {
+                        is_controlled_by = ROOT
+                        is_core_of = ROOT
+                        NOT = { has_state_flag = Edan }
+                    }
+                    set_state_flag = Edan
+                    add_dynamic_modifier = {
+                        modifier = yidian_modifier
+                        scope = ROOT
+                    }
+                }
+                random_owned_state = {
+                    limit = {
+                        is_controlled_by = ROOT
+                        is_core_of = ROOT
+                        NOT = { has_state_flag = Edan }
+                    }
+                    set_state_flag = Edan
+                    add_dynamic_modifier = {
+                        modifier = yidian_modifier
+                        scope = ROOT
+                    }
+                }
+            }
         }
     }
     give_other_leader_bmi_system = {   #给其他将领上bmi特质——2025.8.6，17：27

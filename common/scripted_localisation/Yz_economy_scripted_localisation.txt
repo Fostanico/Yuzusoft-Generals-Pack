@@ -63,7 +63,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = finished_yoshino_industry
-			NOT = { has_country_flag = Yoshino_industry_long_term_invest_now_start }
+			NOT = { Yoshino_monthly_industry_program_active = yes }
 		}
 		localization_key = yz_bond_long_term_ready_status
 	}

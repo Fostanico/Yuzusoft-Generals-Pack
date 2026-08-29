@@ -37,6 +37,22 @@
  hiyori_event.6.d: ""
  hiyori_event.6.a: "今后也请多指教"
 #技能-立绘
+ hiy_por_1: "当前使用妃爱立绘 1"
+ hiy_por_2: "当前使用妃爱立绘 2"
+ hiy_por_3: "当前使用妃爱立绘 3"
+ hiy_por_4: "当前使用妃爱立绘 4"
+ hiy_por_5: "当前使用妃爱立绘 5"
+ hiy_por_6: "当前使用妃爱立绘 6"
+ hiy_por_7: "当前使用妃爱立绘 7"
+ hiy_por_8: "当前使用妃爱立绘 8"
+ hiy_por_9: "当前使用妃爱立绘 9"
+ hiy_por_10: "当前使用妃爱立绘 10"
+ hiy_por_11: "当前使用妃爱立绘 11"
+ hiy_por_12: "当前使用妃爱立绘 12"
+ hiy_por_13: "当前使用妃爱立绘 13"
+ hiy_por_14: "当前使用妃爱立绘 14"
+ hiy_por_15: "当前使用妃爱立绘 15"
+
  hiyori_Skin_Ability_1: "妃爱-更换立绘"
  hiyori_Skin_Ability_1_desc: "共十五张差分，不随机"
 

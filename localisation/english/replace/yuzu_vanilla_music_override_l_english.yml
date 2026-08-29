@@ -1,0 +1,4 @@
+﻿l_english:
+ # Narrow override of two vanilla soundtrack titles. Do not restore music_l_english.yml.
+ axis_peace_2: "PERFECT GIRL(Ins Ver)"
+ axis_war_3: "PERFECT GIRL"

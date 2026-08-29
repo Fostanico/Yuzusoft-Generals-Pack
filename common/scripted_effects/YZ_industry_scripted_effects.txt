@@ -428,3 +428,293 @@ yz_arma_transfer_old = {            #军工转移
         }
     }
 }
+
+# 现金线中长期建设：把一次性柚子币加成写入芳乃工业动态精神使用的同一组 Yoshino_* 变量。
+# 完成后读取的是 Yoshino_industry_finished_dynamic_modifier，计划中读取的是进行中精神；两套共用变量。
+yz_yoshino_ensure_industry_spirit = {
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = Yoshino_industry_finished_dynamic_modifier
+				}
+			}
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = Yoshino_industry_dynamic_modifier
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = Yoshino_industry_finished_dynamic_modifier }
+	}
+}
+yz_yoshino_midterm_add_construction_boost = {
+	yz_yoshino_ensure_industry_spirit = yes
+	if = {
+		limit = { NOT = { has_country_flag = yoshino_midterm_construction_boost_on } }
+		set_country_flag = yoshino_midterm_construction_boost_on
+		custom_effect_tooltip = Yoshino_industry_dynamic_modifier_tt
+		add_to_variable = { Yoshino_production_speed_buildings_factor = 0.25 tooltip = production_speed_buildings_factor_tt }
+		add_to_variable = { Yoshino_consumer_goods_factor = -0.25 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { Yoshino_production_speed_industrial_complex_factor = 0.15 tooltip = production_speed_industrial_complex_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+yz_yoshino_midterm_remove_construction_boost = {
+	if = {
+		limit = { has_country_flag = yoshino_midterm_construction_boost_on }
+		clr_country_flag = yoshino_midterm_construction_boost_on
+		custom_effect_tooltip = Yoshino_industry_dynamic_modifier_tt
+		subtract_from_variable = { Yoshino_production_speed_buildings_factor = 0.25 tooltip = production_speed_buildings_factor_tt }
+		add_to_variable = { Yoshino_consumer_goods_factor = 0.25 tooltip = consumer_goods_factor_tt }
+		subtract_from_variable = { Yoshino_production_speed_industrial_complex_factor = 0.15 tooltip = production_speed_industrial_complex_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+yz_yoshino_midterm_add_output_boost = {
+	yz_yoshino_ensure_industry_spirit = yes
+	if = {
+		limit = { NOT = { has_country_flag = yoshino_midterm_output_boost_on } }
+		set_country_flag = yoshino_midterm_output_boost_on
+		custom_effect_tooltip = Yoshino_industry_dynamic_modifier_tt
+		add_to_variable = { Yoshino_industrial_capacity_factory = 0.25 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { Yoshino_production_factory_efficiency_gain_factor = 0.12 tooltip = production_factory_efficiency_gain_factor_tt }
+		add_to_variable = { Yoshino_production_factory_max_efficiency_factor = 0.12 tooltip = production_factory_max_efficiency_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+yz_yoshino_midterm_remove_output_boost = {
+	if = {
+		limit = { has_country_flag = yoshino_midterm_output_boost_on }
+		clr_country_flag = yoshino_midterm_output_boost_on
+		custom_effect_tooltip = Yoshino_industry_dynamic_modifier_tt
+		subtract_from_variable = { Yoshino_industrial_capacity_factory = 0.25 tooltip = industrial_capacity_factory_tt }
+		subtract_from_variable = { Yoshino_production_factory_efficiency_gain_factor = 0.12 tooltip = production_factory_efficiency_gain_factor_tt }
+		subtract_from_variable = { Yoshino_production_factory_max_efficiency_factor = 0.12 tooltip = production_factory_max_efficiency_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+yz_yoshino_midterm_add_resource_boost = {
+	yz_yoshino_ensure_industry_spirit = yes
+	if = {
+		limit = { NOT = { has_country_flag = yoshino_midterm_resource_boost_on } }
+		set_country_flag = yoshino_midterm_resource_boost_on
+		custom_effect_tooltip = Yoshino_industry_dynamic_modifier_tt
+		add_to_variable = { Yoshino_local_resources_factor = 0.3 tooltip = local_resources_factor_tt }
+		add_to_variable = { Yoshino_stability = 0.05 tooltip = stability_factor_neutral_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+yz_yoshino_midterm_remove_resource_boost = {
+	if = {
+		limit = { has_country_flag = yoshino_midterm_resource_boost_on }
+		clr_country_flag = yoshino_midterm_resource_boost_on
+		custom_effect_tooltip = Yoshino_industry_dynamic_modifier_tt
+		subtract_from_variable = { Yoshino_local_resources_factor = 0.3 tooltip = local_resources_factor_tt }
+		subtract_from_variable = { Yoshino_stability = 0.05 tooltip = stability_factor_neutral_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+
+# 现金线批量建设：一次拨款在若干已拥有且完全控制的地区立刻落成，选点优先已有工厂/大城市。
+# 循环用 tries 上限防止无匹配州时卡死；yoshino_midterm_batch_mark 只在本次效果内存活。
+yz_yoshino_midterm_clear_batch_marks = {
+	every_owned_state = {
+		limit = { has_state_flag = yoshino_midterm_batch_mark }
+		clr_state_flag = yoshino_midterm_batch_mark
+	}
+}
+yz_yoshino_midterm_build_civilian_factories = {
+	yz_yoshino_midterm_clear_batch_marks = yes
+	set_temp_variable = { yoshino_midterm_built = 0 }
+	set_temp_variable = { yoshino_midterm_tries = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { yoshino_midterm_built < 5 }
+			check_variable = { yoshino_midterm_tries < 25 }
+		}
+		add_to_temp_variable = { yoshino_midterm_tries = 1 }
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = { impassable = yes }
+				NOT = { has_state_flag = yoshino_midterm_batch_mark }
+				OR = {
+					industrial_complex > 0
+					arms_factory > 0
+				}
+			}
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+			set_state_flag = yoshino_midterm_batch_mark
+			ROOT = {
+				add_to_temp_variable = { yoshino_midterm_built = 1 }
+			}
+		}
+	}
+	set_temp_variable = { yoshino_midterm_tries = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { yoshino_midterm_built < 5 }
+			check_variable = { yoshino_midterm_tries < 25 }
+		}
+		add_to_temp_variable = { yoshino_midterm_tries = 1 }
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = { impassable = yes }
+				NOT = { has_state_flag = yoshino_midterm_batch_mark }
+			}
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+			set_state_flag = yoshino_midterm_batch_mark
+			ROOT = {
+				add_to_temp_variable = { yoshino_midterm_built = 1 }
+			}
+		}
+	}
+	yz_yoshino_midterm_clear_batch_marks = yes
+}
+yz_yoshino_midterm_build_infrastructure = {
+	yz_yoshino_midterm_clear_batch_marks = yes
+	set_temp_variable = { yoshino_midterm_built = 0 }
+	set_temp_variable = { yoshino_midterm_tries = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { yoshino_midterm_built < 4 }
+			check_variable = { yoshino_midterm_tries < 25 }
+		}
+		add_to_temp_variable = { yoshino_midterm_tries = 1 }
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = { impassable = yes }
+				NOT = { has_state_flag = yoshino_midterm_batch_mark }
+				free_building_slots = {
+					building = infrastructure
+					size > 1
+				}
+				OR = {
+					has_state_category = large_city
+					has_state_category = metropolis
+					has_state_category = megalopolis
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = yoshino_midterm_batch_mark
+			ROOT = {
+				add_to_temp_variable = { yoshino_midterm_built = 1 }
+			}
+		}
+	}
+	set_temp_variable = { yoshino_midterm_tries = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { yoshino_midterm_built < 4 }
+			check_variable = { yoshino_midterm_tries < 25 }
+		}
+		add_to_temp_variable = { yoshino_midterm_tries = 1 }
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = { impassable = yes }
+				NOT = { has_state_flag = yoshino_midterm_batch_mark }
+				free_building_slots = {
+					building = infrastructure
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = yoshino_midterm_batch_mark
+			ROOT = {
+				add_to_temp_variable = { yoshino_midterm_built = 1 }
+			}
+		}
+	}
+	yz_yoshino_midterm_clear_batch_marks = yes
+}
+yz_yoshino_midterm_build_industrial_parks = {
+	yz_yoshino_midterm_clear_batch_marks = yes
+	set_temp_variable = { yoshino_midterm_built = 0 }
+	set_temp_variable = { yoshino_midterm_tries = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { yoshino_midterm_built < 5 }
+			check_variable = { yoshino_midterm_tries < 25 }
+		}
+		add_to_temp_variable = { yoshino_midterm_tries = 1 }
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = { impassable = yes }
+				NOT = { has_state_flag = yoshino_midterm_batch_mark }
+				OR = {
+					industrial_complex > 0
+					arms_factory > 0
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			set_state_flag = yoshino_midterm_batch_mark
+			ROOT = {
+				add_to_temp_variable = { yoshino_midterm_built = 1 }
+			}
+		}
+	}
+	set_temp_variable = { yoshino_midterm_tries = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { yoshino_midterm_built < 5 }
+			check_variable = { yoshino_midterm_tries < 25 }
+		}
+		add_to_temp_variable = { yoshino_midterm_tries = 1 }
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = { impassable = yes }
+				NOT = { has_state_flag = yoshino_midterm_batch_mark }
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			set_state_flag = yoshino_midterm_batch_mark
+			ROOT = {
+				add_to_temp_variable = { yoshino_midterm_built = 1 }
+			}
+		}
+	}
+	yz_yoshino_midterm_clear_batch_marks = yes
+}

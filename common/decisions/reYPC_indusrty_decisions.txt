@@ -23,6 +23,8 @@ JCL_industry_category = {
 		days_mission_timeout = 730
 		timeout_effect = {
 			set_country_flag = finished_yoshino_industry
+			# 现金线超时仍解锁中长期建设，作为未借债完成计划的补偿入口。
+			set_country_flag = Yoshino_industry_cash_plan_completed
 			add_stability = -0.2
 			add_political_power = -300
 			remove_advisor_role = {
@@ -39,6 +41,7 @@ JCL_industry_category = {
 				remove_ideas = manglujianshe
 				clr_country_flag = doing_Yoshino_industry
 				set_country_flag = finished_yoshino_industry
+				set_country_flag = Yoshino_industry_cash_plan_completed
 				country_event = start_event.5
 				remove_dynamic_modifier = {
 					modifier = Yoshino_industry_dynamic_modifier
@@ -73,7 +76,8 @@ JCL_industry_category = {
 			add_dynamic_modifier = { modifier = Yoshino_industry_dynamic_modifier }
 			force_update_dynamic_modifier = yes
 			set_country_flag = Yoshino_industry_five_year_yes
-			set_country_flag = Yoshino_industry_five_year_yes_by_loan
+			# 现金启动不得再写债券旗标，否则会同时激活两套 730 日任务。
+			set_country_flag = Yoshino_industry_started_without_bonds
 			set_country_flag = doing_Yoshino_industry
 			if = {
 				limit = {
@@ -3196,6 +3200,225 @@ JCL_industry_category = {
 				Yoshino_stability = 0.037
 				tooltip = stability_factor_neutral_tt
 			}
+		}
+	}
+
+	# 现金线完成后的芳乃中长期建设：批量盖厂/基建，临时加成写入芳乃工业动态精神。
+	# 不走债券线月扣款、不另开民族精神。完成后精神是工业强国，变量与进行中工业振新共用。
+	Yoshino_midterm_boost_construction = {
+		icon = GFX_yoshino
+		priority = 580
+		days_remove = 180
+		days_re_enable = 1
+		cancel_if_not_visible = no
+		visible = {
+			Yoshino_cash_midterm_construction_unlocked = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = yz_money
+				value = 1000
+				compare = greater_than_or_equals
+				tooltip = yz_money_tooltip_compare
+			}
+		}
+		custom_cost_text = YM_1000
+		complete_effect = {
+			add_to_variable = {
+				var = yz_money
+				value = -1000
+				tooltip = yz_money_tooltip_subtain
+			}
+			yz_yoshino_midterm_add_construction_boost = yes
+		}
+		cancel_effect = {
+			yz_yoshino_midterm_remove_construction_boost = yes
+		}
+		remove_effect = {
+			yz_yoshino_midterm_remove_construction_boost = yes
+		}
+		ai_will_do = {
+			base = 8
+		}
+	}
+	Yoshino_midterm_boost_output = {
+		icon = GFX_yoshino
+		priority = 579
+		days_remove = 180
+		days_re_enable = 1
+		cancel_if_not_visible = no
+		visible = {
+			Yoshino_cash_midterm_construction_unlocked = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = yz_money
+				value = 1000
+				compare = greater_than_or_equals
+				tooltip = yz_money_tooltip_compare
+			}
+		}
+		custom_cost_text = YM_1000
+		complete_effect = {
+			add_to_variable = {
+				var = yz_money
+				value = -1000
+				tooltip = yz_money_tooltip_subtain
+			}
+			yz_yoshino_midterm_add_output_boost = yes
+		}
+		cancel_effect = {
+			yz_yoshino_midterm_remove_output_boost = yes
+		}
+		remove_effect = {
+			yz_yoshino_midterm_remove_output_boost = yes
+		}
+		ai_will_do = {
+			base = 8
+		}
+	}
+	Yoshino_midterm_boost_resources = {
+		icon = GFX_yoshino
+		priority = 578
+		days_remove = 180
+		days_re_enable = 1
+		cancel_if_not_visible = no
+		visible = {
+			Yoshino_cash_midterm_construction_unlocked = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = yz_money
+				value = 750
+				compare = greater_than_or_equals
+				tooltip = yz_money_tooltip_compare
+			}
+		}
+		custom_cost_text = YM_750
+		complete_effect = {
+			add_to_variable = {
+				var = yz_money
+				value = -750
+				tooltip = yz_money_tooltip_subtain
+			}
+			yz_yoshino_midterm_add_resource_boost = yes
+		}
+		cancel_effect = {
+			yz_yoshino_midterm_remove_resource_boost = yes
+		}
+		remove_effect = {
+			yz_yoshino_midterm_remove_resource_boost = yes
+		}
+		ai_will_do = {
+			base = 6
+		}
+	}
+	Yoshino_midterm_build_civilian_factory = {
+		icon = GFX_decision_generic_construction
+		priority = 577
+		days_re_enable = 15
+		visible = {
+			Yoshino_cash_midterm_construction_unlocked = yes
+		}
+		available = {
+			check_variable = {
+				num_owned_controlled_states > 4
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = yz_money
+				value = 2000
+				compare = greater_than_or_equals
+				tooltip = yz_money_tooltip_compare
+			}
+		}
+		custom_cost_text = YM_2000
+		complete_effect = {
+			add_to_variable = {
+				var = yz_money
+				value = -2000
+				tooltip = yz_money_tooltip_subtain
+			}
+			custom_effect_tooltip = Yoshino_midterm_civ_batch_tt
+			hidden_effect = {
+				yz_yoshino_midterm_build_civilian_factories = yes
+			}
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+	Yoshino_midterm_build_infrastructure = {
+		icon = GFX_decision_generic_construction
+		priority = 576
+		days_re_enable = 10
+		visible = {
+			Yoshino_cash_midterm_construction_unlocked = yes
+		}
+		available = {
+			check_variable = {
+				num_owned_controlled_states > 3
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = yz_money
+				value = 1500
+				compare = greater_than_or_equals
+				tooltip = yz_money_tooltip_compare
+			}
+		}
+		custom_cost_text = YM_1500
+		complete_effect = {
+			add_to_variable = {
+				var = yz_money
+				value = -1500
+				tooltip = yz_money_tooltip_subtain
+			}
+			custom_effect_tooltip = Yoshino_midterm_infra_batch_tt
+			hidden_effect = {
+				yz_yoshino_midterm_build_infrastructure = yes
+			}
+		}
+		ai_will_do = {
+			base = 4
+		}
+	}
+	Yoshino_midterm_build_industrial_park = {
+		icon = GFX_decision_generic_industry
+		priority = 575
+		days_re_enable = 20
+		visible = {
+			Yoshino_cash_midterm_construction_unlocked = yes
+		}
+		available = {
+			check_variable = {
+				num_owned_controlled_states > 4
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = yz_money
+				value = 2500
+				compare = greater_than_or_equals
+				tooltip = yz_money_tooltip_compare
+			}
+		}
+		custom_cost_text = YM_2500
+		complete_effect = {
+			add_to_variable = {
+				var = yz_money
+				value = -2500
+				tooltip = yz_money_tooltip_subtain
+			}
+			custom_effect_tooltip = Yoshino_midterm_park_batch_tt
+			hidden_effect = {
+				yz_yoshino_midterm_build_industrial_parks = yes
+			}
+		}
+		ai_will_do = {
+			base = 3
 		}
 	}
 }

@@ -66,6 +66,7 @@
  yz_works_equipment_0_desc: "柚子社各作游戏"
 
  YuzuSongUndDanceTroupe_modifier: "§Y柚子歌舞团巡演中...§!"
+ yidian_modifier: "伊甸"
 
  start_event.201.t: "柚子歌舞团·战时生活志"
  start_event.201.d: "[YuzuSongUndDanceTroupe_event_text]"

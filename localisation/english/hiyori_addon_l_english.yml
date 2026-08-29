@@ -36,6 +36,22 @@
  hiyori_event.6.d: ""
  hiyori_event.6.a: "Please take care of me from now on"
 #技能-立绘
+ hiy_por_1: "Hiyori is currently using portrait 1"
+ hiy_por_2: "Hiyori is currently using portrait 2"
+ hiy_por_3: "Hiyori is currently using portrait 3"
+ hiy_por_4: "Hiyori is currently using portrait 4"
+ hiy_por_5: "Hiyori is currently using portrait 5"
+ hiy_por_6: "Hiyori is currently using portrait 6"
+ hiy_por_7: "Hiyori is currently using portrait 7"
+ hiy_por_8: "Hiyori is currently using portrait 8"
+ hiy_por_9: "Hiyori is currently using portrait 9"
+ hiy_por_10: "Hiyori is currently using portrait 10"
+ hiy_por_11: "Hiyori is currently using portrait 11"
+ hiy_por_12: "Hiyori is currently using portrait 12"
+ hiy_por_13: "Hiyori is currently using portrait 13"
+ hiy_por_14: "Hiyori is currently using portrait 14"
+ hiy_por_15: "Hiyori is currently using portrait 15"
+
  hiyori_Skin_Ability_1: "Hiyori - Change Portrait"
  hiyori_Skin_Ability_1_desc: "Fifteen variations in total, not random"
 

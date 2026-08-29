@@ -2697,7 +2697,7 @@ yzrecruit_irno_full = {
             limit = {
                 is_ai = no
             }
-            set_country_flag = yuzu_super_event_private_visible_flag
+            yz_prepare_private_super_event = yes
             set_country_flag = we_forward_with_irno_flag
         }
         play_song = a_voice_from_best_future
@@ -2746,7 +2746,7 @@ yzrecruit_misaka_makoto_full = {
             limit = {
                 is_ai = no
             }
-            set_country_flag = yuzu_super_event_private_visible_flag
+            yz_prepare_private_super_event = yes
             set_country_flag = we_forward_with_makoto_flag
         }
         play_song = time_forward
@@ -2835,5 +2835,330 @@ yzrecruit_robocop = {
                 }
             }
         }
+    }
+}
+
+# Country-scope debug batch for the recruitment registry. Each stable `have_*`
+# flag is the idempotency guard; normal recruit effects remain the sole owners
+# of character data and unlock side effects. Refund only their built-in PP cost.
+yz_debug_recruit_all_registered_characters = {
+    hidden_effect = {
+        if = {
+            limit = { NOT = { has_country_flag = have_murasame } }
+            yzrecruit_murasame = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_lena } }
+            yzrecruit_lena = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_mako } }
+            yzrecruit_mako = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yoshino } }
+            yzrecruit_yoshino = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_luchun } }
+            yzrecruit_luchun = yes
+            add_political_power = 20
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_ningning } }
+            yzrecruit_nene = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_chou } }
+            yzrecruit_chou = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_meigulu } }
+            yzrecruit_megulu = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_toko } }
+            yzrecruit_toko = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_wakana } }
+            yzrecruit_wakana = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_0nai } }
+            yzrecruit_ayase = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_nanami } }
+            yzrecruit_nanami = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_hazuki } }
+            yzrecruit_hazuki = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_Mayu } }
+            yzrecruit_mayu = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_chisaki } }
+            yzrecruit_chisaki = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_kanna } }
+            yzrecruit_kanna = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_zaozi } }
+            yzrecruit_zaozi = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_nozomi } }
+            yzrecruit_nozomi = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_mei } }
+            yzrecruit_mei = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_fumika } }
+            yzrecruit_fumika = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_orie } }
+            yzrecruit_orie = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_noa } }
+            yzrecruit_noa = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_amane } }
+            yzrecruit_amane = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_kurumi } }
+            yzrecruit_kurumi = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_kaguya } }
+            yzrecruit_kaguya = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_airi } }
+            yzrecruit_airi = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_shirley } }
+            yzrecruit_shirley = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yune } }
+            yzrecruit_xiyin = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_masaki } }
+            yzrecruit_zhenxiao = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_konoka } }
+            yzrecruit_konoka = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_tia } }
+            yzrecruit_tia = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_miu } }
+            yzrecruit_miu = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_bighouse } }
+            yzrecruit_hiyori = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_nicola } }
+            yzrecruit_nicola = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_elina_owen } }
+            yzrecruit_elina = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_rio } }
+            yzrecruit_liyin = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_mera_azusa } }
+            yzrecruit_buliangzi = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_hinata } }
+            yzrecruit_hinata = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_maya } }
+            yzrecruit_maya = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_sena } }
+            yzrecruit_sena = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_akari } }
+            yzrecruit_akari = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_shizuru } }
+            yzrecruit_shizuru = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_chihaya } }
+            yzrecruit_chihaya = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_sasara } }
+            yzrecruit_sasara = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yuiko } }
+            yzrecruit_yuiko = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_sana } }
+            yzrecruit_sana = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_aoi } }
+            yzrecruit_aoi = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_ruri } }
+            yzrecruit_ruri = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_mahiro } }
+            yzrecruit_mahiro = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yukari } }
+            yzrecruit_yukari = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_sakuyahime } }
+            yzrecruit_sakuyahime = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yuki } }
+            yzrecruit_yuki = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_sumi } }
+            yzrecruit_sumi = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_noriko } }
+            yzrecruit_noriko = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_tae } }
+            yzrecruit_tae = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_ena } }
+            yzrecruit_ena = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_anju } }
+            yzrecruit_anju = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_ririko } }
+            yzrecruit_ririko = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_tsukimi } }
+            yzrecruit_tsukimi = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_nayuka } }
+            yzrecruit_nayuka = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_miku } }
+            yzrecruit_miku = yes
+            add_political_power = 10
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_kakka_nor } }
+            yzrecruit_irno_full = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_misaka_makoto } }
+            yzrecruit_misaka_makoto_full = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yz_robocop } }
+            yzrecruit_robocop = yes
+        }
+
+        # The work-title buttons otherwise remain clickable and call their
+        # unguarded group effects, which would duplicate the debug recruits.
+        set_country_flag = recruit_QL_titile_clicked
+        set_country_flag = recruit_SW_titile_clicked
+        set_country_flag = recruit_RJ_titile_clicked
+        set_country_flag = recruit_CS_titile_clicked
+        set_country_flag = recruit_TS_titile_clicked
+        set_country_flag = recruit_AIN_titile_clicked
+        set_country_flag = recruit_DR_titile_clicked
+        set_country_flag = recruit_NW_titile_clicked
+        set_country_flag = recruit_NK_titile_clicked
+        set_country_flag = TL_recruit_title_clicked
+        set_country_flag = LLLJ_recruit_title_clicked
     }
 }
