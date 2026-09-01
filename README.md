@@ -47,7 +47,7 @@
 | 项目 | 信息 |
 |---|---|
 | Mod 名称 | 柚子社将领包 |
-| Mod Version | `1.85` |
+| Mod Version | `1.188` |
 | HOI4 `supported_version` | `1.19.2.0` |
 | Steam Workshop ID | `3303751918` |
 | GitHub 分支 | `main` |
@@ -197,7 +197,15 @@ QQ 群：
 
 ## AI 使用声明 / AI Use Statement
 
-本项目在开发与维护过程中使用 **OpenAI ChatGPT 与 OpenAI Codex** 进行辅助。使用范围涵盖项目开发期间本人 **ChatGPT Plus** 订阅在网页版 ChatGPT 中实际可用的全部模型，以及 Codex 中向 Plus 订阅实际开放的模型；**不包含仅限 Pro 等更高等级订阅使用的 Pro 专属模型**。AI 主要用于 PDX Script 与相关代码的编写、重构和调试，算法与 GUI 逻辑整理，以及文档、翻译、本地化和文本润色。所有 AI 输出均由人类制作组成员审查、测试和修改后决定是否采用；项目设计、内容取舍、版本发布、维护及最终责任均由人类制作组承担。
+本项目在开发与维护过程中使用多种 AI 模型辅助。启动界面鸣谢中记录的模型包括：
+
+- OpenAI Codex（GPT-5.5，GPT-5.6sol，reasoning effort: medium/high/xhigh）
+- Anysphere Cursor（Anthropic Claude Opus 5 Thinking，xAI Grok 4.6，reasoning effort: high）
+- OpenAI ChatGPT（GPT-5.5 Thinking / GPT-5.6 Thinking）
+- Google Gemini（Gemini 3.1 Pro Preview）
+- DeepSeek Chat（DeepSeek V3.2 Pro，DeepSeek V4 Flash，DeepSeek V4 Pro）
+
+AI 主要用于 PDX Script 与相关代码的编写、重构和调试，算法与 GUI 逻辑整理，以及文档、翻译、本地化和文本润色。所有 AI 输出均由人类制作组成员审查、测试和修改后决定是否采用；项目设计、内容取舍、版本发布、维护及最终责任均由人类制作组承担。
 
 ---
 

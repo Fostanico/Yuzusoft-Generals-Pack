@@ -1,4 +1,4 @@
-version="1.185"
+version="1.188"
 tags={
 	"Balance"
 	"Utilities"

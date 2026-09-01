@@ -47,7 +47,7 @@
 | 項目 | 情報 |
 |---|---|
 | Mod名 | ゆずソフト将軍パック |
-| Mod Version | `1.85` |
+| Mod Version | `1.188` |
 | HOI4 `supported_version` | `1.19.2.0` |
 | Steam Workshop ID | `3303751918` |
 | GitHubブランチ | `main` |
@@ -196,7 +196,15 @@ QQグループ：
 
 ## AI使用声明 / AI Use Statement
 
-本プロジェクトでは、開発とメンテナンスの補助として **OpenAI ChatGPTおよびOpenAI Codex** を使用しています。対象には、開発期間中に制作者本人の **ChatGPT Plus** サブスクリプションでChatGPTウェブ版から実際に利用できた全モデルと、Plusユーザー向けにCodexで提供されたモデルが含まれますが、**Proなど上位プラン専用のモデルは含まれません**。AIは主に、PDX Scriptおよび関連コードの作成、リファクタリング、デバッグ、アルゴリズムとGUIロジックの整理、文書、翻訳、ローカライズ、文章の改善に使用されています。AIの出力はすべて人間の制作チームメンバーが確認、テスト、修正し、採用するかどうかを決定しています。プロジェクト設計、内容の選択、バージョン公開、メンテナンス、および最終的な責任は人間の制作チームが負います。
+本プロジェクトでは、開発とメンテナンスの補助として複数のAIモデルを使用しています。起動画面の謝辞に記載されているモデルは次のとおりです。
+
+- OpenAI Codex（GPT-5.5、GPT-5.6sol、reasoning effort: medium/high/xhigh）
+- Anysphere Cursor（Anthropic Claude Opus 5 Thinking、xAI Grok 4.6、reasoning effort: high）
+- OpenAI ChatGPT（GPT-5.5 Thinking / GPT-5.6 Thinking）
+- Google Gemini（Gemini 3.1 Pro Preview）
+- DeepSeek Chat（DeepSeek V3.2 Pro、DeepSeek V4 Flash、DeepSeek V4 Pro）
+
+AIは主に、PDX Scriptおよび関連コードの作成、リファクタリング、デバッグ、アルゴリズムとGUIロジックの整理、文書、翻訳、ローカライズ、文章の改善に使用されています。AIの出力はすべて人間の制作チームメンバーが確認、テスト、修正し、採用するかどうかを決定しています。プロジェクト設計、内容の選択、バージョン公開、メンテナンス、および最終的な責任は人間の制作チームが負います。
 
 ---
 
