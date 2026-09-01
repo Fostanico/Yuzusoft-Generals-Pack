@@ -196,15 +196,7 @@ You can also use the group to:
 
 ## AI Use Statement
 
-This project uses several AI models as development and maintenance assistants. The models listed in the in-game startup credits are:
-
-- OpenAI Codex (GPT-5.5, GPT-5.6sol, reasoning effort: medium/high/xhigh)
-- Anysphere Cursor (Anthropic Claude Opus 5 Thinking, xAI Grok 4.6, reasoning effort: high)
-- OpenAI ChatGPT (GPT-5.5 Thinking / GPT-5.6 Thinking)
-- Google Gemini (Gemini 3.1 Pro Preview)
-- DeepSeek Chat (DeepSeek V3.2 Pro, DeepSeek V4 Flash, DeepSeek V4 Pro)
-
-AI assistance is mainly used for writing, refactoring, and debugging PDX Script and related code; organizing algorithms and GUI logic; and improving documentation, translations, localisation, and prose. All AI output is reviewed, tested, and revised by human team members before adoption. Project design, content decisions, releases, maintenance, and final responsibility remain with the human development team.
+This project uses OpenAI Codex, ChatGPT, Claude, Grok, Gemini, and DeepSeek to assist development. All AI output is reviewed by the human team before use, and the team remains responsible for the project.
 
 ---
 

@@ -197,15 +197,7 @@ QQ 群：
 
 ## AI 使用声明 / AI Use Statement
 
-本项目在开发与维护过程中使用多种 AI 模型辅助。启动界面鸣谢中记录的模型包括：
-
-- OpenAI Codex（GPT-5.5，GPT-5.6sol，reasoning effort: medium/high/xhigh）
-- Anysphere Cursor（Anthropic Claude Opus 5 Thinking，xAI Grok 4.6，reasoning effort: high）
-- OpenAI ChatGPT（GPT-5.5 Thinking / GPT-5.6 Thinking）
-- Google Gemini（Gemini 3.1 Pro Preview）
-- DeepSeek Chat（DeepSeek V3.2 Pro，DeepSeek V4 Flash，DeepSeek V4 Pro）
-
-AI 主要用于 PDX Script 与相关代码的编写、重构和调试，算法与 GUI 逻辑整理，以及文档、翻译、本地化和文本润色。所有 AI 输出均由人类制作组成员审查、测试和修改后决定是否采用；项目设计、内容取舍、版本发布、维护及最终责任均由人类制作组承担。
+本项目使用 OpenAI Codex、ChatGPT、Claude、Grok、Gemini 与 DeepSeek 辅助开发。AI 输出均经人类制作组审查后采用，最终责任由制作组承担。
 
 ---
 
