@@ -320,4 +320,22 @@ spriteTypes = {
 		name = "GFX_super_event_restore_8620"
 		textureFile = "gfx/super_event/Super_event_restore_8620.dds"
 	}
+	# Codex 的招募与婚礼均使用新版 720x610 超事件框架。
+	spriteType = {
+		name = "GFX_super_event_codex_online"
+		textureFile = "gfx/super_event/Super_event_codex_online_720x610.png"
+	}
+	spriteType = {
+		name = "GFX_super_event_marry_codex"
+		textureFile = "gfx/super_event/Super_event_marry_codex_720x610.png"
+	}
+	# Grok 的招募与婚礼均使用新版 720x610 超事件框架。
+	spriteType = {
+		name = "GFX_super_event_grok_online"
+		textureFile = "gfx/super_event/Super_event_grok_online_720x610.png"
+	}
+	spriteType = {
+		name = "GFX_super_event_marry_grok"
+		textureFile = "gfx/super_event/Super_event_marry_grok_720x610.png"
+	}
 }

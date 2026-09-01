@@ -2357,4 +2357,42 @@ general_married_decision_category = {
 			country_event = tongyong_event.51484895
 		}
 	}
+	get_married_codex = {
+		# Codex；事件 ID 为 CP936 名称的 MSVC x64 std::hash 结果。
+		# 制作组彩蛋婚礼不读取或写入 `havent_married`，也不受 Amane 特殊婚礼排斥；
+		# 它可以与任意普通柚子角色婚姻共存，但同一 Codex 决议仍只可完成一次。
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		icon = GFX_Codex
+		visible = {
+			check_variable = { love_depth > 98 }
+			has_country_flag = have_yz_codex
+		}
+		complete_effect = {
+			country_event = tongyong_event.2
+		}
+		remove_effect = {
+			country_event = tongyong_event.26240228
+		}
+	}
+	get_married_grok = {
+		# Grok；事件 ID 为 CP936 名称的 MSVC x64 std::hash 结果。
+		# 制作组彩蛋婚礼不读取或写入 `havent_married`，也不受 Amane 特殊婚礼排斥；
+		# 它可以与任意普通柚子角色婚姻共存，但同一 Grok 决议仍只可完成一次。
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		icon = GFX_Grok
+		visible = {
+			check_variable = { love_depth > 98 }
+			has_country_flag = have_yz_grok
+		}
+		complete_effect = {
+			country_event = tongyong_event.2
+		}
+		remove_effect = {
+			country_event = tongyong_event.40375782
+		}
+	}
 }

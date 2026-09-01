@@ -1094,6 +1094,8 @@ YZ_CORE_GROUP = {
         }
     }
     #蠢驴是印度人的星怒
+    # 原版彩蛋。千禧开局用地图州核心决议 yz_adjust_chi_cores 替换，探测只认
+    # yz_md_startup_detected，不再用日期重判。
     remove_chunlu_and_raj_decisions = {
         icon = GFX
         fire_only_once = yes
@@ -1102,9 +1104,41 @@ YZ_CORE_GROUP = {
                 has_country_flag = qiyong_youzi_2
                 has_country_flag = qiyong_youzi_3
             }
+            NOT = { has_global_flag = yz_md_startup_detected }
         }
         complete_effect = {
             country_event = { id = shabichunlv_event.1 }
+        }
+    }
+    # 千禧地图：CHI 取得内蒙古、新疆、西藏、阿克赛钦、钓鱼岛、藏南的所有权与核心。
+    yz_adjust_chi_cores = {
+        icon = GFX
+        fire_only_once = yes
+        visible = {
+            or = {
+                has_country_flag = qiyong_youzi_2
+                has_country_flag = qiyong_youzi_3
+            }
+            has_global_flag = yz_md_startup_detected
+        }
+        available = {
+            country_exists = CHI
+        }
+        complete_effect = {
+            CHI = {
+                transfer_state = 556
+                add_state_core = 556
+                transfer_state = 592
+                add_state_core = 592
+                transfer_state = 589
+                add_state_core = 589
+                transfer_state = 591
+                add_state_core = 591
+                transfer_state = 939
+                add_state_core = 939
+                transfer_state = 475
+                add_state_core = 475
+            }
         }
     }
 

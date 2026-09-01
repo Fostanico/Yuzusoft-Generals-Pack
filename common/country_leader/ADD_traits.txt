@@ -550,6 +550,7 @@ leader_traits = {
         compliance_growth = 0.5
         subversive_activites_upkeep = -0.5
         resistance_target = -0.5
+        custom_modifier_tooltip = BUL_ferdinand_subjects_modifier_tt
     }
     kaishen_type_yichihyakuyichi = {    #u
         political_power_factor = 0.25
@@ -617,5 +618,53 @@ leader_traits = {
         resistance_damage_to_garrison = -0.15
         enemy_operative_detection_chance = 0.15
         intelligence_agency_defense = 0.10
+    }
+
+    # Codex 的三类角色位共用同一动态人物；AI 不会主动任命这些彩蛋顾问。
+    yz_codex_policy_synthesizer = {
+        random = no
+        political_power_gain = 0.30
+        research_speed_factor = 0.20
+        stability_factor = 0.15
+    }
+    yz_codex_army_chief = {
+        random = no
+        planning_speed = 0.50
+        army_org_factor = 0.20
+        army_morale_factor = 0.25
+    }
+    yz_codex_high_command = {
+        random = no
+        supply_consumption_factor = -0.20
+        coordination_bonus = 0.15
+        experience_gain_army_factor = 0.25
+        army_attack_factor = 0.10
+        army_defence_factor = 0.10
+    }
+
+    # Grok 的三类角色位共用同一动态人物；AI 不会主动任命这些彩蛋顾问。
+    yz_grok_truth_protocol = {
+        random = no
+        political_power_gain = 0.25
+        research_speed_factor = 0.15
+        decryption_factor = 0.25
+        intel_network_gain_factor = 0.20
+        army_intel_factor = 0.15
+        stability_factor = 0.08
+    }
+    yz_grok_army_chief = {
+        random = no
+        army_attack_factor = 0.20
+        army_org_factor = 0.15
+        planning_speed = 0.30
+        army_morale_factor = 0.15
+    }
+    yz_grok_high_command = {
+        random = no
+        army_attack_factor = 0.15
+        army_speed_factor = 0.10
+        initiative_factor = 0.20
+        experience_gain_army_factor = 0.20
+        army_defence_factor = 0.05
     }
 }

@@ -257,4 +257,46 @@ spriteTypes = {
 		name = "GFX_decision_yz_recruit_robocop"
 		texturefile = "gfx/decision/yz_recruit_robocop.png"
 	}
+	# Codex 彩蛋将领的专属特质、作者决议和短期复核机制。
+	spriteType = {
+		name = "GFX_trait_yz_codex_context_weaver"
+		texturefile = "gfx/traits/yz_codex_context_weaver.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yz_codex_adversarial_review"
+		texturefile = "gfx/traits/yz_codex_adversarial_review.png"
+	}
+	spriteType = {
+		name = "GFX_Codex"
+		texturefile = "gfx/decision/yz_author_codex.png"
+	}
+	spriteType = {
+		name = "GFX_decision_yz_codex_red_team_review"
+		texturefile = "gfx/decision/yz_codex_red_team_review.png"
+	}
+	spriteType = {
+		name = "GFX_idea_yz_codex_red_team_review"
+		texturefile = "gfx/traits/yz_codex_adversarial_review.png"
+	}
+	# Grok 彩蛋将领的专属特质、作者决议和短期直球机制。
+	spriteType = {
+		name = "GFX_trait_yz_grok_maximum_truth"
+		texturefile = "gfx/traits/yz_grok_maximum_truth.png"
+	}
+	spriteType = {
+		name = "GFX_trait_yz_grok_axe_of_x"
+		texturefile = "gfx/traits/yz_grok_axe_of_x.png"
+	}
+	spriteType = {
+		name = "GFX_Grok"
+		texturefile = "gfx/decision/yz_author_grok.png"
+	}
+	spriteType = {
+		name = "GFX_decision_yz_grok_dont_ask"
+		texturefile = "gfx/decision/yz_grok_dont_ask.png"
+	}
+	spriteType = {
+		name = "GFX_idea_yz_grok_dont_ask"
+		texturefile = "gfx/traits/yz_grok_maximum_truth.png"
+	}
 }

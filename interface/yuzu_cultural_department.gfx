@@ -40,4 +40,12 @@ spriteTypes = {
 		name = "GFX_rino_wedding"
 		textureFile = "gfx/event_pictures/rino_wedding.png"
 	}
+	spriteType = {
+		name = "GFX_codex_wedding"
+		textureFile = "gfx/event_pictures/codex_wedding.png"
+	}
+	spriteType = {
+		name = "GFX_grok_wedding"
+		textureFile = "gfx/event_pictures/grok_wedding.png"
+	}
 }

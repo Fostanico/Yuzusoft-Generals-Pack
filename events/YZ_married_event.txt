@@ -2036,3 +2036,51 @@ country_event = { # 山吹涉的婚礼
         }
     }
 }
+
+country_event = { # Codex 的婚礼；ID 来自名称“Codex”的项目哈希。
+    id = tongyong_event.26240228
+    title = tongyong_event.26240228.t
+    desc = tongyong_event.26240228.d
+    picture = GFX_codex_wedding
+    is_triggered_only = yes
+    option = {
+        name = tongyong_event.26240228.a
+        custom_effect_tooltip = get_married
+        add_political_power = 15
+        add_stability = 0.025
+        add_war_support = 0.025
+        add_ideas = Married
+        remove_ideas = Married_preparing
+        add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_codex
+        random_army_leader = {
+            limit = { has_trait = yz_codex_context_weaver }
+            add_unit_leader_trait = married_trait
+        }
+    }
+}
+
+country_event = { # Grok 的婚礼；ID 来自名称“Grok”的项目哈希。
+    id = tongyong_event.40375782
+    title = tongyong_event.40375782.t
+    desc = tongyong_event.40375782.d
+    picture = GFX_grok_wedding
+    is_triggered_only = yes
+    option = {
+        name = tongyong_event.40375782.a
+        custom_effect_tooltip = get_married
+        add_political_power = 15
+        add_stability = 0.025
+        add_war_support = 0.025
+        add_ideas = Married
+        remove_ideas = Married_preparing
+        add_to_variable = { marry_love_bonus = 100 }
+        yz_prepare_private_super_event = yes
+        set_country_flag = we_marry_with_grok
+        random_army_leader = {
+            limit = { has_trait = yz_grok_maximum_truth }
+            add_unit_leader_trait = married_trait
+        }
+    }
+}

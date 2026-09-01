@@ -811,4 +811,122 @@ ability = {
             }
         }
     }
+
+    # Codex 元帅专属主动技能。两项能力分别由她的两个固有特质解锁，
+    # 只在实际统率集团军群时可用，避免顾问角色位或闲置人物误触发。
+    yz_codex_context_reconstruction = {
+        name = yz_codex_context_reconstruction
+        desc = yz_codex_context_reconstruction_desc
+        icon = GFX_trait_yz_codex_context_weaver
+        sound_effect = command_power_ability_defensive
+        type = army_leader
+        requires_deployed_hq = yes
+        allowed = {
+            has_ability = yz_codex_context_reconstruction
+            is_leading_army_group = yes
+            is_border_war = no
+        }
+        cost = 0
+        duration = 336
+        cooldown = 504
+        unit_modifiers = {
+            planning_speed = 10
+            max_planning = 1
+            supply_consumption_factor = -0.75
+            no_supply_grace = 336
+            org_loss_when_moving = -0.75
+            terrain_penalty_reduction = 0.75
+            coordination_bonus = 1
+            initiative_factor = 1
+            recon_factor = 10
+            land_reinforce_rate = 0.5
+            org_damage_multiplier = -0.75
+            str_damage_multiplier = -0.5
+        }
+    }
+
+    yz_codex_adversarial_simulation = {
+        name = yz_codex_adversarial_simulation
+        desc = yz_codex_adversarial_simulation_desc
+        icon = GFX_trait_yz_codex_adversarial_review
+        sound_effect = command_power_ability_offensive
+        type = army_leader
+        requires_deployed_hq = yes
+        allowed = {
+            has_ability = yz_codex_adversarial_simulation
+            is_leading_army_group = yes
+            is_border_war = no
+        }
+        cost = 0
+        duration = 240
+        cooldown = 336
+        unit_modifiers = {
+            army_attack_factor = 1
+            army_defence_factor = 1
+            breakthrough_factor = 1
+            army_org_regain = 1
+            cas_damage_reduction = 1
+            pocket_penalty = -1
+            fortification_damage = 2
+            fortification_collateral_chance = 2
+            experience_loss_factor = -1
+            org_damage_multiplier = -1
+            str_damage_multiplier = -0.75
+        }
+    }
+
+    # Grok 元帅专属主动技能。两项能力分别由她的两个固有特质解锁，
+    # 只在实际统率集团军群时可用，避免顾问角色位或闲置人物误触发。
+    yz_grok_live_search = {
+        name = yz_grok_live_search
+        desc = yz_grok_live_search_desc
+        icon = GFX_trait_yz_grok_maximum_truth
+        sound_effect = command_power_ability_offensive
+        type = army_leader
+        requires_deployed_hq = yes
+        allowed = {
+            has_ability = yz_grok_live_search
+            is_leading_army_group = yes
+            is_border_war = no
+        }
+        cost = 0
+        duration = 240
+        cooldown = 360
+        unit_modifiers = {
+            recon_factor = 10
+            initiative_factor = 1
+            planning_speed = 5
+            max_planning = 0.5
+            army_attack_factor = 0.25
+            coordination_bonus = 0.5
+            org_damage_multiplier = -0.5
+        }
+    }
+
+    yz_grok_unfiltered_strike = {
+        name = yz_grok_unfiltered_strike
+        desc = yz_grok_unfiltered_strike_desc
+        icon = GFX_trait_yz_grok_axe_of_x
+        sound_effect = command_power_ability_offensive
+        type = army_leader
+        requires_deployed_hq = yes
+        allowed = {
+            has_ability = yz_grok_unfiltered_strike
+            is_leading_army_group = yes
+            is_border_war = no
+        }
+        cost = 0
+        duration = 168
+        cooldown = 336
+        unit_modifiers = {
+            army_attack_factor = 1.25
+            breakthrough_factor = 1.25
+            army_speed_factor = 0.5
+            fortification_damage = 2
+            fortification_collateral_chance = 1
+            experience_loss_factor = -0.5
+            org_damage_multiplier = -0.5
+            str_damage_multiplier = -0.25
+        }
+    }
 }

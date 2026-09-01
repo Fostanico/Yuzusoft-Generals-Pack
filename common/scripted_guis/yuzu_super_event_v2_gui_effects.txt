@@ -17,6 +17,18 @@ scripted_gui = {
 		}
 
 		triggers = {
+			Super_event_codex_online_visible = {
+				has_country_flag = yz_codex_online
+			}
+			Super_event_marry_codex_visible = {
+				has_country_flag = we_marry_with_codex
+			}
+			Super_event_grok_online_visible = {
+				has_country_flag = yz_grok_online
+			}
+			Super_event_marry_grok_visible = {
+				has_country_flag = we_marry_with_grok
+			}
 			Super_event_marry_airi_visible = {
 				has_country_flag = we_marry_with_airi
 			}

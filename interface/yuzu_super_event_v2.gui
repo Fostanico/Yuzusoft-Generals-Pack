@@ -333,6 +333,26 @@ guiTypes = {
 			spriteType = "GFX_super_event_we_unite_with_makoto"
 			position = { x = 0 y = 0 }
 		}
+		iconType = {
+			name = "Super_event_codex_online"
+			spriteType = "GFX_super_event_codex_online"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_codex"
+			spriteType = "GFX_super_event_marry_codex"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_grok_online"
+			spriteType = "GFX_super_event_grok_online"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_marry_grok"
+			spriteType = "GFX_super_event_marry_grok"
+			position = { x = 0 y = 0 }
+		}
 
 		# The quote gradient remains a shared overlay so event images stay reusable.
 		iconType = {

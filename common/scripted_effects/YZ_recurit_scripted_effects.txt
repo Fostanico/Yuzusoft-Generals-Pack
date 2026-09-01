@@ -2838,6 +2838,138 @@ yzrecruit_robocop = {
     }
 }
 
+# Codex 彩蛋角色的唯一招募入口；普通决议与调试批量招募都委托到这里。
+yzrecruit_codex = {
+    yz_prepare_private_super_event = yes
+    set_country_flag = yz_codex_online
+    hidden_effect = {
+        set_country_flag = have_yz_codex
+        meta_effect = {
+            text = {
+                generate_character = {
+                    token_base = YzCodex
+                    name = YZ_character_name_codex
+                    can_be_captured = no
+                    gender = female
+                    nationality = PRC
+                    portraits = {
+                        civilian = {
+                            large = "gfx/leader/yz_codex.png"
+                            small = "gfx/leader/yz_codex_small.png"
+                        }
+                    }
+                    allowed_civil_war = {
+                        is_ai = no
+                    }
+                    advisor = {
+                        slot = political_advisor
+                        cost = 50
+                        idea_token = yz_codex_policy_synthesizer
+                        desc = yz_codex_policy_synthesizer_desc
+                        traits = { yz_codex_policy_synthesizer }
+                        ai_will_do = { factor = 0 }
+                    }
+                    advisor = {
+                        slot = army_chief
+                        cost = 50
+                        idea_token = yz_codex_army_chief
+                        desc = yz_codex_army_chief_desc
+                        traits = { yz_codex_army_chief }
+                        ai_will_do = { factor = 0 }
+                    }
+                    advisor = {
+                        slot = high_command
+                        cost = 50
+                        idea_token = yz_codex_high_command
+                        desc = yz_codex_high_command_desc
+                        traits = { yz_codex_high_command }
+                        ai_will_do = { factor = 0 }
+                    }
+                    field_marshal = {
+                        desc = yz_codex_field_marshal_desc
+                        traits = {
+                            yz_easter_egg_character
+                            yz_codex_context_weaver
+                            yz_codex_adversarial_review
+                        }
+                        skill = 10
+                        attack_skill = 10
+                        defense_skill = 12
+                        planning_skill = 15
+                        logistics_skill = 15
+                    }
+                }
+            }
+        }
+    }
+}
+
+# Grok 彩蛋角色的唯一招募入口；普通决议与调试批量招募都委托到这里。
+yzrecruit_grok = {
+    yz_prepare_private_super_event = yes
+    set_country_flag = yz_grok_online
+    hidden_effect = {
+        set_country_flag = have_yz_grok
+        meta_effect = {
+            text = {
+                generate_character = {
+                    token_base = YzGrok
+                    name = YZ_character_name_grok
+                    can_be_captured = no
+                    gender = female
+                    nationality = PRC
+                    portraits = {
+                        civilian = {
+                            large = "gfx/leader/yz_grok.png"
+                            small = "gfx/leader/yz_grok_small.png"
+                        }
+                    }
+                    allowed_civil_war = {
+                        is_ai = no
+                    }
+                    advisor = {
+                        slot = political_advisor
+                        cost = 50
+                        idea_token = yz_grok_truth_protocol
+                        desc = yz_grok_truth_protocol_desc
+                        traits = { yz_grok_truth_protocol }
+                        ai_will_do = { factor = 0 }
+                    }
+                    advisor = {
+                        slot = army_chief
+                        cost = 50
+                        idea_token = yz_grok_army_chief
+                        desc = yz_grok_army_chief_desc
+                        traits = { yz_grok_army_chief }
+                        ai_will_do = { factor = 0 }
+                    }
+                    advisor = {
+                        slot = high_command
+                        cost = 50
+                        idea_token = yz_grok_high_command
+                        desc = yz_grok_high_command_desc
+                        traits = { yz_grok_high_command }
+                        ai_will_do = { factor = 0 }
+                    }
+                    field_marshal = {
+                        desc = yz_grok_field_marshal_desc
+                        traits = {
+                            yz_easter_egg_character
+                            yz_grok_maximum_truth
+                            yz_grok_axe_of_x
+                        }
+                        skill = 10
+                        attack_skill = 15
+                        defense_skill = 10
+                        planning_skill = 12
+                        logistics_skill = 11
+                    }
+                }
+            }
+        }
+    }
+}
+
 # Country-scope debug batch for the recruitment registry. Each stable `have_*`
 # flag is the idempotency guard; normal recruit effects remain the sole owners
 # of character data and unlock side effects. Refund only their built-in PP cost.
@@ -3145,6 +3277,14 @@ yz_debug_recruit_all_registered_characters = {
         if = {
             limit = { NOT = { has_country_flag = have_yz_robocop } }
             yzrecruit_robocop = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yz_codex } }
+            yzrecruit_codex = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_yz_grok } }
+            yzrecruit_grok = yes
         }
 
         # The work-title buttons otherwise remain clickable and call their

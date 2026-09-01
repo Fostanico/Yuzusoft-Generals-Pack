@@ -1715,6 +1715,84 @@ add_youzi_general_category = {
         }
 
     }
+    yz_recruit_codex = {
+        icon = GFX_Codex
+        visible = {
+            is_ai = no
+            OR = {
+                has_country_flag = qiyong_youzi_1
+                has_country_flag = qiyong_youzi_2
+                has_country_flag = qiyong_youzi_3
+            }
+            has_game_rule = {
+                rule = youzu_easter_egg_rule
+                option = I_need_my_love
+            }
+            NOT = { has_country_flag = have_yz_codex }
+        }
+        cost = 1
+        fire_only_once = yes
+        complete_effect = {
+            yzrecruit_codex = yes
+        }
+    }
+    yz_codex_red_team_review = {
+        icon = GFX_decision_yz_codex_red_team_review
+        visible = {
+            is_ai = no
+            has_country_flag = have_yz_codex
+        }
+        available = {
+            NOT = { has_idea = yz_codex_red_team_review }
+        }
+        cost = 25
+        days_re_enable = 90
+        complete_effect = {
+            add_timed_idea = {
+                idea = yz_codex_red_team_review
+                days = 60
+            }
+        }
+    }
+    yz_recruit_grok = {
+        icon = GFX_Grok
+        visible = {
+            is_ai = no
+            OR = {
+                has_country_flag = qiyong_youzi_1
+                has_country_flag = qiyong_youzi_2
+                has_country_flag = qiyong_youzi_3
+            }
+            has_game_rule = {
+                rule = youzu_easter_egg_rule
+                option = I_need_my_love
+            }
+            NOT = { has_country_flag = have_yz_grok }
+        }
+        cost = 1
+        fire_only_once = yes
+        complete_effect = {
+            yzrecruit_grok = yes
+        }
+    }
+    yz_grok_dont_ask = {
+        icon = GFX_decision_yz_grok_dont_ask
+        visible = {
+            is_ai = no
+            has_country_flag = have_yz_grok
+        }
+        available = {
+            NOT = { has_idea = yz_grok_dont_ask }
+        }
+        cost = 25
+        days_re_enable = 90
+        complete_effect = {
+            add_timed_idea = {
+                idea = yz_grok_dont_ask
+                days = 60
+            }
+        }
+    }
     A_voice_comes_from_the_brightest_future = {
         visible = {
             is_ai = no
@@ -3123,6 +3201,12 @@ add_youzi_general_category = {
                         planning_skill = 5
                         logistics_skill = 5
                     }
+                    advisor = {
+                    cost = 100
+                    slot = theorist
+                    idea_token = mayu
+                    traits = { mayu_theorist }
+                }
                 }
                 if = {
                     limit = {

@@ -483,6 +483,12 @@ leader_traits = {
         org_loss_when_moving = -0.5
         supply_factor = 0.15
     }
+    mayu_theorist = {   #茉优理论家特质——2026.9.1，huhu 0:44
+        random = no
+        nuclear_technology_research_speed_factor = 4
+        rocket_technology_research_speed_factor = 2
+        special_project_speed_factor = 1
+    }
     huhu_general = {
         random = no
         experience_gain_army = 1

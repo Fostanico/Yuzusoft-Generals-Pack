@@ -398,6 +398,22 @@ defined_text = {      #超事件名言
 	#	}
 	#	localization_key = <your 名言>
 	#}
+	text = {
+		trigger = { has_country_flag = yz_codex_online }
+		localization_key = yz_codex_online_quote
+	}
+	text = {
+		trigger = { has_country_flag = we_marry_with_codex }
+		localization_key = we_marry_with_codex_quote
+	}
+	text = {
+		trigger = { has_country_flag = yz_grok_online }
+		localization_key = yz_grok_online_quote
+	}
+	text = {
+		trigger = { has_country_flag = we_marry_with_grok }
+		localization_key = we_marry_with_grok_quote
+	}
 	text = { localization_key = yuzu_super_event_missing_quote }
 }
 defined_text = {       #超事件标题
@@ -799,6 +815,22 @@ defined_text = {       #超事件标题
 	#	}
 	#	localization_key = <your 标题>
 	#}
+	text = {
+		trigger = { has_country_flag = yz_codex_online }
+		localization_key = yz_codex_online_title
+	}
+	text = {
+		trigger = { has_country_flag = we_marry_with_codex }
+		localization_key = we_marry_with_codex_title
+	}
+	text = {
+		trigger = { has_country_flag = yz_grok_online }
+		localization_key = yz_grok_online_title
+	}
+	text = {
+		trigger = { has_country_flag = we_marry_with_grok }
+		localization_key = we_marry_with_grok_title
+	}
 	text = { localization_key = yuzu_super_event_missing_title }
 }
 defined_text = {     #关闭按钮文字
@@ -1200,6 +1232,22 @@ defined_text = {     #关闭按钮文字
 	#	}
 	#	localization_key = <your 关闭按钮文字>
 	#}
+	text = {
+		trigger = { has_country_flag = yz_codex_online }
+		localization_key = yz_codex_online_close_buttom
+	}
+	text = {
+		trigger = { has_country_flag = we_marry_with_codex }
+		localization_key = we_marry_with_codex_close_buttom
+	}
+	text = {
+		trigger = { has_country_flag = yz_grok_online }
+		localization_key = yz_grok_online_close_buttom
+	}
+	text = {
+		trigger = { has_country_flag = we_marry_with_grok }
+		localization_key = we_marry_with_grok_close_buttom
+	}
 	text = { localization_key = yuzu_super_event_missing_close }
 }
 
