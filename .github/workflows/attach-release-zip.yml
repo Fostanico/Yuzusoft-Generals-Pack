@@ -1,0 +1,30 @@
+name: Attach release zip
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag
+        required: true
+        type: string
+      zip_name:
+        description: Asset file name
+        required: true
+        type: string
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 1
+      - name: Pack repository tree
+        run: git archive --format=zip -o "${{ inputs.zip_name }}" HEAD
+      - name: Upload to GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ inputs.tag }}" "${{ inputs.zip_name }}" --clobber --repo "${{ github.repository }}"
