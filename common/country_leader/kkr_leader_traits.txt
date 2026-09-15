@@ -1,7 +1,9 @@
+# 角色专属特质仅由指定招募或事件赋予，禁止进入随机国家领袖特质池。
 leader_traits = {
 	#玖玖瑠
 	#荷包蛋贫乳
 	HBDPR = {
+		random = no
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
 		political_power_factor = 0.5
@@ -31,6 +33,7 @@ leader_traits = {
 	}
 	#国家计委主席
 	GJJWZX = {
+		random = no
 		consumer_goods_factor = -1
 		production_speed_buildings_factor = 1
 		production_factory_start_efficiency_factor = 0.5
@@ -64,6 +67,7 @@ leader_traits = {
 	}
 	#国家科学院长
 	GJKXYZ = {
+		random = no
 		research_speed_factor = 1
 		military_industrial_organization_research_bonus = 0.5
 		military_industrial_organization_funds_gain = 2.5

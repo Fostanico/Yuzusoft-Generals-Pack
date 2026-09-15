@@ -4472,11 +4472,38 @@ Megulu_industry_category = {
 		timeout_effect = {
 			add_to_variable = { num_megulu_industray_completed = 1 }
 			set_country_flag = megulu_industry_16
-			set_technology = { fuel_silos = 1 }
-			set_technology = { fuel_refining = 1 }
-			set_technology = { fuel_refining2 = 1 }
-			set_technology = { synth_oil_experiments = 1 }
-			set_technology = { oil_processing = 1 }
+			# 千禧用燃料储存与 I-IV 精炼五项科技承接奖励；不改变任务扣款和进度。
+			if = {
+				limit = { has_global_flag = yz_md_startup_detected }
+				custom_effect_tooltip = yz_reward_megulu_oil_md_tt
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_technology = {
+								fuel_silos = 1
+								fuel_refining = 1
+								fuel_refining2 = 1
+								fuel_refining3 = 1
+								fuel_refining4 = 1
+							}
+						}
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = yz_reward_megulu_oil_vanilla_tt
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_technology = { fuel_silos = 1 }
+							set_technology = { fuel_refining = 1 }
+							set_technology = { fuel_refining2 = 1 }
+							set_technology = { synth_oil_experiments = 1 }
+							set_technology = { oil_processing = 1 }
+						}
+					}
+				}
+			}
 			if = {
 				limit = {
 					check_variable = {

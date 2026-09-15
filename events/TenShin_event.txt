@@ -112,9 +112,6 @@ country_event= {
                         traits={
                             yz_yuzusoft_character
                             maid_kaguya_trait
-                            bearer_of_artillery
-                            adaptable
-                            brilliant_strategist
                         }
                         skill = 5
                         attack_skill = 5
@@ -184,9 +181,6 @@ country_event= {
                         traits={
                             yz_yuzusoft_character
                             maid_kaguya_trait
-                            bearer_of_artillery
-                            adaptable
-                            brilliant_strategist
                         }
                         skill = 5
                         attack_skill = 5
@@ -236,7 +230,6 @@ country_event= {
                         traits={
                             yz_yuzusoft_character
                             maid_sairi_trait_2
-                            brilliant_strategist
                         }
                 # id = 100121273 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         skill = 1
@@ -291,12 +284,6 @@ country_event= {
                         traits={
                             yz_yuzusoft_character
                             yz_weizi_trait
-                            adaptable
-                            trait_reckless
-                            brilliant_strategist
-                            urban_assault_specialist
-                            trait_reckless
-                            hill_fighter
                         }
                         attack_skill = 6
                         defense_skill = 5
@@ -337,9 +324,6 @@ country_event= {
                         traits={
                             yz_yuzusoft_character
                             maid_amane_trait
-                            urban_assault_specialist
-                            trait_reckless
-                            hill_fighter
                         }
                         skill=5
                         attack_skill=6
@@ -535,9 +519,7 @@ country_event= {
             }
             remove_unit_leader_trait = yz_kurumi_trait01
             add_unit_leader_trait = yz_kurumi_trait_2
-            add_unit_leader_trait = organizer
-            add_unit_leader_trait = logistics_wizard
-            add_unit_leader_trait = inspirational_leader
+            # 原版的组织者、后勤大师和魅力型领袖加成已折叠进 yz_kurumi_trait_2。
         }
     }
 }
@@ -589,14 +571,36 @@ country_event= {
         }
         add_ideas = sairi_bad_end
         kill_country_leader = yes
-        create_country_leader = {
-            name = YZ_character_name_mikuni_sairi
-            desc = "魔王之母"
-            picture = "gfx/leader/Badsairi.png"
-            expire = "2065.1.1"
-            ideology = nazism
-            traits = {
-                sairi_leader_trait
+        if = {
+            limit = { has_global_flag = yz_md_startup_detected }
+            set_popularities = {
+                democratic = 0
+                neutrality = 0
+                fascism = 100
+                communism = 0
+                nationalist = 0
+            }
+            create_country_leader = {
+                name = YZ_character_name_mikuni_sairi
+                desc = yz_md_sairi_leader_desc
+                picture = "gfx/leader/Badsairi.png"
+                expire = "2065.1.1"
+                ideology = Kingdom
+                traits = {
+                    yz_md_trait_sairi_demon
+                }
+            }
+        }
+        else = {
+            create_country_leader = {
+                name = YZ_character_name_mikuni_sairi
+                desc = "魔王之母"
+                picture = "gfx/leader/Badsairi.png"
+                expire = "2065.1.1"
+                ideology = nazism
+                traits = {
+                    sairi_leader_trait
+                }
             }
         }
         meta_effect = {
@@ -620,7 +624,7 @@ country_event= {
                     field_marshal = {
                         traits={
                             yz_yuzusoft_character
-                            adaptable maid_sairi_trait_1
+                            maid_sairi_trait_1
                         }
                         attack_skill = 9
                         defense_skill = 9

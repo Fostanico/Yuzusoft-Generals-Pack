@@ -1,5 +1,5 @@
 # 柚子核心周期入口。HOI4 的周期 on_action 会按国家调用；月度系统必须保持玩家与
-# 启用 flag 门槛。on_daily 仅保留需要逐日精度的生日计数，派生值走事件/周/月刷新。
+# 启用 flag 门槛。佐奈生日由决议直接读取游戏日历，派生值走事件/周/月刷新。
 on_actions = {
     on_weekly = {      #每周统一入口：防止被大清洗、低好感离开
         effect = {
@@ -94,8 +94,6 @@ on_actions = {
                 id = 7102
                 name = "鹫逗"
             }
-            set_variable = { date_counter = 0 }
-
         }
     }
 
@@ -230,19 +228,6 @@ on_actions = {
                         country_event = start_event.4
                         set_country_flag = yz_bad_end
                     }
-                }
-            }
-        }
-    }
-
-    on_daily = {       #佐奈生日日期需要按日精确推进，但只为玩家国家写入变量
-        effect = {
-            if = {
-                limit = { is_ai = no }
-                add_to_variable = { date_counter = 1 }
-                if = {
-                    limit = { check_variable = { date_counter > 364 } }
-                    add_to_variable = { date_counter = -365 }
                 }
             }
         }

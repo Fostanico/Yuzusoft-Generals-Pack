@@ -13,9 +13,11 @@
 
 ###佐奈的生日
  sana_birthday: "佐奈の誕生日を祝う"
- sana_birthday_desc: "佐奈の誕生日当日（UTC+9）にこの決議をクリックすると、彼女はとても喜びますよ～"
+ sana_birthday_desc: "毎年§Y6月8日§!は佐奈の誕生日。忘れずにお祝いすれば、きっと喜んでくれますよ～\n\nゲーム内のカレンダーを見て、日にちを間違えないでね。"
  sana_birthday_weak: "佐奈の誕生日を遅れて祝う"
- sana_birthday_weak_desc: "当日に祝い忘れた場合、20日以内に遅れて祝えば、佐奈も許してくれます"
+ sana_birthday_weak_desc: "当日に祝い忘れても、§Y6月9日から6月28日まで§!の20日間なら、遅れてお祝いできます。佐奈も許してくれますよ。"
+ sana_birthday_date_tt: "今日は§Y6月8日§!、佐奈の誕生日"
+ sana_birthday_makeup_date_tt: "今は§Y6月9日から6月28日まで§!の、遅れて誕生日を祝える期間"
  sana_birthday_not_celebrated_this_year_tt: "今年はまだ§Y佐奈§!の誕生日を祝っていない"
  maid_sana_birthday_boost1: "With You!!"
  maid_sana_birthday_boost2: "With You!!"
@@ -309,7 +311,7 @@
  airi_crystal_support_equipment_1_short: "通信水晶"
  airi_crystal_support_equipment: "通信水晶"
  tech_airi_crystal_support_equipment_1: "通信水晶"
- unlock_airi_marry: "決議「§Y小さな発見、大きな変化§!」の完了が必要"
+ unlock_airi_marry: "決議「§Y小さな発見、大きな変化§!」、または中核団決議「§Y愛莉と愛莉信グループを設立§!」の完了が必要"
 
  airi_event.1.t: "愛莉と今後の計画を話し合う"
  airi_event.1.d: "（テキスト未定）"

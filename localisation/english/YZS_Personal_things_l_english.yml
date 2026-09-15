@@ -13,9 +13,11 @@
 
 ###佐奈的生日
  sana_birthday: "Celebrate Sana's Birthday"
- sana_birthday_desc: "Click this decision on Sana's birthday (UTC+9) and she will be very happy~"
+ sana_birthday_desc: "Remember to celebrate Sana's birthday on §YJune 8§! each year. It will make her very happy~\n\nJust follow the in-game calendar, and don't get the date mixed up."
  sana_birthday_weak: "Make Up Sana's Birthday"
- sana_birthday_weak_desc: "If you forget to celebrate on the day itself, you can make up for it within 20 days — Sana will forgive you"
+ sana_birthday_weak_desc: "If you forget to celebrate on the day itself, you can still make it up to Sana during the 20 days from §YJune 9 to June 28§!. She will forgive you."
+ sana_birthday_date_tt: "Today is §YJune 8§!, Sana's birthday"
+ sana_birthday_makeup_date_tt: "It is §YJune 9–28§!, time to make up Sana's birthday"
  sana_birthday_not_celebrated_this_year_tt: "§YSana's§! birthday has not been celebrated this year"
  maid_sana_birthday_boost1: "With You!!"
  maid_sana_birthday_boost2: "With You!!"
@@ -309,7 +311,7 @@
  airi_crystal_support_equipment_1_short: "Communication Crystal"
  airi_crystal_support_equipment: "Communication Crystal"
  tech_airi_crystal_support_equipment_1: "Communication Crystal"
- unlock_airi_marry: "Requires completing the decision \"§YA Small Discovery, a Great Change§!\""
+ unlock_airi_marry: "Requires completing \"§YA Small Discovery, a Great Change§!\", or the Inner Circle decision \"§YFound the Airixin Group with Airi§!\""
 
  airi_event.1.t: "Discuss Future Plans with Airi"
  airi_event.1.d: "(Text to be added)"

@@ -1,0 +1,66 @@
+# 千禧/原版陆军库存切换。调用前设置临时变量 yz_eq_amount（可为负）。
+# 有 producer 的条目不走这里，避免 THIS/PREV/JAP 被写死。
+
+yz_stockpile_infantry = {
+	if = {
+		limit = { has_global_flag = yz_md_startup_detected }
+		add_equipment_to_stockpile = {
+			type = infantry_weapons_type
+			amount = yz_eq_amount
+		}
+	}
+	else = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = yz_eq_amount
+		}
+	}
+}
+
+yz_stockpile_support = {
+	if = {
+		limit = { has_global_flag = yz_md_startup_detected }
+		add_equipment_to_stockpile = {
+			type = cnc_equipment_type
+			amount = yz_eq_amount
+		}
+	}
+	else = {
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = yz_eq_amount
+		}
+	}
+}
+
+yz_stockpile_motorized = {
+	if = {
+		limit = { has_global_flag = yz_md_startup_detected }
+		add_equipment_to_stockpile = {
+			type = util_vehicle_type
+			amount = yz_eq_amount
+		}
+	}
+	else = {
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = yz_eq_amount
+		}
+	}
+}
+
+yz_stockpile_mechanized = {
+	if = {
+		limit = { has_global_flag = yz_md_startup_detected }
+		add_equipment_to_stockpile = {
+			type = medium_tank_flame_chassis
+			amount = yz_eq_amount
+		}
+	}
+	else = {
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = yz_eq_amount
+		}
+	}
+}

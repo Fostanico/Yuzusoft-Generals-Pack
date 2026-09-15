@@ -335,7 +335,7 @@ country_event= {           #大隐藏
                         corps_commander = {
                             traits={
                                 yz_yuzusoft_character
-                                maid_sana_trait trait_reckless infantry_officer
+                                maid_sana_trait
                             }
                             skill=15
                             attack_skill=22

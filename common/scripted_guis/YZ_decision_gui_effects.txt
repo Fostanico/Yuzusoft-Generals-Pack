@@ -1,13 +1,18 @@
-# 财政 GUI 只消费国家级持久账本变量：打开窗口前、等级按钮修改源值后立即重建。
-# 三项经济政策的 timed idea 是冷却唯一事实源，不再维护每日递减计数器。
+# 本文件集中持有核心圈决议组及其财政/商店子窗口，避免把同一消费者拆成零碎 scripted GUI 文件。
+# 财政 GUI 只消费国家级持久账本变量；三项经济政策的 timed idea 是冷却唯一事实源。
 scripted_gui = {
-	Yz_leader_gui = {	#核心圈
+	# 核心圈决议组：头像仅启动重选，人选继续由决议列表完成。
+	Yz_leader_gui = {
 		window_name = "Yz_leader"
 		context_type = decision_category
 		visible = {
 			has_country_flag = YzCoreGroup_visible
 		}
 		effects = {
+			# 三个透明中心边框按钮覆盖人物图/空席图，共用同一国家级重选效果。
+			Yzleader_portrait1_click = { yz_begin_core_group_reselection = yes }
+			Yzleader_portrait2_click = { yz_begin_core_group_reselection = yes }
+			Yzleader_portrait3_click = { yz_begin_core_group_reselection = yes }
 			open_yz_money_btn_click = {
 				if = {
 					limit = {
@@ -44,31 +49,42 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			Yzleader_unknown1_visible = {
+			# 内部 flag 不应作为红叉条件暴露给玩家；可见规则统一由头像 tooltip 说明。
+			Yzleader_portrait1_click_enabled = {
+				hidden_trigger = { yz_core_group_reselection_available = yes }
+			}
+			Yzleader_portrait2_click_enabled = {
+				hidden_trigger = { yz_core_group_reselection_available = yes }
+			}
+			Yzleader_portrait3_click_enabled = {
+				hidden_trigger = { yz_core_group_reselection_available = yes }
+			}
+			Yzleader_unknown1_image_visible = {
 				not = { has_country_flag = have_YCG_FS }
 			}
-			Yzleader_unknown2_visible = {
+			Yzleader_unknown2_image_visible = {
 				not = { has_country_flag = have_YCG_CM }
 			}
-			Yzleader_unknown3_visible = {
+			Yzleader_unknown3_image_visible = {
 				not = { has_country_flag = have_YCG_VC }
 			}
 		}
 		properties = {
-			Yzleader_portrait1 = {
+			# portrait1/2/3 的视觉层分别对应副主席、主席、第一书记；按钮层不替换纹理。
+			Yzleader_portrait1_image = {
 				image = "[Yzleader_portrait1_images]"
 			}
-			Yzleader_portrait2 = {
+			Yzleader_portrait2_image = {
 				image = "[Yzleader_portrait2_images]"
 			}
-			Yzleader_portrait3 = {
+			Yzleader_portrait3_image = {
 				image = "[Yzleader_portrait3_images]"
 			}
 		}
-
 	}
 
-	yz_money_window_gui = {	#经济界面
+	# 财政明细窗口。
+	yz_money_window_gui = {
 		window_name = "yz_money_window"
 		context_type = player_context
 		visible = {

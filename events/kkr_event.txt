@@ -34,12 +34,6 @@ country_event= {
                     corps_commander = {
                         traits = {
                             yz_easter_egg_character
-                            brilliant_strategist
-                            career_officer
-                            bearer_of_artillery
-                            infantry_officer
-                            cavalry_officer
-                            armor_officer
                             kukuru_1_trait
                             kukuru_2_trait
                             kukuru_3_trait
@@ -226,11 +220,37 @@ country_event= {        #素体准备完成
         name = kkr_event.4.a
         custom_effect_tooltip = Kukuru_atri_research_dynamic_modifier_tt
         add_to_variable = { KKR_atri_research_research_speed_factor = 0.05 tooltip = YZ_research_speed_factor_tt }
-        add_tech_bonus = {
-            bonus = 1
-            ahead_reduction = 2
-            uses = 2
-            category = industry
+        # 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+        if = {
+            limit = { has_global_flag = yz_md_startup_detected }
+            custom_effect_tooltip = yz_reward_kkr_industry_tt
+            hidden_effect = {
+                meta_effect = {
+                    text = {
+                        add_tech_bonus = {
+                            bonus = 1
+                            ahead_reduction = 2
+                            uses = 2
+                            category = CAT_industry
+                        }
+                    }
+                }
+            }
+        }
+        else = {
+            custom_effect_tooltip = yz_reward_kkr_industry_tt
+            hidden_effect = {
+                meta_effect = {
+                    text = {
+                        add_tech_bonus = {
+                            bonus = 1
+                            ahead_reduction = 2
+                            uses = 2
+                            category = industry
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -256,11 +276,41 @@ country_event= {        #AI重构准备完成
         kkr_refresh_favor_outputs = yes
         custom_effect_tooltip = Kukuru_atri_research_dynamic_modifier_tt
         add_to_variable = { KKR_atri_research_research_speed_factor = 0.05 tooltip = YZ_research_speed_factor_tt }
-        add_tech_bonus = {
-            bonus = 2
-            ahead_reduction = 5
-            uses = 5
-            category = electronics
+        # 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+        if = {
+            limit = { has_global_flag = yz_md_startup_detected }
+            custom_effect_tooltip = yz_reward_kkr_electronics_md_tt
+            hidden_effect = {
+                meta_effect = {
+                    text = {
+                        add_tech_bonus = {
+                            bonus = 2
+                            ahead_reduction = 5
+                            uses = 5
+                            category = CAT_computing_tech
+                            category = CAT_microchips
+                            category = CAT_internet_tech
+                            category = CAT_encryption_tech
+                            category = CAT_decryption_tech
+                        }
+                    }
+                }
+            }
+        }
+        else = {
+            custom_effect_tooltip = yz_reward_kkr_electronics_vanilla_tt
+            hidden_effect = {
+                meta_effect = {
+                    text = {
+                        add_tech_bonus = {
+                            bonus = 2
+                            ahead_reduction = 5
+                            uses = 5
+                            category = electronics
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -472,5 +522,4 @@ country_event= {        #结婚
         name = kkr_event.101.a
     }
 }
-
 

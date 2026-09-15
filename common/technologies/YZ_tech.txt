@@ -46,6 +46,96 @@ technologies = {
 		#hard_attack = 0.1
 	#}
 	}
+	yz_SCPartillery_1 = {
+		#SCP火炮彩蛋线二阶段
+		research_cost = 1.5
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		category_artillery = {
+			hard_attack = 20
+			ap_attack = 5
+		}
+		category_anti_air = {
+			hard_attack = 10
+			ap_attack = 5
+			soft_attack = 2
+		}
+	}
+	yz_SCPartillery_2 = {
+		#SCP火炮彩蛋线三阶段
+		research_cost = 1.5
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		category_anti_tank = {
+			hard_attack = 5
+			ap_attack = 2
+		}
+	}
+	yz_SCPartillery_3 = {
+		#SCP火炮彩蛋线四阶段
+		research_cost = 1.5
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		category_artillery = {
+			breakthrough = 10
+		}
+		category_anti_air = {
+			hard_attack = 10
+		}
+		category_anti_tank = {
+			ap_attack = 5
+		}
+	}
+	yz_SCPartillery_4 = {
+		#SCP火炮彩蛋线五阶段
+		research_cost = 1.5
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		category_artillery = {
+			combat_width = -2
+			soft_attack = 20
+			max_organisation = 50
+			max_strength = 20
+		}
+		category_anti_air = {
+			combat_width = -2
+			air_attack = 20
+			max_organisation = 50
+			max_strength = 20
+		}
+		category_anti_tank = {
+			combat_width = -2
+			hard_attack = 20
+			max_organisation = 50
+			max_strength = 20
+		}
+		category_rocket_artillery = {
+			soft_attack = 10
+			equipment_capture_factor = 0.1
+			max_organisation = 50
+			max_strength = 20
+		}
+	}
 	yz_infantry_1 = {
 		#柚子步兵改革一阶段
 		research_cost = 1.5

@@ -239,11 +239,6 @@ add_youzi_general_category = {
                             desc = gongping_corps_desc
                             traits={
                                 yz_yuzusoft_character
-                                adaptable
-                                infantry_leader
-                                scavenger
-                                camouflage_expert
-                                fast_planner
                                 maid_gongping_trait
                             }
                             skill=5
@@ -362,7 +357,6 @@ add_youzi_general_category = {
                             traits = {
                                 yz_yuzusoft_character
                                 yz_ebihara_minase_trait
-                                cavalry_officer armor_officer
                             }
                             skill = 5
                             attack_skill = 4
@@ -419,7 +413,6 @@ add_youzi_general_category = {
                             traits = {
                                 yz_yuzusoft_character
                                 yz_aragami_sayo_trait
-                                cavalry_officer armor_officer
                                 trait_maid_vampires
                             }
                             skill = 9
@@ -1068,10 +1061,6 @@ add_youzi_general_category = {
                                 ruyu_type_sword_big_teacher
                                 kabutochi
                                 regression_star
-                                offensive_doctrine
-                                trickster
-                                infantry_officer
-                                adaptable
                             }
                             skill = 9
                             attack_skill = 13
@@ -1142,9 +1131,6 @@ add_youzi_general_category = {
                             desc = van_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                old_guard
-                                brilliant_strategist
-                                inflexible_strategist
                                 maid_van_trait
                             }
                             skill = 1
@@ -1208,9 +1194,6 @@ add_youzi_general_category = {
                             desc = Verniy_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                naval_invader
-                                naval_liason
-                                inflexible_strategist
                                 maid_Verniy_trait
                                 yz_Verniy_trait
                             }
@@ -1266,9 +1249,6 @@ add_youzi_general_category = {
                             traits = {
                                 yz_easter_egg_character
                                 maid_Tsukimori_trait
-                                brilliant_strategist
-                                skilled_staffer
-                                bearer_of_artillery
                             }
                             skill = 1
                             attack_skill = 1
@@ -1319,7 +1299,6 @@ add_youzi_general_category = {
                             traits = {
                                 yz_easter_egg_character
                                 maid_o5j_trait
-                                inflexible_strategist
                             }
                             skill = 1
                             attack_skill = 1
@@ -1370,8 +1349,6 @@ add_youzi_general_category = {
                             traits = {
                                 yz_easter_egg_character
                                 maid_Weiss_trait
-                                career_officer
-                                trickster
                             }
                             skill = 1
                             attack_skill = 1
@@ -1450,60 +1427,6 @@ add_youzi_general_category = {
         }
     }
 
-    Ling_calling = {
-        icon = GFX_Ling
-        visible = {
-            is_ai = no
-            or = {
-                has_country_flag = qiyong_youzi_1
-                has_country_flag = qiyong_youzi_2
-                has_country_flag = qiyong_youzi_3
-            }
-            has_game_rule = {
-                rule = youzu_easter_egg_rule
-                option = I_need_my_love
-            }
-        }
-        cost = 1
-        fire_only_once = yes
-        complete_effect = {
-            set_country_flag = have_Ling
-            meta_effect = {
-                text = {
-                    generate_character = {
-                        token_base = Commander_Ling
-                        name = YZ_character_name_statistics_planning_manager
-                        gender = male
-                        nationality = prc
-                        portraits = {
-                            civilian = {
-                                large = "gfx/leader/Ling.png"
-                                small = "gfx/leader/Ling2.png"
-                            }
-                        }
-                        allowed_civil_war = { is_ai = no }
-                        corps_commander = {
-                            desc = Ling_corps_desc
-                            traits = {
-                                yz_easter_egg_character
-                                maid_Ling_trait
-                                yz_Ling_trait
-                                brilliant_strategist
-                                armor_officer
-                                adaptable
-                            }
-                            skill = 1
-                            attack_skill = 1
-                            defense_skill = 1
-                            planning_skill = 1
-                            logistics_skill = 1
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     Laoba_calling = {
         icon = GFX_Laoba
         visible = {
@@ -1555,9 +1478,6 @@ add_youzi_general_category = {
                                 yz_easter_egg_character
                                 maid_Laoba_trait
                                 yz_Laoba_trait
-                                brilliant_strategist
-                                adaptable
-                                jaeger
                             }
                             skill = 1
                             attack_skill = 1
@@ -1619,10 +1539,6 @@ add_youzi_general_category = {
                                     yz_easter_egg_character
                                     work_ai_help_you
                                     call_from_king_s_force
-                                    trickster
-                                    panzer_leader
-                                    commando
-                                    adaptable
                                 }
                                 skill=2
                                 attack_skill=8
@@ -1691,9 +1607,8 @@ add_youzi_general_category = {
                             desc = yuna_desc
                             traits = {
                                 yz_easter_egg_character
-                                panzer_leader
-                                light_small_speak_home      #我敢说十年内没人能想出这么逆天的翻译 ——huhu 2026.7.19 1:11
-                                technology_lover        #翻译的竟然还挺合理
+                                light_small_speak_home
+                                technology_lover
                             }
                             skill = 5
                             attack_skill = 10
@@ -2433,8 +2348,6 @@ add_youzi_general_category = {
                                     see_star
                                     ill_and_weak
                                     man_walk_in_night
-                                    inflexible_strategist
-                                    trait_cautious
                                 }
                                 skill = 1
                                 attack_skill = 1
@@ -2611,9 +2524,6 @@ add_youzi_general_category = {
                                 yz_easter_egg_character
                                 maid_Manbo_trait
                                 yz_Manbo_trait
-                                brilliant_strategist
-                                cavalry_officer
-                                adaptable
                             }
                             skill = 1
                             attack_skill = 1
@@ -3185,6 +3095,12 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_Mayu
+                    }
+                    yz_add_mayu_theorist_advisor = yes
+                }
+                if = {
+                    limit = {
+                        has_country_flag = have_Mayu
                         NOT = { any_army_leader = { has_trait = maid_Mayu_trait } }
                     }
                     add_corps_commander_role = {
@@ -3201,12 +3117,6 @@ add_youzi_general_category = {
                         planning_skill = 5
                         logistics_skill = 5
                     }
-                    advisor = {
-                    cost = 100
-                    slot = theorist
-                    idea_token = mayu
-                    traits = { mayu_theorist }
-                }
                 }
                 if = {
                     limit = {

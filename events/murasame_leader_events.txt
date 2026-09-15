@@ -8,10 +8,23 @@ country_event = {
 
     is_triggered_only = yes
 
+
+    option = {
+        name = murasame_event.1.a
+        trigger = {
+            has_global_flag = yz_md_startup_detected
+        }
+        custom_effect_tooltip = yz_md_appoint_country_leader_tt
+        hidden_effect = {
+            yz_md_appoint_murasame = yes
+        }
+    }
+
     option = {
         retire_country_leader = yes
         name = murasame_event.1.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = communism
         }
         set_rule = {
@@ -37,6 +50,7 @@ country_event = {
         retire_country_leader = yes
         name = murasame_event.2.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = democratic
         }
         set_rule = {
@@ -62,6 +76,7 @@ country_event = {
         retire_country_leader = yes
         name = murasame_event.3.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = fascism
         }
         set_rule = {
@@ -87,6 +102,7 @@ country_event = {
         retire_country_leader = yes
         name = murasame_event.4.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = neutrality
         }
         set_rule = {

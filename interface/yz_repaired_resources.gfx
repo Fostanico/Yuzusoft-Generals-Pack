@@ -31,10 +31,6 @@ spriteTypes = {
         texturefile = "gfx/decision/yz_author_ukisov.png"
     }
     spriteType = {
-        name = "GFX_Ling"
-        texturefile = "gfx/decision/yz_author_ling.png"
-    }
-    spriteType = {
         name = "GFX_Laoba"
         texturefile = "gfx/decision/yz_author_laoba.png"
     }

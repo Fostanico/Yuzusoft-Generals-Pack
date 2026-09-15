@@ -47,14 +47,8 @@ country_event = {
 						desc = Ayase_corps_desc
 						traits={
 						    yz_yuzusoft_character
-							organizer
-							panzer_leader
-							media_personality
-							JAP_communist_sympathizer
-							maid_cuodao_trait
-							brilliant_strategist
-							urban_assault_specialist
-							trickster
+                            maid_cuodao_trait
+                            yz_ayase_story_command_trait
 						}
 						skill=3
 						attack_skill=3
@@ -107,13 +101,8 @@ country_event = {
 						desc = Ayase_corps_desc
 						traits={
 						    yz_yuzusoft_character
-							organizer
-							panzer_leader
-							politically_connected
-							hidden_sympathies
-							media_personality
-							JAP_communist_sympathizer
-							maid_cuodao_trait
+                            maid_cuodao_trait
+                            yz_ayase_duty_command_trait
 						}
 						attack_skill = 6
 						defense_skill = 3
@@ -194,9 +183,7 @@ country_event = {
 			limit = {
 				has_trait = maid_cuodao_trait
 			}
-			add_unit_leader_trait = adaptable
-			add_unit_leader_trait = aggressive_assaulter
-			add_unit_leader_trait = offensive_doctrine
+            add_unit_leader_trait = yz_ayase_cat_tactics_trait
 		}
 		hidden_effect = {
 			country_event = { id = ayase_event.5 days = 20 }

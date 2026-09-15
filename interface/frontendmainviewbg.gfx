@@ -486,14 +486,6 @@ spriteTypes = {
 		texturefile = "gfx/traits/maid_Weiss_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Ling_trait"
-		texturefile = "gfx/traits/maid_Ling_trait.png"
-	}
-	spriteType = {
-		name = "GFX_trait_yz_Ling_trait"
-		texturefile = "gfx/traits/married_trait.png"
-	}
-	spriteType = {
 		name = "GFX_trait_maid_Tsukimori_trait"
 		texturefile = "gfx/traits/maid_Tsukimori_trait.png"
 	}

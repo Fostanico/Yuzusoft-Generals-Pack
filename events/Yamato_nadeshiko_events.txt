@@ -7,10 +7,23 @@ country_event = {
 
 	is_triggered_only = yes
 
+
+	option = {
+		name = yuyuan_event.1.a
+		trigger = {
+			has_global_flag = yz_md_startup_detected
+		}
+		custom_effect_tooltip = yz_md_appoint_country_leader_tt
+		hidden_effect = {
+			yz_md_appoint_hazuki = yes
+		}
+	}
+
 	option = {
 		retire_country_leader = yes
 		name = yuyuan_event.1.a
 		trigger = {
+			NOT = { has_global_flag = yz_md_startup_detected }
 			has_government = communism
 		}
 		set_rule = {
@@ -22,7 +35,7 @@ country_event = {
 		create_country_leader = {
 			name = ertiaoyuanyuyue
 			picture = GFX_portrait_ADD_yuyue
-			desc = yuyue_desc
+			desc = ertiaoyuanyuyue_desc
 			expire = "2095.1.1"
 			ideology = marxism
 			traits = {
@@ -35,6 +48,7 @@ country_event = {
 		retire_country_leader = yes
 		name = yuyuan_event.2.a
 		trigger = {
+			NOT = { has_global_flag = yz_md_startup_detected }
 			has_government = democratic
 		}
 		set_rule = {
@@ -46,7 +60,7 @@ country_event = {
 		create_country_leader = {
 			name = ertiaoyuanyuyue
 			picture = GFX_portrait_ADD_yuyue
-			desc = yuyue_desc
+			desc = ertiaoyuanyuyue_desc
 			expire = "2095.1.1"
 			ideology = conservatism
 			traits = {
@@ -59,6 +73,7 @@ country_event = {
 		retire_country_leader = yes
 		name = yuyuan_event.3.a
 		trigger = {
+			NOT = { has_global_flag = yz_md_startup_detected }
 			has_government = fascism
 		}
 		set_rule = {
@@ -70,7 +85,7 @@ country_event = {
 		create_country_leader = {
 			name = ertiaoyuanyuyue
 			picture = GFX_portrait_ADD_yuyue
-			desc = yuyue_desc
+			desc = ertiaoyuanyuyue_desc
 			expire = "2095.1.1"
 			ideology = fascism_ideology
 			traits = {
@@ -83,6 +98,7 @@ country_event = {
 		retire_country_leader = yes
 		name = yuyuan_event.4.a
 		trigger = {
+			NOT = { has_global_flag = yz_md_startup_detected }
 			has_government = neutrality
 		}
 		set_rule = {
@@ -94,7 +110,7 @@ country_event = {
 		create_country_leader = {
 			name = ertiaoyuanyuyue
 			picture = GFX_portrait_ADD_yuyue
-			desc = yuyue_desc
+			desc = ertiaoyuanyuyue_desc
 			expire = "2095.1.1"
 			ideology = despotism
 			traits = {

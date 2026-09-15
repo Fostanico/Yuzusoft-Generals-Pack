@@ -34,11 +34,6 @@ yzrecruit_murasame = {
                     desc = Murasame_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        brilliant_strategist
-                        trait_reckless
-                        inflexible_strategist
-                        ranger
-                        JAP_communist_sympathizer
                         maid_congyu_trait
                     }
                     skill=5
@@ -77,9 +72,6 @@ yzrecruit_lena = {
                     desc = Lena_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        jaeger
-                        winter_specialist
-                        trait_engineer
                         maid_lena_trait
                     }
                     skill=5
@@ -128,11 +120,6 @@ yzrecruit_mako = {
                     desc = Mako_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        operative_skill
-                        ranger commando
-                        offensive_doctrine
-                        victory_through_airpower
-                        trait_cautious armor_officer
                         maid_mozi_trait
                     }
                     skill=5
@@ -278,12 +265,6 @@ yzrecruit_nene = {
                     desc = ningning_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        trait_engineer
-                        inspirational_leader
-                        trait_reckless
-                        fortress_buster
-                        expert_delegator
-                        JAP_communist_sympathizer
                         maid_ninging_trait
                     }
                     skill = 5
@@ -323,11 +304,6 @@ yzrecruit_chou = {
                     traits={
                         yz_yuzusoft_character
                         maid_chou_trait
-                        organizer trait_cautious
-                        infantry_officer
-                        urban_assault_specialist
-                        defensive_doctrine
-                        skilled_staffer
                     }
                     skill=5
                     attack_skill=4
@@ -387,12 +363,6 @@ yzrecruit_megulu = {
                     desc = Meguru_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        organizer
-                        trait_cautious
-                        inflexible_strategist
-                        camouflage_expert
-                        panzer_leader
-                        JAP_communist_sympathizer
                         maid_meigulu_trait
                     }
                     skill=5
@@ -452,10 +422,6 @@ yzrecruit_toko = {
                     traits={
                         yz_yuzusoft_character
                         maid_toko_trait
-                        cavalry_officer
-                        harsh_leader
-                        logistics_wizard
-                        trait_reckless
                     }
                     skill=5
                     attack_skill=5
@@ -503,10 +469,6 @@ yzrecruit_wakana = {
                     traits={
                         yz_yuzusoft_character
                         maid_wakana_trait
-                        infantry_officer
-                        urban_assault_specialist
-                        war_hero
-                        trait_reckless
                     }
                     skill=4
                     attack_skill=4
@@ -554,13 +516,6 @@ yzrecruit_nanami = {
                     desc = Nanami_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        brilliant_strategist
-                        trait_reckless
-                        bearer_of_artillery
-                        urban_assault_specialist
-                        nkvd_rezident
-                        JAP_communist_sympathizer
-                        anti_fascist_agent
                         maid_qihai_trait
                     }
                     skill=5
@@ -612,10 +567,6 @@ yzrecruit_hazuki = {
                     traits={
                         yz_yuzusoft_character
                         maid_hazuki_trait
-                        naval_invader
-                        invader_ii
-                        naval_liason
-                        harsh_leader
                     }
                     skill=5
                     attack_skill=5
@@ -670,9 +621,6 @@ yzrecruit_mayu = {
                     desc = Mayu_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        brilliant_strategist
-                        thorough_planner
-                        organizer
                         maid_Mayu_trait
                     }
                     skill = 5
@@ -796,6 +744,30 @@ yzrecruit_mayu = {
         }
     }
 }
+# 式部茉优理论家顾问。招募只生成将领与四名科学家，顾问由七二一所
+# use_mayu 授予；复活决议走同一入口。已有 theorist 角色时不再添加。
+yz_add_mayu_theorist_advisor = {
+    if = {
+        limit = {
+            has_character = Shikibe_Mayu
+            NOT = {
+                Shikibe_Mayu = {
+                    has_advisor_role = theorist
+                }
+            }
+        }
+        add_advisor_role = {
+            character = Shikibe_Mayu
+            advisor = {
+                cost = 100
+                slot = theorist
+                idea_token = mayu
+                traits = { mayu_theorist }
+            }
+            activate = no
+        }
+    }
+}
 yzrecruit_chisaki = {
     add_political_power = -10
     set_country_flag = have_chisaki
@@ -822,10 +794,7 @@ yzrecruit_chisaki = {
                     desc = chisaki_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        infantry_leader
-                        paratrooper
                         maid_chisaki_trait
-                        inflexible_strategist
                     }
                     skill=5
                     attack_skill=4
@@ -873,11 +842,6 @@ yzrecruit_kanna = {
                     desc = kanna_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        political_dancer
-                        guerilla_fighter
-                        urban_assault_specialist
-                        trickster
-                        panzer_leader
                         maid_kanna_trait
                     }
                     skill=5
@@ -937,10 +901,6 @@ yzrecruit_zaozi = {
                     traits={
                         yz_yuzusoft_character
                         maid_zaozi_trait
-                        harsh_leader
-                        inflexible_strategist
-                        inspirational_leader
-                        trickster career_officer
                     }
                     skill=5
                     attack_skill=6
@@ -979,9 +939,6 @@ yzrecruit_nozomi = {
                     traits={
                         yz_yuzusoft_character
                         maid_nozomi_trait
-                        adaptable
-                        logistics_wizard
-                        trait_reckless
                     }
                     skill=5
                     attack_skill=5
@@ -1017,7 +974,6 @@ yzrecruit_mei = {
                     traits = {
                         yz_yuzusoft_character
                         yz_mei_trait
-                        infantry_officer
                         yz_baiban_trait
                     }
                     skill = 5
@@ -1067,12 +1023,6 @@ yzrecruit_fumika = {
                     traits={
                         yz_yuzusoft_character
                         maid_fumika_trait
-                        old_guard
-                        infantry_officer
-                        cavalry_officer
-                        trait_cautious
-                        career_officer
-                        organizer
                     }
                     skill=5
                     attack_skill=5
@@ -1117,7 +1067,6 @@ yzrecruit_orie = {
                     traits = {
                         yz_yuzusoft_character
                         yz_orie_trait
-                        infantry_officer
                         yz_baiban_trait
                     }
                     skill = 5
@@ -1175,9 +1124,6 @@ yzrecruit_kaguya = {
                     traits={
                         yz_yuzusoft_character
                         maid_kaguya_trait
-                        bearer_of_artillery
-                        adaptable
-                        brilliant_strategist
                     }
                     skill = 5
                     attack_skill = 5
@@ -1194,7 +1140,46 @@ yzrecruit_airi = {
     set_country_flag = have_airi
     country_event = { id = tongyong_event.1 }
     add_to_variable = { num_YZ_general = 2 }
+    # 千禧无顾问/总司令槽，顾问链第一环永远点不了。探测只认 yz_md_startup_detected，直接给将领。
     if = {
+        limit = {
+            has_global_flag = yz_md_startup_detected
+        }
+        custom_effect_tooltip = get_airi_unit_leader
+        meta_effect = {
+            text = {
+                generate_character = {
+                    token_base = Shiraga_Airi
+                    name = YZ_character_name_shiraga_airi
+                    can_be_captured = no
+                    gender = female
+                    nationality = JAP
+                    portraits = {
+                        civilian = {
+                            large = "gfx/leader/Airi_unit_leader.png"
+                            small = "gfx/leader/Airi_unit_leader2.png"
+                        }
+                    }
+                    allowed_civil_war = {
+                        is_ai = no
+                    }
+                    corps_commander = {
+                        desc = Airi_corps_desc
+                        traits={
+                            yz_yuzusoft_character
+                            yz_airi_trait
+                        }
+                        skill=3
+                        attack_skill=4
+                        defense_skill=2
+                        planning_skill=4
+                        logistics_skill=6
+                    }
+                }
+            }
+        }
+    }
+    else_if = {
         limit = {
             has_country_flag = qiyong_youzi_2
         }
@@ -1270,10 +1255,6 @@ yzrecruit_airi = {
                         traits={
                             yz_yuzusoft_character
                             yz_airi_trait
-                            trait_reckless
-                            trait_cautious
-                            brilliant_strategist
-                            infantry_leader
                         }
                         skill=3
                         attack_skill=4
@@ -1312,7 +1293,6 @@ yzrecruit_shirley = {
                     desc = shirley_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        JAP_communist_sympathizer
                         maid_shirley_trait
                     }
                     skill = 5
@@ -1351,7 +1331,6 @@ yzrecruit_xiyin = {
                         yz_yuzusoft_character
                         yz_yune_trait
                         #yz_baiban_trait
-                        adaptable
                     }
                     skill = 7
                     attack_skill = 11
@@ -1389,16 +1368,7 @@ yzrecruit_zhenxiao = {
                     desc = Masaki_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        trait_engineer
-                        inspirational_leader
-                        trait_reckless
-                        expert_delegator
-                        JAP_communist_sympathizer
-                        organizer
                         maid_masaki_trait
-                        adaptable
-                        ranger
-                        winter_specialist
                     }
                     skill = 5
                     attack_skill = 5
@@ -1470,7 +1440,6 @@ yzrecruit_tia = {
                     traits = {
                         yz_yuzusoft_character
                         yz_tia_trait
-                        infantry_officer
                         #yz_baiban_trait
                     }
                     skill = 5
@@ -1520,14 +1489,8 @@ yzrecruit_miu = {
                     desc = Miu_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        trait_engineer
-                        JAP_communist_sympathizer
                         maid_miu_trait
                         trait_maid_vampires
-                        adaptable
-                        ranger
-                        urban_assault_specialist
-                        trait_mountaineer
                     }
                     skill = 5
                     attack_skill = 7
@@ -1604,7 +1567,6 @@ yzrecruit_nicola = {
                     traits = {
                         yz_yuzusoft_character
                         yz_nicola_trait
-                        infantry_officer
                         trait_maid_vampires
                     }
                     skill = 5
@@ -1643,7 +1605,6 @@ yzrecruit_elina = {
                     traits = {
                         yz_yuzusoft_character
                         yz_elina_owen_trait
-                        infantry_officer
                         trait_maid_vampires
                     }
                     skill = 5
@@ -1688,9 +1649,6 @@ yzrecruit_liyin = {
                         yz_yuzusoft_character
                         maid_rio_trait_1
                         trait_maid_vampires
-                        harsh_leader
-                        inflexible_strategist
-                        infantry_officer
                     }
                     skill=6
                     attack_skill=6
@@ -1732,8 +1690,6 @@ yzrecruit_buliangzi = {
                     traits = {
                         yz_yuzusoft_character
                         yz_mera_azusa_trait
-                        infantry_officer
-
                     }
                     skill = 5
                     attack_skill = 5
@@ -1808,7 +1764,6 @@ yzrecruit_maya = {
                     traits = {
                         yz_yuzusoft_character
                         yz_maya_trait
-                        infantry_officer
                         help_from_haishangdushi
                     }
                     skill = 7
@@ -1846,7 +1801,6 @@ yzrecruit_sena = {
                     traits = {
                         yz_yuzusoft_character
                         yz_sena_trait
-                        infantry_officer
                         sena_gainianshen_da
                     }
                     skill = 5
@@ -1883,7 +1837,6 @@ yzrecruit_akari = {
                     traits = {
                         yz_yuzusoft_character
                         yz_akari_trait
-                        infantry_officer
                         aojiao_de_daxiaojie
                         akari_dahefuzi
                     }
@@ -2074,7 +2027,7 @@ yzrecruit_sana = {
                     desc = sana_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_sana_trait trait_reckless infantry_officer
+                        maid_sana_trait
                     }
                     skill=5
                     attack_skill=2
@@ -2186,7 +2139,6 @@ yzrecruit_mahiro = {
                     traits = {
                         yz_yuzusoft_character
                         yz_mahiro_trait
-                        infantry_officer
                         yz_baiban_trait
                     }
                     skill = 5
@@ -2223,7 +2175,6 @@ yzrecruit_yukari = {
                     traits = {
                         yz_yuzusoft_character
                         yz_yukari_trait
-                        infantry_officer
                         yz_baiban_trait
                     }
                     skill = 5
@@ -2299,9 +2250,6 @@ yzrecruit_yuki = {
                         yz_yuzusoft_character
                         yz_yuki_trait
                         yz_yuki_trait_2
-                        panzer_leader
-                        thorough_planner
-                        inspiring_leader
                     }
                     skill = 6
                     attack_skill = 6
@@ -2338,8 +2286,6 @@ yzrecruit_sumi = {
                         yz_yuzusoft_character
                         yz_sumi_trait
                         yz_sumi_trait_2
-                        panzer_leader
-                        adaptable
                     }
                     skill = 2
                     attack_skill = 1
@@ -2376,8 +2322,6 @@ yzrecruit_noriko = {
                         yz_yuzusoft_character
                         yz_noriko_trait
                         yz_noriko_trait_2
-                        infantry_leader
-                        political_analyst
                     }
                     skill = 4
                     attack_skill = 5
@@ -2414,8 +2358,6 @@ yzrecruit_tae = {
                         yz_yuzusoft_character
                         yz_tae_trait
                         yz_tae_trait_2
-                        panzer_leader
-                        inspiring_leader
                     }
                     skill = 5
                     attack_skill = 5

@@ -22,6 +22,48 @@ has_yz_general = {
 	}
 }
 
+# 国家 scope：生日按当前游戏日历判断，不依赖开局日期或每日累加变量。
+# global.year 是引擎当前年份；不要替换成千禧自行维护的 global.month。
+# 半开区间分别覆盖 6 月 8 日全天，以及 6 月 9 日至 28 日的 20 天补庆期。
+yz_sana_is_birthday = {
+	custom_trigger_tooltip = {
+		tooltip = sana_birthday_date_tt
+		meta_trigger = {
+			text = {
+				NOT = { date < "[YEAR].6.8" }
+				date < "[YEAR].6.9"
+			}
+			YEAR = global.year
+		}
+	}
+}
+
+yz_sana_is_birthday_makeup_window = {
+	custom_trigger_tooltip = {
+		tooltip = sana_birthday_makeup_date_tt
+		meta_trigger = {
+			text = {
+				NOT = { date < "[YEAR].6.9" }
+				date < "[YEAR].6.29"
+			}
+			YEAR = global.year
+		}
+	}
+}
+
+# 三个生日入口共用国家级年度记录；首次庆祝前变量不存在，视为本年尚未庆祝。
+# 加成到期只清理原有 sana_birthday_succeed，不清除此年份；跨年直接与 global.year 比较。
+# 调试开关在手动调用者的 OR 分支绕过日期和年度限制，不影响自动任务的日历规则。
+yz_sana_birthday_not_celebrated_this_year = {
+	custom_trigger_tooltip = {
+		tooltip = sana_birthday_not_celebrated_this_year_tt
+		OR = {
+			NOT = { has_variable = yz_sana_last_birthday_year }
+			NOT = { check_variable = { yz_sana_last_birthday_year = global.year } }
+		}
+	}
+}
+
 #神秘标记点@@
 
 yz_general = {
@@ -61,5 +103,33 @@ yz_academy_choose_work_menu_open = {
 		has_country_flag = yz_academy_choose_work_NK
 		has_country_flag = yz_academy_choose_work_TL
 		has_country_flag = yz_academy_choose_work_LLLJ
+	}
+}
+
+# 国家 scope。只有尚未开始任命或旧决议重组、且三席同为空缺或同为已就任时，才能启动核心圈重选。
+yz_core_group_reselection_available = {
+	has_country_flag = YzCoreGroup_visible
+	has_political_power > 119
+	NOT = { has_country_flag = yz_core_group_reselection_in_progress }
+	NOT = {
+		OR = {
+			has_country_flag = YzCoreGroup_first_secretary
+			has_country_flag = YzCoreGroup_chairman
+			has_country_flag = YzCoreGroup_vice_chair
+		}
+	}
+	OR = {
+		AND = {
+			has_country_flag = have_YCG_FS
+			has_country_flag = have_YCG_CM
+			has_country_flag = have_YCG_VC
+		}
+		NOT = {
+			OR = {
+				has_country_flag = have_YCG_FS
+				has_country_flag = have_YCG_CM
+				has_country_flag = have_YCG_VC
+			}
+		}
 	}
 }

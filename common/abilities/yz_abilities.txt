@@ -383,7 +383,7 @@ ability = {
             str_damage_multiplier = -0.5
         }
     }
-    sana_ability = { #佐奈技能  @统计计划管理 数值美工改一下就可以了
+    sana_ability = { #佐奈技能
         name = sana_ability
         desc = sana_ability_desc #额外描述
         sound_effect = sana_ability_sound #声音
@@ -415,19 +415,6 @@ ability = {
             breakthrough_factor = 0.5 #突破
             org_damage_multiplier = -1 #受到的组织度损伤
             str_damage_multiplier = -1 #受到的兵力损伤
-        }
-        one_time_effect = { #单次加成
-            hidden_effect = {
-                set_portraits = {
-                    army = {
-                        large = "gfx/leader/Ling.png"
-                    }
-                }
-                FROM = {
-                    country_event = { id = start_event.21 days = 15 }
-                }
-            }
-            #custom_effect_tooltip = nene_witch_ability_tt #技能描述
         }
     }
     SCP_in_deep_way = {

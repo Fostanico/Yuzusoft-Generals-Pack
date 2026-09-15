@@ -63,8 +63,6 @@ country_event = {
                         traits={
                             yz_easter_egg_character
                             tielurenou
-                            JAP_communist_sympathizer
-                            logistics_wizard
                         }
                         attack_skill = 1
                         defense_skill = 1
@@ -107,8 +105,6 @@ country_event = {
                         traits={
                             yz_easter_egg_character
                             tielurenou
-                            JAP_communist_sympathizer
-                            logistics_wizard
                         }
                         attack_skill = 4
                         defense_skill = 3
@@ -385,10 +381,23 @@ country_event = {
 
     is_triggered_only = yes
 
+
+    option = {
+        name = ASHC_event.20.a
+        trigger = {
+            has_global_flag = yz_md_startup_detected
+        }
+        custom_effect_tooltip = yz_md_appoint_country_leader_tt
+        hidden_effect = {
+            yz_md_appoint_baliu = yes
+        }
+    }
+
     option = {
         retire_country_leader = yes
         name = ASHC_event.20.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = communism
         }
         set_rule = {
@@ -414,6 +423,7 @@ country_event = {
         retire_country_leader = yes
         name = ASHC_event.21.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = democratic
         }
         set_rule = {
@@ -439,6 +449,7 @@ country_event = {
         retire_country_leader = yes
         name = ASHC_event.22.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = fascism
         }
         set_rule = {
@@ -464,6 +475,7 @@ country_event = {
         retire_country_leader = yes
         name = ASHC_event.23.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = neutrality
         }
         set_rule = {

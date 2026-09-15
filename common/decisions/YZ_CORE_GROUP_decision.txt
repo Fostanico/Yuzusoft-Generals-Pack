@@ -15,18 +15,25 @@ YZ_CORE_GROUP = {
             }
         }
     }
+    # 传统决议入口与头像入口并存；满足任命状态并支付 120 政治点即可重新确立核心圈。
     YzCoreGroup_election_start = {
         priority = 100
         days_remove = 5
         cost = 120
-        days_re_enable = 120
+        days_re_enable = 0
         visible = {
             has_country_flag = YzCoreGroup_visible
         }
+        available = {
+            hidden_trigger = { yz_core_group_reselection_available = yes }
+        }
         complete_effect = {
             clr_YzCoreGroup = yes
+            # 仅标记旧决议的 5 天重组过程，防止期间再从头像入口重复启动；这不是冷却。
+            set_country_flag = yz_core_group_reselection_in_progress
         }
         remove_effect = {
+            clr_country_flag = yz_core_group_reselection_in_progress
             set_country_flag = YzCoreGroup_visible
             set_country_flag = YzCoreGroup_first_secretary
         }
@@ -1141,6 +1148,51 @@ YZ_CORE_GROUP = {
             }
         }
     }
+    # 千禧替代爱莉顾问→总司令→小小的发现链。无顾问槽时招募已直接给将领；本决议发民族精神、通信水晶与结婚旗。
+    # 花费：50 政治点 + 5000 柚子币；国债走千禧官方入口 modify_debt_effect，debt 单位为十亿美元，故 100 = $100B。
+    yz_found_airixin_group = {
+        icon = GFX_airi
+        fire_only_once = yes
+        cost = 50
+        custom_cost_trigger = {
+            check_variable = {
+                var = yz_money
+                value = 5000
+                compare = greater_than_or_equals
+            }
+        }
+        custom_cost_text = YM_5000
+        visible = {
+            is_ai = no
+            has_global_flag = yz_md_startup_detected
+            has_country_flag = have_airi
+            NOT = { has_idea = yz_airixin }
+        }
+        available = {
+            NOT = { has_idea = yz_airixin }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            add_to_variable = {
+                yz_money = -5000
+                tooltip = yz_money_tooltip_subtain
+            }
+            set_temp_variable = { debt_change = 100 }
+            modify_debt_effect = yes
+            add_ideas = yz_airixin
+            set_technology = {
+                tech_airi_crystal_support = 1
+            }
+            set_technology = {
+                tech_airi_crystal_support_equipment_1 = 1
+            }
+            set_country_flag = unlock_airi_marry
+            custom_effect_tooltip = yz_found_airixin_group_effect_tt
+            unlock_decision_tooltip = get_married_27
+        }
+    }
 
     ##       ########    ###    ########  ######## ########
     ##       ##         ## ##   ##     ## ##       ##     ##
@@ -1355,13 +1407,17 @@ YZ_CORE_GROUP = {
         }
         complete_effect = {
             custom_effect_tooltip = makoto_become_leader
+            if = {
+                limit = { has_global_flag = yz_md_startup_detected }
+                custom_effect_tooltip = yz_md_appoint_country_leader_tt
+            }
             hidden_effect = {
-                retire_country_leader = yes
-                # 原版与 Millennium Dawn 使用不同意识形态和特质 ID，按开局兼容 flag 分流。
+                # 原版写死 marxism。千禧按当前 has_ideology 就任，中国/印度仍用原 MD 特质组。
                 if = {
                     limit = {
                         NOT = { has_global_flag = yz_md_startup_detected }
                     }
+                    retire_country_leader = yes
                     create_country_leader = {
                         name = YZ_character_name_misaka_makoto
                         picture = "GFX_leader_misaka_makoto"
@@ -1375,41 +1431,8 @@ YZ_CORE_GROUP = {
                         }
                     }
                 }
-                else_if = {
-                    limit = {
-                        OR = {
-                            tag = CHI
-                            tag = RAJ
-                        }
-                    }
-                    retire_country_leader = yes
-                    create_country_leader = {
-                        name = YZ_character_name_misaka_makoto
-                        picture = "GFX_leader_misaka_makoto"
-                        desc = misaka_makoto_leader_desc
-                        expire = "2200.1.1"
-                        ideology = Communist-State
-                        traits = {
-                            new_big_forward
-                            new_class_struggle
-                            people_s_new_revolution
-                        }
-                    }
-                }
                 else = {
-                    retire_country_leader = yes
-                    create_country_leader = {
-                        name = YZ_character_name_misaka_makoto
-                        picture = "GFX_leader_misaka_makoto"
-                        desc = misaka_makoto_leader_desc
-                        expire = "2200.1.1"
-                        ideology = Communist-State
-                        traits = {
-                            new_lenin
-                            social_new_designer
-                            comrade_we_forward
-                        }
-                    }
+                    yz_md_appoint_makoto = yes
                 }
             }
         }
@@ -1429,43 +1452,9 @@ YZ_CORE_GROUP = {
         }
         complete_effect = {
             custom_effect_tooltip = we_rebuild_it
+            custom_effect_tooltip = yz_md_appoint_country_leader_tt
             hidden_effect = {
-                if = {
-                    limit = {
-                        OR = {
-                            tag = CHI
-                            tag = RAJ
-                        }
-                    }
-                    retire_country_leader = yes
-                    create_country_leader = {
-                        name = YZ_character_name_true_misaka_makoto
-                        picture = "GFX_leader_misaka_makoto"
-                        desc = misaka_makoto_leader_desc
-                        expire = "2200.1.1"
-                        ideology = Communist-State
-                        traits = {
-                            we_will_rebuild_our_world
-                            fengshanguoshanfengshuiguoshui
-                            do_not_afraid_of_dead_and_scarif
-                        }
-                    }
-                }
-                else = {
-                    retire_country_leader = yes
-                    create_country_leader = {
-                        name = YZ_character_name_true_misaka_makoto
-                        picture = "GFX_leader_misaka_makoto"
-                        desc = misaka_makoto_leader_desc
-                        expire = "2200.1.1"
-                        ideology = Communist-State
-                        traits = {
-                            we_will_rebuild_our_world
-                            we_strong_than_hell
-                            do_not_afraid_of_dead_and_scarif
-                        }
-                    }
-                }
+                yz_md_appoint_makoto_dead = yes
             }
         }
     }
@@ -1482,8 +1471,18 @@ YZ_CORE_GROUP = {
         }
         complete_effect = {
             custom_effect_tooltip = huhu_become_leader
+            if = {
+                limit = { has_global_flag = yz_md_startup_detected }
+                custom_effect_tooltip = yz_md_appoint_country_leader_tt
+            }
             hidden_effect = {
                 if = {
+                    limit = {
+                        has_global_flag = yz_md_startup_detected
+                    }
+                    yz_md_appoint_huhu = yes
+                }
+                else_if = {
                     limit = {
                         has_government = communism
                     }
@@ -1572,8 +1571,18 @@ YZ_CORE_GROUP = {
         }
         complete_effect = {
             custom_effect_tooltip = chun_become_leader
+            if = {
+                limit = { has_global_flag = yz_md_startup_detected }
+                custom_effect_tooltip = yz_md_appoint_country_leader_tt
+            }
             hidden_effect = {
                 if = {
+                    limit = {
+                        has_global_flag = yz_md_startup_detected
+                    }
+                    yz_md_appoint_chun = yes
+                }
+                else_if = {
                     limit = {
                         has_government = communism
                     }
@@ -1680,6 +1689,13 @@ YZ_CORE_GROUP = {
                     has_government = democratic
                 }
                 country_event = yzgh_event.1
+            }
+            if = {
+                limit = {
+                    has_global_flag = yz_md_startup_detected
+                    has_government = nationalist
+                }
+                country_event = yzyh_event.1
             }
             clr_country_flag = open_Yz_leaders_list
         }

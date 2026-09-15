@@ -42,10 +42,7 @@ country_event = { 		##
 						desc = suzune_corps_desc
 						traits={
 						    yz_yuzusoft_character
-							maid_suzune_trait
-							organisational_leader
-							adaptable
-							logistics_wizard
+                            maid_suzune_trait
 						}
 						skill=5
 						attack_skill=3
@@ -108,10 +105,7 @@ country_event = { 		##
 						desc = suzune_corps_desc
 						traits={
 						    yz_yuzusoft_character
-							maid_suzune_trait
-							organisational_leader
-							adaptable
-							logistics_wizard
+                            maid_suzune_trait
 						}
 						skill=5
 						attack_skill=3

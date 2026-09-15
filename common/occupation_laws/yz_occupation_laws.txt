@@ -1,0 +1,243 @@
+# 柚子占领法追加定义：只注册本 Mod 自有法案，不覆盖原版或其他 Mod 的 occupation_laws.txt。
+# 默认法案与回退定义由原版或当前大型 Mod 提供；既有 ID、数值和门槛保持不变。
+# 自动切换仍由 Yuzu_land_on_actions.txt 管理，本次文件迁移不改变该机制。
+
+yuri_s_Revenge_occupation = {     #柚里的复仇
+	tooltip = "loc_yuri_occupation"
+	icon = GFX_yuri_occupation
+	sound_effect = "Martial_Law_Interface_yuri_s_Revenge_occupation"
+    #default_law = yes
+    #starting_law = yes
+	visible = {
+		OR = {
+			has_country_flag = qiyong_youzi_2
+			has_country_flag = qiyong_youzi_1
+			has_country_flag = qiyong_youzi_3
+		}
+        #any_state = {
+        #if = {             #这些是我发现了更加好的办法，所以把老的方法注释掉，但是保留备用——伊尔诺，2025.3.13，12：12（西比西比）
+        #	limit = {
+        #		is_controlled_by = ROOT
+        #		NOT = {
+        #			is_core_of = ROOT
+        #		}
+        #		OR = {
+        #			has_state_category = city
+        #			has_state_category = large_city
+        #			has_state_category = metropolis
+        #			has_state_category = megalopolis
+        #		}
+        #	}
+        #	has_state_flag = can_use_washizu_style
+        #}
+        #has_state_flag = can_use_yuri_style
+        #}
+	}
+
+	state_modifier = {
+		resistance_target 				= -0.5
+		compliance_gain 				= 0.10
+		required_garrison_factor 		= 0.15
+		resistance_damage_to_garrison 	= -0.15
+		local_factories 				= 0.15
+		local_resources 				= 0.1
+		enemy_operative_detection_chance_over_occupied_tag = 30
+		enemy_intel_network_gain_factor_over_occupied_tag = -0.45
+		local_manpower 					= 0.05
+        #required_garrison_factor 		= -0.30  我也不知道为什么我一开始驻军需求写了两个——伊尔诺 2025.3.11
+        #custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
+        #custom_modifier_tooltip = "resource_sabotage_decrease_tooltip"
+	}
+
+	ai_will_do = {
+		base = 200
+	}
+}
+
+hoori_style_occupation = {      #穗织式管理
+	tooltip = "loc_hoori_occupation"
+	icon = GFX_yoshino
+	sound_effect = "Martial_Law_Interface_yuri_s_Revenge_occupation"
+    #default_law = yes
+    #starting_law = yes
+	visible = {
+		OR = {
+			has_country_flag = qiyong_youzi_2
+			has_country_flag = qiyong_youzi_1
+			has_country_flag = qiyong_youzi_3
+		}
+
+        #any_state = {
+        #if = {
+        #	limit = {
+        #		is_controlled_by = ROOT
+        #		NOT = {
+        #			is_core_of = ROOT
+        #		}
+        #		OR = {
+        #			has_state_category = city
+        #			has_state_category = large_city
+        #			has_state_category = metropolis
+        #			has_state_category = megalopolis
+        #		}
+        #	}
+        #	has_state_flag = can_use_washizu_style
+        #}
+        #	has_state_flag = can_use_hoori_style
+        #}
+	}
+
+
+	state_modifier = {
+		resistance_target 				= -0.25
+		compliance_gain 				= 0.025
+		required_garrison_factor 		= -0.25
+		resistance_damage_to_garrison 	= -0.25
+		local_factories 				= 0.15
+		local_resources 				= 0.5
+		enemy_operative_detection_chance_over_occupied_tag = 10
+		enemy_intel_network_gain_factor_over_occupied_tag = -0.25
+		local_manpower 					= 0.4
+        #required_garrison_factor 		= -0.30
+        #custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
+        #custom_modifier_tooltip = "resource_sabotage_decrease_tooltip"
+	}
+
+	ai_will_do = {
+		base = 200
+	}
+}
+
+washizu_style_occupation = {      #鹫逗式管理
+	tooltip = "loc_washizu_occupation"
+	icon = GFX_lingnai
+	sound_effect = "Martial_Law_Interface_yuri_s_Revenge_occupation"
+    #default_law = yes
+    #starting_law = yes
+	visible = {
+		OR = {
+			has_country_flag = qiyong_youzi_2
+			has_country_flag = qiyong_youzi_1
+			has_country_flag = qiyong_youzi_3
+		}
+        #FROM = {
+        #	any_state = {
+        #		has_state_flag = can_use_washizu_style
+        #	}
+        #}
+        #any_state = {
+        #if = {
+        #	limit = {
+        #		is_controlled_by = ROOT
+        #		NOT = {
+        #			is_core_of = ROOT
+        #		}
+        #		OR = {
+        #			has_state_category = city
+        #			has_state_category = large_city
+        #			has_state_category = metropolis
+        #			has_state_category = megalopolis
+        #		}
+        #	}
+        #	has_state_flag = can_use_washizu_style
+        #}
+        #	has_state_flag = can_use_washizu_style
+        #}
+	}
+
+	state_modifier = {
+		resistance_target 				= -0.15
+		compliance_gain 				= 0.015
+		required_garrison_factor 		= 0.25
+		resistance_damage_to_garrison 	= -0.25
+		local_factories 				= 0.5
+		local_resources 				= 0.2
+		enemy_operative_detection_chance_over_occupied_tag = 10
+		enemy_intel_network_gain_factor_over_occupied_tag = -0.25
+		local_manpower 					= 0.15
+        #required_garrison_factor 		= -0.30
+        #custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
+        #custom_modifier_tooltip = "resource_sabotage_decrease_tooltip"
+	}
+
+	ai_will_do = {
+		base = 200
+	}
+}
+
+let_them_fly_occupation = {          #把他们上市！    ——暂时废弃，伊尔诺，2025.3.13，12：14
+	icon = 13
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+    #fallback_law = military_governor_occupation
+
+	visible = {
+		has_country_flag = qiyong_youzi_2
+		has_country_flag = qiyongcaidan
+        #has_dlc = "Gotterdammerung"
+        #BEL = {
+        #	has_completed_focus = BEL_secretaries_general
+        #}
+		FROM = { original_tag = USA }
+        #NOT = {
+        #	has_global_flag = BEL_no_secretaries_general
+        #}
+	}
+
+	state_modifier = { #CHANGES HERE NEED TO BE APPLIED ALSO IN ITA_fake_colonial_police_law idea TODO_GARETH: anything to do here?
+		resistance_target 				= -0.5
+		compliance_gain 				= 1
+		required_garrison_factor 		= -0.5
+		resistance_damage_to_garrison 	= -0.5
+		local_factories 				= 0.5
+		local_resources 				= 0.5
+		enemy_operative_detection_chance_over_occupied_tag = 300
+		enemy_intel_network_gain_factor_over_occupied_tag = -1
+		local_manpower 					= 0.20
+	}
+
+	ai_will_do = {
+		base = 250
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.3}
+			add = 200
+		}
+
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.44}
+			set_temp_variable = { requirement_limit = 0.35 }
+			if = {
+				limit = { occupation_law = local_police_force_garrison }
+				set_temp_variable = { requirement_limit = 0.55 }
+			}
+			check_variable = { garrison_min_support_ratio < requirement_limit }
+			add = 350
+		}
+	}
+}
+
+test_law = {
+	icon = 12
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+
+	visible = {
+        #original_tag = TUR
+        #has_dlc = "Battle for the Bosporus"
+        #OR = {
+        #	has_completed_focus = TUR_a_common_destiny_for_all_of_turkey
+        #	has_completed_focus = TUR_permit_regional_elections
+        #}
+        #FROM = { original_tag = KUR }
+		has_country_flag = now_test_occupation_law
+	}
+
+	state_modifier = {
+		compliance_gain 				= 0.03
+		required_garrison_factor 		= -0.5
+		resistance_damage_to_garrison 	= -0.3
+		resistance_decay 				= 0.5
+	}
+
+	ai_will_do = {
+		base = 200
+	}
+}

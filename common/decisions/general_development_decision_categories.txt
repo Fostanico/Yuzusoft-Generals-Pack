@@ -464,7 +464,7 @@ general_develpomen_decision_category = {
                 limit = {
                     has_trait = maid_noa_trait
                 }
-                add_unit_leader_trait = panzer_leader
+                add_unit_leader_trait = yz_noa_armor_training_trait
             }
         }
     }
@@ -498,7 +498,7 @@ general_develpomen_decision_category = {
                 limit = {
                     has_trait = maid_noa_trait
                 }
-                add_unit_leader_trait = adaptable
+                add_unit_leader_trait = yz_noa_adaptation_training_trait
             }
 
         }
@@ -1020,9 +1020,8 @@ general_develpomen_decision_category = {
                 limit = {
                     has_trait = maid_rio_trait_1
                 }
-                add_unit_leader_trait = adaptable
+                add_unit_leader_trait = yz_rio_tamed_destiny_trait
                 remove_unit_leader_trait = trait_maid_vampires
-                add_unit_leader_trait = panzer_leader
 
                 add_attack = 1
                 add_logistics = 3
@@ -1645,6 +1644,8 @@ general_develpomen_decision_category = {
     }
 
     # 作用：在自动模式下于每年6月8日执行普通生日的完整成长效果；要点：自动扣除75政治点，并以200天移除期保留原生日决议修正。署名：伊尔诺+2026-06-08+assisted by Codex
+    # 激活与完成均复核实际日期和年度记录，防止切换模式或待完成任务重复结算；不承诺零点调度。
+    # 旧日计数只为玩家推进；移除计数后仍显式保留普通生日入口的玩家限定。
     sana_automatic_birthday = {
         icon = GFX_zuonai
         days_mission_timeout = 1
@@ -1652,16 +1653,24 @@ general_develpomen_decision_category = {
         selectable_mission = no
         is_good = yes
         activation = {
+            is_ai = no
             has_country_flag = sana_automatic_birthday_enabled
             has_country_flag = have_sana
             has_country_flag = qiyong_youzi_2
             not = { has_country_flag = yz_bad_end }
-            check_variable = {
-                date_counter = 158
-            }
+            yz_sana_is_birthday = yes
+            yz_sana_birthday_not_celebrated_this_year = yes
         }
         available = {
-            always = yes
+            hidden_trigger = {
+                is_ai = no
+                has_country_flag = sana_automatic_birthday_enabled
+                has_country_flag = have_sana
+                has_country_flag = qiyong_youzi_2
+                NOT = { has_country_flag = yz_bad_end }
+            }
+            yz_sana_is_birthday = yes
+            yz_sana_birthday_not_celebrated_this_year = yes
         }
         modifier = {
             consumer_goods_factor = -0.05
@@ -1673,6 +1682,7 @@ general_develpomen_decision_category = {
         }
         complete_effect = {
             hidden_effect = {
+                set_variable = { yz_sana_last_birthday_year = global.year }
                 play_song = youzu22
             }
             add_political_power = -75
@@ -1792,8 +1802,10 @@ general_develpomen_decision_category = {
         }
         available = {
             OR = {
-                check_variable = {
-                    date_counter = 158
+                AND = {
+                    hidden_trigger = { is_ai = no }
+                    yz_sana_is_birthday = yes
+                    yz_sana_birthday_not_celebrated_this_year = yes
                 }
                 has_country_flag = debug_love_sana_everyday
             }
@@ -1809,6 +1821,7 @@ general_develpomen_decision_category = {
         }
         complete_effect = {
             hidden_effect = {
+                set_variable = { yz_sana_last_birthday_year = global.year }
                 play_song = youzu22
             }
             add_to_variable = {sana_army_attack = 0.025}
@@ -1932,18 +1945,9 @@ general_develpomen_decision_category = {
         available = {
             OR = {
                 AND = {
-                    check_variable = {
-                        date_counter > 158
-                    }
-                    check_variable = {
-                        date_counter < 179
-                    }
-                    custom_trigger_tooltip = {
-                        tooltip = sana_birthday_not_celebrated_this_year_tt
-                        NOT = {
-                            has_country_flag = sana_birthday_succeed
-                        }
-                    }
+                    hidden_trigger = { is_ai = no }
+                    yz_sana_is_birthday_makeup_window = yes
+                    yz_sana_birthday_not_celebrated_this_year = yes
                 }
                 has_country_flag = debug_love_sana_everyday
             }
@@ -1959,6 +1963,7 @@ general_develpomen_decision_category = {
         }
         complete_effect = {
             hidden_effect = {
+                set_variable = { yz_sana_last_birthday_year = global.year }
                 play_song = youzu22
             }
             add_to_variable = {sana_army_attack = 0.01}
@@ -2446,5 +2451,4 @@ Roka_Koharu_decision_category = {
         }
     }
 }
-
 

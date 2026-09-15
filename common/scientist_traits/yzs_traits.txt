@@ -1,5 +1,9 @@
 
 test_yz_scientist_trait = {
+    # 仅供脚本显式赋予，排除随机招募科学家的特质选择。
+    available = {
+        always = no
+    }
 
     modifier = {
         special_project_speed_factor = 0.1	#特殊项目速度
@@ -12,6 +16,10 @@ test_yz_scientist_trait = {
 }
 
 scientist_trait_yz_research_speed_trait = {
+    # 仅供脚本显式赋予，排除随机招募科学家的特质选择。
+    available = {
+        always = no
+    }
     specialization = { specialization_land }
     modifier = {
         sp_tag_aircraft_speed_factor = 0.5
@@ -30,6 +38,10 @@ scientist_trait_yz_research_speed_trait = {
     }
 }
 takashiro_maya_tenshen_trait = {
+    # 仅供脚本显式赋予，排除随机招募科学家的特质选择。
+    available = {
+        always = no
+    }
     modifier = {
         special_project_speed_factor = 200
         scientist_breakthrough_bonus_factor = 200

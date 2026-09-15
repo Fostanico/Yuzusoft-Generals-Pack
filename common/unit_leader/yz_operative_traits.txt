@@ -60,4 +60,51 @@ leader_traits = {
             target_sabotage_cost = -0.75
         }
     }
+    yz_operative_saturo_trait = {
+        type = operative
+        trait_type = personality_trait
+        new_commander_weight = {
+            factor = 0
+        }
+        modifier = {
+            intel_network_gain = 8
+            intelligence_agency_defense = 2
+            intelligence_operation_speed = 1
+            operation_cost = -0.5
+            operation_outcome = 0.5
+            own_operative_capture_chance_factor = -1
+            own_operative_harmed_time_factor = -1
+            own_operative_detection_chance = 25
+            own_operative_forced_into_hiding_time_factor = -1
+            boost_ideology_mission_factor = 1
+            propaganda_mission_factor = 1
+            diplomatic_pressure_mission_factor = 1
+            control_trade_mission_factor = 1
+            boost_resistance_factor = 1
+            operative_death_on_capture_chance = -1.1
+        }
+    }
+    yz_operative_nanami_trait = {
+        type = operative
+        trait_type = personality_trait
+        new_commander_weight = {
+            factor = 0
+        }
+        modifier = {
+            intel_network_gain = 10
+            intelligence_agency_defense = 4 
+            intelligence_operation_speed = 1
+            operation_cost = -0.5
+            operation_outcome = 0.5
+            own_operative_capture_chance_factor = -1
+            own_operative_harmed_time_factor = -1
+            own_operative_detection_chance = -25
+            boost_ideology_mission_factor = 2
+            propaganda_mission_factor = 2
+            diplomatic_pressure_mission_factor = 2
+            control_trade_mission_factor = 2
+            boost_resistance_factor = 5
+            operative_death_on_capture_chance = -1.1
+        }
+    }
 }

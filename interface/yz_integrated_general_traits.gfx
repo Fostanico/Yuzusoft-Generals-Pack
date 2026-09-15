@@ -1,0 +1,27 @@
+spriteTypes = {
+    # Route and training traits reuse the character's established portrait-style trait icon.
+    spriteType = {
+        name = "GFX_trait_yz_ayase_story_command_trait"
+        texturefile = "gfx/traits/maid_cuodao_trait.png"
+    }
+    spriteType = {
+        name = "GFX_trait_yz_ayase_duty_command_trait"
+        texturefile = "gfx/traits/maid_cuodao_trait.png"
+    }
+    spriteType = {
+        name = "GFX_trait_yz_ayase_cat_tactics_trait"
+        texturefile = "gfx/traits/maid_cuodao_trait.png"
+    }
+    spriteType = {
+        name = "GFX_trait_yz_noa_armor_training_trait"
+        texturefile = "gfx/traits/maid_noa_trait.png"
+    }
+    spriteType = {
+        name = "GFX_trait_yz_noa_adaptation_training_trait"
+        texturefile = "gfx/traits/maid_noa_trait.png"
+    }
+    spriteType = {
+        name = "GFX_trait_yz_rio_tamed_destiny_trait"
+        texturefile = "gfx/traits/maid_rio_trait.png"
+    }
+}

@@ -26,6 +26,7 @@
  YzLeader_orie_image: "GFX_portrait_orie"
  YzLeader_kaguya_image: "GFX_portrait_kaguya"
  YzLeader_kurumi_image: "GFX_portrait_kurumi"
+ yz_core_group_portrait_reselection_tt: "§Y中核団を再編する§!\n£pol_power §Y120§!を消費して、第一書記・主席・副主席を改めて任命できます。\n\n§Gいずれかの肖像をクリックして開始します。§!"
 
  #柚子操作面板
  YZ_setting_tt: "§Yゆずソフト操作パネル§!を開きます。ロープをクリックしてドラッグすると§Yナナミ§!を動かせます"

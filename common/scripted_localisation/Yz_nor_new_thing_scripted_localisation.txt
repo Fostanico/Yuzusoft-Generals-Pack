@@ -71,6 +71,10 @@ defined_text = {     #小夜市长特质
 		}
 		localization_key = YZ_aragami_sayo_our_role_model_of_victory_name_n
 	}
+	# Final unconditional fallback covers MD nationalist and other non-vanilla groups.
+	text = {
+		localization_key = yz_md_trait_sayo_banner
+	}
 }
 defined_text = {      #小夜吸血鬼特质
 	name = YZ_aragami_sayo_two_hundred_years_vampire_name
@@ -109,6 +113,10 @@ defined_text = {      #小夜吸血鬼特质
 			}
 		}
 		localization_key = YZ_aragami_sayo_two_hundred_years_vampire_name_n
+	}
+	# Keep the four historical branches; never return an empty trait name.
+	text = {
+		localization_key = yz_md_trait_sayo_foresight
 	}
 }
 defined_text = {      #参谋总长头像——2026.5.3，12：26，井向真琴

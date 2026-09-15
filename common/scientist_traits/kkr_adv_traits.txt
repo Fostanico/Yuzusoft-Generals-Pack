@@ -1,5 +1,9 @@
 
 kkr_scientist_trait = {
+	# 仅供脚本显式赋予，排除随机招募科学家的特质选择。
+	available = {
+		always = no
+	}
 	
 	modifier = {
 		special_project_speed_factor = 0.996	#特殊项目速度

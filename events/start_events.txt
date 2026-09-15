@@ -113,21 +113,3 @@ country_event= {           #抽到市杵宍姬命——2026.5.28，22：47，井
         #custom_effect_tooltip = toujiang_tt
     }
 }
-
-country_event= {           #佐奈立绘倒计时
-    id = start_event.21
-    is_triggered_only = yes
-    hidden = yes
-    immediate = {
-        random_unit_leader = {
-            limit = {
-                has_trait = maid_sana_trait
-            }
-            set_portraits = {
-                army = {
-                    large = "gfx/leader/sana.png"
-                }
-            }
-        }
-    }
-}

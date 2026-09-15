@@ -1,3 +1,4 @@
+# 角色专属特质仅由指定招募或事件赋予，禁止进入随机国家领袖特质池。
 #防覆盖文件
 leader_traits = {
     trait_sub_lingdiningning = {
@@ -150,6 +151,7 @@ leader_traits = {
     }
     #美咕噜顾问
     trait_sub_meigulu = {
+        random = no
         military_industrial_organization_size_up_requirement = -0.4        #升级规模要求
         military_industrial_organization_funds_gain = 0.8       #经费获取
         military_industrial_organization_research_bonus = 0.2       #研究加成

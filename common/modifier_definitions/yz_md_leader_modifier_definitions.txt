@@ -1,0 +1,192 @@
+# Static registration for the MD leader-trait adapter; NOT an economic implementation.
+# Source: installed Millennium Dawn Beta 2.0.0 (Workshop 3374271790), 2026-09-02.
+# Every entry mirrors upstream metadata exactly. Keep a unique filename: never shadow
+# MD's money/energy/influence/modifier_definitions.txt, which contain many other keys.
+# Without MD this only lets the parser recognize tokens; no budget system is installed.
+# With MD the same token/metadata refers to its existing modifier; this assigns no bonus.
+# Recheck metadata against the selected MD build when upgrading; do not invent aliases,
+# because MD's modifier@ consumers read these exact names. Fresh combined-load log test pending.
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+airforce_personnel_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+army_personnel_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+bureaucracy_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+civ_facs_worker_requirement_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+corporate_tax_income_multiplier_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+cyber_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+education_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/energy_modifier_definitions.txt
+energy_use_multiplier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+equipment_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/influence_modifier_definitions.txt
+foreign_influence_defense_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/influence_modifier_definitions.txt
+foreign_influence_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+health_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+interest_rate_multiplier_modifier = {
+	color_type = bad
+	value_type = number
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/modifier_definitions.txt
+investment_cost_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/modifier_definitions.txt
+investment_duration_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+mil_facs_worker_requirement_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+navy_personnel_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+offices_worker_requirement_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+police_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+population_tax_income_multiplier_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+productivity_growth_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	category = country
+}
+
+# MD: common/modifier_definitions/modifier_definitions.txt
+receiving_investment_duration_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+# MD: common/modifier_definitions/money_modifier_definitions.txt
+social_cost_multiplier_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	category = country
+}

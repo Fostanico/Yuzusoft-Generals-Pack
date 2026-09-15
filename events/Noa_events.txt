@@ -44,7 +44,7 @@ country_event= {
                         desc = noa_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_noa_trait JAP_communist_sympathizer Brilliant_Strategist armor_officer
+                            maid_noa_trait
                         }
                 # id = 1001211 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         attack_skill = 3
@@ -93,7 +93,8 @@ country_event= {
                         desc = noa_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_noa_trait maid_noa1_trait JAP_communist_sympathizer Brilliant_Strategist armor_officer
+                            maid_noa_trait
+                            maid_noa1_trait
                         }
                 # id = 1001212 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         attack_skill = 6

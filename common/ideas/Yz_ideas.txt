@@ -54,6 +54,43 @@ ideas = {
 				political_power_factor = 0.01
 			}
 		}
+		youzu_SCPartillery_I = {
+			picture = yuzu_artillery
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				army_artillery_attack_factor = 5
+				army_artillery_defence_factor = 3
+			}
+		}
+		youzu_SCPartillery_II = {
+			picture = yuzu_artillery
+			allowed_civil_war = {
+				is_ai = no
+			}
+			modifier = {
+				army_artillery_attack_factor = 5
+				army_artillery_defence_factor = 3
+			}
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					build_cost_ic = -0.75
+					reliability = 0.2
+				}
+				anti_tank = {
+					instant = yes
+					build_cost_ic = -0.75
+					reliability = 0.2
+				}
+				anti_air = {
+					instant = yes
+					build_cost_ic = -0.75
+					reliability = 0.2
+				}
+		}
+	}
 		youzu_infantry_I = {
 			picture = yuzu_infantry
 			allowed_civil_war = {
@@ -1127,6 +1164,22 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.5
 				subversive_activites_upkeep = -0.1
+			}
+		}
+		# 千禧爱莉信集团。顾问槽不存在时，用民族精神承接爱莉的通讯线。
+		yz_airixin = {
+			picture = GFX_idea_yz_airixin
+			allowed_civil_war = {
+				is_ai = no
+			}
+			removal_cost = -1
+			modifier = {
+				encryption_factor = 0.15
+				decryption_factor = 0.15
+				coordination_bonus = 0.10
+				land_reinforce_rate = 0.05
+				supply_consumption_factor = -0.08
+				research_speed_factor = 0.03
 			}
 		}
 	}

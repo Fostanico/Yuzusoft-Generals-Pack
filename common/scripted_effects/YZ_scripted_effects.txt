@@ -620,6 +620,20 @@ clr_YzCoreGroup = {
 	clr_country_flag = YCG_VC_misaka_makoto
 }
 
+# 国家 scope。头像点击后立即清空旧席位并开放第一书记任命；三席人选仍由原决议完成。
+# 效果内部再次检查任命状态与政治点，避免只依赖 GUI 禁用态。
+yz_begin_core_group_reselection = {
+	if = {
+		limit = { yz_core_group_reselection_available = yes }
+		add_political_power = -120
+		clr_YzCoreGroup = yes
+		clr_country_flag = YzCoreGroup_first_secretary
+		clr_country_flag = YzCoreGroup_chairman
+		clr_country_flag = YzCoreGroup_vice_chair
+		set_country_flag = YzCoreGroup_first_secretary
+	}
+}
+
 noa_love_up = {			###noa好感度增加
 	if = {
 		limit = { has_idea = noa_love_level_3 }

@@ -269,12 +269,16 @@ YZS_scientist_category = {
         available = {
             has_country_flag = have_Mayu
         }
-
+        complete_effect = {
+            custom_effect_tooltip = use_mayu_advisor_tt
+            yz_add_mayu_theorist_advisor = yes
+        }
         remove_effect = {
             custom_effect_tooltip = yz_721_research_facility_dynamic_modifier_tt
             add_to_variable = { yz_721_research_research_speed_factor = 0.04  tooltip = YZ_research_speed_factor_tt }
             add_to_variable = { yz_721_research_consumer_goods_factor = 0.01 tooltip = consumer_goods_factor_tt }
             set_country_flag = used_mayu
+            yz_add_mayu_theorist_advisor = yes
         }
     }
 
@@ -1219,12 +1223,6 @@ YZS_scientist_category = {
                         corps_commander = {
                             traits = {
                                 yz_easter_egg_character
-                                brilliant_strategist
-                                career_officer
-                                bearer_of_artillery
-                                infantry_officer
-                                cavalry_officer
-                                armor_officer
                                 ATRI_trait
                             }
                             skill = 1

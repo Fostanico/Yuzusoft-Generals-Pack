@@ -8,10 +8,23 @@ country_event = {
 
 	is_triggered_only = yes
 
+
+	option = {
+		name = yzgh_event.1.a
+		trigger = {
+			has_global_flag = yz_md_startup_detected
+		}
+		custom_effect_tooltip = yz_md_appoint_country_leader_tt
+		hidden_effect = {
+			yz_md_appoint_yzgh = yes
+		}
+	}
+
 	option = {
 		retire_country_leader = yes
 		name = yzgh_event.1.a
 		trigger = {
+			NOT = { has_global_flag = yz_md_startup_detected }
 			has_government = democratic
 		}
 		hidden_effect = {

@@ -257,15 +257,11 @@ Miyako_steal_decision = {
 				limit = {
 					has_country_flag = Miyako_steal_have_chosen
 				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -5000
-				}
+				set_temp_variable = { yz_eq_amount = -5000 }
+				yz_stockpile_infantry = yes
 			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 5000
-			}
+			set_temp_variable = { yz_eq_amount = 5000 }
+			yz_stockpile_infantry = yes
 		}
 	}
 	Miyako_steal_support_equipment = {
@@ -295,15 +291,11 @@ Miyako_steal_decision = {
 				limit = {
 					has_country_flag = Miyako_steal_have_chosen
 				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = -2000
-				}
+				set_temp_variable = { yz_eq_amount = -2000 }
+				yz_stockpile_support = yes
 			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 2000
-			}
+			set_temp_variable = { yz_eq_amount = 2000 }
+			yz_stockpile_support = yes
 		}
 	}
 	Miyako_steal_artillery_equipment = {
@@ -371,15 +363,11 @@ Miyako_steal_decision = {
 				limit = {
 					has_country_flag = Miyako_steal_have_chosen
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = -500
-				}
+				set_temp_variable = { yz_eq_amount = -500 }
+				yz_stockpile_motorized = yes
 			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 500
-			}
+			set_temp_variable = { yz_eq_amount = 500 }
+			yz_stockpile_motorized = yes
 		}
 	}
 	Miyako_steal_mechanized_equipment = {
@@ -409,15 +397,11 @@ Miyako_steal_decision = {
 				limit = {
 					has_country_flag = Miyako_steal_have_chosen
 				}
-				add_equipment_to_stockpile = {
-					type = mechanized_equipment
-					amount = -1000
-				}
+				set_temp_variable = { yz_eq_amount = -1000 }
+				yz_stockpile_mechanized = yes
 			}
-			add_equipment_to_stockpile = {
-				type = mechanized_equipment
-				amount = 1000
-			}
+			set_temp_variable = { yz_eq_amount = 1000 }
+			yz_stockpile_mechanized = yes
 		}
 	}
 	Miyako_steal_fuel = {

@@ -101,37 +101,123 @@ country_event= {
 	}
 	option = {
 		name = yz_721_scientist_event.3.a
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = armor
+		# 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+		if = {
+			limit = { has_global_flag = yz_md_startup_detected }
+			custom_effect_tooltip = yz_reward_721_armor_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_armor
+						}
+					}
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = yz_reward_721_armor_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = armor
+						}
+					}
+				}
+			}
 		}
 	}
 
 	option = {
 		name = yz_721_scientist_event.3.b
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = artillery
+		# 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+		if = {
+			limit = { has_global_flag = yz_md_startup_detected }
+			custom_effect_tooltip = yz_reward_721_artillery_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_artillery
+						}
+					}
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = yz_reward_721_artillery_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = artillery
+						}
+					}
+				}
+			}
 		}
 	}
 	option = {
 		name = yz_721_scientist_event.3.c
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = infantry_weapons
+		# 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+		if = {
+			limit = { has_global_flag = yz_md_startup_detected }
+			custom_effect_tooltip = yz_reward_721_infantry_md_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_inf_wep
+						}
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_inf
+						}
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_cnc
+							category = CAT_support_weapons
+						}
+					}
+				}
+			}
 		}
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = infantry_tech
-		}
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = support_tech
+		else = {
+			custom_effect_tooltip = yz_reward_721_infantry_vanilla_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = infantry_weapons
+						}
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = infantry_tech
+						}
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = support_tech
+						}
+					}
+				}
+			}
 		}
 	}
 	option = {
@@ -152,32 +238,116 @@ country_event= {
 	}
 	option = {
 		name = yz_721_scientist_event.4.a
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = air_equipment
+		# 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+		if = {
+			limit = { has_global_flag = yz_md_startup_detected }
+			custom_effect_tooltip = yz_reward_721_air_naval_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_air_eqp
+						}
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_naval_all
+						}
+					}
+				}
+			}
 		}
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = naval_equipment
+		else = {
+			custom_effect_tooltip = yz_reward_721_air_naval_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = air_equipment
+						}
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = naval_equipment
+						}
+					}
+				}
+			}
 		}
 	}
 
 	option = {
 		name = yz_721_scientist_event.4.b
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = industry
+		# 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+		if = {
+			limit = { has_global_flag = yz_md_startup_detected }
+			custom_effect_tooltip = yz_reward_721_industry_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_industry
+						}
+					}
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = yz_reward_721_industry_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = industry
+						}
+					}
+				}
+			}
 		}
 	}
 	option = {
 		name = yz_721_scientist_event.4.c
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = electronics
+		# 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+		if = {
+			limit = { has_global_flag = yz_md_startup_detected }
+			custom_effect_tooltip = yz_reward_721_electronics_md_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = CAT_computing_tech
+							category = CAT_microchips
+							category = CAT_internet_tech
+							category = CAT_encryption_tech
+							category = CAT_decryption_tech
+						}
+					}
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = yz_reward_721_electronics_vanilla_tt
+			hidden_effect = {
+				meta_effect = {
+					text = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 2
+							category = electronics
+						}
+					}
+				}
+			}
 		}
 	}
 	option = {

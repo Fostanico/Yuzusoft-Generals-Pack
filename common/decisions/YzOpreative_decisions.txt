@@ -272,16 +272,22 @@ YzOpreative_category = {
 				tooltip = any_country_need_one_spy_tt
 			}
 			has_intelligence_agency = yes
-			has_equipment = {
-				infantry_equipment > 10
+			if = {
+				limit = { has_global_flag = yz_md_startup_detected }
+				has_equipment = {
+					infantry_weapons_type > 10
+				}
+			}
+			else = {
+				has_equipment = {
+					infantry_equipment > 10
+				}
 			}
 		}
 		complete_effect = {
 			add_manpower = -100
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -10
-			}
+			set_temp_variable = { yz_eq_amount = -10 }
+			yz_stockpile_infantry = yes
 		}
 		remove_effect = {
 			every_country = {
@@ -431,8 +437,16 @@ YzOpreative_category = {
 		available = {
 			has_intelligence_agency = yes
 			has_manpower > 1000
-			has_equipment = {
-				infantry_equipment > 99
+			if = {
+				limit = { has_global_flag = yz_md_startup_detected }
+				has_equipment = {
+					infantry_weapons_type > 99
+				}
+			}
+			else = {
+				has_equipment = {
+					infantry_equipment > 99
+				}
 			}
 			check_variable = {
 				yz_money > 300
@@ -452,10 +466,8 @@ YzOpreative_category = {
 			multiply_temp_variable = { YzOpreative_need_infantry_equipment = 125 }
 			multiply_temp_variable = { YzOpreative_need_yz_works_equipment = 750 }
 			add_manpower = YzOpreative_need_add_manpower
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = YzOpreative_need_infantry_equipment
-			}
+			set_temp_variable = { yz_eq_amount = YzOpreative_need_infantry_equipment }
+			yz_stockpile_infantry = yes
 			add_equipment_to_stockpile = {
 				type = yz_works_equipment
 				amount = YzOpreative_need_yz_works_equipment
@@ -578,11 +590,22 @@ YzOpreative_category = {
 			has_war = yes
 			has_intelligence_agency = yes
 			has_manpower > 300
-			has_equipment = {
-				infantry_equipment > 49
+			if = {
+				limit = { has_global_flag = yz_md_startup_detected }
+				has_equipment = {
+					infantry_weapons_type > 49
+				}
+				has_equipment = {
+					util_vehicle_type > 24
+				}
 			}
-			has_equipment = {
-				motorized_equipment > 24
+			else = {
+				has_equipment = {
+					infantry_equipment > 49
+				}
+				has_equipment = {
+					motorized_equipment > 24
+				}
 			}
 			check_variable = {
 				yz_money > 300
@@ -593,14 +616,10 @@ YzOpreative_category = {
 			custom_effect_tooltip = yz_neighbor_only_tt
 			add_to_variable = { yz_money = -300 }
 			add_manpower = -300
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -50
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -25
-			}
+			set_temp_variable = { yz_eq_amount = -50 }
+			yz_stockpile_infantry = yes
+			set_temp_variable = { yz_eq_amount = -25 }
+			yz_stockpile_motorized = yes
 		}
 		remove_effect = {
 			every_country = {
@@ -608,37 +627,74 @@ YzOpreative_category = {
 					has_country_flag = YzOpreative_have_chosen
 					is_neighbor_of = ROOT
 				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -2500
-					producer = THIS
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment
-					amount = -500
-					producer = THIS
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = -500
-					producer = this
-				}	
-				ROOT = {
+				if = {
+					limit = { has_global_flag = yz_md_startup_detected }
 					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 500
-						producer = PREV
+						type = infantry_weapons_type
+						amount = -2500
+						producer = THIS
 					}
 					add_equipment_to_stockpile = {
 						type = artillery_equipment
-						amount = 75
-						producer = PREV
-					}	
+						amount = -500
+						producer = THIS
+					}
+					add_equipment_to_stockpile = {
+						type = cnc_equipment_type
+						amount = -500
+						producer = THIS
+					}
+					ROOT = {
+						add_equipment_to_stockpile = {
+							type = infantry_weapons_type
+							amount = 500
+							producer = PREV
+						}
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 75
+							producer = PREV
+						}
+						add_equipment_to_stockpile = {
+							type = cnc_equipment_type
+							amount = 150
+							producer = PREV
+						}
+					}
+				}
+				else = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -2500
+						producer = THIS
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = -500
+						producer = THIS
+					}
 					add_equipment_to_stockpile = {
 						type = support_equipment
-						amount = 150
-						producer = PREV
-					}	
+						amount = -500
+						producer = THIS
+					}
+					ROOT = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 500
+							producer = PREV
+						}
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 75
+							producer = PREV
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 150
+							producer = PREV
+						}
+					}
 				}
 			}
 		}
@@ -698,12 +754,76 @@ YzOpreative_category = {
 			}
 		}
 	}
+	recruit_saturo_operative = {
+        icon = GFX_trait_yz_operative_secret_order_ace
+        priority = 1000000
+		fire_only_once = yes
+        visible = {
+            has_country_flag = YzOpreative_open
+			has_country_flag = have_nanami
+        }
+
+        available = {
+            has_dlc = "La Resistance"
+        }
+
+        fire_only_once = no
+        cost = 0
+
+        complete_effect = {
+            create_operative_leader = {
+                name = Levy_6
+                GFX = GFX_portrait_yz_operative_saturo
+				skill = 2
+                traits = { yz_operative_saturo_trait }
+                bypass_recruitment = yes
+                female = no
+            }
+        }
+
+        ai_will_do = {
+            base = 0
+        }
+    }
+	recruit_nanami_operative = {
+        icon = GFX_trait_yz_operative_secret_order_ace
+        priority = 1000000
+		fire_only_once = yes
+        visible = {
+            has_country_flag = YzOpreative_open
+			has_country_flag = have_nanami
+        }
+
+        available = {
+            has_dlc = "La Resistance"
+        }
+
+        fire_only_once = no
+        cost = 0
+
+        complete_effect = {
+            create_operative_leader = {
+                name = Levy_9
+                GFX = GFX_portrait_RGR_Nanami
+				skill = 2
+                traits = { yz_operative_nanami_trait }
+                bypass_recruitment = yes
+                female = yes
+            }
+			set_country_flag = have_nanami_operative
+        }
+
+        ai_will_do = {
+            base = 0
+        }
+    }
 	YzOpreative_add_enemy_party_popularity = {
 		icon = GFX_decision_SWI_expand_covert_operations
 		days_re_enable = 30
 		cost = 250
 		visible = {
 			has_country_flag = YzOpreative_open
+			has_country_flag = have_nanami_operative
 		}
 		available = {			#我tm真是傻逼啊，我真tm不是人类了，能加个CD解决的事我tm写nmb一堆条件我真是有病啊，然后tm这堆判定条件还没鸟用啊，我不活了，我把我遗留的代码贴在这供后人嘲笑了，我真不是人类了 ——huhu 2026.8.24 4:45
 			#any_country = { 

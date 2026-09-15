@@ -195,21 +195,58 @@ kkr_atri_reseasrch_decision_category = {
 			}
 			kkr_refresh_favor_outputs = yes
 			country_event = kkr_event.3
-			set_technology = {
-				electronic_mechanical_engineering = 1
-				radio = 1
-				improved_radio = 1
-				advanced_radio = 1
-				radio_detection = 1
-				cavity_magnatron = 1
-				cavity_magnatron = 1
-				centimetric_radar = 1
-				phased_array = 1
-				monopulse_radar = 1
-				mechanical_computing = 1
-				computing_machine = 1
-				improved_computing_machine = 1
-				advanced_computing_machine = 1
+			# 千禧补齐至 2005 年的计算/通信前置链；原版奖励不变，不跨入 AI 或机器人支线。
+			if = {
+				limit = { has_global_flag = yz_md_startup_detected }
+				custom_effect_tooltip = yz_reward_kkr_preparation_md_tt
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_technology = {
+								basic_computing = 1
+								integrated_circuit = 1
+								computing1 = 1
+								microprocessors = 1
+								computing2 = 1
+								computing3 = 1
+								computing4 = 1
+								radar = 1
+								internet1 = 1
+								internet2 = 1
+								gprs = 1
+								internet3 = 1
+								wifi = 1
+								edge = 1
+								umts = 1
+							}
+						}
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = yz_reward_kkr_preparation_vanilla_tt
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_technology = {
+								electronic_mechanical_engineering = 1
+								radio = 1
+								improved_radio = 1
+								advanced_radio = 1
+								radio_detection = 1
+								cavity_magnatron = 1
+								cavity_magnatron = 1
+								centimetric_radar = 1
+								phased_array = 1
+								monopulse_radar = 1
+								mechanical_computing = 1
+								computing_machine = 1
+								improved_computing_machine = 1
+								advanced_computing_machine = 1
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -333,77 +370,176 @@ kkr_atri_reseasrch_decision_category = {
 			add_to_variable = {
 				KKR_atri_research_research_speed_factor = 0.5
 			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = armor
+			# 按环境选择科技分类；延迟解析互斥 ID，科研券倍率、次数和超前减免保持原值。
+			if = {
+				limit = { has_global_flag = yz_md_startup_detected }
+				custom_effect_tooltip = yz_reward_kkr_academy_md_tt
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_armor
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_artillery
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_inf_wep
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_util
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_naval_all
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_missile
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_nuclear
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 20
+								category = CAT_industry
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_inf
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_air_eqp
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_air_wpn
+								category = CAT_air_spc
+								category = CAT_avionics
+								category = CAT_wings
+								category = CAT_air_stealth
+								category = CAT_air_engine
+								category = CAT_air_countermeasures
+								category = CAT_air_camera
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = CAT_heli
+							}
+						}
+					}
+				}
 			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = artillery
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = motorized_equipment
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = naval_equipment
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = rocketry
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = nuclear
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 20
-				category = industry
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = infantry_tech
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = air_equipment
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = plane_modules_tech
-			}
-			add_tech_bonus = {
-				ahead_reduction = 20
-				bonus = 5
-				uses = 5
-				category = helicopter_tech
+			else = {
+				custom_effect_tooltip = yz_reward_kkr_academy_vanilla_tt
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = armor
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = artillery
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = infantry_weapons
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = motorized_equipment
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = naval_equipment
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = rocketry
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = nuclear
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 20
+								category = industry
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = infantry_tech
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = air_equipment
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = plane_modules_tech
+							}
+							add_tech_bonus = {
+								ahead_reduction = 20
+								bonus = 5
+								uses = 5
+								category = helicopter_tech
+							}
+						}
+					}
+				}
 			}
 		}
 	}

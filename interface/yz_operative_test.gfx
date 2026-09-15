@@ -8,4 +8,20 @@ spriteTypes = {
         name = "GFX_trait_yz_operative_secret_order_ace"
         texturefile = "gfx/traits/alexander_bartender.PNG"
     }
+    spriteType = {
+        name = "GFX_trait_yz_operative_nanami_trait"
+        texturefile = "gfx/traits/maid_qihai_trait.png"
+    }
+    spriteType = {
+        name = "GFX_trait_yz_operative_saturo_trait"
+        texturefile = "gfx/traits/alexander_bartender.PNG"
+    }
+    spriteType = {
+        name = "GFX_portrait_yz_operative_saturo"
+        texturefile = "gfx/leader/saturo.png"
+    }
+    spriteType = {
+        name = "GFX_portrait_RGR_Nanami"
+        texturefile = "gfx/leader/Nanami.png"
+    }
 }

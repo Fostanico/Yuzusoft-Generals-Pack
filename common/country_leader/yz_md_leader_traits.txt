@@ -1,0 +1,319 @@
+# Millennium Dawn leader traits; country scope. Appointed only through MD-gated callers.
+# Vanilla definitions and both Makoto variants are intentionally kept in their original owners.
+# random = no prevents these budget-heavy traits from entering the generic leader pool.
+# MD Beta 2.0.0 / 3374271790: productivity_growth_modifier is numeric, interest is percentage points.
+leader_traits = {
+    # 穗织の神子
+    yz_md_trait_yoshino_miko = {
+        random = no
+        stability_factor = 0.15
+        health_cost_multiplier_modifier = -0.15
+        social_cost_multiplier_modifier = -0.15
+    }
+
+    # 穗织人民的巫女大人
+    yz_md_trait_yoshino_people = {
+        random = no
+        bureaucracy_cost_multiplier_modifier = -0.2
+        population_tax_income_multiplier_modifier = 0.15
+        political_power_factor = 0.15
+    }
+
+    # 穗织の刀灵
+    yz_md_trait_murasame_spirit = {
+        random = no
+        army_org_factor = 0.15
+        army_core_defence_factor = 0.2
+        army_personnel_cost_multiplier_modifier = -0.15
+    }
+
+    # 小飞机场·现代化
+    yz_md_trait_murasame_airfield = {
+        random = no
+        airforce_personnel_cost_multiplier_modifier = -0.15
+        air_mission_efficiency = 0.15
+        ground_attack_factor = 0.25
+    }
+
+    # 钢铁之人·学生会式行政
+    yz_md_trait_ayase_administration = {
+        random = no
+        bureaucracy_cost_multiplier_modifier = -0.2
+        education_cost_multiplier_modifier = -0.15
+        political_power_factor = 0.15
+    }
+
+    # 全国人气偶像
+    yz_md_trait_ayase_idol = {
+        random = no
+        foreign_influence_modifier = 0.2
+        stability_factor = 0.15
+        population_tax_income_multiplier_modifier = 0.1
+    }
+
+    # 超自然研究部长
+    yz_md_trait_nene_research = {
+        random = no
+        research_speed_factor = 0.2
+        education_cost_multiplier_modifier = -0.2
+        productivity_growth_modifier = 0.04
+    }
+
+    # 七二一·精密火力
+    yz_md_trait_nene_721 = {
+        random = no
+        special_project_speed_factor = 0.25
+        army_artillery_attack_factor = 0.21
+        army_artillery_defence_factor = 0.07
+        equipment_cost_multiplier_modifier = -0.15
+    }
+
+    # 阴阳局的剑与盾
+    yz_md_trait_miu_bureau = {
+        random = no
+        police_cost_multiplier_modifier = -0.25
+        foreign_influence_defense_modifier = 0.25
+        intelligence_agency_defense = 3
+    }
+
+    # 月下秩序
+    yz_md_trait_miu_order = {
+        random = no
+        stability_factor = 0.15
+        resistance_target = -0.15
+        industry_air_damage_factor = -0.15
+    }
+
+    # 幕后铁幕
+    yz_md_trait_gongping_curtain = {
+        random = no
+        operation_risk = -0.25
+        intel_network_gain = 0.35
+        decryption_factor = 0.2
+    }
+
+    # 看不见的国家机器
+    yz_md_trait_gongping_machine = {
+        random = no
+        cyber_cost_multiplier_modifier = -0.2
+        foreign_influence_modifier = 0.15
+        foreign_influence_defense_modifier = 0.2
+    }
+
+    # 蓝水海军の大和抚子
+    yz_md_trait_hazuki_navy = {
+        random = no
+        navy_personnel_cost_multiplier_modifier = -0.25
+        industrial_capacity_dockyard = 0.35
+        naval_detection = 0.2
+    }
+
+    # 人民之辉
+    yz_md_trait_hazuki_people = {
+        random = no
+        stability_factor = 0.1
+        health_cost_multiplier_modifier = -0.1
+        social_cost_multiplier_modifier = -0.15
+    }
+
+    # 我们先军旗帜的模样
+    yz_md_trait_sayo_banner = {
+        random = no
+        army_org_factor = 0.2
+        army_core_defence_factor = 0.2
+        army_personnel_cost_multiplier_modifier = -0.2
+    }
+
+    # 海上都市的市长大人
+    yz_md_trait_sayo_mayor = {
+        random = no
+        bureaucracy_cost_multiplier_modifier = -0.2
+        corporate_tax_income_multiplier_modifier = 0.2
+        foreign_influence_modifier = 0.15
+    }
+
+    # 长生种的远见
+    yz_md_trait_sayo_foresight = {
+        random = no
+        health_cost_multiplier_modifier = -0.2
+        social_cost_multiplier_modifier = -0.2
+        productivity_growth_modifier = 0.04
+    }
+
+    # 旋转的未来
+    yz_md_trait_baliu_future = {
+        random = no
+        productivity_growth_modifier = 0.03
+        bureaucracy_cost_multiplier_modifier = -0.15
+        production_speed_industrial_complex_factor = 0.2
+    }
+
+    # 8620国铁创建者
+    yz_md_trait_baliu_railway = {
+        random = no
+        production_speed_rail_way_factor = 0.5
+        production_speed_infrastructure_factor = 0.3
+        production_speed_supply_node_factor = 0.3
+        supply_consumption_factor = -0.15
+    }
+
+    # 天降神兵
+    yz_md_trait_irno_soldier = {
+        random = no
+        army_attack_factor = 0.25
+        army_defence_factor = 0.25
+        army_org_factor = 0.25
+        army_personnel_cost_multiplier_modifier = -0.25
+    }
+
+    # 新时代的大统领
+    yz_md_trait_irno_president = {
+        random = no
+        foreign_influence_defense_modifier = 0.4
+        police_cost_multiplier_modifier = -0.3
+        intelligence_agency_defense = 5
+    }
+
+    # 全民的最高领袖
+    yz_md_trait_irno_supreme = {
+        random = no
+        bureaucracy_cost_multiplier_modifier = -0.25
+        energy_use_multiplier = -0.2
+        productivity_growth_modifier = 0.05
+    }
+
+    # 种田界の贪逼
+    yz_md_trait_huhu_builder = {
+        random = no
+        production_speed_buildings_factor = 0.4
+        corporate_tax_income_multiplier_modifier = 0.25
+    }
+
+    # 空中制胜
+    yz_md_trait_huhu_air = {
+        random = no
+        airforce_personnel_cost_multiplier_modifier = -0.35
+        ground_attack_factor = 0.5
+        air_attack_factor = 0.25
+    }
+
+    # 战狂界の好战分子
+    yz_md_trait_huhu_war = {
+        random = no
+        justify_war_goal_time = -0.35
+        resistance_target = -0.15
+        foreign_influence_modifier = 0.2
+    }
+
+    # 亲自微操的统帅
+    yz_md_trait_huhu_micro = {
+        random = no
+        planning_speed = 0.5
+        max_planning_factor = 0.25
+        army_org_factor = 0.15
+    }
+
+    # 世纪海军的野望
+    yz_md_trait_noa_navy = {
+        random = no
+        navy_personnel_cost_multiplier_modifier = -0.35
+        industrial_capacity_dockyard = 0.4
+        experience_gain_navy_factor = 0.5
+    }
+
+    # 战略轰炸推崇者
+    yz_md_trait_noa_bombing = {
+        random = no
+        air_strategic_bomber_bombing_factor = 0.35
+        airforce_personnel_cost_multiplier_modifier = -0.25
+        air_mission_efficiency = 0.15
+    }
+
+    # 经营的最优解
+    yz_md_trait_noa_accounts = {
+        random = no
+        interest_rate_multiplier_modifier = -0.75
+        corporate_tax_income_multiplier_modifier = 0.2
+        productivity_growth_modifier = 0.05
+    }
+
+    # 天才少女的资产负债表
+    yz_md_trait_kukuru_assets = {
+        random = no
+        investment_cost_modifier = -0.25
+        investment_duration_modifier = -0.25
+        corporate_tax_income_multiplier_modifier = 0.25
+    }
+
+    # 国家计委主席
+    yz_md_trait_kukuru_planning = {
+        random = no
+        civ_facs_worker_requirement_modifier = -0.2
+        mil_facs_worker_requirement_modifier = -0.2
+        offices_worker_requirement_modifier = -0.2
+        energy_use_multiplier = -0.25
+        productivity_growth_modifier = 0.1
+    }
+
+    # 国家科学院长
+    yz_md_trait_kukuru_academy = {
+        random = no
+        research_speed_factor = 0.4
+        education_cost_multiplier_modifier = -0.3
+        special_project_speed_factor = 0.4
+    }
+
+    # 纪律严明·集体领导
+    yz_md_trait_collective_discipline = {
+        random = no
+        political_power_factor = 0.15
+        stability_factor = 0.1
+        bureaucracy_cost_multiplier_modifier = -0.1
+    }
+
+    # 人民之力·公共经济
+    yz_md_trait_council_people = {
+        random = no
+        education_cost_multiplier_modifier = -0.2
+        social_cost_multiplier_modifier = -0.2
+        industrial_capacity_factory = 0.15
+        productivity_growth_modifier = 0.03
+    }
+
+    # 科学，自由，博爱
+    yz_md_trait_club_science = {
+        random = no
+        research_speed_factor = 0.2
+        education_cost_multiplier_modifier = -0.15
+        foreign_influence_modifier = 0.2
+        receiving_investment_duration_modifier = -0.2
+    }
+
+    # 军国一体·现代动员
+    yz_md_trait_junta_mobilization = {
+        random = no
+        army_personnel_cost_multiplier_modifier = -0.25
+        equipment_cost_multiplier_modifier = -0.2
+        army_attack_factor = 0.15
+        army_org_factor = 0.15
+    }
+
+    # 秩序至上·制度延续
+    yz_md_trait_royal_order = {
+        random = no
+        police_cost_multiplier_modifier = -0.2
+        foreign_influence_defense_modifier = 0.3
+        interest_rate_multiplier_modifier = -0.5
+        max_planning_factor = 0.15
+    }
+
+    # 魔王之母
+    yz_md_trait_sairi_demon = {
+        random = no
+        justify_war_goal_time = -0.75
+        subversive_activites_upkeep = -0.5
+        foreign_influence_defense_modifier = 0.4
+        bureaucracy_cost_multiplier_modifier = 0.25
+    }
+
+}

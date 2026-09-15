@@ -82,15 +82,9 @@ Kukuru_coming_decision_category = {
 						corps_commander = {
 							traits = {
 							    yz_easter_egg_character
-								brilliant_strategist
-								career_officer
-								bearer_of_artillery
-								infantry_officer
-								cavalry_officer
-								armor_officer
-								kukuru_1_trait
-								kukuru_2_trait
-								kukuru_3_trait
+                                kukuru_1_trait
+                                kukuru_2_trait
+                                kukuru_3_trait
 							}
 							skill = 1
 							attack_skill = 9
@@ -279,6 +273,15 @@ Kukuru_main_decision_category = {
 			set_country_flag = kkr_leader
 			if = {
 				limit = {
+					has_global_flag = yz_md_startup_detected
+				}
+				custom_effect_tooltip = yz_md_appoint_country_leader_tt
+				hidden_effect = {
+					yz_md_appoint_kukuru = yes
+				}
+			}
+			else_if = {
+				limit = {
 					has_government = democratic
 				}
 				create_country_leader = {
@@ -294,7 +297,7 @@ Kukuru_main_decision_category = {
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_government = fascism
 				}
@@ -311,7 +314,7 @@ Kukuru_main_decision_category = {
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_government = neutrality
 				}
@@ -328,7 +331,7 @@ Kukuru_main_decision_category = {
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_government = communism
 				}

@@ -3,13 +3,9 @@ guiTypes = {
 	containerWindowType = {
 		name = "Yz_leader"
 		position = { x = 0 y = -50 }
-		size = { width = 510 height = 350 } 
+		size = { width = 510 height = 350 }
 		clipping = no
 
-		background = {
-			name = "Yz_leader_bg"
-			#quadTextureSprite ="GFX_tiled_window2_1b_border"
-		}
 		instantTextBoxType = {
 			name = "Yzleader_title"
 			position = { x = 150 y = -10 }
@@ -18,113 +14,92 @@ guiTypes = {
 			maxWidth = 200
 			maxHeight = 40
 			alwaystransparent = yes
-			format = center 
+			format = center
 		}
+
+		# 右上角保留启动/设置入口；核心圈三席按左、中、右分别对应副主席、主席、第一书记。
 		buttonType = {
 			name = "open_YzModule"
 			position = { x = 420 y = -8 }
 			size = { x = 180 y = 230 }
-			scale = 0.6		###缩放
+			scale = 0.6
 			quadTextureSprite = "GFX_murasame_3"
 			pdx_tooltip = "open_start_ui_tt"
-		} 
-		#instantTextBoxType = {
-		#	name = "open_YzModule_text"
-		#	position = { x = 280 y = 20 }
-		#	font = "hoi_16mbs"
-		#	text = "open_YzModule_text"
-		#	maxWidth = 200
-		#	maxHeight = 40
-		#	alwaystransparent = yes
-		#	format = center 
-		#}
-		buttonType = {
-			name = "Yzleader_portrait1"
+		}
+
+		# 副主席（左）：人物图与空席图位于底层，透明中心边框独立承担点击与禁用反馈。
+		iconType = {
+			name = "Yzleader_portrait1_image"
 			position = { x = 74 y = 73 }
-			size = { x = 180 y = 230 }
-			scale = 0.51		###缩放
+			scale = 0.51
 			quadTextureSprite = "GFX_yzleader_bg"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-		} 
-		iconType = { 
-			name = "Yzleader_box1"
-			position = { x = 64 y = 63 }
-			# size = { width = 180 height = 230 }
-			scale = 0.55		###缩放
-			quadTextureSprite = "GFX_yzleader_box"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-			alwaystransparent = yes
-		} 
-		iconType = { 
-			name = "Yzleader_unknown1"
-			position = { x = 64 y = 60 }
-			# size = { width = 180 height = 230 }
-			scale = 0.55		###缩放
-			quadTextureSprite = "GFX_yzleader_unknown"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-		} 
-		 
-		buttonType = {
-			name = "Yzleader_portrait2"
-			position = { x = 210 y = 44 } 
-			size = { x = 180 y = 220 }
-			scale = 0.52		###缩放
-			quadTextureSprite = "GFX_yzleader_bg"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-		} 
-		iconType = { 
-			name = "Yzleader_box2"
-			position = { x = 201 y = 35 }
-			# size = { width = 180 height = 210 }
-			scale = 0.55		###缩放
-			quadTextureSprite = "GFX_yzleader_box"
-			pdx_tooltip = " "
-			#clicksound = clicksound
 			alwaystransparent = yes
 		}
-		buttonType = { 
-			name = "Yzleader_unknown2"
-			position = { x = 201 y = 35 } 
-			size = { x = 180 y = 210 }
-			scale = 0.55		###缩放
+		iconType = {
+			name = "Yzleader_unknown1_image"
+			position = { x = 64 y = 60 }
+			scale = 0.55
 			quadTextureSprite = "GFX_yzleader_unknown"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-		} 
-		
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "Yzleader_portrait1"
+			position = { x = 64 y = 63 }
+			size = { x = 180 y = 230 }
+			scale = 0.55
+			quadTextureSprite = "GFX_yzleader_box"
+			pdx_tooltip = yz_core_group_portrait_reselection_tt
+		}
+
+		# 主席（中）：视觉层不接收输入，边框按钮保持完整矩形命中区域。
+		iconType = {
+			name = "Yzleader_portrait2_image"
+			position = { x = 210 y = 44 }
+			scale = 0.52
+			quadTextureSprite = "GFX_yzleader_bg"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "Yzleader_unknown2_image"
+			position = { x = 201 y = 35 }
+			scale = 0.55
+			quadTextureSprite = "GFX_yzleader_unknown"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "Yzleader_portrait2"
+			position = { x = 201 y = 35 }
+			size = { x = 180 y = 230 }
+			scale = 0.55
+			quadTextureSprite = "GFX_yzleader_box"
+			pdx_tooltip = yz_core_group_portrait_reselection_tt
+		}
+
+		# 第一书记（右）：与另外两席保持相同的图像/按钮分层合同。
+		iconType = {
+			name = "Yzleader_portrait3_image"
+			position = { x = 348 y = 69 }
+			scale = 0.51
+			quadTextureSprite = "GFX_yzleader_bg"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "Yzleader_unknown3_image"
+			position = { x = 338 y = 60 }
+			scale = 0.55
+			quadTextureSprite = "GFX_yzleader_unknown"
+			alwaystransparent = yes
+		}
 		buttonType = {
 			name = "Yzleader_portrait3"
-			position = { x = 348 y = 69 } 
+			position = { x = 338 y = 60 }
 			size = { x = 180 y = 230 }
-			scale = 0.51		###缩放
-			quadTextureSprite = "GFX_yzleader_bg"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-		} 
-		iconType = { 
-			name = "Yzleader_box3"
-			position = { x = 338 y = 60 } 
-			# size = { width = 180 height = 230 }
-			scale = 0.55		###缩放
+			scale = 0.55
 			quadTextureSprite = "GFX_yzleader_box"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-			alwaystransparent = yes
-		} 
-		buttonType = { 
-			name = "Yzleader_unknown3"
-			position = { x = 338 y = 60 } 
-			size = { x = 180 y = 230 }
-			scale = 0.55		###缩放
-			quadTextureSprite = "GFX_yzleader_unknown"
-			pdx_tooltip = " "
-			#clicksound = clicksound
-		} 
-		
+			pdx_tooltip = yz_core_group_portrait_reselection_tt
+		}
+
+		# 职位标题保持在所有头像层之后绘制。
 		instantTextBoxType = {
 			name = "Yzleader_title1"
 			position = { x = 175 y = 160 }
@@ -133,7 +108,7 @@ guiTypes = {
 			maxWidth = 150
 			maxHeight = 30
 			alwaystransparent = yes
-			format = center 
+			format = center
 		}
 		instantTextBoxType = {
 			name = "Yzleader_title2"

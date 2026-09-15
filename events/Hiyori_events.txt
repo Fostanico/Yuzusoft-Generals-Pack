@@ -39,10 +39,7 @@ country_event = {
 					corps_commander = {
 						traits={
 						    yz_easter_egg_character
-							media_personality
-							JAP_communist_sympathizer
-							brilliant_strategist
-							hiyohiyo
+                            hiyohiyo
 						}
 						skill=1
 						attack_skill=1

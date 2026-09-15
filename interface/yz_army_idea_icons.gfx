@@ -36,4 +36,9 @@ spriteTypes = {
 		texturefile = "gfx/ideas/yuzu_lighting_krieg.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_idea_yz_airixin"
+		texturefile = "gfx/ideas/yz_airixin.png"
+		legacy_lazy_load = no
+	}
 }

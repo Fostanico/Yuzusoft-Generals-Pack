@@ -8,12 +8,12 @@ leader_traits = {
             army_attack_factor = 0.15
             army_morale_factor = +0.15
             breakthrough_factor = 0.1
-            planning_speed = 0.721
+            planning_speed = 0.921
             max_planning = 0.36
             org_loss_when_moving = -0.5
-            wounded_chance_factor = -0.5
+            wounded_chance_factor = 0
             fort = {
-                attack = 0.8
+                attack = 1.05
                 defence = 0.3
             }
             urban = {
@@ -21,31 +21,53 @@ leader_traits = {
                 defence = 0.3
             }
 
+            river = {
+                attack = 0.05
+            }
         }
         enable_ability = nene_witch_ability
         new_commander_weight = {
             factor = 0
         }
+        leader_default_proximity_offset = -1
+        attack_skill_factor = 1
+        defense_skill_factor = -1
+        planning_skill_factor = 1
+        field_marshal_modifier = {
+            max_army_group_size = 2
+            army_morale_factor = 0.1
+        }
+        enable_ability = siege_artillery
     }
-    ##因幡爱瑠
+    ##因幡巡
     #天才的游戏少女
     maid_meigulu_trait = {
         type = land
         trait_type = personality_trait
         attack_skill = 10
-        attack_skill_factor = 1
+        attack_skill_factor = 3
         modifier = {
             experience_gain_factor = 1
             experience_gain_army_unit_factor = 1
-            army_armor_attack_factor = 0.4
+            army_armor_attack_factor = 0.56
             army_armor_defence_factor = 0.3
             mechanized_attack_factor = 0.25
             mechanized_defence_factor = 0.25
             breakthrough_factor = 0.1
+            cas_damage_reduction = 0.5
+            air_superiority_bonus_in_combat = -0.5
+            planning_speed = -0.1
+            army_armor_speed_factor = 0.05
+            wounded_chance_factor = -0.5
         }
         new_commander_weight = {
             factor = 0
         }
+        defense_skill = 1
+        logistics_skill = 1
+        defense_skill_factor = 2
+        logistics_skill_factor = 2
+        leader_default_proximity_offset = 1
     }
     ##紬妈妈
     #善解人意的魔女
@@ -63,10 +85,30 @@ leader_traits = {
             max_planning = 0.3
             max_planning_factor = 0.15
 
+            planning_speed = -0.1
+            wounded_chance_factor = -0.5
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         enable_ability = chou_witch_ability
         new_commander_weight = {
             factor = 0
+        }
+        defense_skill_factor = 2
+        planning_skill_factor = 1
+        logistics_skill_factor = 3
+        leader_default_proximity_offset = 1
+        field_marshal_modifier = {
+            max_dig_in_factor = 0.3
+        }
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
+        corps_commander_modifier = {
+            max_commander_army_size = 6
         }
     }
     ##丛雨
@@ -79,16 +121,30 @@ leader_traits = {
             army_core_defence_factor = 0.3
             land_reinforce_rate = 0.25
             terrain_penalty_reduction = 0.3
-            wounded_chance_factor = -1
+            wounded_chance_factor = -0.5
             army_attack_factor = 0.15
             army_defence_factor = 0.15
             breakthrough_factor = 0.15
             org_loss_when_moving = -0.5
             org_loss_at_low_org_factor = -0.5
+            planning_speed = 0.2
+            forest = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 2
+        planning_skill_factor = 2
+        defense_skill = 1
+        logistics_skill = 1
+        logistics_skill_factor = 1
+        leader_default_proximity_offset = -1
     }
     #芭菲之力
     maid_congyu_trait_1 = {
@@ -131,7 +187,9 @@ leader_traits = {
                 movement = 0.2
             }
             forest = {
-                movement = 0.2
+                movement = 0.25
+                attack = 0.1
+                defence = 0.1
             }
             mountain = {
                 movement = 0.2
@@ -151,9 +209,24 @@ leader_traits = {
             river = {
                 movement = 0.2
             }
+            out_of_supply_factor = -0.25
+            planning_speed = -0.2
+            wounded_chance_factor = -0.5
         }
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill_factor = 1
+        planning_skill_factor = 1
+        attack_skill = 1
+        leader_default_proximity_offset = 1
+        defense_skill_factor = 1
+        logistics_skill_factor = 1
+        trait_xp_factor = {
+            panzer_leader = 1
+        }
+        field_marshal_modifier = {
+            org_loss_when_moving = -0.3
         }
     }
     ##芳乃
@@ -170,10 +243,38 @@ leader_traits = {
             army_core_defence_factor = 0.25
             max_planning = 0.2
             enemy_army_bonus_air_superiority_factor = -0.5
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            mountain = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 2
+        planning_skill_factor = 3
+        defense_skill_factor = 1
+        logistics_skill_factor = 2
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
+        field_marshal_modifier = {
+            supply_consumption_factor = -0.15
+        }
+        corps_commander_modifier = {
+            max_commander_army_size = 6
+        }
+        non_shared_modifier = {
+            promote_cost_factor = -0.5
+            reassignment_duration_factor = 0.5
+        }
+        enable_ability = extra_suplies
     }
     #神子の袱禊之职
     maid_fangnai2_trait = {
@@ -225,17 +326,35 @@ leader_traits = {
         type = land
         trait_type = personality_trait
         modifier = {
-            winter_attrition_factor = -0.65
+            winter_attrition_factor = -1.15
             experience_gain_factor= 0.5
-            equipment_capture = 0.2
+            equipment_capture = 0.23
             army_infantry_defence_factor = 0.25
             army_armor_defence_factor = 0.25
             wounded_chance_factor = -0.75
             army_core_attack_factor = 0.25
             army_core_defence_factor = 0.25
+            river = {
+                attack = 0.05
+            }
+            fort = {
+                attack = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill_factor = 1
+        logistics_skill_factor = 1
+        trait_xp_factor = {
+            trickster = 1
+            winter_specialist = 1
+            commando = 1
+            swamp_fox = 1
+            ranger = 1
+            hill_fighter = 1
+            urban_assault_specialist = 1
+            naval_invader = 1
         }
     }
     ##锉刀
@@ -317,21 +436,33 @@ leader_traits = {
             experience_loss_factor = -0.1
             attrition = -0.5
             recon_factor = 1.5
-            planning_speed = 0.2
+            planning_speed = 0.4
             supply_consumption_factor = 0.1
             army_morale_factor = 0.15
             army_org_regain = 0.4
             army_strength_factor = 0.25
             max_planning = 0.15
-            wounded_chance_factor = -1145.14
+            wounded_chance_factor = -1144.64
             no_supply_grace = 120
             army_attack_factor = 0.1
             army_defence_factor = 0.2
+            army_artillery_attack_factor = 0.15
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         enable_ability = nanami_ability
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 2
+        planning_skill_factor = 2
+        leader_default_proximity_offset = -1
+        defense_skill_factor = -1
     }
     ##千咲
     ##元气满满的学妹
@@ -339,7 +470,7 @@ leader_traits = {
         type = land
         trait_type = personality_trait
         modifier = {
-            army_infantry_defence_factor = 0.25
+            army_infantry_defence_factor = 0.38
             army_attack_factor = 0.15
             army_defence_factor = 0.15
             no_supply_grace = 48
@@ -347,8 +478,9 @@ leader_traits = {
             land_reinforce_rate = 0.06
             army_org_regain = 0.25
             amphibious_invasion_defence = 0.2   #两栖登陆防御
+            extra_paratrooper_supply_grace = 240
         }
-        logistics_skill = 5
+        logistics_skill = 6
         corps_commander_modifier = {
             max_commander_army_size = -6
         }
@@ -358,6 +490,10 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill = 1
+        defense_skill_factor = 1
+        logistics_skill_factor = 1
+        enable_ability = glider_planes
     }
     #栞娜
     #工口死神
@@ -369,11 +505,20 @@ leader_traits = {
             army_core_attack_factor = 0.1
             army_core_defence_factor = 0.1
             land_reinforce_rate = 0.1
-            recon_factor = 0.25
+            recon_factor = 0.5
+            dig_in_speed_factor = 0.5
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
         }
+        attack_skill_factor = 2
     }
     #恭平
     #小男娘
@@ -381,19 +526,36 @@ leader_traits = {
         type = land
         trait_type = personality_trait
         modifier = {
-            army_armor_speed_factor = 0.05
-            land_reinforce_rate = 0.05
-            initiative_factor = 0.05
-            special_forces_attack_factor = 0.1
+            army_armor_speed_factor = 0.2
+            army_speed_factor = 0.2
+            land_reinforce_rate = 0.15
+            initiative_factor = 0.15
+            special_forces_attack_factor = 0.25
+            special_forces_defence_factor = 0.25
             winter_attrition_factor = -0.2
             hills = {
                 movement = 0.05
                 attack = 0.1
                 defence = 0.05
             }
+            mountain = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.05
+            }
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            cas_damage_reduction = 0.5
+            air_superiority_bonus_in_combat = -0.5
+            army_infantry_defence_factor = 0.13
+            equipment_capture = 0.03
         }
         new_commander_weight = {
             factor = 0
+        }
+        field_marshal_modifier = {
+            planning_speed = 0.25
         }
     }
     #乃爱
@@ -412,6 +574,11 @@ leader_traits = {
         }
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            panzer_leader = 1
         }
     }
     #战乙女
@@ -478,11 +645,19 @@ leader_traits = {
             terrain_penalty_reduction = 0.2
             attrition = -0.15
             dig_in_speed = 1
+            planning_speed = 0.2
+            wounded_chance_factor = 0.5
         }
         new_commander_weight = {
             factor = 0
         }
         enable_ability = sana_ability
+        planning_skill_factor = 2
+        leader_default_proximity_offset = -1
+        attack_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     #佐奈海军（特质底下写了，别重复）
     #枣子姐
@@ -495,12 +670,27 @@ leader_traits = {
             air_attack_factor = 0.15
             army_attack_factor = 0.1
             army_artillery_attack_factor = 0.15
+            army_morale_factor = -0.1
+            recon_factor = 0.25
         }
         corps_commander_modifier = {
             max_commander_army_size = 16
         }
         new_commander_weight = {
             factor = 0
+        }
+        planning_skill_factor = 1
+        logistics_skill_factor = 3
+        attack_skill = 1
+        attack_skill_factor = 1
+        defense_skill = 1
+        logistics_skill = 1
+        defense_skill_factor = 1
+        non_shared_modifier = {
+            promote_cost_factor = -0.25
+        }
+        field_marshal_modifier = {
+            army_morale_factor = 0.1
         }
     }
     #茅羽耶
@@ -725,8 +915,8 @@ leader_traits = {
             land_reinforce_rate = 0.15
             coordination_bonus = 0.1
             initiative_factor = 0.1
-            amphibious_invasion = 0.5
-            invasion_preparation = -0.5
+            amphibious_invasion = 0.8
+            invasion_preparation = -0.8
             land_night_attack = 0.25
             special_forces_attack_factor = 0.25
             naval_invasion_prep_days = -30
@@ -738,11 +928,18 @@ leader_traits = {
                 movement = 0.2
                 attack = 0.4
             }
+            army_morale_factor = -0.1
+            extra_marine_supply_grace = 240
+            shore_bombardment_bonus = 0.25
         }
         enable_ability = hazuki_ability
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        attack_skill_factor = 1
+        logistics_skill_factor = 1
+        enable_ability = faster_naval_invasion_planning
     }
     #大和抚子（海军版）
     dahefuzi= {
@@ -802,10 +999,21 @@ leader_traits = {
                 movement = 0.2
                 attack = 0.1
             }
+            army_morale_factor = -0.1
         }
         enable_ability = rio_bloodsucking_ability
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill = 1
+        attack_skill_factor = 1
+        logistics_skill_factor = 2
+        defense_skill_factor = 2
+        planning_skill_factor = 1
+        defense_skill = 1
+        logistics_skill = 1
+        trait_xp_factor = {
+            infantry_leader = 1
         }
     }
     #无心的吞噬者
@@ -836,6 +1044,9 @@ leader_traits = {
             breakthrough_factor = 0.3
             army_defence_factor = -0.5
             supply_consumption_factor = -0.99
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
         }
         new_commander_weight = {
             factor = 0
@@ -851,6 +1062,10 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 1
+        planning_skill_factor = 1
     }
     #喜多喜多
     maid_fumika_trait = {
@@ -860,17 +1075,30 @@ leader_traits = {
             supply_consumption_factor = 0.05
             army_org_factor = 0.1
             army_morale_factor = 0.15
-            planning_speed = 0.1
+            planning_speed = 0
             max_planning = 0.1
             experience_gain_army_unit_factor = 0.55
             cavalry_attack_factor = 0.15
             cavalry_defence_factor = 0.1
+            max_dig_in = 1
+            wounded_chance_factor = -0.5
         }
         trait_xp_factor = {
             maid_fumika_trait = 1
+            cavalry_leader = 1
+            infantry_leader = 1
         }
         new_commander_weight = {
             factor = 0
+        }
+        planning_skill_factor = 2
+        logistics_skill_factor = 3
+        attack_skill_factor = 1
+        defense_skill_factor = 2
+        leader_default_proximity_offset = 1
+        non_shared_modifier = {
+            promote_cost_factor = -0.25
+            experience_gain_factor = -0.25
         }
     }
     #天音
@@ -884,10 +1112,26 @@ leader_traits = {
             army_attack_factor = 0.05
             army_defence_factor = 0.05
             land_reinforce_rate = -0.01
+            planning_speed = 0.2
+            wounded_chance_factor = 0.5
+            hills = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
         }
+        leader_default_proximity_offset = -1
+        attack_skill_factor = 1
+        defense_skill_factor = -1
+        planning_skill_factor = 1
     }
     maid_kurumi_trait = {
         type = land
@@ -910,13 +1154,25 @@ leader_traits = {
             experience_loss_factor = -0.05
             army_strength_factor = 0.05
             enemy_army_bonus_air_superiority_factor = -0.15
-            wounded_chance_factor = -0.5
+            wounded_chance_factor = 0
             supply_consumption_factor = -0.1
             no_supply_grace = 48
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            planning_speed = 0.2
         }
         new_commander_weight = {
             factor = 0
         }
+        leader_default_proximity_offset = -1
+        attack_skill_factor = 1
+        defense_skill_factor = -1
+        planning_skill_factor = 1
+        field_marshal_modifier = {
+            supply_consumption_factor = -0.15
+        }
+        enable_ability = extra_suplies
     }
     #真正的巫女
     maid_nozomi_trait_1 = {
@@ -946,10 +1202,12 @@ leader_traits = {
             land_reinforce_rate = 0.3
             coordination_bonus = 0.2
             out_of_supply_factor = -0.5
-            wounded_chance_factor = -1
+            wounded_chance_factor = -0.5
             initiative_factor = 0.3
             army_defence_factor = 0.2
             attrition = -0.25
+            army_morale_factor = -0.1
+            planning_speed = 0.2
         }
         corps_commander_modifier = {
             max_commander_army_size = 6
@@ -957,6 +1215,19 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        attack_skill_factor = 3
+        logistics_skill_factor = 2
+        attack_skill = 1
+        leader_default_proximity_offset = -1
+        defense_skill_factor = -1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            cavalry_leader = 1
+        }
+        field_marshal_modifier = {
+            supply_consumption_factor = -0.15
+        }
+        enable_ability = extra_suplies
     }
     #和奏
     #兄弟你好香
@@ -970,11 +1241,27 @@ leader_traits = {
             army_attack_factor = 0.1
             terrain_penalty_reduction = 0.3
             army_infantry_defence_factor = 0.25
-            wounded_chance_factor = -0.8
+            wounded_chance_factor = -0.3
             army_defence_factor = 0.1
+            planning_speed = 0.2
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
+        }
+        planning_skill_factor = 3
+        leader_default_proximity_offset = -1
+        attack_skill_factor = 2
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
+        non_shared_modifier = {
+            promote_cost_factor = -0.5
+            reassignment_duration_factor = 0.5
         }
     }
     #凉音
@@ -986,10 +1273,18 @@ leader_traits = {
             supply_consumption_factor = -0.7
             no_supply_grace = 72
             pocket_penalty = -0.3
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
         }
         new_commander_weight = {
             factor = 0
         }
+        field_marshal_modifier = {
+            supply_consumption_factor = -0.15
+            land_reinforce_rate = 0.02
+        }
+        enable_ability = extra_suplies
     }
     ##美羽
     #阴阳局的利爪
@@ -1001,12 +1296,35 @@ leader_traits = {
             no_supply_grace = 72
             army_attack_factor = 0.1
             army_defence_factor = 0.3
-            terrain_penalty_reduction = 0.25
+            terrain_penalty_reduction = 0.55
             supply_consumption_factor = -0.1
             max_planning = 0.25
             recon_factor = 0.5
             coordination_bonus = 0.2
             land_reinforce_rate = 0.2
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            forest = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
+            river = {
+                attack = 0.05
+            }
+            fort = {
+                attack = 0.1
+            }
+            mountain = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         enable_ability = miu_bloodsucking_ability
         new_commander_weight = {
@@ -1024,11 +1342,35 @@ leader_traits = {
             army_defence_factor = 0.3
             army_strength_factor = 0.15
             army_org_regain = 0.15
-            terrain_penalty_reduction = 0.25
+            terrain_penalty_reduction = 0.55
             supply_consumption_factor = 0.1
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            planning_speed = 0.3
+            wounded_chance_factor = 0.5
+            winter_attrition_factor = -0.5
+            forest = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
+            river = {
+                attack = 0.05
+            }
+            fort = {
+                attack = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
+        }
+        leader_default_proximity_offset = -1
+        attack_skill_factor = 1
+        defense_skill_factor = -1
+        planning_skill_factor = 1
+        field_marshal_modifier = {
+            max_army_group_size = 2
+            army_morale_factor = 0.1
         }
     }
     ##茉优
@@ -1044,14 +1386,20 @@ leader_traits = {
             equipment_capture = 0.3
             experience_gain_factor = 0.5
             experience_gain_army_unit_factor = 0.25
-            planning_speed = 0.5
+            planning_speed = 0.6
             max_planning = 0.3
         }
-        planning_skill = 5
+        planning_skill = 6
         logistics_skill = 4
         enable_ability = mayu_ability
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill = 1
+        attack_skill_factor = 1
+        planning_skill_factor = 1
+        field_marshal_modifier = {
+            max_planning = 0.1
         }
     }
     maid_astral_boost1 = {
@@ -1120,10 +1468,31 @@ leader_traits = {
             army_org_factor = -0.1
 
             promote_cost_factor =  9.99
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            planning_speed = 0.2
+            wounded_chance_factor = 0.5
+            hills = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
         }
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 2
+        planning_skill_factor = 2
+        leader_default_proximity_offset = -1
+        defense_skill_factor = -1
     }
     #天音
     #无法被接受的恋心
@@ -1261,13 +1630,15 @@ leader_traits = {
         type = land
         trait_type = personality_trait
         modifier = {
-            planning_speed = 0.3
+            planning_speed = 0.4
             max_planning = 0.3
             supply_consumption_factor = -0.3
             promote_cost_factor = -9.99
         }
         field_marshal_modifier = {
             max_army_group_size = 5
+            supply_consumption_factor = -0.15
+            army_morale_factor = 0.1
         }
         attack_skill = 4
         defense_skill = 3
@@ -1276,6 +1647,7 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        enable_ability = extra_suplies
     }
     maid_kaguya_trait = {
         type = land
@@ -1283,10 +1655,18 @@ leader_traits = {
         modifier = {
             army_attack_factor = 0.3
             breakthrough_factor = 0.3
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            army_artillery_attack_factor = 0.15
         }
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 1
+        planning_skill_factor = 1
     }
     power_of_otherworld_queen_kaguya_trait = {
         type = land
@@ -1306,7 +1686,7 @@ leader_traits = {
         trait_type = personality_trait
         modifier = {
             army_infantry_attack_factor = 0.25
-            army_infantry_defence_factor = 0.25
+            army_infantry_defence_factor = 0.38
             army_artillery_attack_factor = 0.25
             army_artillery_defence_factor = 0.25
             experience_gain_factor = 1.5
@@ -1318,6 +1698,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 2
+        planning_skill_factor = 2
+        logistics_skill_factor = 1
     }
     #神秘标记点@@
     yz_ebihara_minase_trait = { #海老原水濑
@@ -1365,6 +1750,13 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        attack_skill_factor = 2
+        planning_skill_factor = 1
+        logistics_skill_factor = 1
+        trait_xp_factor = {
+            panzer_leader = 1
+            cavalry_leader = 1
+        }
     }
     #荒神小夜       2025.3.29,16:46,伊尔诺                  #通衢必须通衢
     yz_aragami_sayo_trait = {
@@ -1392,6 +1784,13 @@ leader_traits = {
         enable_ability = aragami_sayo_bloodsucking_ability
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill_factor = 2
+        planning_skill_factor = 1
+        logistics_skill_factor = 1
+        trait_xp_factor = {
+            panzer_leader = 1
+            cavalry_leader = 1
         }
     }
     #大房妃依里
@@ -1444,6 +1843,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     #布良梓
     yz_mera_azusa_trait = {
@@ -1477,6 +1881,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     #尼古拉
     yz_nicola_trait = {
@@ -1491,6 +1900,11 @@ leader_traits = {
         enable_ability = nicola_bloodsucking_ability
         new_commander_weight = {
             factor = 0
+        }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
         }
     }
     #云雀丘由贵
@@ -1509,9 +1923,15 @@ leader_traits = {
             no_supply_grace = 120
             land_reinforce_rate = 0.05
             combat_width_factor = -0.2
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
         }
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill_factor = 2
+        field_marshal_modifier = {
+            max_planning = 0.1
         }
     }
     yz_yuki_trait_2 = {
@@ -1540,6 +1960,7 @@ leader_traits = {
             army_strength_factor = -0.2
             attrition = 0.2
             initiative_factor = -0.2
+            army_infantry_defence_factor = 0.13
         }
         new_commander_weight = {
             factor = 0
@@ -1574,12 +1995,22 @@ leader_traits = {
             army_attack_factor = -0.1
             army_defence_factor = -0.1
             initiative_factor = -0.15
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
         }
         new_commander_weight = {
             factor = 0
         }
+        attack_skill_factor = 2
     }
     yz_sumi_trait_2 = {
+        # 须美专属；仍由指定招募赋予，不参与随机新将领生成。
+        new_commander_weight = {
+            factor = 0
+        }
         type = land
         trait_type = personality_trait
         modifier = {
@@ -1606,12 +2037,14 @@ leader_traits = {
             experience_gain_army_unit_factor = 0.3
             army_strength_factor = 0.2
             army_attack_factor = 0.15
-            army_armor_attack_factor = 0.2
+            army_armor_attack_factor = 0.36
             wounded_chance_factor = -0.2
+            army_armor_speed_factor = 0.05
         }
         new_commander_weight = {
             factor = 0
         }
+        attack_skill_factor = 2
     }
     yz_tae_trait_2 = {
         type = land
@@ -1682,6 +2115,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     aojiao_de_daxiaojie = {      #urusaii
         trait_type = personality_trait
@@ -1734,6 +2172,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     sena_gainianshen_da = {
         trait_type = personality_trait
@@ -1769,6 +2212,11 @@ leader_traits = {
         }
         new_commander_weight = {
             factor = 0
+        }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
         }
     }
     help_from_haishangdushi = {   #海上都市的增援
@@ -1880,6 +2328,9 @@ leader_traits = {
             army_infantry_attack_factor = 0.5
             army_armor_attack_factor = 0.25
             supply_consumption_factor = 0.05
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
         }
         new_commander_weight = {
             factor = 0
@@ -2124,6 +2575,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     yz_orie_second_trait = {
         type = land
@@ -2151,6 +2607,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     #爱衣
     yz_mei_trait = {
@@ -2165,6 +2626,11 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
     }
     #常盘真寻
     yz_mahiro_trait = {
@@ -2175,6 +2641,11 @@ leader_traits = {
         }
         new_commander_weight = {
             factor = 0
+        }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
         }
     }
     #火宫木乃香
@@ -2204,6 +2675,11 @@ leader_traits = {
         }
         new_commander_weight = {
             factor = 0
+        }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        trait_xp_factor = {
+            infantry_leader = 1
         }
     }
     #训练
@@ -2808,15 +3284,16 @@ leader_traits = {
             army_org_regain = 0.3
             dig_in_speed_factor = 2
             max_dig_in = 10
+            army_artillery_attack_factor = 0.15
         }
         trait_xp_factor = {
             organizer = 5
-            cavalry_leader = 5
-            infantry_leader = 5
+            cavalry_leader = 6
+            infantry_leader = 6
             skilled_staffer = 5
             trickster = 5
             trait_engineer = 5
-            panzer_leader = 5
+            panzer_leader = 6
             commando = 5
             naval_invader = 5
 
@@ -2857,6 +3334,15 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        attack_skill_factor = 3
+        planning_skill_factor = 4
+        attack_skill = 1
+        planning_skill = 1
+        logistics_skill_factor = 2
+        defense_skill_factor = 1
+        non_shared_modifier = {
+            promote_cost_factor = -0.25
+        }
     }
     #八六
     #铁路人偶
@@ -2878,6 +3364,10 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        field_marshal_modifier = {
+            supply_consumption_factor = -0.15
+        }
+        enable_ability = extra_suplies
     }
     #旋转的未来
     maid_tielurenou1_trait = {
@@ -2908,9 +3398,21 @@ leader_traits = {
             army_attack_factor = 0.1
             experience_gain_factor = 0.45
             no_supply_grace = 48
+            max_dig_in = 1
         }
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 1
+        planning_skill_factor = 1
+        defense_skill = 1
+        logistics_skill = 1
+        defense_skill_factor = 1
+        logistics_skill_factor = 1
+        non_shared_modifier = {
+            experience_gain_factor = -0.25
         }
     }
     #信赖
@@ -2924,10 +3426,17 @@ leader_traits = {
             army_artillery_attack_factor = 0.3
             experience_gain_factor = 0.3
             sickness_chance = 0.2
+            amphibious_invasion = 0.3
+            invasion_preparation = -0.3
+            shore_bombardment_bonus = 0.25
         }
         new_commander_weight = {
             factor = 0
         }
+        defense_skill = 1
+        logistics_skill = 1
+        defense_skill_factor = 1
+        logistics_skill_factor = 1
     }
     #信赖
     #红海军
@@ -2952,12 +3461,20 @@ leader_traits = {
         type = land
         trait_type = personality_trait
         modifier = {
-            army_artillery_attack_factor = 0.3
+            army_artillery_attack_factor = 0.45
             army_artillery_defence_factor = 0.3
             army_attack_factor = 0.1
         }
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 1
+        planning_skill_factor = 1
+        logistics_skill_factor = 2
+        corps_commander_modifier = {
+            max_commander_army_size = 6
         }
     }
     #o5j
@@ -2974,6 +3491,10 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
+        defense_skill = 1
+        logistics_skill = 1
+        defense_skill_factor = 1
+        logistics_skill_factor = 1
     }
     #绫空落羽初
     maid_Weiss_trait = {
@@ -2988,9 +3509,15 @@ leader_traits = {
             planning_speed = -0.25
             amphibious_invasion = -0.35
             terrain_penalty_reduction = 0.1
+            recon_factor = 0.25
         }
         new_commander_weight = {
             factor = 0
+        }
+        planning_skill_factor = 1
+        logistics_skill_factor = 1
+        non_shared_modifier = {
+            promote_cost_factor = -0.25
         }
     }
     #岛主 天基螺旋炮
@@ -3020,52 +3547,13 @@ leader_traits = {
             factor = 0
         }
     }
-    #笨蛋绫濑101  “六大原则”战略宗师
-    maid_Ling_trait = {
-        type = land
-        trait_type = personality_trait
-        modifier = {
-            army_attack_factor = 0.15
-            army_defence_factor = -0.1
-            army_speed_factor = 0.15
-            planning_speed = 0.25
-            max_planning = 0.2
-            org_loss_when_moving = -0.25
-            terrain_penalty_reduction = 0.2
-            land_reinforce_rate = 0.05
-            recon_factor = 0.25
-            land_night_attack = 0.2
-            reassignment_duration_factor = -0.25
-        }
-        corps_commander_modifier = {
-            max_commander_army_size = 12
-        }
-        new_commander_weight = {
-            factor = 0
-        }
-    }
-    #治愈之风（伪）
-    yz_Ling_trait = {
-        type = land
-        trait_type = personality_trait
-        modifier = {
-            army_org_regain = 0.15
-            army_org_factor = 0.1
-            experience_loss_factor = -0.3
-            no_supply_grace = 36
-            sickness_chance = 0.05
-        }
-        new_commander_weight = {
-            factor = 0
-        }
-    }
     #牢八
     #坚毅之心
     maid_Laoba_trait = {
         type = land
         trait_type = personality_trait
-        attack_skill = 1
-        attack_skill_factor = 1
+        attack_skill = 2
+        attack_skill_factor = 3
         modifier = {
             army_attack_factor = 0.25
             army_core_defence_factor = -0.05
@@ -3074,9 +3562,26 @@ leader_traits = {
             combat_width_factor = -0.05
             max_planning = 0.2
             army_org_factor = 0.1
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            equipment_capture = 0.03
         }
         new_commander_weight = {
             factor = 0
+        }
+        planning_skill = 1
+        planning_skill_factor = 1
+        logistics_skill_factor = 1
+        trait_xp_factor = {
+            trickster = 1
+            winter_specialist = 1
+            commando = 1
+            swamp_fox = 1
+            ranger = 1
+            hill_fighter = 1
+            urban_assault_specialist = 1
+            naval_invader = 1
         }
     }
     #多面手
@@ -3121,9 +3626,20 @@ leader_traits = {
             amphibious_invasion_defence = 0.25
             experience_gain_factor = 0.5
             promote_cost_factor = 0.2
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
         }
         new_commander_weight = {
             factor = 0
+        }
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 2
+        planning_skill_factor = 1
+        logistics_skill_factor = 1
+        trait_xp_factor = {
+            cavalry_leader = 1
         }
     }
     #赛马娘训练员
@@ -3414,7 +3930,7 @@ leader_traits = {
             dig_in_speed_factor = 3.86
             max_dig_in = 33.6
             max_dig_in_factor = 3.36
-            terrain_penalty_reduction = 0.2
+            terrain_penalty_reduction = 0.5
             pocket_penalty = -0.3
             army_strength_factor = 0.2
             max_planning = 0.5
@@ -3423,6 +3939,12 @@ leader_traits = {
             land_night_attack = 0.5
             army_attack_speed_factor = 0.3
             army_retreat_speed_factor = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            out_of_supply_factor = -0.25
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
+            recon_factor = 0.25
         }
         corps_commander_modifier = {
             max_commander_army_size = 24
@@ -3433,6 +3955,7 @@ leader_traits = {
             max_army_group_size = 5
             dont_lose_dig_in_on_attack = 1
         }
+        attack_skill_factor = 2
     }
     light_small_speak_home = {      #柚子
         trait_type = personality_trait
@@ -3447,7 +3970,10 @@ leader_traits = {
             land_reinforce_rate = 0.4
             planning_speed = 0.99
             max_planning = 0.99
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
         }
+        attack_skill_factor = 2
     }
     technology_lover = {
         trait_type = personality_trait
@@ -3520,7 +4046,14 @@ leader_traits = {
             forest = {
                 attack = -0.1
             }
+            planning_speed = -0.2
+            wounded_chance_factor = -0.5
         }
+        defense_skill = 1
+        logistics_skill = 1
+        defense_skill_factor = 2
+        logistics_skill_factor = 2
+        leader_default_proximity_offset = 1
     }
     evil_in_setting = {
         trait_type = personality_trait
@@ -3909,6 +4442,19 @@ leader_traits = {
             army_core_attack_factor = 0.2
             army_core_defence_factor = 0.2
             land_reinforce_rate = 0.1
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            recon_factor = 0.25
+        }
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        attack_skill = 1
+        trait_xp_factor = {
+            infantry_leader = 1
+        }
+        field_marshal_modifier = {
+            org_loss_when_moving = -0.3
         }
     }
     kabutochi = {   #居合斩
@@ -4401,6 +4947,157 @@ leader_traits = {
             army_attack_factor = 0.30
             breakthrough_factor = 0.25
             army_speed_factor = 0.10
+        }
+    }
+
+    # 折叠原版加成：角色面板只保留本 Mod 的专属特质。
+    kukuru_1_trait = {
+        type = land
+        trait_type = personality_trait
+        attack_skill_factor = 3
+        planning_skill_factor = 4
+        attack_skill = 1
+        planning_skill = 1
+        logistics_skill_factor = 2
+        defense_skill_factor = 1
+        trait_xp_factor = {
+            panzer_leader = 1
+            cavalry_leader = 1
+            infantry_leader = 1
+        }
+        modifier = {
+            army_artillery_attack_factor = 0.15
+        }
+        non_shared_modifier = {
+            promote_cost_factor = -0.25
+        }
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    kukuru_2_trait = {
+        type = land
+        trait_type = personality_trait
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    kukuru_3_trait = {
+        type = land
+        trait_type = personality_trait
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    yz_ayase_story_command_trait = {
+        type = land
+        trait_type = personality_trait
+        attack_skill = 1
+        planning_skill = 1
+        attack_skill_factor = 4
+        planning_skill_factor = 1
+        defense_skill_factor = 1
+        modifier = {
+            planning_speed = 0.1
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
+            recon_factor = 0.25
+            urban = {
+                movement = 0.05
+                attack = 0.1
+                defence = 0.1
+            }
+        }
+        non_shared_modifier = {
+            reassignment_duration_factor = 1
+        }
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    yz_ayase_duty_command_trait = {
+        type = land
+        trait_type = personality_trait
+        attack_skill_factor = 3
+        defense_skill_factor = 1
+        planning_skill_factor = 1
+        logistics_skill_factor = 1
+        modifier = {
+            planning_speed = 0.1
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
+        }
+        non_shared_modifier = {
+            reassignment_duration_factor = 1
+            experience_gain_factor = -0.1
+            promote_cost_factor = -0.5
+        }
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    yz_ayase_cat_tactics_trait = {
+        type = land
+        trait_type = personality_trait
+        attack_skill = 1
+        modifier = {
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+        }
+        field_marshal_modifier = {
+            breakthrough_factor = 0.1
+            org_loss_when_moving = -0.3
+        }
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    yz_noa_armor_training_trait = {
+        type = land
+        trait_type = personality_trait
+        attack_skill_factor = 2
+        modifier = {
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
+        }
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    yz_noa_adaptation_training_trait = {
+        type = land
+        trait_type = personality_trait
+        modifier = {
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+        }
+        new_commander_weight = {
+            factor = 0
+        }
+    }
+
+    yz_rio_tamed_destiny_trait = {
+        type = land
+        trait_type = personality_trait
+        attack_skill_factor = 2
+        modifier = {
+            terrain_penalty_reduction = 0.3
+            acclimatization_cold_climate_gain_factor = 0.1
+            acclimatization_hot_climate_gain_factor = 0.1
+            army_armor_speed_factor = 0.05
+            army_armor_attack_factor = 0.16
+        }
+        new_commander_weight = {
+            factor = 0
         }
     }
 }

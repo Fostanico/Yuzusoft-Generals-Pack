@@ -26,6 +26,7 @@
  YzLeader_orie_image: "GFX_portrait_orie"
  YzLeader_kaguya_image: "GFX_portrait_kaguya"
  YzLeader_kurumi_image: "GFX_portrait_kurumi"
+ yz_core_group_portrait_reselection_tt: "§Y重新确立柚子核心圈§!\n花费£pol_power §Y120§!，重新任命第一书记、主席与副主席。\n\n§G点击任一头像即可开始。§!"
 
  #柚子操作面板
  YZ_setting_tt: "打开§Y柚子控制面板§!,点击绳子可以拖动§Y娜娜米§!"

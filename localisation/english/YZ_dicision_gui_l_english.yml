@@ -26,6 +26,7 @@
  YzLeader_orie_image: "GFX_portrait_orie"
  YzLeader_kaguya_image: "GFX_portrait_kaguya"
  YzLeader_kurumi_image: "GFX_portrait_kurumi"
+ yz_core_group_portrait_reselection_tt: "§YRe-form the Inner Circle§!\nSpend £pol_power §Y120§! to appoint a new First Secretary, Chair, and Vice Chair.\n\n§GClick any portrait to begin.§!"
 
  #柚子操作面板
  YZ_setting_tt: "Opens the §YYuzusoft Control Panel§!. Click and drag the rope to move §YNanami§!"

@@ -101,11 +101,7 @@ country_event= {
 						desc = Airi_corps_desc
 						traits={
 						    yz_yuzusoft_character
-							yz_airi_trait
-							trait_reckless
-							trait_cautious
-							brilliant_strategist
-							infantry_leader
+                            yz_airi_trait
 						}
 						skill=3
 						attack_skill=4

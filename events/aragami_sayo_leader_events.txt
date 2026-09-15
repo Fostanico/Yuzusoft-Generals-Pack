@@ -8,11 +8,25 @@ country_event = {
 
     is_triggered_only = yes
 
+
+    option = {
+        name = aragami_sayo_event.1.a
+        trigger = {
+            has_global_flag = yz_md_startup_detected
+        }
+        custom_effect_tooltip = yz_sorry_i_try_my_best_on_scripted_localisation_tt
+        custom_effect_tooltip = yz_md_appoint_country_leader_tt
+        hidden_effect = {
+            yz_md_appoint_sayo = yes
+        }
+    }
+
     option = {
         custom_effect_tooltip = yz_sorry_i_try_my_best_on_scripted_localisation_tt
         retire_country_leader = yes
         name = aragami_sayo_event.1.a
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = communism
         }
         set_rule = {
@@ -45,6 +59,7 @@ country_event = {
         retire_country_leader = yes
         name = aragami_sayo_event.1.b
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = democratic
         }
         set_rule = {
@@ -72,6 +87,7 @@ country_event = {
         retire_country_leader = yes
         name = aragami_sayo_event.1.c
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = fascism
         }
         set_rule = {
@@ -99,6 +115,7 @@ country_event = {
         retire_country_leader = yes
         name = aragami_sayo_event.1.e
         trigger = {
+            NOT = { has_global_flag = yz_md_startup_detected }
             has_government = neutrality
         }
         set_rule = {
@@ -158,17 +175,9 @@ country_event = {
         trigger = {
             has_global_flag = yz_md_startup_detected
         }
-        create_country_leader = {
-            name = YZ_character_name_iruno
-            picture = "GFX_leader_nor"
-            ideology = Communist-State
-            desc = leader_nor_desc
-            expire = "2200.1.1"
-            traits = {
-                YZ_leader_nor_self_use_a_traits_for_md
-                YZ_leader_nor_self_use_b_traits_for_md
-                YZ_leader_nor_self_use_c_traits_for_md
-            }
+        custom_effect_tooltip = yz_md_appoint_country_leader_tt
+        hidden_effect = {
+            yz_md_appoint_irno = yes
         }
     }
 }

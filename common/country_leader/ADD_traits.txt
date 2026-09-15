@@ -1,6 +1,8 @@
+# 角色专属特质仅由指定招募或事件赋予，禁止进入随机国家领袖特质池。
 leader_traits = {
     #穗织の神子
     SZDWN = {
+        random = no
         political_power_gain = 0.4
         min_export = -0.5
         stability_factor = 0.25
@@ -11,6 +13,7 @@ leader_traits = {
     }
     #穗织人民的巫女大人
     SZRM = {
+        random = no
         weekly_manpower = 2500
         mobilization_laws_cost_factor = -0.5
         trade_laws_cost_factor = -0.5
@@ -30,6 +33,7 @@ leader_traits = {
     }
     #幕后铁幕
     mhtm = {
+        random = no
         operation_rescue_operative_risk = -0.4
         operation_rescue_operative_outcome = 0.4
         enemy_operative_detection_chance = 5
@@ -48,11 +52,13 @@ leader_traits = {
     }
     #魔王之母
     sairi_leader_trait = {
+        random = no
         justify_war_goal_time = -0.99
         subversive_activites_upkeep = -0.99
     }
     #"钢铁之人"
     gtzr = {
+        random = no
         political_power_factor = 0.1
         party_popularity_stability_factor = 0.2
         war_support_weekly = 0.002
@@ -72,6 +78,7 @@ leader_traits = {
     }
     #欧派偏执
     oppz = {
+        random = no
         custom_modifier_tooltip = SOV_paranoia_advance_modifier_increase_effect_tt
         experience_gain_army = 0.25
         production_speed_arms_factory_factor = 0.25
@@ -82,6 +89,7 @@ leader_traits = {
     }
     #超自然研究员
     CZRYJZ = {
+        random = no
         political_power_factor = 0.25
         research_speed_factor = 0.25
         equipment_capture = 0.2
@@ -96,6 +104,7 @@ leader_traits = {
     }
     #彩蛋特质
     yz_0721_trait = {
+        random = no
         army_artillery_defence_factor = 0.07
         army_artillery_attack_factor = 0.21
         unit_artillery_brigade_design_cost_factor = -1
@@ -105,6 +114,7 @@ leader_traits = {
     }
     #纪律严明
     JLYM = {
+        random = no
         political_power_factor = 0.1
         stability_factor = 0.15
         war_support_factor = 0.15
@@ -119,6 +129,7 @@ leader_traits = {
     }
     #人民之力
     RMZL = {
+        random = no
         production_factory_max_efficiency_factor = 0.1
         industrial_capacity_factory = 0.15
         industrial_capacity_dockyard = 0.15
@@ -130,6 +141,7 @@ leader_traits = {
     }
     #科学，自由，博爱
     KZB = {
+        random = no
         decryption_factor = 0.1
         opinion_gain_monthly_factor = 0.2
         research_speed_factor = -0.125
@@ -141,6 +153,7 @@ leader_traits = {
     }
     #军国一体
     JGYT = {
+        random = no
         war_support_weekly = 0.01
         experience_gain_army = 0.15
         army_attack_factor = 0.08
@@ -152,6 +165,7 @@ leader_traits = {
     }
     #秩序至上
     ZXZS = {
+        random = no
         stability_factor = 0.1
         max_planning = 0.1
         max_dig_in_factor = 0.1
@@ -164,6 +178,7 @@ leader_traits = {
     }
     #久经考验的领导者
     JJKYDLDZ = {
+        random = no
         political_power_factor = 0.25
         monthly_population = 1
         surrender_limit = 0.05
@@ -178,6 +193,7 @@ leader_traits = {
     }
     #8620国铁创建者
     GTCJ = {
+        random = no
         industrial_concern_cost_factor = -0.35
         production_speed_rail_way_factor = 0.2
         global_building_slots_factor = 0.15
@@ -186,6 +202,7 @@ leader_traits = {
     }
     #蓝水海军の大和抚子
     navy_Yamato_nadeshiko = {
+        random = no
         consumer_goods_factor = 0.075
         naval_strike = 0.2
         invasion_preparation = -0.25
@@ -221,6 +238,7 @@ leader_traits = {
     }
     #人民之辉
     renminzhihui = {
+        random = no
         party_popularity_stability_factor = 0.3
         political_power_factor = 0.15
         send_volunteer_size = 5
@@ -229,6 +247,7 @@ leader_traits = {
     }
     #穗织の刀灵
     SZDDL = {
+        random = no
         justify_war_goal_time = -0.75
         subversive_activites_upkeep = -0.75
         war_support_factor = 0.3
@@ -244,6 +263,7 @@ leader_traits = {
     }
     #小飞机场
     XFJC = {
+        random = no
         stability_weekly = -0.001
         army_defence_factor = -0.1
         army_org_factor = -0.05
@@ -256,6 +276,7 @@ leader_traits = {
     }
     #阴阳局的剑与盾（美羽特质）
     MY = {
+        random = no
         political_power_factor = 0.15 # 政治点数+15%
         stability_factor = 0.15 # 稳定度+15%
         stability_weekly = 0.02 # 每周稳定度增加+2%
@@ -278,6 +299,7 @@ leader_traits = {
         industry_air_damage_factor = -0.25	#工厂受轰炸易损性 -
     }
     YZ_aragami_sayo_our_role_model_of_victory = {        #这是先军旗帜的模样
+        random = no
         army_attack_factor = 0.1
         army_defence_factor = 0.1
         army_org_factor = 0.3
@@ -287,6 +309,7 @@ leader_traits = {
         army_core_attack_factor	= 0.4
     }
     YZ_aragami_sayo_the_mayor = {
+        random = no
         political_power_factor = 0.3
         stability_weekly = 0.05
         stability_factor = 0.2
@@ -296,6 +319,7 @@ leader_traits = {
         conscription = 0.05
     }
     YZ_aragami_sayo_two_hundred_years_vampire = {
+        random = no
         research_speed_factor = 0.1
         local_resources_factor = 0.3
         consumer_goods_factor = -0.3
@@ -305,6 +329,7 @@ leader_traits = {
         industrial_capacity_dockyard = 0.3
     }
     YZ_leader_nor_self_use_a_traits = {
+        random = no
         army_attack_factor = 1
         army_defence_factor = 1
         army_org_factor = 1
@@ -312,6 +337,7 @@ leader_traits = {
         breakthrough_factor = 1
     }
     YZ_leader_nor_self_use_b_traits = {
+        random = no
         enemy_operative_detection_chance = 500
         intelligence_agency_defense = 100
         political_power_factor = 1
@@ -323,6 +349,7 @@ leader_traits = {
         conscription = 0.5
     }
     YZ_leader_nor_self_use_c_traits = {
+        random = no
         local_resources_factor = 1
         consumer_goods_factor = -1
         consumer_goods_expected_value = -0.5
@@ -333,6 +360,7 @@ leader_traits = {
     }
     #这几个是千禧专用特质
     YZ_leader_nor_self_use_c_traits_for_md = {
+        random = no
         local_resources_factor = 0.3
         consumer_goods_factor = -0.3
         consumer_goods_expected_value = -0.1
@@ -342,6 +370,7 @@ leader_traits = {
         industrial_capacity_dockyard = 0.3
     }
     YZ_leader_nor_self_use_b_traits_for_md = {
+        random = no
         enemy_operative_detection_chance = 500
         intelligence_agency_defense = 100
         political_power_factor = 0.2
@@ -353,6 +382,7 @@ leader_traits = {
         conscription = 0.2
     }
     YZ_leader_nor_self_use_a_traits_for_md = {
+        random = no
         army_attack_factor = 0.2
         army_defence_factor = 0.2
         army_org_factor = 0.2
@@ -360,6 +390,7 @@ leader_traits = {
         breakthrough_factor = 0.2
     }
     our_pround_and_happy = {   #我们的骄傲与喜悦
+        random = no
         enemy_operative_detection_chance = 750
         intelligence_agency_defense = 300
         political_power_factor = 1
@@ -372,6 +403,7 @@ leader_traits = {
         conscription = 0.2
     }
     our_glory_and_believe = {    #我们的荣光与信仰
+        random = no
         army_attack_factor = 3
         army_defence_factor = 3
         army_org_factor = 3
@@ -379,6 +411,7 @@ leader_traits = {
         breakthrough_factor = 3
     }
     tallest_biggest_uppest = {    #至高、至大、至上
+        random = no
         local_resources_factor = 1.75
         consumer_goods_factor = -1
         consumer_goods_expected_value = -1
@@ -388,6 +421,7 @@ leader_traits = {
         industrial_capacity_dockyard = 1
     }
     people_s_new_revolution = {    #人民的新革命
+        random = no
         communism_drift = 3
         army_attack_factor = 0.3
         army_defence_factor = 0.3
@@ -396,6 +430,7 @@ leader_traits = {
         breakthrough_factor = 0.3
     }
     new_class_struggle = {     #新时代的阶级斗争
+        random = no
         enemy_operative_detection_chance = 1000
         intelligence_agency_defense = 400
         political_power_factor = 1
@@ -410,6 +445,7 @@ leader_traits = {
         production_factory_max_efficiency_factor = 0.25
     }
     new_big_forward = {     #新征程的大跃进
+        random = no
         health_cost_multiplier_modifier = -0.5
         education_cost_multiplier_modifier = -0.5
         army_personnel_cost_multiplier_modifier = -0.99
@@ -432,6 +468,7 @@ leader_traits = {
         production_speed_buildings_factor = 0.5
     }
     new_lenin = {     #新时代的列宁
+        random = no
         communism_drift = 3
         local_resources_factor = 0.75
         consumer_goods_factor = -0.5
@@ -442,6 +479,7 @@ leader_traits = {
         industrial_capacity_dockyard = 0.3
     }
     social_new_designer = {     #社会的设计师
+        random = no
         enemy_operative_detection_chance = 1000
         intelligence_agency_defense = 400
         monthly_population = 1
@@ -460,6 +498,7 @@ leader_traits = {
 
     }
     comrade_we_forward = {    #同志们，勇敢地前进！
+        random = no
         offices_worker_requirement_modifier = -0.33
         civ_facs_worker_requirement_modifier = -0.33
         mil_facs_worker_requirement_modifier = -0.33
@@ -469,6 +508,7 @@ leader_traits = {
         local_resources_factor = 2
     }
     do_not_afraid_of_dead_and_scarif = {   #不怕困难、不怕牺牲
+        random = no
         communism_drift = 3
         army_attack_factor = 1
         army_defence_factor = 1
@@ -477,6 +517,7 @@ leader_traits = {
         breakthrough_factor = 1
     }
     fengshanguoshanfengshuiguoshui = {     #逢山过山逢水过水
+        random = no
         offices_worker_requirement_modifier = 0.33
         civ_facs_worker_requirement_modifier = 0.33
         mil_facs_worker_requirement_modifier = 0.33
@@ -493,6 +534,7 @@ leader_traits = {
         war_support_factor = 5
     }
     we_strong_than_hell = {    #我们比地狱更强大
+        random = no
         offices_worker_requirement_modifier = -0.33
         civ_facs_worker_requirement_modifier = -0.33
         mil_facs_worker_requirement_modifier = -0.33
@@ -509,6 +551,7 @@ leader_traits = {
         war_support_factor = 5
     }
     we_will_rebuild_our_world = {    #我们将重建世界
+        random = no
         health_cost_multiplier_modifier = -0.95
         education_cost_multiplier_modifier = -0.95
         army_personnel_cost_multiplier_modifier = -1.5
@@ -529,6 +572,7 @@ leader_traits = {
         consumer_goods_expected_value = -0.5
     }
     John_official_in_planting_field ={     #h
+        random = no
         production_speed_buildings_factor = 0.5
         consumer_goods_factor = -0.5
         production_speed_arms_factory_factor = 0.5
@@ -537,6 +581,7 @@ leader_traits = {
         military_industrial_organization_funds_gain = 0.5
     }
     victory_in_air = {    #u
+        random = no
         production_speed_air_base_factor = 2
         research_speed_factor = 0.2
         air_attack_factor = 0.5
@@ -547,12 +592,14 @@ leader_traits = {
         air_mastery_gain_factor = 1
     }
     war_lover_in_war_lover_field = {  #h
+        random = no
         compliance_growth = 0.5
         subversive_activites_upkeep = -0.5
         resistance_target = -0.5
         custom_modifier_tooltip = BUL_ferdinand_subjects_modifier_tt
     }
     kaishen_type_yichihyakuyichi = {    #u
+        random = no
         political_power_factor = 0.25
         command_power_gain = 1
         max_command_power = 500
@@ -566,6 +613,7 @@ leader_traits = {
         dig_in_speed = 1
     }
     hope_for_new_centery_navy = {
+        random = no
         consumer_goods_factor = -0.5
         production_speed_dockyard_factor = 0.75
         industrial_capacity_factory = 1
@@ -573,6 +621,7 @@ leader_traits = {
         naval_mastery_gain_factor = 2
     }
     pastisen_of_boomer = {
+        random = no
         equipment_bonus = {
             large_plane_airframe = {
                 air_bombing = 1
@@ -591,6 +640,7 @@ leader_traits = {
         experience_gain_air = 2
     }
     best_solve_in_keiei = {
+        random = no
         production_speed_buildings_factor = 0.5
         consumer_goods_factor = -0.3
         production_speed_industrial_complex_factor = 0.25
@@ -603,10 +653,12 @@ leader_traits = {
     }
     #柚子专员将军
     YZ_Commissioner_General = {
+        random = no
         production_speed_buildings_factor = 0.05
         army_org_factor = 0.1
     }
     this_character_has_been_clean = {
+        random = no
 
     }
     # 机械战警作为政治顾问时负责治安、反间谍与降低占领损耗。
