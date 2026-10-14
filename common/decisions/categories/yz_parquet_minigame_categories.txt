@@ -1,0 +1,8 @@
+# The PARQUET play/skip choice unlocks this group. Keep it after the first win
+# for replay; the independent campaign reward flag prevents repeated rewards.
+yz_parquet_minigame = {
+    icon = GFX_rino
+    priority = 2
+    allowed = { always = yes }
+    visible = { is_ai = no has_country_flag = parquet_started }
+}

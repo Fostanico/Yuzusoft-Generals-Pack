@@ -1,0 +1,78 @@
+# Character tokens and traits preserve the original PARQUET recruitment contract.
+# Flags prevent the debug replay path from generating either leader twice.
+yz_parquet_recruit_rino = {
+    if = {
+        limit = { NOT = { has_country_flag = yz_parquet_rino_recruited } }
+        meta_effect = {
+            text = {
+                generate_character = {
+                    token_base = ibaraki_rino
+                    name = YZ_character_name_ibaraki_rino
+                    can_be_captured = no
+                    gender = female
+                    nationality = JAP
+                    portraits = {
+                        civilian = {
+                            large = "gfx/leader/ibaraki_rino.png"
+                            small = "gfx/leader/ibaraki_rino_small.png"
+                        }
+                    }
+                    allowed_civil_war = { ROOT = { is_ai = no } }
+                    corps_commander = {
+                        desc = ibaraki_rino_corps_desc
+                        traits = {
+                            yz_yuzusoft_character
+                            ibaraki_rino_only_at_night
+                            bmi_device
+                        }
+                        skill = 5
+                        attack_skill = 7
+                        defense_skill = 3
+                        planning_skill = 5
+                        logistics_skill = 3
+                    }
+                }
+            }
+        }
+        set_country_flag = yz_parquet_rino_recruited
+    }
+}
+
+yz_parquet_recruit_tsubasa = {
+    if = {
+        limit = { NOT = { has_country_flag = yz_parquet_tsubasa_recruited } }
+        meta_effect = {
+            text = {
+                generate_character = {
+                    token_base = kido_tsubasa
+                    name = YZ_character_name_kido_tsubasa
+                    can_be_captured = no
+                    gender = female
+                    nationality = JAP
+                    portraits = {
+                        civilian = {
+                            large = "gfx/leader/kido_tsubasa.png"
+                            small = "gfx/leader/kido_tsubasa_small.png"
+                        }
+                    }
+                    allowed_civil_war = { ROOT = { is_ai = no } }
+                    corps_commander = {
+                        desc = kido_tsubasa_corps_desc
+                        traits = {
+                            yz_yuzusoft_character
+                            yasaidaburuninnikuaboramashimashibaagaa_trait
+                            kido_tsubasa_only_at_sun
+                            bmi_device
+                        }
+                        skill = 5
+                        attack_skill = 3
+                        defense_skill = 7
+                        planning_skill = 6
+                        logistics_skill = 7
+                    }
+                }
+            }
+        }
+        set_country_flag = yz_parquet_tsubasa_recruited
+    }
+}

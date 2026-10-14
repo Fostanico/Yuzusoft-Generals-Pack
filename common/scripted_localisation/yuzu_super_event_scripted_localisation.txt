@@ -414,6 +414,10 @@ defined_text = {      #超事件名言
 		trigger = { has_country_flag = we_marry_with_grok }
 		localization_key = we_marry_with_grok_quote
 	}
+	text = {
+		trigger = { has_country_flag = yz_parquet_together }
+		localization_key = yz_parquet_together_quote
+	}
 	text = { localization_key = yuzu_super_event_missing_quote }
 }
 defined_text = {       #超事件标题
@@ -831,6 +835,10 @@ defined_text = {       #超事件标题
 		trigger = { has_country_flag = we_marry_with_grok }
 		localization_key = we_marry_with_grok_title
 	}
+	text = {
+		trigger = { has_country_flag = yz_parquet_together }
+		localization_key = yz_parquet_together_title
+	}
 	text = { localization_key = yuzu_super_event_missing_title }
 }
 defined_text = {     #关闭按钮文字
@@ -1247,6 +1255,10 @@ defined_text = {     #关闭按钮文字
 	text = {
 		trigger = { has_country_flag = we_marry_with_grok }
 		localization_key = we_marry_with_grok_close_buttom
+	}
+	text = {
+		trigger = { has_country_flag = yz_parquet_together }
+		localization_key = yz_parquet_together_close_buttom
 	}
 	text = { localization_key = yuzu_super_event_missing_close }
 }

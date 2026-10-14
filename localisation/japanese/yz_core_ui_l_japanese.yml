@@ -1,0 +1,6 @@
+﻿l_japanese:
+ yz_core_empty_label: "§L空席§!"
+ yz_core_store_button: "§W柚子ショップ§!"
+ yz_core_economy_button: "§W柚子経済部§!"
+ yz_core_funds_full: "§W建設資金：£GFX_yz_money [?yz_money|+1]\n月間純増減：£GFX_yz_money [?monly_YZ_money_visible|+1]（§Y上限 [?yz_money_max|.0+Y]§!）\n工場が増えるほど月収も増加！§!"
+ yz_core_affection_full: "§W好感度：£GFX_love_depth [?love_depth|+1]\n毎月の変化：£GFX_love_depth [?monly_num_YZ_love_depth|+1]§!\n§t好感度§!は§Y少女を迎える§!と§Y上昇§!します！"

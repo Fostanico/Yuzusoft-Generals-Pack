@@ -374,9 +374,9 @@ music = {
 	song = "koto_battle"
 	
 	chance = {
-		factor = 1
+		factor = 0
 		modifier = {
-			factor = 1
+			factor = 0
 		}		
 	}	
 }
@@ -550,23 +550,5 @@ music = {
 		modifier = {
 			factor = 1
 		}		
-	}
-}
-music = {
-	song = "the_song_of_guanyu"
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 1
-		}
-	}
-}
-music = {
-	song = "Dear_Moments"
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 1
-		}
 	}
 }

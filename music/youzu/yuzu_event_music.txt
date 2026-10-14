@@ -3,10 +3,7 @@ music = {
 	song = "youzu25"
 	
 	chance = {
-		factor = 1
-		modifier = {
-			factor = 1
-		}		
+		factor = 0.33
 	}	
 }
 
@@ -14,10 +11,7 @@ music = {
 	song = "youzu26"
 	
 	chance = {
-		factor = 1
-		modifier = {
-			factor = 0.33
-		}		
+		factor = 0.33
 	}	
 }
 music = {
@@ -94,16 +88,13 @@ music = {
 music = {
 	song = "yuzu_sing_our_moving_spring"
 	chance = {
-		factor = 0.33
+		factor = 0
 	}
 }
 music = {
 	song = "yuzu_tsubasawokudasai"
 	chance = {
-		factor = 1
-		modifier = {
-			factor = 0.33
-		}
+		factor = 0
 	}		
 }
 music = {
@@ -193,18 +184,32 @@ music = {
 music = {
 	song = "battle_carry_on_violet_ver"
 	chance = {
-		factor = 0.33
+		factor = 0.0
 	}
 }
 music = {
 	song = "the_song_of_guanyu"
 	chance = {
-		factor = 0.33
+		factor = 0
 	}
 }
 music = {
 	song = "Dear_Moments"
 	chance = {
 		factor = 0.33
+	}
+}
+
+# submod 的曲子：只在事件里用 play_song 点名播放，不参与随机轮播（factor = 0）
+music = {
+	song = "yuzu_internationale_jp"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "yuzu_dongfanghong"
+	chance = {
+		factor = 0
 	}
 }

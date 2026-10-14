@@ -1,0 +1,71 @@
+# PARQUET adapter: country/player scope, called by the choice and challenge decision.
+# The core-circle SD caller is free play. Switching callers resets the board,
+# so a solved free-play board can never be reclassified as a rewarded challenge.
+# No legacy-save migration; PARQUET story rewards are claimed once per country and are
+# independent of yzm_new_game, yzm_close_window and board save/reload.
+# The shared yzm_award_win effect grants 5 PP for every victory from either entry.
+yz_parquet_start_minesweeper = {
+    if = {
+        limit = { is_ai = no }
+        set_country_flag = parquet_started
+        # Retain this marker so the marriage conditions require actual recruits.
+        set_country_flag = yz_parquet_session_initialized
+        clr_country_flag = show_parquet_recruit
+        remove_decision_on_cooldown = yz_parquet_open_table
+    }
+}
+
+yz_parquet_open_minesweeper = {
+    if = {
+        limit = { is_ai = no has_country_flag = parquet_started }
+        if = {
+            limit = { NOT = { has_country_flag = yz_parquet_minesweeper_challenge } }
+            yzm_new_game = yes
+        }
+        set_country_flag = yz_parquet_minesweeper_challenge
+        yzm_open_window = yes
+    }
+}
+
+yz_minesweeper_open_freeplay = {
+    if = {
+        limit = { is_ai = no }
+        if = {
+            limit = { has_country_flag = yz_parquet_minesweeper_challenge }
+            yzm_new_game = yes
+        }
+        clr_country_flag = yz_parquet_minesweeper_challenge
+        yzm_open_window = yes
+    }
+}
+
+# Both the player's skip choice and the first challenge win share this claim.
+# Mark the claim before character generation and the shared super-event effects.
+yz_parquet_grant_good_end = {
+    if = {
+        limit = { is_ai = no NOT = { has_country_flag = yz_parquet_minesweeper_rewarded } }
+        set_country_flag = yz_parquet_minesweeper_rewarded
+        set_country_flag = yz_parquet_finished
+        set_country_flag = yz_parquet_good_end
+        set_country_flag = yz_parquet_hc101_transfer_complete
+        clr_country_flag = yz_parquet_if_end
+        yz_parquet_recruit_rino = yes
+        yz_parquet_recruit_tsubasa = yes
+        yz_show_parquet_together_super_event = yes
+    }
+}
+
+# Called only by the real 71-safe-cell victory transition, never by opening UI.
+yz_parquet_minesweeper_first_win = {
+    if = {
+        limit = {
+            is_ai = no
+            has_country_flag = parquet_started
+            has_country_flag = yz_parquet_minesweeper_challenge
+            NOT = { has_country_flag = yz_parquet_minesweeper_rewarded }
+            check_variable = { var = yzm_status value = 2 compare = equals }
+            check_variable = { var = yzm_opened value = 71 compare = equals }
+        }
+        yz_parquet_grant_good_end = yes
+    }
+}

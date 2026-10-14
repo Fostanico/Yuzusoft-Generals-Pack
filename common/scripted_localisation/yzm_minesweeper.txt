@@ -1,0 +1,20 @@
+defined_text = {
+name = yzm_session_title
+text = { trigger = { has_country_flag = yz_parquet_minesweeper_challenge } localization_key = yzm_challenge_title }
+text = { localization_key = yzm_free_title }
+}
+
+defined_text = {
+name = yzm_status_text
+text = { trigger = { check_variable = { var = yzm_status value = 2 compare = equals } } localization_key = yzm_won }
+text = { trigger = { check_variable = { var = yzm_status value = 3 compare = equals } } localization_key = yzm_lost }
+text = { trigger = { check_variable = { var = yzm_status value = 4 compare = equals } } localization_key = yzm_fault }
+text = { trigger = { check_variable = { var = yzm_status value = 1 compare = equals } } localization_key = yzm_playing }
+text = { localization_key = yzm_ready }
+}
+
+defined_text = {
+name = yzm_mode_text
+text = { trigger = { check_variable = { var = yzm_mode value = 1 compare = equals } } localization_key = yzm_mode_flag }
+text = { localization_key = yzm_mode_reveal }
+}

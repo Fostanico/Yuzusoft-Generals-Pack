@@ -19,6 +19,7 @@ yz_clear_super_event_state = {
 	clr_country_flag = SCP_come_here
 	clr_country_flag = yz_codex_online
 	clr_country_flag = yz_grok_online
+	clr_country_flag = yz_parquet_together
 	clr_country_flag = we_forward_with_irno_flag
 	clr_country_flag = we_forward_with_makoto_flag
 	clr_country_flag = we_have_fukai_omo
@@ -111,4 +112,11 @@ yz_show_8620_super_event = {
 	play_song = youzu30
 	yz_prepare_private_super_event = yes
 	set_country_flag = we_restore_8620
+}
+
+# PARQUET good ending and the player's skip option share one conclusion.
+yz_show_parquet_together_super_event = {
+	play_song = furerufurueru
+	yz_prepare_private_super_event = yes
+	set_country_flag = yz_parquet_together
 }

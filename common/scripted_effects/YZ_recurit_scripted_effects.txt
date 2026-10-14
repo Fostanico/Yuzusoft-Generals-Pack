@@ -18,7 +18,7 @@ yzrecruit_murasame = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 advisor = {
                     slot = high_command
@@ -34,7 +34,9 @@ yzrecruit_murasame = {
                     desc = Murasame_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_congyu_trait
+                        yz_legacy_congyu_trait
+                        yz_adapted
+                        yz_infantry_officer
                     }
                     skill=5
                     attack_skill=6
@@ -66,13 +68,14 @@ yzrecruit_lena = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Lena_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_lena_trait
+                        yz_legacy_lena_trait
+                        yz_infantry_officer
                     }
                     skill=5
                     attack_skill=3
@@ -104,7 +107,7 @@ yzrecruit_mako = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 advisor = {
                     slot = high_command
@@ -120,7 +123,9 @@ yzrecruit_mako = {
                     desc = Mako_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_mozi_trait
+                        yz_legacy_mozi_trait
+                        yz_engineer_officer
+                        yz_special_officer
                     }
                     skill=5
                     attack_skill=6
@@ -146,6 +151,7 @@ yzrecruit_luchun = {
     if = {
         limit = {
             has_country_flag = qiyong_youzi_2
+            NOT = { OR = { has_country_flag = have_roka has_country_flag = have_koharu } }
         }
         set_country_flag = start_roko
         add_to_variable = { num_YZ_general = 2 }
@@ -156,72 +162,8 @@ yzrecruit_luchun = {
     }
     else = {
         custom_effect_tooltip = roko_peace_tt
-        set_country_flag = have_roka
-        meta_effect = {
-            text = {
-                generate_character = {
-                    token_base = Kurama_Roka
-                    name = YZ_character_name_maniva_roka
-                    can_be_captured = no
-                    gender = female
-                    nationality = JAP
-                    portraits = {
-                        civilian = {
-                            large = "gfx/leader/Roka.png"
-                            small = "gfx/leader/Roka2.png"
-                        }
-                    }
-                    allowed_civil_war = {
-                        is_ai = no
-                    }
-                    corps_commander = {
-                        desc = Roka_corps_desc
-                        traits={
-                            yz_yuzusoft_character
-                            yz_roka_trait
-                        }
-                        skill=5
-                        attack_skill=5
-                        defense_skill=5
-                        planning_skill=5
-                        logistics_skill=5
-                    }
-                }
-            }
-        }
-        set_country_flag = have_koharu
-        meta_effect = {
-            text = {
-                generate_character = {
-                    token_base = Kurama_Koharu
-                    name = YZ_character_name_kurama_koharu
-                    can_be_captured = no
-                    gender = female
-                    nationality = JAP
-                    portraits = {
-                        civilian = {
-                            large = "gfx/leader/Koharu.png"
-                            small = "gfx/leader/Koharu2.png"
-                        }
-                    }
-                    allowed_civil_war = {
-                        is_ai = no
-                    }
-                    corps_commander = {
-                        desc = koharu_corps_desc
-                        traits={
-                            yz_yuzusoft_character
-                            yz_koharu_trait
-                        }
-                        skill=5
-                        attack_skill=5
-                        defense_skill=5
-                        planning_skill=5
-                        logistics_skill=5
-                    }
-                }
-            }
-        }
+        yz_create_roka_recruit_character = yes
+        yz_create_koharu_recruit_character = yes
     }
     add_political_power = -20
 }
@@ -259,13 +201,14 @@ yzrecruit_nene = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = ningning_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        maid_ninging_trait
+                        yz_legacy_ninging_trait
+                        yz_engineer_officer
                     }
                     skill = 5
                     attack_skill = 7
@@ -297,13 +240,14 @@ yzrecruit_chou = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = chou_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_chou_trait
+                        yz_legacy_chou_trait
+                        yz_staff_officer
                     }
                     skill=5
                     attack_skill=4
@@ -347,7 +291,7 @@ yzrecruit_megulu = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 advisor = {
                     slot = high_command
@@ -363,7 +307,8 @@ yzrecruit_megulu = {
                     desc = Meguru_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_meigulu_trait
+                        yz_legacy_meigulu_trait
+                        yz_armor_officer
                     }
                     skill=5
                     attack_skill=5
@@ -395,7 +340,7 @@ yzrecruit_toko = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 advisor = {
                     slot = army_chief
@@ -421,7 +366,8 @@ yzrecruit_toko = {
                     desc = Toko_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_toko_trait
+                        yz_legacy_toko_trait
+                        yz_cavalry_officer
                     }
                     skill=5
                     attack_skill=5
@@ -462,13 +408,14 @@ yzrecruit_wakana = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = wakana_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_wakana_trait
+                        yz_legacy_wakana_trait
+                        yz_adapted
                     }
                     skill=4
                     attack_skill=4
@@ -510,13 +457,14 @@ yzrecruit_nanami = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Nanami_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_qihai_trait
+                        yz_legacy_qihai_trait
+                        yz_logistic_officer
                     }
                     skill=5
                     attack_skill=5
@@ -560,13 +508,14 @@ yzrecruit_hazuki = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = hazuki_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_hazuki_trait
+                        yz_legacy_hazuki_trait
+                        yz_special_officer
                     }
                     skill=5
                     attack_skill=5
@@ -615,13 +564,14 @@ yzrecruit_mayu = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Mayu_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        maid_Mayu_trait
+                        yz_legacy_Mayu_trait
+                        yz_engineer_officer
                     }
                     skill = 5
                     attack_skill = 3
@@ -788,13 +738,14 @@ yzrecruit_chisaki = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = chisaki_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_chisaki_trait
+                        yz_legacy_chisaki_trait
+                        yz_special_officer
                     }
                     skill=5
                     attack_skill=4
@@ -826,7 +777,7 @@ yzrecruit_kanna = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 advisor = {
                     slot = air_chief
@@ -842,7 +793,9 @@ yzrecruit_kanna = {
                     desc = kanna_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_kanna_trait
+                        yz_legacy_kanna_trait
+                        yz_infantry_officer
+                        yz_logistic_officer
                     }
                     skill=5
                     attack_skill=7
@@ -893,14 +846,16 @@ yzrecruit_zaozi = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
 
                 corps_commander = {
                     desc = zaozi_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_zaozi_trait
+                        yz_legacy_zaozi_trait
+                        yz_staff_officer
+                        yz_logistic_officer
                     }
                     skill=5
                     attack_skill=6
@@ -932,13 +887,15 @@ yzrecruit_nozomi = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Nozomi_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_nozomi_trait
+                        yz_legacy_nozomi_trait
+                        yz_infantry_officer
+                        yz_logistic_officer
                     }
                     skill=5
                     attack_skill=5
@@ -968,13 +925,13 @@ yzrecruit_mei = {
                         small = "gfx/leader/Mei2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Hiuchidani_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_mei_trait
-                        yz_baiban_trait
+                        yz_cavalry_officer
                     }
                     skill = 5
                     attack_skill = 8
@@ -985,6 +942,54 @@ yzrecruit_mei = {
             }
         }
     }
+}
+yzrecruit_suzune = {
+    set_country_flag = have_suzune
+    country_event = { id = tongyong_event.1 }
+    add_to_variable = { num_YZ_general = 2 }
+    meta_effect = {
+        text = {
+				generate_character = {
+					token_base = suzune
+					name = YZ_character_name_shioyama_suzune
+					gender = female
+					nationality = JAP
+					portraits = {
+						civilian = {
+							large = "gfx/leader/suzune.png"
+							small = "gfx/leader/suzune2.png"
+						}
+					}
+					allowed_civil_war = {
+						ROOT = { is_ai = no }
+					}
+					advisor = {
+						slot = high_command
+						cost = 100
+						idea_token = suzune_command
+						desc = suzune_army_desc
+						ledger = army
+						traits = { suzune_army  }
+						ai_will_do = {
+							factor = 0
+						}
+					}
+					corps_commander = {
+						desc = suzune_corps_desc
+						traits={
+						    yz_yuzusoft_character
+                            yz_legacy_suzune_trait
+                            yz_logistic_officer
+						}
+						skill=5
+						attack_skill=3
+						defense_skill=3
+						planning_skill=3
+						logistics_skill=9
+					}
+				}
+			}
+        }
 }
 yzrecruit_fumika = {
     add_political_power = -10
@@ -1006,7 +1011,7 @@ yzrecruit_fumika = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 advisor = {
                     slot = army_chief
@@ -1022,7 +1027,9 @@ yzrecruit_fumika = {
                     desc = Fumika_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_fumika_trait
+                        yz_legacy_fumika_trait
+                        yz_staff_officer
+                        yz_special_officer
                     }
                     skill=5
                     attack_skill=5
@@ -1061,13 +1068,14 @@ yzrecruit_orie = {
                         small = "gfx/leader/Orie2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Orie_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_orie_trait
-                        yz_baiban_trait
+                        yz_staff_officer
+                        yz_logistic_officer
                     }
                     skill = 5
                     attack_skill = 5
@@ -1117,13 +1125,15 @@ yzrecruit_kaguya = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Kaguya_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_kaguya_trait
+                        yz_legacy_kaguya_trait
+                        yz_armor_officer
+                        yz_infantry_officer
                     }
                     skill = 5
                     attack_skill = 5
@@ -1161,13 +1171,15 @@ yzrecruit_airi = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Airi_corps_desc
                         traits={
                             yz_yuzusoft_character
                             yz_airi_trait
+                            yz_infantry_officer
+                            yz_logistic_officer
                         }
                         skill=3
                         attack_skill=4
@@ -1249,12 +1261,14 @@ yzrecruit_airi = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         traits={
                             yz_yuzusoft_character
                             yz_airi_trait
+                            yz_infantry_officer
+                            yz_logistic_officer
                         }
                         skill=3
                         attack_skill=4
@@ -1287,13 +1301,15 @@ yzrecruit_shirley = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = shirley_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        maid_shirley_trait
+                        yz_legacy_shirley_trait
+                        yz_infantry_officer
+                        yz_staff_officer
                     }
                     skill = 5
                     attack_skill = 1
@@ -1324,13 +1340,14 @@ yzrecruit_xiyin = {
                         small = "gfx/leader/Yune2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = amagiri_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_yune_trait
-                        #yz_baiban_trait
+                        yz_cavalry_officer
+                        yz_armor_officer
                     }
                     skill = 7
                     attack_skill = 11
@@ -1362,13 +1379,16 @@ yzrecruit_zhenxiao = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Masaki_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        maid_masaki_trait
+                        yz_legacy_masaki_trait
+                        yz_infantry_officer
+                        yz_staff_officer
+                        yz_adapted
                     }
                     skill = 5
                     attack_skill = 5
@@ -1398,13 +1418,13 @@ yzrecruit_konoka = {
                         small = "gfx/leader/Konoka2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Konoka_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        #yz_konoda_trait
                         yz_konoka_trait
+                        yz_infantry_officer
                     }
                     skill = 5
                     attack_skill = 5
@@ -1434,13 +1454,14 @@ yzrecruit_tia = {
                         small = "gfx/leader/Tia2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Tia_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_tia_trait
-                        #yz_baiban_trait
+                        yz_staff_officer
+                        yz_logistic_officer
                     }
                     skill = 5
                     attack_skill = 7
@@ -1483,14 +1504,16 @@ yzrecruit_miu = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Miu_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        maid_miu_trait
-                        trait_maid_vampires
+                        yz_legacy_miu_trait
+                        yz_legacy_vampires_trait
+                        yz_adapted
+                        yz_special_officer
                     }
                     skill = 5
                     attack_skill = 7
@@ -1526,11 +1549,12 @@ yzrecruit_hiyori = {
                         small = "gfx/leader/bighouse2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     traits = {
                         yz_yuzusoft_character
                         alexander_bartender
+                        yz_logistic_officer
                     }
                     skill = 5
                     attack_skill = 4
@@ -1561,13 +1585,14 @@ yzrecruit_nicola = {
                         small = "gfx/leader/Nicola2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Nicola_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_nicola_trait
-                        trait_maid_vampires
+                        yz_legacy_vampires_trait
+                        yz_engineer_officer
                     }
                     skill = 5
                     attack_skill = 5
@@ -1599,13 +1624,14 @@ yzrecruit_elina = {
                         small = "gfx/leader/elina_owen2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = elina_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_elina_owen_trait
-                        trait_maid_vampires
+                        yz_legacy_vampires_trait
+                        yz_armor_officer
                     }
                     skill = 5
                     attack_skill = 5
@@ -1641,14 +1667,15 @@ yzrecruit_liyin = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Rio_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_rio_trait_1
-                        trait_maid_vampires
+                        yz_legacy_rio_trait_1
+                        yz_legacy_vampires_trait
+                        yz_adapted
                     }
                     skill=6
                     attack_skill=6
@@ -1684,12 +1711,13 @@ yzrecruit_buliangzi = {
                         small = "gfx/leader/mera_azusa2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = azusa_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_mera_azusa_trait
+                        yz_infantry_officer
                     }
                     skill = 5
                     attack_skill = 5
@@ -1720,7 +1748,7 @@ yzrecruit_hinata = {
                         small = "gfx/leader/Hinata2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Hinata_corps_desc
                     traits = {
@@ -1758,7 +1786,7 @@ yzrecruit_maya = {
                         small = "gfx/leader/Maya2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Maya_corps_desc
                     traits = {
@@ -1795,7 +1823,7 @@ yzrecruit_sena = {
                         small = "gfx/leader/Sena2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Sena_corps_desc
                     traits = {
@@ -1831,7 +1859,7 @@ yzrecruit_akari = {
                         small = "gfx/leader/Akari2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = akari_corps_desc
                     traits = {
@@ -1869,7 +1897,7 @@ yzrecruit_shizuru = {
                         small = "gfx/leader/Shizuru2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Shizuru_corps_desc
                     traits = {
@@ -1907,13 +1935,13 @@ yzrecruit_chihaya = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = Chihaya_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_chihaya_trait_1
+                        yz_legacy_chihaya_trait_1
                     }
                     skill=1
                     attack_skill=1
@@ -1944,14 +1972,12 @@ yzrecruit_sasara = {
                         small = "gfx/leader/Sasara2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = sasara_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_sasara_trait
-                        yz_baiban_trait
-
                     }
                     skill = 5
                     attack_skill = 5
@@ -1982,13 +2008,12 @@ yzrecruit_yuiko = {
                         small = "gfx/leader/Yuiko2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Yuiko_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_yuiko_trait
-                        yz_baiban_trait
 
                     }
                     skill = 5
@@ -2021,13 +2046,16 @@ yzrecruit_sana = {
                     }
                 }
                 allowed_civil_war = {
-                    is_ai = no
+                    ROOT = { is_ai = no }
                 }
                 corps_commander = {
                     desc = sana_corps_desc
                     traits={
                         yz_yuzusoft_character
-                        maid_sana_trait
+                        yz_legacy_sana_trait
+                        yz_infantry_officer
+                        yz_adapted
+                        yz_staff_officer
                     }
                     skill=5
                     attack_skill=2
@@ -2058,13 +2086,13 @@ yzrecruit_aoi = {
                         small = "gfx/leader/Aoi2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Aoi_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_aoi_trait
-                        yz_baiban_trait
+                        yz_infantry_officer
 
                     }
                     skill = 5
@@ -2096,7 +2124,7 @@ yzrecruit_ruri = {
                         small = "gfx/leader/Ruri2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Ruri_corps_desc
                     traits = {
@@ -2104,6 +2132,8 @@ yzrecruit_ruri = {
                         yz_ruri_trait
                         ruri_haa
                         my_doubutsu_tomodachi
+                        yz_adapted
+                        yz_cavalry_officer
                     }
                     skill = 5
                     attack_skill = 15
@@ -2133,7 +2163,7 @@ yzrecruit_mahiro = {
                         small = "gfx/leader/Mahiro2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Mahiro_corps_desc
                     traits = {
@@ -2169,7 +2199,7 @@ yzrecruit_yukari = {
                         small = "gfx/leader/Yukari2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Yukari_corps_desc
                     traits = {
@@ -2206,14 +2236,15 @@ yzrecruit_sakuyahime = {
                         small = "gfx/leader/Sakuyahime2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = sakuyahime_corps_desc
                     traits = {
                         yz_yuzusoft_character
                         yz_sakuyahime_trait
-                        yz_baiban_trait
                         yz_kamikaranokisu_trait
+                        yz_adapted
+                        yz_logistic_officer
                     }
                     skill = 5
                     attack_skill = 7
@@ -2243,7 +2274,7 @@ yzrecruit_yuki = {
                         small = "gfx/leader/Yuki2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Yuki_corps_desc
                     traits = {
@@ -2279,7 +2310,7 @@ yzrecruit_sumi = {
                         small = "gfx/leader/Sumi2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Sumi_corps_desc
                     traits = {
@@ -2315,7 +2346,7 @@ yzrecruit_noriko = {
                         small = "gfx/leader/Noriko2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Noriko_corps_desc
                     traits = {
@@ -2351,7 +2382,7 @@ yzrecruit_tae = {
                         small = "gfx/leader/Tae2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = Tae_corps_desc
                     traits = {
@@ -2391,14 +2422,15 @@ yzrecruit_ena = {
                         small = "gfx/leader/ena2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = ena_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        #yz_baiban_trait
                         hanakyu
                         influencing_singer
+                        yz_infantry_officer
+                        yz_armor_officer
                     }
                     skill = 5
                     attack_skill = 6
@@ -2433,12 +2465,13 @@ yzrecruit_anju = {
                         small = "gfx/leader/anju2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = anju_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        #yz_baiban_trait
+                        yz_cavalry_officer
+                        yz_engineer_officer
                         give_me_a_shining_at_b_point
                         good_at_both_gita_and_study
                     }
@@ -2481,12 +2514,14 @@ yzrecruit_ririko = {
                         small = "gfx/leader/ririko2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = ririko_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        #yz_baiban_trait
+                        yz_logistic_officer
+                        yz_staff_officer
+                        yz_adapted
                         good_woman_ririko
                         broker_of_band
                     }
@@ -2523,12 +2558,13 @@ yzrecruit_tsukimi = {
                         small = "gfx/leader/tsukimi2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = tsukimi_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        #yz_baiban_trait
+                        yz_infantry_officer
+                        yz_staff_officer
                         big_small_sister_good_at_sex
                         yuzusoft_fans_girl
                     }
@@ -2565,12 +2601,13 @@ yzrecruit_nayuka = {
                         small = "gfx/leader/nayuka2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = nayuka_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        #yz_baiban_trait
+                        yz_staff_officer
+                        yz_armor_officer
                         best_music_maker
                     }
                     skill = 5
@@ -2612,12 +2649,12 @@ yzrecruit_miku = {
                         small = "gfx/leader/miku2.png"
                     }
                 }
-                allowed_civil_war = { is_ai = no }
+                allowed_civil_war = { ROOT = { is_ai = no } }
                 corps_commander = {
                     desc = miku_corps_desc
                     traits = {
                         yz_yuzusoft_character
-                        #yz_baiban_trait
+                        yz_infantry_officer
                         internet_oppose_line_little_princess
                     }
                     skill = 5
@@ -2659,7 +2696,7 @@ yzrecruit_irno_full = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         traits = {
@@ -2707,7 +2744,7 @@ yzrecruit_misaka_makoto_full = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = misaka_makoto_desc_commander
@@ -2748,7 +2785,7 @@ yzrecruit_robocop = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     advisor = {
                         slot = political_advisor
@@ -2801,7 +2838,7 @@ yzrecruit_codex = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     advisor = {
                         slot = political_advisor
@@ -2867,7 +2904,7 @@ yzrecruit_grok = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     advisor = {
                         slot = political_advisor
@@ -3010,6 +3047,10 @@ yz_debug_recruit_all_registered_characters = {
         if = {
             limit = { NOT = { has_country_flag = have_mei } }
             yzrecruit_mei = yes
+        }
+        if = {
+            limit = { NOT = { has_country_flag = have_suzune } }
+            yzrecruit_suzune = yes
         }
         if = {
             limit = { NOT = { has_country_flag = have_fumika } }
@@ -3242,5 +3283,86 @@ yz_debug_recruit_all_registered_characters = {
         set_country_flag = recruit_NK_titile_clicked
         set_country_flag = TL_recruit_title_clicked
         set_country_flag = LLLJ_recruit_title_clicked
+    }
+}
+
+# Shared formal payloads used by peaceful legacy and direct route recruitment.
+yz_create_roka_recruit_character = {
+    if = {
+        limit = { NOT = { has_country_flag = have_roka } }
+        set_country_flag = have_roka
+        meta_effect = {
+            text = {
+                generate_character = {
+                    token_base = Kurama_Roka
+                    name = YZ_character_name_maniva_roka
+                    can_be_captured = no
+                    gender = female
+                    nationality = JAP
+                    portraits = {
+                        civilian = {
+                            large = "gfx/leader/Roka.png"
+                            small = "gfx/leader/Roka2.png"
+                        }
+                    }
+                    allowed_civil_war = {
+                        ROOT = { is_ai = no }
+                    }
+                    corps_commander = {
+                        desc = Roka_corps_desc
+                        traits={
+                            yz_yuzusoft_character
+                            yz_roka_trait
+                            yz_infantry_officer
+                        }
+                        skill=5
+                        attack_skill=5
+                        defense_skill=5
+                        planning_skill=5
+                        logistics_skill=5
+                    }
+                }
+            }
+        }
+    }
+}
+
+yz_create_koharu_recruit_character = {
+    if = {
+        limit = { NOT = { has_country_flag = have_koharu } }
+        set_country_flag = have_koharu
+        meta_effect = {
+            text = {
+                generate_character = {
+                    token_base = Kurama_Koharu
+                    name = YZ_character_name_kurama_koharu
+                    can_be_captured = no
+                    gender = female
+                    nationality = JAP
+                    portraits = {
+                        civilian = {
+                            large = "gfx/leader/Koharu.png"
+                            small = "gfx/leader/Koharu2.png"
+                        }
+                    }
+                    allowed_civil_war = {
+                        ROOT = { is_ai = no }
+                    }
+                    corps_commander = {
+                        desc = koharu_corps_desc
+                        traits={
+                            yz_yuzusoft_character
+                            yz_koharu_trait
+                            yz_armor_officer
+                        }
+                        skill=5
+                        attack_skill=5
+                        defense_skill=5
+                        planning_skill=5
+                        logistics_skill=5
+                    }
+                }
+            }
+        }
     }
 }

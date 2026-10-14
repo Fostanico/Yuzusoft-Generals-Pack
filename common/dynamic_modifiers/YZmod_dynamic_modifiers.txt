@@ -298,6 +298,17 @@ youzu_air_dynamic_modifier = {
 	air_strategic_bomber_bombing_factor = youzu_air_strategic_bomber_bombing_factor #陆军经验增长
 	carrier_capacity_penalty_reduction = youzu_carrier_capacity_penalty_reduction #适役人口
 }
+# 自动庆祝使用与手动生日相同的 200 天国家加成；名称复用现有三语本地化。
+sana_automatic_birthday = {
+    enable = { always = yes }
+    consumer_goods_factor = -0.05
+    industrial_capacity_factory = 0.05
+    industrial_capacity_dockyard = 0.05
+    production_speed_buildings_factor = 0.1
+    political_power_gain = 0.1
+    political_power_factor = 0.05
+}
+
 sana_birthday_dynamic_modifier = {
 	enable = { always = yes } 
 	army_attack_factor = sana_army_attack
@@ -320,6 +331,7 @@ YZ_noa_event_103_consumer_goods_modifier = {
 # 核心攻防留在州级动态修正中，使其只在被选中的核心州内结算。
 yidian_modifier = {
 	enable = { always = yes }
+	icon = GFX_idea_yidian
 	local_resources = 0.5
 	local_building_slots = 4
 	local_building_slots_factor = 0.25
@@ -328,4 +340,18 @@ yidian_modifier = {
 	local_factory_energy_consumption_per_infrastructure = -0.15
 	local_factory_energy_consumption = -0.2
 	state_production_speed_buildings_factor = 0.3
+}
+
+cat_good_feeling_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_trait_cat_trait
+	consumer_goods_factor = cat_good_feeling_consumer_goods_factor
+	stability_weekly = cat_good_feeling_factor
+	war_support_weekly = cat_good_feeling_factor
+	stability_factor = cat_good_feeling_stability_factor
+	war_support_factor = cat_good_feeling_stability_factor
+	army_attack_factor = cat_good_feeling_army_factor
+	army_defence_factor = cat_good_feeling_army_factor
+	army_org_factor = cat_good_feeling_army_factor
+	army_strength_factor = cat_good_feeling_army_factor
 }

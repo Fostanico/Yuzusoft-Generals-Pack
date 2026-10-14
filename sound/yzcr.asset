@@ -1,0 +1,14 @@
+# Shared confirmation sound for every work, native mono PCM WAV.
+sound = {
+	name = "yzcr_confirm_sample"
+	file = "yzcr/confirm.wav"
+}
+soundeffect = {
+	name = "yzcr_confirm_click"
+	volume = 0.6
+	sounds = { sound = yzcr_confirm_sample }
+}
+category = {
+	name = "UI"
+	soundeffects = { yzcr_confirm_click }
+}

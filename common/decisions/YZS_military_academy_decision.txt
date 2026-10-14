@@ -227,23 +227,23 @@ YZS_military_academy_category = {
 		}
 
 	}
-	revenge_for_SPG = {		#自火复活赛打赢了，这个可以暂时不上了——huhu		#自火复活赛又打输了，没肘过牢大，还是弄回来吧
-		priority = 20
-		cost = 0
-		visible = {
-			or = {
-				has_country_flag = qiyong_youzi_2
-				has_country_flag = qiyong_youzi_3
-			}
-			has_country_flag = open_YZS_military_academy
-		}
-		fire_only_once = yes
-		complete_effect = {
-			set_technology = {
-				SPG_back_to_light = 1
-			}
-		}
-	}
+	#revenge_for_SPG = {		#自火复活赛打赢了，这个可以暂时不上了——huhu		#自火复活赛又打输了，没肘过牢大，还是弄回来吧		#攻击P社老冯ing……——huhu
+		#priority = 20
+		#cost = 0
+		#visible = {
+			#or = {
+				#has_country_flag = qiyong_youzi_2
+				#has_country_flag = qiyong_youzi_3
+			#}
+			#has_country_flag = open_YZS_military_academy
+		#}
+		#fire_only_once = yes
+		#complete_effect = {
+			#set_technology = {
+				#SPG_back_to_light = 1
+			#}
+		#}
+	#}
 
 	ship_making_standardlized = {
 		priority = 20
@@ -2349,7 +2349,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_cuodao_trait
+					has_trait = yz_legacy_cuodao_trait
 				}
 			}
 		}
@@ -2359,7 +2359,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_cuodao_trait
+						has_trait = yz_legacy_cuodao_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2413,7 +2413,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_kanna_trait
+					has_trait = yz_legacy_kanna_trait
 				}
 			}
 		}
@@ -2423,7 +2423,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_kanna_trait
+						has_trait = yz_legacy_kanna_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2445,7 +2445,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_meigulu_trait
+					has_trait = yz_legacy_meigulu_trait
 				}
 			}
 		}
@@ -2455,7 +2455,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_meigulu_trait
+						has_trait = yz_legacy_meigulu_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2477,7 +2477,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_congyu_trait
+					has_trait = yz_legacy_congyu_trait
 				}
 			}
 		}
@@ -2487,7 +2487,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_congyu_trait
+						has_trait = yz_legacy_congyu_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2509,7 +2509,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_qihai_trait
+					has_trait = yz_legacy_qihai_trait
 				}
 			}
 		}
@@ -2519,7 +2519,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_qihai_trait
+						has_trait = yz_legacy_qihai_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2541,7 +2541,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_ninging_trait
+					has_trait = yz_legacy_ninging_trait
 				}
 			}
 		}
@@ -2551,7 +2551,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_ninging_trait
+						has_trait = yz_legacy_ninging_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2573,7 +2573,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_noa_trait
+					has_trait = yz_legacy_noa_trait
 				}
 			}
 		}
@@ -2583,7 +2583,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_noa_trait
+						has_trait = yz_legacy_noa_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2605,7 +2605,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_nozomi_trait
+					has_trait = yz_legacy_nozomi_trait
 				}
 			}
 		}
@@ -2615,7 +2615,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_nozomi_trait
+						has_trait = yz_legacy_nozomi_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2638,8 +2638,8 @@ YZS_military_academy_category = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
 					or = {
-						has_trait = maid_rio_trait_1
-						has_trait = maid_rio_trait_2
+						has_trait = yz_legacy_rio_trait_1
+						has_trait = yz_legacy_rio_trait_2
 					}
 				}
 			}
@@ -2651,8 +2651,8 @@ YZS_military_academy_category = {
 				random_army_leader = {
 					limit = {
 						or = {
-							has_trait = maid_rio_trait_1
-							has_trait = maid_rio_trait_2
+							has_trait = yz_legacy_rio_trait_1
+							has_trait = yz_legacy_rio_trait_2
 						}
 					}
 					set_character_flag = have_been_chosen
@@ -2675,7 +2675,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_suzune_trait
+					has_trait = yz_legacy_suzune_trait
 				}
 			}
 		}
@@ -2685,7 +2685,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_suzune_trait
+						has_trait = yz_legacy_suzune_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2707,7 +2707,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_fangnai_trait
+					has_trait = yz_legacy_fangnai_trait
 				}
 			}
 		}
@@ -2717,7 +2717,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_fangnai_trait
+						has_trait = yz_legacy_fangnai_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2789,7 +2789,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_zaozi_trait
+					has_trait = yz_legacy_zaozi_trait
 				}
 			}
 		}
@@ -2799,7 +2799,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_zaozi_trait
+						has_trait = yz_legacy_zaozi_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2821,7 +2821,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_chou_trait
+					has_trait = yz_legacy_chou_trait
 				}
 			}
 		}
@@ -2831,7 +2831,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_chou_trait
+						has_trait = yz_legacy_chou_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2853,7 +2853,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_amane_trait
+					has_trait = yz_legacy_amane_trait
 				}
 			}
 		}
@@ -2863,7 +2863,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_amane_trait
+						has_trait = yz_legacy_amane_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2885,7 +2885,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_fumika_trait
+					has_trait = yz_legacy_fumika_trait
 				}
 			}
 		}
@@ -2895,7 +2895,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_fumika_trait
+						has_trait = yz_legacy_fumika_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2917,7 +2917,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_gongping_trait
+					has_trait = yz_legacy_gongping_trait
 				}
 			}
 		}
@@ -2927,7 +2927,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_gongping_trait
+						has_trait = yz_legacy_gongping_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2949,7 +2949,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_hazuki_trait
+					has_trait = yz_legacy_hazuki_trait
 				}
 			}
 		}
@@ -2959,7 +2959,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_hazuki_trait
+						has_trait = yz_legacy_hazuki_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -2982,9 +2982,12 @@ YZS_military_academy_category = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
 					or = {
+						has_trait = yz_legacy_kurumi_trait
 						has_trait = yz_kurumi_trait
 						has_trait = yz_kurumi_trait0
 						has_trait = yz_kurumi_trait01
+						has_trait = yz_kurumi_trait_1
+						has_trait = yz_kurumi_trait_2
 					}
 				}
 			}
@@ -2995,7 +2998,16 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_kurumi_trait
+						# 来海由事件动态生成，剧情路线会在数种专属特质间切换；
+						# yz_legacy_kurumi_trait 供当前补发入口生成的来海使用。
+						or = {
+							has_trait = yz_legacy_kurumi_trait
+							has_trait = yz_kurumi_trait
+							has_trait = yz_kurumi_trait0
+							has_trait = yz_kurumi_trait01
+							has_trait = yz_kurumi_trait_1
+							has_trait = yz_kurumi_trait_2
+						}
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3017,7 +3029,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_mozi_trait
+					has_trait = yz_legacy_mozi_trait
 				}
 			}
 		}
@@ -3027,7 +3039,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_mozi_trait
+						has_trait = yz_legacy_mozi_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3049,7 +3061,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_sana_trait
+					has_trait = yz_legacy_sana_trait
 				}
 			}
 		}
@@ -3059,7 +3071,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_sana_trait
+						has_trait = yz_legacy_sana_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3081,7 +3093,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_toko_trait
+					has_trait = yz_legacy_toko_trait
 				}
 			}
 		}
@@ -3091,7 +3103,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_toko_trait
+						has_trait = yz_legacy_toko_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3113,7 +3125,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_wakana_trait
+					has_trait = yz_legacy_wakana_trait
 				}
 			}
 		}
@@ -3123,7 +3135,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_wakana_trait
+						has_trait = yz_legacy_wakana_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3145,7 +3157,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_sairi_trait_2
+					has_trait = yz_legacy_sairi_trait_2
 				}
 			}
 		}
@@ -3155,7 +3167,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_sairi_trait_2
+						has_trait = yz_legacy_sairi_trait_2
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3176,7 +3188,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_masaki_trait
+					has_trait = yz_legacy_masaki_trait
 				}
 			}
 		}
@@ -3186,7 +3198,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_masaki_trait
+						has_trait = yz_legacy_masaki_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3207,7 +3219,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_miu_trait
+					has_trait = yz_legacy_miu_trait
 				}
 			}
 		}
@@ -3217,7 +3229,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_miu_trait
+						has_trait = yz_legacy_miu_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3238,7 +3250,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_Mayu_trait
+					has_trait = yz_legacy_Mayu_trait
 				}
 			}
 		}
@@ -3248,7 +3260,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_Mayu_trait
+						has_trait = yz_legacy_Mayu_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3269,7 +3281,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_kotori_trait
+					has_trait = yz_legacy_kotori_trait
 				}
 			}
 		}
@@ -3279,7 +3291,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_kotori_trait
+						has_trait = yz_legacy_kotori_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3300,7 +3312,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_shirley_trait
+					has_trait = yz_legacy_shirley_trait
 				}
 			}
 		}
@@ -3310,7 +3322,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_shirley_trait
+						has_trait = yz_legacy_shirley_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3697,7 +3709,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_lena_trait
+					has_trait = yz_legacy_lena_trait
 				}
 			}
 		}
@@ -3706,7 +3718,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_lena_trait
+						has_trait = yz_legacy_lena_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3727,7 +3739,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_chisaki_trait
+					has_trait = yz_legacy_chisaki_trait
 				}
 			}
 		}
@@ -3736,7 +3748,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_chisaki_trait
+						has_trait = yz_legacy_chisaki_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes
@@ -3786,7 +3798,7 @@ YZS_military_academy_category = {
 			not = {
 				any_army_leader = {
 					has_character_flag = have_been_chosen
-					has_trait = maid_kaguya_trait
+					has_trait = yz_legacy_kaguya_trait
 				}
 			}
 		}
@@ -3795,7 +3807,7 @@ YZS_military_academy_category = {
 				yz_academy_close_choose_menu = yes
 				random_army_leader = {
 					limit = {
-						has_trait = maid_kaguya_trait
+						has_trait = yz_legacy_kaguya_trait
 					}
 					set_character_flag = have_been_chosen
 					yz_academy_refresh_selected_leader_display = yes

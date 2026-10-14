@@ -1,6 +1,24 @@
 # 柚子核心周期入口。HOI4 的周期 on_action 会按国家调用；月度系统必须保持玩家与
-# 启用 flag 门槛。佐奈生日由决议直接读取游戏日历，派生值走事件/周/月刷新。
+# 启用 flag 门槛。佐奈自动生日需要准确命中 6 月 8 日，每日入口只检查玩家已启用的模式。
 on_actions = {
+    # 日期精确到天，无法由周/月入口保证。国家 scope；先检查开关和玩家，再计算日期。
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    is_ai = no
+                    has_country_flag = sana_automatic_birthday_enabled
+                    has_country_flag = have_sana
+                    has_country_flag = qiyong_youzi_2
+                    NOT = { has_country_flag = yz_bad_end }
+                    yz_sana_is_birthday = yes
+                    yz_sana_birthday_not_celebrated_this_year = yes
+                }
+                yz_sana_celebrate_automatic_birthday = yes
+            }
+        }
+    }
+
     on_weekly = {      #每周统一入口：防止被大清洗、低好感离开
         effect = {
             if = {
@@ -58,6 +76,19 @@ on_actions = {
         }
     }
 
+    # ROOT 为进攻方，FROM 为防守方。战争关系建立时角色分流已经完成；同时检查双方，
+    # 使无论动态内战国家被放在哪个 scope，都能在开战当刻回收误分流角色。
+    on_war_relation_added = {
+        effect = {
+            ROOT = {
+                yz_return_mod_generals_to_human_civil_war_side = yes
+            }
+            FROM = {
+                yz_return_mod_generals_to_human_civil_war_side = yes
+            }
+        }
+    }
+
     on_startup = {
         effect = {
             # 仅在新开局判定一次：2000 年后且俄车战争已由千禧黎明历史文件建立时，
@@ -100,6 +131,11 @@ on_actions = {
     # 柚子币唯一月结算入口：其他 on_action 不得再次扣除部门或长期投资支出。
     on_monthly = {     #每月统一入口：商店限制、好感、工业资金与坏结局
         effect = {
+            # 低频兜底修复异常内战脚本与旧存档中已经分流到 AI 一侧的本 Mod 将领。
+            ROOT = {
+                yz_return_mod_generals_to_human_civil_war_side = yes
+            }
+
             ROOT = {
                 if = {
                     limit = {

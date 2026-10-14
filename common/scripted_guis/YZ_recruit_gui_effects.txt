@@ -61,15 +61,7 @@ scripted_gui = {
 		}
 		effects = {
 			SR_click = {
-				if = {
-					limit = {
-						has_country_flag = QL_recruit_show
-					}
-					clr_country_flag = QL_recruit_show
-				}
-				else = {
-					set_country_flag = QL_recruit_show
-				}
+				yzcr_request_senren = yes
 			}
 		}
 		triggers = {
@@ -113,15 +105,7 @@ scripted_gui = {
 		}
 		effects = {
 			RJ_click = {
-				if = {
-					limit = {
-						has_country_flag = RJ_recruit_show
-					}
-					clr_country_flag = RJ_recruit_show
-				}
-				else = {
-					set_country_flag = RJ_recruit_show
-				}
+				yzcr_request_riddle = yes
 			}
 		}
 		triggers = {
@@ -378,23 +362,23 @@ scripted_gui = {
 		}
 		effects = {
 			recruit_murasame_click = {
-				yzrecruit_murasame = yes
+				yzcr_recruit_murasame = yes
 			}
 			recruit_lena_click = {                                               #哎wc蕾娜这里是怎么个事啊
-				yzrecruit_lena = yes
+				yzcr_recruit_lena = yes
 			}
 			recruit_mako_click = {
-				yzrecruit_mako = yes
+				yzcr_recruit_mako = yes
 			}
 			recruit_title_click = {
 				if = {
 					limit = {
 						not = { has_country_flag = recruit_QL_titile_clicked }
 					}
-					yzrecruit_murasame = yes
-					yzrecruit_lena = yes
-					yzrecruit_mako = yes
-					yzrecruit_luchun = yes
+					yzcr_recruit_murasame = yes
+					yzcr_recruit_lena = yes
+					yzcr_recruit_mako = yes
+					yzcr_recruit_luchun_legacy = yes
 					set_country_flag = recruit_QL_titile_clicked
 				}
 				else = {
@@ -402,10 +386,10 @@ scripted_gui = {
 				}
 			}
 			recruit_yoshino_click = {
-				yzrecruit_yoshino = yes
+				yzcr_recruit_yoshino = yes
 			}
 			recruit_luchun_click = {
-				yzrecruit_luchun = yes
+				yzcr_recruit_luchun_legacy = yes
 			}
 			QL_exit_click = {
 				clr_country_flag = QL_recruit_show
@@ -547,23 +531,23 @@ scripted_gui = {
 		effects = {
 
 			recruit_ayase_click = {		#0nai
-				yzrecruit_ayase = yes
+				yzcr_recruit_ayase = yes
 			}
 			recruit_nanami_click = {		#七海
-				yzrecruit_nanami = yes
+				yzcr_recruit_nanami = yes
 			}
 			recruit_nijouin_hazuki_click = {	#羽院
-				yzrecruit_hazuki = yes
+				yzcr_recruit_hazuki = yes
 			}
 			RJ_recruit_title_click = {
 				if = {
 					limit = {
 						not = { has_country_flag = recruit_RJ_titile_clicked }
 					}
-					yzrecruit_nanami = yes
-					yzrecruit_hazuki = yes
-					yzrecruit_chisaki = yes
-					yzrecruit_mayu = yes
+					yzcr_recruit_nanami = yes
+					yzcr_recruit_hazuki = yes
+					yzcr_recruit_chisaki = yes
+					yzcr_recruit_mayu = yes
 					set_country_flag = recruit_RJ_titile_clicked
 				}
 				else = {
@@ -571,10 +555,10 @@ scripted_gui = {
 				}
 			}
 			recruit_mayu_click = {		#茉优
-				yzrecruit_mayu = yes
+				yzcr_recruit_mayu = yes
 			}
 			recruit_chisaki_click = {	#壬生千咲
-				yzrecruit_chisaki = yes
+				yzcr_recruit_chisaki = yes
 			}
 			RJ_exit_click = {
 				clr_country_flag = RJ_recruit_show
@@ -657,7 +641,11 @@ scripted_gui = {
 				yzrecruit_mei = yes
 			}
 			recruit_suzune_click = {	#凉音
-
+				if = { 
+					limit = {has_country_flag = qiyong_youzi_1 }
+					yzrecruit_suzune = yes
+				}
+				
 			}
 			CS_neko_click = {
 				if = {
@@ -669,11 +657,16 @@ scripted_gui = {
 					set_country_flag = Yz_no_neko
 				}
 				random_list = {
-					975 = {}
+					875 = {}
 					25 = {
 						add_political_power = 5
 						add_to_variable = {
 							neko_click = 1
+						}
+					}
+					100 = {
+						country_event = {
+							id = yudi_event.1
 						}
 					}
 				}

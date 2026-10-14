@@ -227,7 +227,7 @@ country_event= {           #小隐藏1
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         traits={
@@ -280,7 +280,7 @@ country_event= {           #小隐藏2
                             }
                         }
                         allowed_civil_war = {
-                            is_ai = no
+                            ROOT = { is_ai = no }
                         }
                         corps_commander = {
                             traits={
@@ -330,12 +330,12 @@ country_event= {           #大隐藏
                             }
                         }
                         allowed_civil_war = {
-                            is_ai = no
+                            ROOT = { is_ai = no }
                         }
                         corps_commander = {
                             traits={
                                 yz_yuzusoft_character
-                                maid_sana_trait
+                                yz_legacy_sana_trait
                             }
                             skill=15
                             attack_skill=22
@@ -348,13 +348,13 @@ country_event= {           #大隐藏
             }
             random_unit_leader = {
                 limit = {
-                    has_trait = maid_sana_trait
+                    has_trait = yz_legacy_sana_trait
                 }
-                add_unit_leader_trait = maid_sana_birthday_boost1
-                add_unit_leader_trait = maid_sana_birthday_boost2
-                add_unit_leader_trait = maid_sana_birthday_boost3
-                add_unit_leader_trait = maid_sana_birthday_boost4
-                add_unit_leader_trait = maid_sana_birthday_boost5
+                add_unit_leader_trait = yz_legacy_sana_birthday_boost1
+                add_unit_leader_trait = yz_legacy_sana_birthday_boost2
+                add_unit_leader_trait = yz_legacy_sana_birthday_boost3
+                add_unit_leader_trait = yz_legacy_sana_birthday_boost4
+                add_unit_leader_trait = yz_legacy_sana_birthday_boost5
             }
         }
         custom_effect_tooltip = dayincangkuan_tt
@@ -404,7 +404,7 @@ country_event= {           #紬妈立绘倒计时
     immediate = {
         random_unit_leader = {
             limit = {
-                has_trait = maid_chou_trait
+                has_trait = yz_legacy_chou_trait
             }
             set_portraits = {
                 army = {
@@ -422,7 +422,7 @@ country_event= {           #宁宁立绘倒计时
     immediate = {
         random_unit_leader = {
             limit = {
-                has_trait = maid_ninging_trait
+                has_trait = yz_legacy_ninging_trait
             }
             set_portraits = {
                 army = {

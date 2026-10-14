@@ -207,6 +207,11 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 		}
 		iconType = {
+			name = "Super_event_marry_sana"
+			spriteType = "GFX_super_event_marry_sana"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
 			name = "Super_event_marry_sayo"
 			spriteType = "GFX_super_event_marry_sayo"
 			position = { x = 0 y = 0 }
@@ -351,6 +356,16 @@ guiTypes = {
 		iconType = {
 			name = "Super_event_marry_grok"
 			spriteType = "GFX_super_event_marry_grok"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_parquet_together"
+			spriteType = "GFX_super_event_parquet_together"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "Super_event_we_have_fukai_omo"
+			spriteType = "GFX_super_event_we_have_fukai_omo"
 			position = { x = 0 y = 0 }
 		}
 

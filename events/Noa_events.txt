@@ -38,13 +38,13 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = noa_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_noa_trait
+                            yz_legacy_noa_trait
                         }
                 # id = 1001211 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         attack_skill = 3
@@ -87,14 +87,14 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = noa_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_noa_trait
-                            maid_noa1_trait
+                            yz_legacy_noa_trait
+                            yz_legacy_noa1_trait
                         }
                 # id = 1001212 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         attack_skill = 6
@@ -282,9 +282,9 @@ country_event= {
         noa_love_up = yes
         random_army_leader = {
             limit = {
-                has_trait = maid_noa_trait
+                has_trait = yz_legacy_noa_trait
             }
-            add_unit_leader_trait = maid_noa1_trait
+            add_unit_leader_trait = yz_legacy_noa1_trait
             add_attack = 1
         }
         hidden_effect = {
@@ -347,9 +347,9 @@ country_event= {
             country_event = { id = noa_event.10001 days = 1 }
             random_army_leader = {
                 limit = {
-                    has_trait = maid_noa_trait
+                    has_trait = yz_legacy_noa_trait
                 }
-                add_unit_leader_trait = maid_noa4_trait
+                add_unit_leader_trait = yz_legacy_noa4_trait
             }
         }
     }
@@ -396,7 +396,7 @@ country_event= {
         add_war_support = 0.01
         random_army_leader = {
             limit = {
-                has_trait = maid_noa_trait
+                has_trait = yz_legacy_noa_trait
             }
             add_planning = 1
             add_defense = 1
@@ -426,9 +426,9 @@ country_event= {
         noa_love_up = yes
         random_army_leader = {
             limit = {
-                has_trait = maid_noa_trait
+                has_trait = yz_legacy_noa_trait
             }
-            add_unit_leader_trait = maid_noa2_trait
+            add_unit_leader_trait = yz_legacy_noa2_trait
             add_skill_level = 3
             add_logistics = 1
         }
@@ -453,7 +453,7 @@ country_event= {
         add_stability = -0.015
         every_army_leader = {
             limit = {
-                has_trait = maid_noa_trait
+                has_trait = yz_legacy_noa_trait
             }
             remove_unit_leader_role = yes
         }
@@ -484,13 +484,13 @@ country_event= {
         }
         random_army_leader = {
             limit = {
-                has_trait = maid_noa_trait
+                has_trait = yz_legacy_noa_trait
             }
 
-            remove_unit_leader_trait = maid_noa3_trait
-            remove_unit_leader_trait = maid_noa1_trait
-            remove_unit_leader_trait = maid_noa2_trait
-            remove_unit_leader_trait = maid_noa_trait
+            remove_unit_leader_trait = yz_legacy_noa3_trait
+            remove_unit_leader_trait = yz_legacy_noa1_trait
+            remove_unit_leader_trait = yz_legacy_noa2_trait
+            remove_unit_leader_trait = yz_legacy_noa_trait
             remove_unit_leader_trait = guerilla_fighter     ###从大力丸借鉴（抄）的
             remove_unit_leader_trait = expert_improviser
             remove_unit_leader_trait = camouflage_expert
@@ -560,9 +560,9 @@ country_event = {
         custom_effect_tooltip = qibaoqi
         random_army_leader = {
             limit = {
-                has_trait = maid_noa_trait
+                has_trait = yz_legacy_noa_trait
             }
-            add_unit_leader_trait = maid_noa3_trait
+            add_unit_leader_trait = yz_legacy_noa3_trait
         }
     }
 }

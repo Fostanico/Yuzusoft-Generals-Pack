@@ -42,7 +42,7 @@ country_event= {           #抽到真琴
                             }
                         }
                         allowed_civil_war = {
-                            is_ai = no
+                            ROOT = { is_ai = no }
                         }
                         corps_commander = {
                             desc = misaka_makoto_desc_commander
@@ -90,7 +90,7 @@ country_event= {           #抽到市杵宍姬命——2026.5.28，22：47，井
                             }
                         }
                         allowed_civil_war = {
-                            is_ai = no
+                            ROOT = { is_ai = no }
                         }
                         corps_commander = {
                             desc = itsukishishishihimenomikoto_desc_commander

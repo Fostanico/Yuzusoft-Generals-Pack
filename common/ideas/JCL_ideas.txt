@@ -48,7 +48,7 @@ ideas = {
 		
 		yoshino_love_level_1 = {
 
-			picture = FRA_market_dynamism_yoshino
+			picture = GFX_idea_FRA_market_dynamism
 
 			allowed_civil_war = {
 				is_ai = no
@@ -70,7 +70,7 @@ ideas = {
 		
 		yoshino_love_level_0 = {
 
-			picture = FRA_market_dynamism_yoshino1
+			picture = GFX_idea_FRA_market_dynamism
 
 			allowed_civil_war = {
 				is_ai = no

@@ -224,7 +224,7 @@ ideas = {
 			}
 		}
 		youzu_support_I = {
-			picture = nothing			###还没做好
+			picture = GFX_idea_generic_artillery_regiments
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -233,7 +233,7 @@ ideas = {
 			}
 		}
 		youzu_support_II = {
-			picture = nothing			###还没做好
+			picture = GFX_idea_generic_artillery_regiments
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -246,7 +246,7 @@ ideas = {
 			}
 		}
 		youzu_support_III = {
-			picture = nothing			###还没做好
+			picture = GFX_idea_generic_artillery_regiments
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -358,9 +358,7 @@ ideas = {
 				armor = {
 					build_cost_ic = -0.2
 					reliability = 0.2
-					# production_bonus = {
-						# production_resource_need_factor = -0.3
-					# }
+                	instant = yes
 				}
 			}
 			modifier = {
@@ -376,9 +374,7 @@ ideas = {
 				armor = {
 					build_cost_ic = -0.2
 					reliability = 0.2
-					# production_bonus = {
-						# production_resource_need_factor = -0.3
-					# }
+					instant = yes
 				}
 			}
 			modifier = {
@@ -394,9 +390,7 @@ ideas = {
 				armor = {
 					build_cost_ic = -0.2
 					reliability = 0.2
-					# production_bonus = {
-						# production_resource_need_factor = -0.3
-					# }
+					instant = yes
 				}
 			}
 			modifier = {
@@ -416,9 +410,7 @@ ideas = {
 				armor = {
 					build_cost_ic = -0.2
 					reliability = 0.2
-					# production_bonus = {
-						# production_resource_need_factor = -0.3
-					# }
+					instant = yes
 				}
 			}
 			modifier = {
@@ -680,7 +672,7 @@ ideas = {
 			}
 		}
 		Married_preparing = {
-			picture = nothing			###还没做好
+			picture = Married_preparing
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -689,7 +681,7 @@ ideas = {
 			}
 		}
 		Married = {
-			picture = nothing			###还没做好
+			picture = Married
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -728,7 +720,7 @@ ideas = {
 		}
 		###咖啡馆蛋糕决议
 		fruit_cake = {
-			picture = nothing			###还没做好
+			picture = fruit_cake
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -742,7 +734,7 @@ ideas = {
 			}
 		}
 		chocolate_donuts = {
-			picture = nothing			###还没做好
+			picture = chocolate_donuts
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -754,7 +746,7 @@ ideas = {
 			}
 		}
 		cream_pudding = {
-			picture = nothing			###还没做好
+			picture = cream_pudding
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -766,7 +758,7 @@ ideas = {
 			}
 		}
 		xiangcaosongbing = {
-			picture = nothing			###还没做好
+			picture = xiangcaosongbing
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -778,7 +770,7 @@ ideas = {
 			}
 		}
 		mengbulang = {
-			picture = nothing			###还没做好
+			picture = mengbulang
 			allowed_civil_war = {
 				is_ai = no
 			}
@@ -790,7 +782,7 @@ ideas = {
 			}
 		}
 		tilamisu = {
-			picture = nothing			###还没做好
+			picture = tilamisu
 			allowed_civil_war = {
 				is_ai = no
 			}

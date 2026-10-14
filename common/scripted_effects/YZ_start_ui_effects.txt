@@ -1,0 +1,43 @@
+# Country scope. Preserve existing save flags; no tabs means the title page.
+# Opened by all three production startup decisions. Shader animation has no PDX tick.
+YZ_start_ui_clear_tabs = {
+    clr_country_flag = YZ_start_ui_tab_update
+    clr_country_flag = YZ_start_ui_tab_history
+    clr_country_flag = YZ_start_ui_tab_guide
+    clr_country_flag = YZ_start_ui_tab_credits
+}
+YZ_start_ui_open = {
+    YZ_start_ui_clear_tabs = yes
+    set_country_flag = YZ_start_ui_visible
+    set_variable = { YZ_start_ui_sd_progress = 0 }
+    add_to_variable = { YZ_start_ui_dirty = 1 }
+}
+YZ_start_ui_close = {
+    clr_country_flag = YZ_start_ui_visible
+    YZ_start_ui_clear_tabs = yes
+    add_to_variable = { YZ_start_ui_dirty = 1 }
+}
+YZ_start_ui_show_home = {
+    YZ_start_ui_clear_tabs = yes
+    add_to_variable = { YZ_start_ui_dirty = 1 }
+}
+YZ_start_ui_show_update = {
+    YZ_start_ui_clear_tabs = yes
+    set_country_flag = YZ_start_ui_tab_update
+    add_to_variable = { YZ_start_ui_dirty = 1 }
+}
+YZ_start_ui_show_history = {
+    YZ_start_ui_clear_tabs = yes
+    set_country_flag = YZ_start_ui_tab_history
+    add_to_variable = { YZ_start_ui_dirty = 1 }
+}
+YZ_start_ui_show_guide = {
+    YZ_start_ui_clear_tabs = yes
+    set_country_flag = YZ_start_ui_tab_guide
+    add_to_variable = { YZ_start_ui_dirty = 1 }
+}
+YZ_start_ui_show_credits = {
+    YZ_start_ui_clear_tabs = yes
+    set_country_flag = YZ_start_ui_tab_credits
+    add_to_variable = { YZ_start_ui_dirty = 1 }
+}

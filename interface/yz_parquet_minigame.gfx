@@ -1,0 +1,63 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_yz_parquet_cards"
+        textureFile = "gfx/guis/yz_parquet_cards.png"
+        noOfFrames = 55
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_table"
+        textureFile = "gfx/guis/yz_parquet_table.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_card_hit"
+        textureFile = "gfx/guis/yz_parquet_card_hit.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_card_slot"
+        textureFile = "gfx/guis/yz_parquet_card_slot.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_score_plate"
+        textureFile = "gfx/guis/yz_parquet_score_plate.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_action"
+        textureFile = "gfx/guis/yz_parquet_action.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_choice"
+        textureFile = "gfx/guis/yz_parquet_choice.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_close"
+        textureFile = "gfx/guis/yz_parquet_close.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_help_panel"
+        textureFile = "gfx/guis/yz_parquet_help_panel.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_role_panel"
+        textureFile = "gfx/guis/yz_parquet_role_panel.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_phase_day"
+        textureFile = "gfx/guis/yz_parquet_phase_day.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_phase_night"
+        textureFile = "gfx/guis/yz_parquet_phase_night.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_event_unexecuted"
+        textureFile = "gfx/event_pictures/yz_parquet_unexecuted.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_event_two_day"
+        textureFile = "gfx/event_pictures/yz_parquet_two_day.png"
+    }
+    spriteType = {
+        name = "GFX_yz_parquet_event_if_failure"
+        textureFile = "gfx/event_pictures/yz_parquet_if_failure.png"
+    }
+}

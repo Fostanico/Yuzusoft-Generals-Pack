@@ -1,0 +1,572 @@
+spriteTypes = {
+    # Keep active-state names aligned with the ability icon names used by vanilla.
+    spriteType = {
+        name = "GFX_ability_chou_witch_ability"
+        texturefile = "gfx/interface/abilitylist/chou_witch_ability_icon.png"
+    }
+    spriteType = {
+        name = "GFX_ability_chou_witch_ability_animated"
+        texturefile = "gfx/interface/abilitylist/chou_witch_ability_icon.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/abilitylist/chou_witch_ability_icon.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_ability_nene_witch_ability"
+        texturefile = "gfx/interface/abilitylist/nene_witch_ability_icon.png"
+    }
+    spriteType = {
+        name = "GFX_ability_nene_witch_ability_animated"
+        texturefile = "gfx/interface/abilitylist/nene_witch_ability_icon.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/abilitylist/nene_witch_ability_icon.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_ability_nanao_morin_ability"
+        texturefile = "gfx/interface/abilitylist/nanao_morin_ability.png"
+    }
+    spriteType = {
+        name = "GFX_ability_nanao_morin_ability_animated"
+        texturefile = "gfx/interface/abilitylist/nanao_morin_ability.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/abilitylist/nanao_morin_ability.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_ability_hypong_bom"
+        texturefile = "gfx/traits/hypong_bom.png"
+    }
+    spriteType = {
+        name = "GFX_ability_hypong_bom_animated"
+        texturefile = "gfx/traits/hypong_bom.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/hypong_bom.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_ability_eat_people"
+        texturefile = "gfx/traits/human_eating_girl.png"
+    }
+    spriteType = {
+        name = "GFX_ability_eat_people_animated"
+        texturefile = "gfx/traits/human_eating_girl.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/human_eating_girl.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_ability_power_of_kami"
+        texturefile = "gfx/traits/old_big_sister.png"
+    }
+    spriteType = {
+        name = "GFX_ability_power_of_kami_animated"
+        texturefile = "gfx/traits/old_big_sister.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/old_big_sister.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    # Active-state aliases for the remaining shared/custom ability icons.
+    spriteType = {
+        name = "GFX_ability_cat_haaaaaa"
+        texturefile = "gfx/traits/cat.png"
+    }
+    spriteType = {
+        name = "GFX_ability_hiyoriradio_animated"
+        texturefile = "gfx/interface/abilitylist/Trumpet.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/abilitylist/Trumpet.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_hiyohiyo_animated"
+        texturefile = "gfx/traits/hiyori_trait_1.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/hiyori_trait_1.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_elina_owen_trait_animated"
+        texturefile = "gfx/traits/yz_elina_owen_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_elina_owen_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_nicola_trait_animated"
+        texturefile = "gfx/traits/yz_nicola_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_nicola_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_legacy_miu_trait_animated"
+        texturefile = "gfx/traits/yz_legacy_miu_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_legacy_miu_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_legacy_rio_trait_1_animated"
+        texturefile = "gfx/traits/yz_legacy_rio_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_legacy_rio_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_aragami_sayo_trait_animated"
+        texturefile = "gfx/traits/yz_aragami_sayo_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_aragami_sayo_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_ruri_ha_ability_animated"
+        texturefile = "gfx/interface/abilitylist/ruri_ha_ability.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/abilitylist/ruri_ha_ability.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_legacy_sana_trait_animated"
+        texturefile = "gfx/traits/yz_legacy_sana_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_legacy_sana_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_work_ai_help_you_animated"
+        texturefile = "gfx/traits/work_ai_help_you.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/work_ai_help_you.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_call_from_king_right_animated"
+        texturefile = "gfx/traits/call_from_king_right.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/call_from_king_right.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_you_cannot_find_me_animated"
+        texturefile = "gfx/traits/you_cannot_find_me.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/you_cannot_find_me.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_Reform_and_opening_up_animated"
+        texturefile = "gfx/traits/Reform_and_opening_up.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/Reform_and_opening_up.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_the_order_comm_animated"
+        texturefile = "gfx/traits/the_order_comm.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/the_order_comm.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_regression_star_animated"
+        texturefile = "gfx/traits/regression_star.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/regression_star.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_legacy_hazuki_trait_animated"
+        texturefile = "gfx/traits/yz_legacy_hazuki_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_legacy_hazuki_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_legacy_qihai_trait_animated"
+        texturefile = "gfx/traits/yz_legacy_qihai_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_legacy_qihai_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_legacy_Mayu_trait_animated"
+        texturefile = "gfx/traits/yz_legacy_Mayu_trait.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_legacy_Mayu_trait.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_legacy_cuodao_trait3_animated"
+        texturefile = "gfx/traits/yz_legacy_cuodao_trait3.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_legacy_cuodao_trait3.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_ability_cat_haaaaaa_animated"
+        texturefile = "gfx/traits/cat.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/cat.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_codex_context_weaver_animated"
+        texturefile = "gfx/traits/yz_codex_context_weaver.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_codex_context_weaver.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_codex_adversarial_review_animated"
+        texturefile = "gfx/traits/yz_codex_adversarial_review.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_codex_adversarial_review.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_grok_maximum_truth_animated"
+        texturefile = "gfx/traits/yz_grok_maximum_truth.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_grok_maximum_truth.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_trait_yz_grok_axe_of_x_animated"
+        texturefile = "gfx/traits/yz_grok_axe_of_x.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/traits/yz_grok_axe_of_x.png"
+            animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+            animationrotation = 0.0
+            animationlooping = yes
+            animationtime = 26.0
+            animationdelay = 0.0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+}

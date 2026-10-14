@@ -4,7 +4,7 @@ Tarot_category = {
 	priority = 2
 }
 YZ_CORE_GROUP = {
-	icon = GFX_Category_decision
+	icon = GFX_yz_core_category
 	scripted_gui = Yz_leader_gui
 	priority = 2
 	visible_when_empty = yes
@@ -25,6 +25,7 @@ qiyong_youzi_general_category = {
 	priority = 2
 }
 Roka_Koharu_decision_category = {
+	visible = { NOT = { has_country_flag = yzcr_roko_direct } }
 	icon = GFX_roko
 	scripted_gui = yz_roka_koharu_category_gui
 	priority = 2

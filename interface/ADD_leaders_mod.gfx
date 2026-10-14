@@ -68,12 +68,12 @@ spriteTypes = {
 		texturefile = "gfx/leader/baliu.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_fangnai2_trait"
-		texturefile = "gfx/traits/maid_fangnai2_trait.png"
+		name = "GFX_trait_yz_legacy_fangnai2_trait"
+		texturefile = "gfx/traits/yz_legacy_fangnai2_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_fangnai3_trait"
-		texturefile = "gfx/traits/maid_fangnai3_trait.png"
+		name = "GFX_trait_yz_legacy_fangnai3_trait"
+		texturefile = "gfx/traits/yz_legacy_fangnai3_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_dahefuzi"

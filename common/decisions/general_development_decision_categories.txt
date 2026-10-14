@@ -462,7 +462,7 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_noa_trait
+                    has_trait = yz_legacy_noa_trait
                 }
                 add_unit_leader_trait = yz_noa_armor_training_trait
             }
@@ -496,7 +496,7 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_noa_trait
+                    has_trait = yz_legacy_noa_trait
                 }
                 add_unit_leader_trait = yz_noa_adaptation_training_trait
             }
@@ -531,7 +531,7 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_noa_trait
+                    has_trait = yz_legacy_noa_trait
                 }
                 add_logistics = 2
             }
@@ -699,10 +699,10 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_nozomi_trait
+                    has_trait = yz_legacy_nozomi_trait
                 }
-                remove_unit_leader_trait = maid_nozomi_trait
-                add_unit_leader_trait = maid_nozomi_trait_1
+                remove_unit_leader_trait = yz_legacy_nozomi_trait
+                add_unit_leader_trait = yz_legacy_nozomi_trait_1
             }
         }
     }
@@ -797,7 +797,7 @@ general_develpomen_decision_category = {
             }
             any_unit_leader = {
                 and = {
-                    has_trait = maid_chihaya_trait_1
+                    has_trait = yz_legacy_chihaya_trait_1
                     skill > 0
                 }
             }
@@ -806,10 +806,10 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_chihaya_trait_1
+                    has_trait = yz_legacy_chihaya_trait_1
                 }
-                remove_unit_leader_trait = maid_chihaya_trait_1
-                add_unit_leader_trait = maid_chihaya_trait_2
+                remove_unit_leader_trait = yz_legacy_chihaya_trait_1
+                add_unit_leader_trait = yz_legacy_chihaya_trait_2
                 add_skill_level = -100
             }
             set_country_flag = qiyuan_1
@@ -833,7 +833,7 @@ general_develpomen_decision_category = {
             }
             any_unit_leader = {
                 and = {
-                    has_trait = maid_chihaya_trait_2
+                    has_trait = yz_legacy_chihaya_trait_2
                     skill > 1
                 }
             }
@@ -842,10 +842,10 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_chihaya_trait_2
+                    has_trait = yz_legacy_chihaya_trait_2
                 }
-                remove_unit_leader_trait = maid_chihaya_trait_2
-                add_unit_leader_trait = maid_chihaya_trait_3
+                remove_unit_leader_trait = yz_legacy_chihaya_trait_2
+                add_unit_leader_trait = yz_legacy_chihaya_trait_3
                 add_skill_level = -100
             }
             set_country_flag = qiyuan_2
@@ -869,7 +869,7 @@ general_develpomen_decision_category = {
             }
             any_unit_leader = {
                 and = {
-                    has_trait = maid_chihaya_trait_3
+                    has_trait = yz_legacy_chihaya_trait_3
                     skill > 1
                 }
             }
@@ -878,10 +878,10 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_chihaya_trait_3
+                    has_trait = yz_legacy_chihaya_trait_3
                 }
-                remove_unit_leader_trait = maid_chihaya_trait_3
-                add_unit_leader_trait = maid_chihaya_trait_4
+                remove_unit_leader_trait = yz_legacy_chihaya_trait_3
+                add_unit_leader_trait = yz_legacy_chihaya_trait_4
                 add_skill_level = -100
             }
             set_country_flag = qiyuan_3
@@ -905,7 +905,7 @@ general_develpomen_decision_category = {
             }
             any_unit_leader = {
                 and = {
-                    has_trait = maid_chihaya_trait_4
+                    has_trait = yz_legacy_chihaya_trait_4
                     skill > 2
                 }
             }
@@ -914,10 +914,10 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_chihaya_trait_4
+                    has_trait = yz_legacy_chihaya_trait_4
                 }
-                remove_unit_leader_trait = maid_chihaya_trait_4
-                add_unit_leader_trait = maid_chihaya_trait_5
+                remove_unit_leader_trait = yz_legacy_chihaya_trait_4
+                add_unit_leader_trait = yz_legacy_chihaya_trait_5
                 add_skill_level = -100
             }
             set_country_flag = qiyuan_4
@@ -941,7 +941,7 @@ general_develpomen_decision_category = {
             }
             any_unit_leader = {
                 and = {
-                    has_trait = maid_chihaya_trait_5
+                    has_trait = yz_legacy_chihaya_trait_5
                     skill > 3
                 }
             }
@@ -950,10 +950,10 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_chihaya_trait_5
+                    has_trait = yz_legacy_chihaya_trait_5
                 }
-                remove_unit_leader_trait = maid_chihaya_trait_5
-                add_unit_leader_trait = maid_chihaya_trait
+                remove_unit_leader_trait = yz_legacy_chihaya_trait_5
+                add_unit_leader_trait = yz_legacy_chihaya_trait
                 add_attack = 3
                 add_defense = 3
                 add_logistics = 3
@@ -1003,10 +1003,10 @@ general_develpomen_decision_category = {
             clr_country_flag = gongxiangmingyun
             random_army_leader = {
                 limit = {
-                    has_trait = maid_rio_trait_1
+                    has_trait = yz_legacy_rio_trait_1
                 }
-                remove_unit_leader_trait = maid_rio_trait_1
-                add_unit_leader_trait = maid_rio_trait_2
+                remove_unit_leader_trait = yz_legacy_rio_trait_1
+                add_unit_leader_trait = yz_legacy_rio_trait_2
                 add_skill_level = -10
                 add_logistics = -10
                 add_planning = -10
@@ -1018,10 +1018,10 @@ general_develpomen_decision_category = {
             clr_country_flag = gongxiangmingyun
             random_army_leader = {
                 limit = {
-                    has_trait = maid_rio_trait_1
+                    has_trait = yz_legacy_rio_trait_1
                 }
                 add_unit_leader_trait = yz_rio_tamed_destiny_trait
-                remove_unit_leader_trait = trait_maid_vampires
+                remove_unit_leader_trait = yz_legacy_vampires_trait
 
                 add_attack = 1
                 add_logistics = 3
@@ -1031,9 +1031,9 @@ general_develpomen_decision_category = {
             set_country_flag = finished_liyin
             random_army_leader = {
                 limit = {
-                    has_trait = maid_rio_trait_1
+                    has_trait = yz_legacy_rio_trait_1
                 }
-                remove_unit_leader_trait = maid_rio_trait_1
+                remove_unit_leader_trait = yz_legacy_rio_trait_1
             }
             meta_effect = {
                 text = {
@@ -1592,9 +1592,9 @@ general_develpomen_decision_category = {
             add_command_power = -30
             random_army_leader = {
                 limit = {
-                    has_trait = maid_congyu_trait
+                    has_trait = yz_legacy_congyu_trait
                 }
-                add_unit_leader_trait = maid_congyu_trait_1
+                add_unit_leader_trait = yz_legacy_congyu_trait_1
             }
         }
 
@@ -1605,9 +1605,9 @@ general_develpomen_decision_category = {
         remove_effect = {
             random_army_leader = {
                 limit = {
-                    has_trait = maid_congyu_trait
+                    has_trait = yz_legacy_congyu_trait
                 }
-                remove_unit_leader_trait = maid_congyu_trait_1
+                remove_unit_leader_trait = yz_legacy_congyu_trait_1
             }
         }
     }
@@ -1623,11 +1623,20 @@ general_develpomen_decision_category = {
         }
         complete_effect = {
             set_country_flag = sana_automatic_birthday_enabled
+            # 当天才启用时，on_daily 已经过了也要立即庆祝一次。
+            if = {
+                limit = {
+                    is_ai = no
+                    yz_sana_is_birthday = yes
+                    yz_sana_birthday_not_celebrated_this_year = yes
+                }
+                yz_sana_celebrate_automatic_birthday = yes
+            }
             custom_effect_tooltip = enable_sana_automatic_birthday_tt
         }
     }
 
-    # 作用：允许玩家关闭佐奈生日自动庆祝；要点：清除启用旗标后，年度自动任务停止激活，手动生日与补过生日决议恢复显示。署名：伊尔诺+2026-06-08+assisted by Codex
+    # 作用：允许玩家关闭佐奈生日自动庆祝；要点：清除启用旗标后，每日自动结算停止，手动生日与补过生日决议恢复显示。署名：伊尔诺+2026-06-08+assisted by Codex
     disable_sana_automatic_birthday = {
         icon = GFX_zuonai
         cost = 0
@@ -1640,154 +1649,6 @@ general_develpomen_decision_category = {
         complete_effect = {
             clr_country_flag = sana_automatic_birthday_enabled
             custom_effect_tooltip = disable_sana_automatic_birthday_tt
-        }
-    }
-
-    # 作用：在自动模式下于每年6月8日执行普通生日的完整成长效果；要点：自动扣除75政治点，并以200天移除期保留原生日决议修正。署名：伊尔诺+2026-06-08+assisted by Codex
-    # 激活与完成均复核实际日期和年度记录，防止切换模式或待完成任务重复结算；不承诺零点调度。
-    # 旧日计数只为玩家推进；移除计数后仍显式保留普通生日入口的玩家限定。
-    sana_automatic_birthday = {
-        icon = GFX_zuonai
-        days_mission_timeout = 1
-        days_remove = 200
-        selectable_mission = no
-        is_good = yes
-        activation = {
-            is_ai = no
-            has_country_flag = sana_automatic_birthday_enabled
-            has_country_flag = have_sana
-            has_country_flag = qiyong_youzi_2
-            not = { has_country_flag = yz_bad_end }
-            yz_sana_is_birthday = yes
-            yz_sana_birthday_not_celebrated_this_year = yes
-        }
-        available = {
-            hidden_trigger = {
-                is_ai = no
-                has_country_flag = sana_automatic_birthday_enabled
-                has_country_flag = have_sana
-                has_country_flag = qiyong_youzi_2
-                NOT = { has_country_flag = yz_bad_end }
-            }
-            yz_sana_is_birthday = yes
-            yz_sana_birthday_not_celebrated_this_year = yes
-        }
-        modifier = {
-            consumer_goods_factor = -0.05
-            industrial_capacity_factory = 0.05
-            industrial_capacity_dockyard = 0.05
-            production_speed_buildings_factor = 0.1
-            political_power_gain = 0.1
-            political_power_factor = 0.05
-        }
-        complete_effect = {
-            hidden_effect = {
-                set_variable = { yz_sana_last_birthday_year = global.year }
-                play_song = youzu22
-            }
-            add_political_power = -75
-            add_to_variable = { sana_army_attack = 0.025 }
-            add_to_variable = { sana_special_forces_cap = 0.01 }
-            add_to_variable = { sana_army_org_factor = 0.025 }
-            add_to_variable = { sana_ws = 0.05 }
-            add_to_variable = { sana_st = 0.05 }
-            add_to_variable = { sana_industry = 0.05 }
-            add_to_variable = { marry_love_bonus = 5 }
-            set_country_flag = sana_birthday_succeed
-            add_dynamic_modifier = {
-                modifier = sana_birthday_dynamic_modifier
-            }
-            set_country_flag = sana_first_birthday
-            if = {
-                limit = {
-                    any_army_leader = {
-                        has_trait = maid_sana_birthday_boost4
-                        NOT = { has_trait = maid_sana_birthday_boost5 }
-                    }
-                }
-                random_army_leader = {
-                    limit = {
-                        has_trait = maid_sana_birthday_boost4
-                    }
-                    add_unit_leader_trait = maid_sana_birthday_boost5
-                    remove_unit_leader_trait = maid_sana_birthday_boost4
-                    add_skill_level = 1
-                    add_logistics = 1
-                    add_planning = 1
-                    add_defense = 1
-                    add_attack = 1
-                }
-            }
-            else_if = {
-                limit = {
-                    any_army_leader = {
-                        has_trait = maid_sana_birthday_boost3
-                        NOT = { has_trait = maid_sana_birthday_boost4 }
-                    }
-                }
-                random_army_leader = {
-                    limit = {
-                        has_trait = maid_sana_birthday_boost3
-                    }
-                    add_unit_leader_trait = maid_sana_birthday_boost4
-                    remove_unit_leader_trait = maid_sana_birthday_boost3
-                }
-            }
-            else_if = {
-                limit = {
-                    any_army_leader = {
-                        has_trait = maid_sana_birthday_boost2
-                        NOT = { has_trait = maid_sana_birthday_boost3 }
-                    }
-                }
-                random_army_leader = {
-                    limit = {
-                        has_trait = maid_sana_birthday_boost2
-                    }
-                    add_unit_leader_trait = maid_sana_birthday_boost3
-                    remove_unit_leader_trait = maid_sana_birthday_boost2
-                    add_skill_level = 1
-                }
-            }
-            else_if = {
-                limit = {
-                    any_army_leader = {
-                        has_trait = maid_sana_birthday_boost1
-                        NOT = { has_trait = maid_sana_birthday_boost2 }
-                    }
-                }
-                random_army_leader = {
-                    limit = {
-                        has_trait = maid_sana_birthday_boost1
-                    }
-                    remove_unit_leader_trait = maid_sana_birthday_boost1
-                    add_unit_leader_trait = maid_sana_birthday_boost2
-                    add_defense = 1
-                    add_attack = 1
-                }
-            }
-            else_if = {
-                limit = {
-                    any_army_leader = {
-                        has_trait = maid_sana_trait
-                        NOT = { has_trait = maid_sana_birthday_boost1 }
-                    }
-                }
-                random_army_leader = {
-                    limit = {
-                        has_trait = maid_sana_trait
-                    }
-                    add_unit_leader_trait = maid_sana_birthday_boost1
-                    add_skill_level = 1
-                    add_logistics = 1
-                    add_planning = 1
-                    add_defense = 1
-                    add_attack = 1
-                }
-            }
-        }
-        remove_effect = {
-            clr_country_flag = sana_birthday_succeed
         }
     }
 
@@ -1840,16 +1701,16 @@ general_develpomen_decision_category = {
             if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost4
-                        NOT = {has_trait = maid_sana_birthday_boost5}
+                        has_trait = yz_legacy_sana_birthday_boost4
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost5}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost4
+                        has_trait = yz_legacy_sana_birthday_boost4
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost5
-                    remove_unit_leader_trait = maid_sana_birthday_boost4
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost5
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost4
                     add_skill_level = 1
                     add_logistics = 1
                     add_planning = 1
@@ -1860,47 +1721,47 @@ general_develpomen_decision_category = {
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost3
-                        NOT = {has_trait = maid_sana_birthday_boost4}
+                        has_trait = yz_legacy_sana_birthday_boost3
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost4}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost3
+                        has_trait = yz_legacy_sana_birthday_boost3
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost4
-                    remove_unit_leader_trait = maid_sana_birthday_boost3
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost4
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost3
                 }
             }
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost2
-                        NOT = {has_trait = maid_sana_birthday_boost3}
+                        has_trait = yz_legacy_sana_birthday_boost2
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost3}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost2
+                        has_trait = yz_legacy_sana_birthday_boost2
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost3
-                    remove_unit_leader_trait = maid_sana_birthday_boost2
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost3
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost2
                     add_skill_level = 1
                 }
             }
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost1
-                        NOT = {has_trait = maid_sana_birthday_boost2}
+                        has_trait = yz_legacy_sana_birthday_boost1
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost2}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost1
+                        has_trait = yz_legacy_sana_birthday_boost1
                     }
-                    remove_unit_leader_trait = maid_sana_birthday_boost1
-                    add_unit_leader_trait = maid_sana_birthday_boost2
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost1
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost2
                     add_defense = 1
                     add_attack = 1
                 }
@@ -1908,15 +1769,15 @@ general_develpomen_decision_category = {
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_trait
-                        NOT = {has_trait = maid_sana_birthday_boost1}
+                        has_trait = yz_legacy_sana_trait
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost1}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_trait
+                        has_trait = yz_legacy_sana_trait
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost1
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost1
                     add_skill_level = 1
                     add_logistics = 1
                     add_planning = 1
@@ -1981,16 +1842,16 @@ general_develpomen_decision_category = {
             if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost4
-                        NOT = {has_trait = maid_sana_birthday_boost5}
+                        has_trait = yz_legacy_sana_birthday_boost4
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost5}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost4
+                        has_trait = yz_legacy_sana_birthday_boost4
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost5
-                    remove_unit_leader_trait = maid_sana_birthday_boost4
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost5
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost4
                     add_skill_level = 1
                     add_logistics = 1
                     add_planning = 1
@@ -2001,47 +1862,47 @@ general_develpomen_decision_category = {
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost3
-                        NOT = {has_trait = maid_sana_birthday_boost4}
+                        has_trait = yz_legacy_sana_birthday_boost3
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost4}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost3
+                        has_trait = yz_legacy_sana_birthday_boost3
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost4
-                    remove_unit_leader_trait = maid_sana_birthday_boost3
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost4
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost3
                 }
             }
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost2
-                        NOT = {has_trait = maid_sana_birthday_boost3}
+                        has_trait = yz_legacy_sana_birthday_boost2
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost3}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost2
+                        has_trait = yz_legacy_sana_birthday_boost2
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost3
-                    remove_unit_leader_trait = maid_sana_birthday_boost2
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost3
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost2
                     add_skill_level = 1
                 }
             }
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_birthday_boost1
-                        NOT = {has_trait = maid_sana_birthday_boost2}
+                        has_trait = yz_legacy_sana_birthday_boost1
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost2}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_birthday_boost1
+                        has_trait = yz_legacy_sana_birthday_boost1
                     }
-                    remove_unit_leader_trait = maid_sana_birthday_boost1
-                    add_unit_leader_trait = maid_sana_birthday_boost2
+                    remove_unit_leader_trait = yz_legacy_sana_birthday_boost1
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost2
                     add_defense = 1
                     add_attack = 1
                 }
@@ -2049,15 +1910,15 @@ general_develpomen_decision_category = {
             else_if = {
                 limit = {
                     any_army_leader = {
-                        has_trait = maid_sana_trait
-                        NOT = {has_trait = maid_sana_birthday_boost1}
+                        has_trait = yz_legacy_sana_trait
+                        NOT = {has_trait = yz_legacy_sana_birthday_boost1}
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_sana_trait
+                        has_trait = yz_legacy_sana_trait
                     }
-                    add_unit_leader_trait = maid_sana_birthday_boost1
+                    add_unit_leader_trait = yz_legacy_sana_birthday_boost1
                     add_skill_level = 1
                     add_logistics = 1
                     add_planning = 1
@@ -2237,6 +2098,202 @@ general_develpomen_decision_category = {
             }
         }
     }
+    neko_ruarua_open = {
+        priority = 0
+        visible = {
+            has_country_flag = have_yudi
+            NOT = { has_country_flag = neko_ruarua }
+            OR = {
+            check_variable = { cat_good_feeling_consumer_goods_factor > -0.50 }
+            check_variable = { cat_good_feeling_factor < 0.03 }
+            check_variable = { cat_good_feeling_stability_factor < 0.2 }
+            check_variable = { cat_good_feeling_army_factor < 0.15 }
+            }
+        }
+        cost = 0
+        complete_effect = {
+            hidden_effect = {
+            set_country_flag = neko_ruarua
+            if = {
+            limit = {
+                NOT = { has_dynamic_modifier = { modifier = cat_good_feeling_dynamic_modifier } }
+            }
+            add_dynamic_modifier = {
+                modifier = cat_good_feeling_dynamic_modifier
+            }
+        }
+            }
+            }
+    }
+    neko_ruarua_close = {
+        priority = 0
+        visible = {
+            has_country_flag = have_yudi
+            has_country_flag = neko_ruarua
+        }
+        cost = 0
+        complete_effect = {
+            hidden_effect = {
+            clr_country_flag = neko_ruarua
+            }
+            }
+    }
+    let_ayase_ruarua_cat = {
+        priority = 0
+        visible = {
+            has_country_flag = have_yudi
+            has_country_flag = have_ayase
+            has_country_flag = neko_ruarua
+        }
+        available = {
+            NOT = { has_country_flag = ruaing_cat }
+        }
+        cost = 0
+        days_remove = 7
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = ruaing_cat
+        }
+        remove_effect = {
+            hidden_effect = {
+                country_event = neko_ruarua_ayase
+            }
+            clr_country_flag = ruaing_cat
+            add_to_variable = {cat_good_feeling_consumer_goods_factor = 0.1}
+            add_to_variable = {cat_good_feeling_factor = -0.01}
+            add_to_variable = {cat_good_feeling_stability_factor = -0.1}
+            add_to_variable = {cat_good_feeling_army_factor = -0.05}
+            cat_good_feeling_limits = yes
+            }
+    }
+    let_mei_ruarua_cat = {
+        priority = 0
+        visible = {
+            has_country_flag = have_yudi
+            has_country_flag = have_mei
+            has_country_flag = neko_ruarua
+        }
+        available = {
+            NOT = { has_country_flag = ruaing_cat }
+            OR = {
+            check_variable = { cat_good_feeling_consumer_goods_factor > -0.50 }
+            check_variable = { cat_good_feeling_factor < 0.03 }
+            check_variable = { cat_good_feeling_stability_factor < 0.2 }
+            check_variable = { cat_good_feeling_army_factor < 0.15 }
+            }
+        }
+        cost = 30
+        days_remove = 7
+        complete_effect = {
+            set_country_flag = ruaing_cat
+        }
+        remove_effect = {
+            clr_country_flag = ruaing_cat
+            hidden_effect = {
+                add_to_variable = {cat_good_feeling_consumer_goods_factor = -0.05}
+                add_to_variable = {cat_good_feeling_factor = 0.01}
+                add_to_variable = {cat_good_feeling_stability_factor = 0.05}
+                add_to_variable = {cat_good_feeling_army_factor = 0.025}
+                cat_good_feeling_limits = yes
+            }
+            }
+    }
+    let_kanna_ruarua_cat = {
+        priority = 0
+        visible = {
+            has_country_flag = have_yudi
+            has_country_flag = have_kanna
+            has_country_flag = neko_ruarua
+        }
+        available = {
+            NOT = { has_country_flag = ruaing_cat }
+            OR = {
+            check_variable = { cat_good_feeling_consumer_goods_factor > -0.50 }
+            check_variable = { cat_good_feeling_factor < 0.03 }
+            check_variable = { cat_good_feeling_stability_factor < 0.2 }
+            check_variable = { cat_good_feeling_army_factor < 0.15 }
+            }
+        }
+        cost = 30
+        days_remove = 7
+        complete_effect = {
+            set_country_flag = ruaing_cat
+        }
+        remove_effect = {
+            clr_country_flag = ruaing_cat
+            hidden_effect = {
+                add_to_variable = {cat_good_feeling_consumer_goods_factor = -0.1}
+                add_to_variable = {cat_good_feeling_factor = 0.005}
+                add_to_variable = {cat_good_feeling_stability_factor = 0.05}
+                add_to_variable = {cat_good_feeling_army_factor = 0.025}
+                cat_good_feeling_limits = yes
+            }
+            }
+    }
+    let_zaozi_ruarua_cat = {
+        priority = 0
+        visible = {
+            has_country_flag = have_yudi
+            has_country_flag = have_zaozi
+            has_country_flag = neko_ruarua
+        }
+        available = {
+            NOT = { has_country_flag = ruaing_cat }
+            OR = {
+            check_variable = { cat_good_feeling_consumer_goods_factor > -0.50 }
+            check_variable = { cat_good_feeling_factor < 0.03 }
+            check_variable = { cat_good_feeling_stability_factor < 0.2 }
+            check_variable = { cat_good_feeling_army_factor < 0.15 }
+            }
+        }
+        cost = 30
+        days_remove = 7
+        complete_effect = {
+            set_country_flag = ruaing_cat
+        }
+        remove_effect = {
+            clr_country_flag = ruaing_cat
+            hidden_effect = {
+                add_to_variable = {cat_good_feeling_consumer_goods_factor = -0.05}
+                add_to_variable = {cat_good_feeling_factor = 0.005}
+                add_to_variable = {cat_good_feeling_stability_factor = 0.1}
+                add_to_variable = {cat_good_feeling_army_factor = 0.025}
+                cat_good_feeling_limits = yes
+            }
+            }
+    }
+    let_nozomi_ruarua_cat = {
+        priority = 0
+        visible = {
+            has_country_flag = have_yudi
+            has_country_flag = have_nozomi
+            has_country_flag = neko_ruarua
+        }
+        available = {
+            NOT = { has_country_flag = ruaing_cat }
+            OR = {
+            check_variable = { cat_good_feeling_consumer_goods_factor > -0.50 }
+            check_variable = { cat_good_feeling_factor < 0.03 }
+            check_variable = { cat_good_feeling_stability_factor < 0.2 }
+            check_variable = { cat_good_feeling_army_factor < 0.15 }
+            }
+        }
+        cost = 30
+        days_remove = 7
+        complete_effect = {
+            set_country_flag = ruaing_cat
+        }
+        remove_effect = {
+            clr_country_flag = ruaing_cat
+            hidden_effect = {
+                add_to_variable = {cat_good_feeling_consumer_goods_factor = -0.05}
+                add_to_variable = {cat_good_feeling_factor = 0.005}
+                add_to_variable = {cat_good_feeling_stability_factor = 0.05}
+                add_to_variable = {cat_good_feeling_army_factor = 0.05}
+                cat_good_feeling_limits = yes
+            }
+            }
+    }
 }
 
 Roka_Koharu_decision_category = {
@@ -2244,9 +2301,11 @@ Roka_Koharu_decision_category = {
         priority = 10
         icon = GFX_Category_decision
         activation = {
+            NOT = { has_country_flag = yzcr_roko_direct }
             has_country_flag = start_roko
         }
         activation = {
+            NOT = { has_country_flag = yzcr_roko_direct }
             not = { has_country_flag = finished_megulu_industry }
         }
         available = {

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="740" viewBox="0 0 500 370">
+<defs>
+ <linearGradient id="ink" x2="0.3" y2="1"><stop stop-color="#343033"/><stop offset=".5" stop-color="#262326"/><stop offset="1" stop-color="#1d1c20"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2=".75" y2="1"><stop stop-color="#776569"/><stop offset=".22" stop-color="#cfb5a7"/><stop offset=".49" stop-color="#947c78"/><stop offset=".76" stop-color="#66545b"/><stop offset="1" stop-color="#bfa096"/></linearGradient>
+ <radialGradient id="well"><stop stop-color="#353034"/><stop offset="1" stop-color="#201e23"/></radialGradient>
+ <filter id="grain"><feTurbulence baseFrequency=".78" numOctaves="3" seed="17" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+</defs>
+
+ <defs>
+  <linearGradient id="readability" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#101012" stop-opacity=".60"/>
+   <stop offset=".36" stop-color="#101012" stop-opacity=".54"/>
+   <stop offset=".64" stop-color="#101012" stop-opacity=".62"/>
+   <stop offset="1" stop-color="#101012" stop-opacity=".78"/>
+  </linearGradient>
+ </defs>
+ <image href="riddle_joker_kitchen.png" x="0" y="0" width="500" height="370" preserveAspectRatio="xMidYMid slice"/>
+ <rect width="500" height="370" fill="url(#readability)"/>
+
+</svg>

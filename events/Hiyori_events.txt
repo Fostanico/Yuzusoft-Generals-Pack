@@ -24,7 +24,7 @@ country_event = {
 						}
 					}
 					allowed_civil_war = {
-						is_ai = no
+						ROOT = { is_ai = no }
 					}
 					advisor = { #顾问
 						slot = political_advisor #类型-政治顾问

@@ -41,4 +41,28 @@ spriteTypes = {
 		texturefile = "gfx/ideas/yz_airixin.png"
 		legacy_lazy_load = no
 	}
+	# 三军 + 特种部队的柚子精神图标
+	# 原本只注册在 frontendmainviewbg.gfx / YZ_image.gfx / YZ_images.gfx 这三个大文件里，
+	# 那几个文件一旦有语法问题，整份文件的 sprite 都不会注册，图标就会时灵时不灵。
+	# 这里再登记一遍，等于给它们一个干净的备份注册点。
+	spriteType = {
+		name = "GFX_idea_air_yuzusoft_spirit"
+		texturefile = "gfx/ideas/Propeller with Wings.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_naval_yuzusoft_spirit"
+		texturefile = "gfx/ideas/navy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_army_yuzusoft_forces"
+		texturefile = "gfx/ideas/Hat Military.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_army_yuzusoft_spirit_special_forces"
+		texturefile = "gfx/ideas/special.png"
+		legacy_lazy_load = no
+	}
 }

@@ -59,7 +59,7 @@ ability = {
         name = chou_witch_ability
         desc = chou_witch_ability_desc #额外描述
         sound_effect = chocoming #声音
-        icon = GFX_ability_chou_witch_ability_icon
+        icon = GFX_ability_chou_witch_ability
         type = army_leader #是陆军将领
 
         allowed = { #要求
@@ -100,7 +100,7 @@ ability = {
         name = nene_witch_ability
         desc = nene_witch_ability_desc #额外描述
         sound_effect = nencoming #声音
-        icon = GFX_ability_nene_witch_ability_icon
+        icon = GFX_ability_nene_witch_ability
         type = army_leader #是陆军将领
 
         allowed = { #要求
@@ -208,7 +208,7 @@ ability = {
         name = miu_bloodsucking_ability
         desc = miu_bloodsucking_ability_desc #额外描述
         sound_effect = command_power_ability_offensive
-        icon = GFX_trait_maid_miu_trait
+        icon = GFX_trait_yz_legacy_miu_trait
         type = army_leader #是陆军将领
 
         allowed = { #要求
@@ -232,7 +232,7 @@ ability = {
         name = rio_bloodsucking_ability
         desc = rio_bloodsucking_ability_desc #额外描述
         sound_effect = command_power_ability_offensive
-        icon = GFX_trait_maid_rio_trait_1
+        icon = GFX_trait_yz_legacy_rio_trait_1
         type = army_leader #是陆军将领
 
         allowed = { #要求
@@ -322,7 +322,7 @@ ability = {
         name = nanao_ability
         desc = nanao_ability_desc
         sound_effect = command_power_ability_offensive
-        icon = GFX_ability_nanao_ability_icon
+        icon = GFX_ability_nanao_morin_ability
         type = army_leader #是陆军将领
 
         allowed = { #要求
@@ -387,7 +387,7 @@ ability = {
         name = sana_ability
         desc = sana_ability_desc #额外描述
         sound_effect = sana_ability_sound #声音
-        icon = GFX_trait_maid_sana_trait
+        icon = GFX_trait_yz_legacy_sana_trait
         type = army_leader #是陆军将领
 
         allowed = { #要求
@@ -609,7 +609,7 @@ ability = {
     hazuki_ability = {
         name = hazuki_ability
         desc = hazuki_ability_desc
-        icon = GFX_trait_maid_hazuki_trait
+        icon = GFX_trait_yz_legacy_hazuki_trait
         sound_effect = command_power_ability_offensive
         type = army_leader
         allowed = {
@@ -625,7 +625,7 @@ ability = {
             amphibious_invasion_defence = 0.5
             river = {
                 attack = 0.15
-                speed = 0.15
+                movement = 0.15
             }
             amphibious = {
                 attack = 0.5
@@ -635,7 +635,7 @@ ability = {
     nanami_ability = {
         name = nanami_ability
         desc = nanami_ability_desc
-        icon = GFX_trait_maid_qihai_trait
+        icon = GFX_trait_yz_legacy_qihai_trait
         sound_effect = command_power_ability_offensive
         type = army_leader
         allowed = {
@@ -656,7 +656,7 @@ ability = {
     mayu_ability = {
         name = mayu_ability
         desc = mayu_ability_desc
-        icon = GFX_trait_maid_Mayu_trait
+        icon = GFX_trait_yz_legacy_Mayu_trait
         sound_effect = command_power_ability_offensive
         type = army_leader
         allowed = {
@@ -678,7 +678,7 @@ ability = {
     ayase_ability = {
         name = ayase_ability
         desc = ayase_ability_desc
-        icon = GFX_trait_maid_cuodao_trait3
+        icon = GFX_trait_yz_legacy_cuodao_trait3
         sound_effect = command_power_ability_offensive
         type = army_leader
         allowed = {
@@ -696,10 +696,42 @@ ability = {
             str_damage_multiplier = -0.5
         }
     }
+
+    cat_haaaaaa = {
+        name = cat_haaaaaa
+        desc = cat_haaaaaa_desc
+        icon = GFX_ability_cat_haaaaaa
+        sound_effect = command_power_ability_offensive
+        type = army_leader
+        allowed = {
+            has_ability = cat_haaaaaa
+        }
+        cost = 0.1
+        duration = 168
+        cooldown = 168
+        unit_modifiers = {
+            army_attack_factor = 0.25
+            army_defence_factor = -0.15
+            breakthrough_factor = 0.4
+            org_damage_multiplier = -0.5
+            str_damage_multiplier = -0.5
+        }
+        # Ability effects must be nested here, or later abilities fail to load.
+        one_time_effect = {
+            hidden_effect = {
+                set_portraits = {
+                    army = { large = "gfx/leader/yudi(human).png" }
+                }
+                OWNER = {
+                    country_event = { id = yz_ability_event.20 days = 7 }
+                }
+            }
+        }
+    }
     hypong_bom = {
         name = hypong_bom
         desc = hypong_bom_desc
-        icon = GFX_trait_hypong_bom
+        icon = GFX_ability_hypong_bom
         sound_effect = raid_result_success_nuclear #command_power_ability_offensive
         type = army_leader
         allowed = {
@@ -726,7 +758,7 @@ ability = {
                     }
                 }
                 FROM = {
-                    country_event = { id = start_event.70205861 days = 20 }
+                    country_event = { id = start_event.47994554 days = 10 }
                 }
             }
 
@@ -735,7 +767,7 @@ ability = {
     eat_people = {
         name = eat_people
         desc = eat_people_desc
-        icon = GFX_trait_human_eating_girl
+        icon = GFX_ability_eat_people
         sound_effect = command_power_ability_offensive
         type = army_leader
         allowed = {
@@ -765,7 +797,7 @@ ability = {
     power_of_kami = {
         name = power_of_kami
         desc = power_of_kami_desc
-        icon = GFX_trait_old_big_sister
+        icon = GFX_ability_power_of_kami
         sound_effect = raid_result_success_nuclear
         type = army_leader
         allowed = {

@@ -1,125 +1,272 @@
+# Production startup screen, ported from the approved test_io layout.
+# Preserve the 1022x857 footprint, production window/callback names and rewards.
+# Shader animation moves pixels; native click areas stay at the declared positions.
 guiTypes = {
-	# 要点：启动界面主窗口使用 1022x857 原图尺寸居中显示，所有交互按钮都在这张背景上绝对定位。 [2026-06-20] [伊尔诺/GPT5.5]
 	containerWindowType = {
 		name = "YZ_start_ui"
 		position = { x = -511 y = -428 }
-		orientation = CENTER
 		size = { width = 1022 height = 857 }
+		orientation = center
 		moveable = yes
 		click_to_front = yes
+		fade_time = 400
+		fade_type = linear
 
+		# Native drag surface, like the original window. Covered by the opaque
+		# stage sprites; visual overlays never receive pointer input.
 		background = {
-			name = "YZ_start_ui_background"
+			name = "yzl_drag_surface"
 			quadTextureSprite = "GFX_start_ui_origin_no_bargin"
 		}
+		# Top drag band stays clear except for the explicit return-to-game button.
+		# Backdrop and light layer, one pair per page.
+		iconType = {
+			name = "yzl_stage_home"
+			spriteType = "GFX_yzl_stage_home"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "yzl_stage_read"
+			spriteType = "GFX_yzl_stage_read"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "yzl_fx_home"
+			spriteType = "GFX_yzl_fx_home"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "yzl_fx_read"
+			spriteType = "GFX_yzl_fx_read"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
 
-		# 内容：前三个内容按钮使用已经画好的整图透明按钮，不使用 GFX_empty；文字用 instantTextBoxType 独立居中覆盖。 [2026-06-20] [伊尔诺/GPT5.5]
+		# Persistent current-page marker (plate offset 20,16).
+		iconType = {
+			name = "yzl_nav_update_on"
+			spriteType = "GFX_yzl_nav_glow"
+			position = { x = 0 y = 74 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "yzl_nav_guide_on"
+			spriteType = "GFX_yzl_nav_glow"
+			position = { x = 0 y = 146 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "yzl_nav_credits_on"
+			spriteType = "GFX_yzl_nav_glow"
+			position = { x = 0 y = 218 }
+			alwaystransparent = yes
+		}
+
 		buttonType = {
 			name = "YZ_start_ui_update_button"
-			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_start_ui_buttom_up_one"
+			spriteType = "GFX_yzl_nav"
+			position = { x = 20 y = 90 }
 			clicksound = click_ok
 		}
-		instantTextBoxType = {
-			name = "YZ_start_ui_update_button_text"
-			position = { x = 25 y = 52 }
-			font = "hoi_18mbs"
-			text = "YZ_start_ui_update_button_text"
-			maxWidth = 186
-			maxHeight = 24
-			format = center
-			alwaystransparent = yes
-		}
-
 		buttonType = {
 			name = "YZ_start_ui_guide_button"
-			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_start_ui_buttom_middle_one"
+			spriteType = "GFX_yzl_nav"
+			position = { x = 20 y = 162 }
 			clicksound = click_ok
 		}
-		instantTextBoxType = {
-			name = "YZ_start_ui_guide_button_text"
-			position = { x = 25 y = 134 }
-			font = "hoi_18mbs"
-			text = "YZ_start_ui_guide_button_text"
-			maxWidth = 186
-			maxHeight = 24
-			format = center
-			alwaystransparent = yes
-		}
-
 		buttonType = {
 			name = "YZ_start_ui_credits_button"
-			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_start_ui_buttom_down_one"
+			spriteType = "GFX_yzl_nav"
+			position = { x = 20 y = 234 }
 			clicksound = click_ok
 		}
-		# 内容：阿诺模式下在相同位置显示同图按钮，直接通过 web_link 打开公开鸣谢网站；普通模式仍使用上方原按钮切换本地鸣谢正文。 [2026-07-15] [伊尔诺/GPT5]
+		# Arno mode: same plate, opens the public credits site instead.
 		buttonType = {
 			name = "YZ_start_ui_credits_web_button"
-			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_start_ui_buttom_down_one"
+			spriteType = "GFX_yzl_nav"
+			position = { x = 20 y = 234 }
 			clicksound = click_ok
 			web_link = "https://fostanico.github.io/Yuzusoft-Generals-Pack/"
 		}
-		instantTextBoxType = {
-			name = "YZ_start_ui_credits_button_text"
-			position = { x = 25 y = 217 }
-			font = "hoi_18mbs"
-			# scale = 0.92
-			text = "YZ_start_ui_credits_button_text"
-			maxWidth = 186
-			maxHeight = 24
-			format = center
-			alwaystransparent = yes
-		}
-
-		# 内容：关闭按钮复用第三个按钮贴图并下移 80 像素，保持左侧按钮视觉风格一致。 [2026-06-20] [伊尔诺/GPT5.5]
 		buttonType = {
 			name = "YZ_start_ui_close_button"
-			position = { x = 0 y = 80 }
-			quadTextureSprite = "GFX_start_ui_buttom_down_one"
+			scale = 0.68
+			spriteType = "GFX_yzl_close"
+			position = { x = 868 y = 26 }
 			clicksound = click_close
 		}
+
+		# SD easter egg inputs: upper is 0, lower is 1 (sequence 1001011001).
+		# The original artwork is packed by visible alpha bounds, centred in each quad.
+		buttonType = {
+			name = "YZ_start_ui_sd_0_button"
+			spriteType = "GFX_yzl_chibi_0"
+			position = { x = 4 y = 300 }
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "YZ_start_ui_sd_1_button"
+			spriteType = "GFX_yzl_chibi_1"
+			position = { x = 4 y = 574 }
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "yzl_news_button"
+			spriteType = "GFX_yzl_news"
+			position = { x = 268 y = 615 }
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "yzl_back_button"
+			spriteType = "GFX_yzl_back"
+			position = { x = 950 y = 102 }
+			clicksound = click_close
+		}
+		# Archive uses the same quiet material and native hit box as latest news.
+		buttonType = {
+			name = "yzl_history_button"
+			spriteType = "GFX_yzl_news"
+			position = { x = 632 y = 615 }
+			clicksound = click_ok
+		}
+
+		# Compact native branding, no baked serif display title or English rule.
 		instantTextBoxType = {
-			name = "YZ_start_ui_close_button_text"
-			position = { x = 25 y = 297 }
+			name = "yzl_brand"
+			position = { x = 20 y = 26 }
+			font = "hoi_20b"
+			text = "yzl_brand"
+			maxWidth = 192
+			maxHeight = 32
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "yzl_mode_caption"
+			position = { x = 20 y = 58 }
 			font = "hoi_18mbs"
-			# scale = 0.92
-			text = "YZ_start_ui_close_button_text"
+			text = "yzl_mode_caption"
+			maxWidth = 192
+			maxHeight = 24
+			alwaystransparent = yes
+		}
+		# Navigation column text.
+		# Always populated: greeting, current page, or Arno mode status.
+		instantTextBoxType = {
+			name = "yzl_sidebar_context"
+			position = { x = 284 y = 30 }
+			font = "hoi_24header"
+			text = "yzl_sidebar_context"
+			maxWidth = 552
+			maxHeight = 34
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "yzl_nav_update_caption"
+			position = { x = 23 y = 111 }
+			font = "hoi_18mbs"
+			text = "yzl_nav_update_text"
 			maxWidth = 186
 			maxHeight = 24
 			format = center
 			alwaystransparent = yes
 		}
-
-		# 要点：两个 SD 小人同时是彩蛋输入按钮；192x256 素材放在 x=22，使中心线落在左侧栏约 x=118 的中轴线上。 [2026-06-20] [伊尔诺/GPT5.5]
-		buttonType = {
-			name = "YZ_start_ui_sd_0_button"
-			position = { x = 22 y = 346 }
-			quadTextureSprite = "GFX_start_ui_sd_0"
-			clicksound = click_default
-		}
-
-		buttonType = {
-			name = "YZ_start_ui_sd_1_button"
-			position = { x = 22 y = 601 }
-			quadTextureSprite = "GFX_start_ui_sd_1"
-			clicksound = click_default
-		}
-
-		# 内容：右侧正文框始终保留原 scripted localisation 页面；阿诺模式只替换鸣谢按钮的点击目标，不再覆盖静态网页截图。 [2026-07-15] [伊尔诺/GPT5]
 		instantTextBoxType = {
-			name = "YZ_start_ui_content"
-			position = { x = 278 y = 58 }
+			name = "yzl_nav_guide_caption"
+			position = { x = 23 y = 183 }
 			font = "hoi_18mbs"
-			# scale = 0.72
+			text = "yzl_nav_guide_text"
+			maxWidth = 186
+			maxHeight = 24
+			format = center
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "yzl_nav_credits_caption"
+			position = { x = 23 y = 255 }
+			font = "hoi_18mbs"
+			text = "yzl_nav_credits_text"
+			maxWidth = 186
+			maxHeight = 24
+			format = center
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "yzl_nav_close_caption"
+			position = { x = 872 y = 37 }
+			font = "hoi_18mbs"
+			text = "yzl_return_game"
+			maxWidth = 122
+			maxHeight = 24
+			format = center
+			alwaystransparent = yes
+		}
+
+		# Title page text.
+		instantTextBoxType = {
+			name = "yzl_news_eyebrow"
+			position = { x = 290 y = 635 }
+			font = "hoi_18mbs"
+			text = "yzl_news_eyebrow"
+			maxWidth = 288
+			maxHeight = 24
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "yzl_news_line"
+			position = { x = 290 y = 675 }
+			font = "hoi_18mbs"
+			text = "yzl_news_brief"
+			maxWidth = 310
+			maxHeight = 130
+			format = left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "yzl_history_eyebrow"
+			position = { x = 654 y = 635 }
+			font = "hoi_18mbs"
+			text = "yzl_history_eyebrow"
+			maxWidth = 288
+			maxHeight = 24
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "yzl_history_line"
+			position = { x = 654 y = 675 }
+			font = "hoi_18mbs"
+			text = "yzl_history_brief"
+			maxWidth = 310
+			maxHeight = 130
+			format = left
+			alwaystransparent = yes
+		}
+
+		# Reading page text: one box, the page comes from scripted localisation.
+		# Reserve the top band for the animated 36 px close/back button. Native
+		# standardtext_slider adds 12 px border/arrow controls: leave both a
+		# vertical gap and a right gutter so its hit area cannot cover that button.
+		# Hiding a text box leaves its scrollbar drawn, so the title page also
+		# empties the text (yzl_page_empty) and there is nothing to scroll.
+		instantTextBoxType = {
+			name = "yzl_page_text"
+			position = { x = 284 y = 164 }
+			font = "hoi_18mbs"
 			text = "YZ_start_ui_content_text"
-			maxWidth = 680
-			maxHeight = 735
+			maxWidth = 640
+			maxHeight = 640
 			format = left
 			scrollbartype = "standardtext_slider"
 			alwaystransparent = yes
 		}
 	}
+
 }

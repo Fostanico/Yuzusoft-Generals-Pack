@@ -15,6 +15,7 @@ country_event = {
 		add_political_power = 5
 		add_stability = 0.01
 		add_ideas = ayase_love_0 #民族精神
+		set_country_flag = have_ayase
 		meta_effect = {
 			text = {
 				generate_character = {
@@ -30,7 +31,7 @@ country_event = {
 						}
 					}
 					allowed_civil_war = {
-						is_ai = no
+						ROOT = { is_ai = no }
 					}
 					advisor = {
 						slot = high_command
@@ -47,7 +48,7 @@ country_event = {
 						desc = Ayase_corps_desc
 						traits={
 						    yz_yuzusoft_character
-                            maid_cuodao_trait
+                            yz_legacy_cuodao_trait
                             yz_ayase_story_command_trait
 						}
 						skill=3
@@ -84,7 +85,7 @@ country_event = {
 						}
 					}
 					allowed_civil_war = {
-						is_ai = no
+						ROOT = { is_ai = no }
 					}
 					advisor = {
 						slot = high_command
@@ -101,7 +102,7 @@ country_event = {
 						desc = Ayase_corps_desc
 						traits={
 						    yz_yuzusoft_character
-                            maid_cuodao_trait
+                            yz_legacy_cuodao_trait
                             yz_ayase_duty_command_trait
 						}
 						attack_skill = 6
@@ -130,7 +131,7 @@ country_event = {
 		custom_effect_tooltip = ayase_2	#小字
 		random_army_leader = {
 			limit = {
-				has_trait = maid_cuodao_trait
+				has_trait = yz_legacy_cuodao_trait
 			}
 			add_skill_level = 1
 			add_attack = 1
@@ -142,7 +143,7 @@ country_event = {
 	}
 }
 
-# add_unit_leader_trait = maid_cuodao_trait1 # 原位于事件外部，当前引擎不会执行；保留为注释以维持现有行为
+# add_unit_leader_trait = yz_legacy_cuodao_trait1 # 原位于事件外部，当前引擎不会执行；保留为注释以维持现有行为
 
 
 country_event = {
@@ -157,9 +158,9 @@ country_event = {
 		add_political_power = 1
 		random_army_leader = {
 			limit = {
-				has_trait = maid_cuodao_trait
+				has_trait = yz_legacy_cuodao_trait
 			}
-			add_unit_leader_trait = maid_cuodao_trait1 #特质制作
+			add_unit_leader_trait = yz_legacy_cuodao_trait1 #特质制作
 		}
 		hidden_effect = {
 			country_event = { id = ayase_event.4 days = 20 }
@@ -181,7 +182,7 @@ country_event = {
 		add_political_power = -1
 		random_army_leader = {
 			limit = {
-				has_trait = maid_cuodao_trait
+				has_trait = yz_legacy_cuodao_trait
 			}
             add_unit_leader_trait = yz_ayase_cat_tactics_trait
 		}
@@ -226,7 +227,7 @@ country_event = {
 		add_war_support = 0.01
 		random_army_leader = {
 			limit = {
-				has_trait = maid_cuodao_trait
+				has_trait = yz_legacy_cuodao_trait
 			}
 			add_skill_level = 1
 			add_defense = 1
@@ -256,9 +257,9 @@ country_event = {
 		add_war_support = 0.01
 		random_army_leader = {
 			limit = {
-				has_trait = maid_cuodao_trait
+				has_trait = yz_legacy_cuodao_trait
 			}
-			add_unit_leader_trait = maid_cuodao_trait2 #特质制作
+			add_unit_leader_trait = yz_legacy_cuodao_trait2 #特质制作
 		}
 		hidden_effect = {
 			country_event = { id = ayase_event.8 days = 15 }
@@ -337,9 +338,9 @@ country_event = {
 		add_ideas = ayase_love_2 #民族精神
 		random_army_leader = {
 			limit = {
-				has_trait = maid_cuodao_trait
+				has_trait = yz_legacy_cuodao_trait
 			}
-			add_unit_leader_trait = maid_cuodao_trait3 #特质制作
+			add_unit_leader_trait = yz_legacy_cuodao_trait3 #特质制作
 			add_skill_level = 1
 			add_attack = 1
 			add_planning = 1

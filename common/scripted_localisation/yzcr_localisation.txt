@@ -1,0 +1,36 @@
+defined_text = {
+	name = yzcr_background_image
+	text = {
+		trigger = {
+			yzcr_rj_active = yes
+		}
+		localization_key = yzcr_rj_background_sprite
+	}
+	text = {
+		localization_key = yzcr_bg_1_image
+	}
+}
+defined_text = {
+	name = yzcr_choice_image
+	text = {
+		trigger = {
+			yzcr_rj_active = yes
+		}
+		localization_key = yzcr_rj_choice_sprite
+	}
+	text = {
+		localization_key = yzcr_choice_sprite
+	}
+}
+defined_text = {
+	name = yzcr_route_help_body
+	text = {
+		trigger = {
+			yzcr_rj_active = yes
+		}
+		localization_key = yzcr_rj_help_body
+	}
+	text = {
+		localization_key = yzcr_help_body
+	}
+}

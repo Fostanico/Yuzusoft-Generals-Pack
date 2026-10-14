@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 200 40">
+<defs>
+ <linearGradient id="ink" x2="0.3" y2="1"><stop stop-color="#343033"/><stop offset=".5" stop-color="#262326"/><stop offset="1" stop-color="#1d1c20"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2=".75" y2="1"><stop stop-color="#776569"/><stop offset=".22" stop-color="#cfb5a7"/><stop offset=".49" stop-color="#947c78"/><stop offset=".76" stop-color="#66545b"/><stop offset="1" stop-color="#bfa096"/></linearGradient>
+ <radialGradient id="well"><stop stop-color="#353034"/><stop offset="1" stop-color="#201e23"/></radialGradient>
+ <filter id="grain"><feTurbulence baseFrequency=".78" numOctaves="3" seed="17" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+</defs>
+
+ <path d="M9 1H191L199 9V31L191 39H9L1 31V9Z" fill="url(#ink)" stroke="url(#metal)" stroke-width="1"/>
+ <path d="M11 5H189L195 11V29L189 35H11L5 29V11Z" fill="none" stroke="#8e7270" stroke-opacity=".35" stroke-width=".5"/>
+ <path d="M13 16L17 20L13 24L9 20Z" fill="#a08883" opacity=".7"/>
+ <path d="M185 16L189 20L185 24" stroke="#d3bcb2" stroke-width=".85" fill="none"/>
+ <path d="M25 6H175" stroke="#d3bcb2" stroke-width=".6" opacity=".18"/>
+
+</svg>

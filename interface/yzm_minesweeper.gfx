@@ -1,0 +1,13 @@
+# Art is generated from primitives; UI glyphs are a rasterized system-font subset.
+spriteTypes = {
+spriteType = { name = "GFX_yzm_shell" texturefile = "gfx/interface/yzm/shell.tga" noOfFrames = 1 }
+spriteType = { name = "GFX_yzm_tiles" texturefile = "gfx/interface/yzm/tiles.tga" noOfFrames = 14 }
+spriteType = { name = "GFX_yzm_cell_button" texturefile = "gfx/interface/yzm/cell_button.tga" noOfFrames = 3 }
+spriteType = { name = "GFX_yzm_face_button" texturefile = "gfx/interface/yzm/face_button.tga" noOfFrames = 3 }
+spriteType = { name = "GFX_yzm_action" texturefile = "gfx/interface/yzm/action.tga" noOfFrames = 3 }
+spriteType = { name = "GFX_yzm_close" texturefile = "gfx/interface/yzm/close.tga" noOfFrames = 3 }
+spriteType = { name = "GFX_yzm_faces" texturefile = "gfx/interface/yzm/faces.tga" noOfFrames = 3 }
+spriteType = { name = "GFX_yzm_digits" texturefile = "gfx/interface/yzm/digits.tga" noOfFrames = 11 }
+}
+
+bitmapfonts = { bitmapfont = { name = "yzm_ui_18" fontfiles = { "gfx/fonts/yzm_ui_18" } color = 0xff111111 } }

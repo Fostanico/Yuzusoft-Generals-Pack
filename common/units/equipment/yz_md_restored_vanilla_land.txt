@@ -3,7 +3,8 @@
 # 决议/库存效果不得依赖这些还原类型；运行时按 yz_md_startup_detected 改走千禧
 # infantry_weapons_type / cnc_equipment_type / util_vehicle_type /
 # medium_tank_flame_chassis。升级只用本 Mod 的 yz_mech_cost_upgrade。
-# 具体型号用项目前缀，避免和原版 infantry_equipment_0 等 ID 撞车。
+# 具体型号用项目前缀，避免和原版 infantry_equipment_0 等 ID 撞车；它们只是
+# 数据库锚点，必须保持 is_buildable = no，不能作为“通用装备”进入生产列表。
 
 equipments = {
 
@@ -36,6 +37,7 @@ equipments = {
 	yz_md_restored_infantry_equipment_1 = {
 		year = 1936
 		archetype = infantry_equipment
+		is_buildable = no
 		priority = 5
 		visual_level = 0
 		active = yes
@@ -65,6 +67,7 @@ equipments = {
 	yz_md_restored_support_equipment_1 = {
 		year = 1918
 		archetype = support_equipment
+		is_buildable = no
 		priority = 20
 		active = yes
 	}
@@ -96,6 +99,7 @@ equipments = {
 	yz_md_restored_motorized_equipment_1 = {
 		year = 1936
 		archetype = motorized_equipment
+		is_buildable = no
 		priority = 10
 		visual_level = 0
 		active = yes
@@ -134,6 +138,7 @@ equipments = {
 	yz_md_restored_mechanized_equipment_1 = {
 		year = 1936
 		archetype = mechanized_equipment
+		is_buildable = no
 		priority = 10
 		visual_level = 0
 		active = yes

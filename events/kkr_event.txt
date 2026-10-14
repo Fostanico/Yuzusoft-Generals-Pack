@@ -29,7 +29,7 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         traits = {

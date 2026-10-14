@@ -16,12 +16,7 @@ qiyong_youzi_general_category = {
             set_country_flag = qiyong_youzi_1
             #country_event = start_event.28
             # 要点：仅将领模式保留原有启动逻辑，同时额外打开启动 GUI 作为统一说明界面。 [2026-06-20] [伊尔诺/GPT5.5]
-            set_country_flag = YZ_start_ui_visible
-            set_country_flag = YZ_start_ui_tab_update
-            clr_country_flag = YZ_start_ui_tab_guide
-            clr_country_flag = YZ_start_ui_tab_credits
-            # 内容：每次从启动决议打开 UI 时重置 SD 彩蛋输入进度，避免残留上一次未完成序列。 [2026-06-20] [伊尔诺/GPT5.5]
-            set_variable = { YZ_start_ui_sd_progress = 0 }
+            YZ_start_ui_open = yes
             add_ideas = Origin_of_youzu_culture   #柚子文化始源地，后面两个同理
             set_variable = { number_of_portrait = 1 }
             set_variable = { number_of_sd = 1 }
@@ -89,12 +84,7 @@ qiyong_youzi_general_category = {
             set_country_flag = qiyong_youzi_2
             set_country_flag = open_traot
             # 要点：完全版由本决议直接设置 GUI flag 打开启动界面；旧的开场弹窗事件已删除。 [2026-08-21] [伊尔诺/Claude]
-            set_country_flag = YZ_start_ui_visible
-            set_country_flag = YZ_start_ui_tab_update
-            clr_country_flag = YZ_start_ui_tab_guide
-            clr_country_flag = YZ_start_ui_tab_credits
-            # 内容：每次从启动决议打开 UI 时重置 SD 彩蛋输入进度，避免残留上一次未完成序列。 [2026-06-20] [伊尔诺/GPT5.5]
-            set_variable = { YZ_start_ui_sd_progress = 0 }
+            YZ_start_ui_open = yes
             set_country_flag = open_YZS_military_academy
             set_country_flag = open_industry_money
             set_country_flag = yzc_armor_decision
@@ -263,12 +253,7 @@ qiyong_youzi_general_category = {
             set_country_flag = open_traot
             country_event = start_event.27
             # 要点：联机削弱版保留原有 start_event.27，同时额外打开启动 GUI 作为统一说明界面。 [2026-06-20] [伊尔诺/GPT5.5]
-            set_country_flag = YZ_start_ui_visible
-            set_country_flag = YZ_start_ui_tab_update
-            clr_country_flag = YZ_start_ui_tab_guide
-            clr_country_flag = YZ_start_ui_tab_credits
-            # 内容：每次从启动决议打开 UI 时重置 SD 彩蛋输入进度，避免残留上一次未完成序列。 [2026-06-20] [伊尔诺/GPT5.5]
-            set_variable = { YZ_start_ui_sd_progress = 0 }
+            YZ_start_ui_open = yes
             set_country_flag = open_YZS_military_academy
             set_country_flag = open_industry_money
             set_country_flag = YZS_scientist_category_show #2025.3.29,16:02,伊尔诺

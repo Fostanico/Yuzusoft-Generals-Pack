@@ -138,6 +138,11 @@ defined_text = {	# 副主席
 		}
 		localization_key =  YzLeader_misaka_makoto_image
 	}
+	# 无人选时返回有效 sprite；可见性由该席位的人选 trigger 控制。
+	text = {
+		trigger = { always = yes }
+		localization_key = YzLeader_empty_image
+	}
 }
 
 defined_text = {	# 主席
@@ -264,7 +269,7 @@ defined_text = {	# 主席
 	}
 	text = {
 		trigger = {
-			has_country_flag = YCG_VC_nozomi
+			has_country_flag = YCG_CM_nozomi
 		}
 		localization_key =  YzLeader_nozomi_image
 	}
@@ -279,6 +284,11 @@ defined_text = {	# 主席
 			has_country_flag = YCG_CM_misaka_makoto
 		}
 		localization_key =  YzLeader_misaka_makoto_image
+	}
+	# 无人选时返回有效 sprite；可见性由该席位的人选 trigger 控制。
+	text = {
+		trigger = { always = yes }
+		localization_key = YzLeader_empty_image
 	}
 }
 
@@ -406,7 +416,7 @@ defined_text = {	# 第一书记
 	}
 	text = {
 		trigger = {
-			has_country_flag = YCG_VC_nozomi
+			has_country_flag = YCG_FS_nozomi
 		}
 		localization_key =  YzLeader_nozomi_image
 	}
@@ -421,5 +431,10 @@ defined_text = {	# 第一书记
 			has_country_flag = YCG_FS_misaka_makoto
 		}
 		localization_key =  YzLeader_misaka_makoto_image
+	}
+	# 无人选时返回有效 sprite；可见性由该席位的人选 trigger 控制。
+	text = {
+		trigger = { always = yes }
+		localization_key = YzLeader_empty_image
 	}
 }

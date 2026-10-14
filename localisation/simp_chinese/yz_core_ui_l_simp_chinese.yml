@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ yz_core_empty_label: "§L空席§!"
+ yz_core_store_button: "§W柚子商店§!"
+ yz_core_economy_button: "§W柚子经济部§!"
+ yz_core_funds_full: "$industry_money_category_desc$"
+ yz_core_affection_full: "$love_depth_localisation_text$"

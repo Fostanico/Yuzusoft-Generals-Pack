@@ -417,3 +417,17 @@ music = {
 	file = "Dear_Moments.ogg"
 	volume = 0.65
 }
+
+# ===== 柚子国 submod 用的曲子 =====
+# 音频文件放在 submod 的 music/youzu/ 目录（HOI4 的文件系统是叠加的，
+# 这里引用得到），这样 submod 将来独立发布时把文件搬走即可，不用动主模组的大文件。
+music = {
+	name = "yuzu_internationale_jp"
+	file = "yuzu_internationale_jp.ogg"
+	volume = 0.65
+}
+music = {
+	name = "yuzu_dongfanghong"
+	file = "yuzu_dongfanghong.ogg"
+	volume = 0.65
+}

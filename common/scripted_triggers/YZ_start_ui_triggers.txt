@@ -1,0 +1,9 @@
+# Startup screen 2.0: a reading page is open (otherwise the title page shows).
+YZ_start_ui_on_page = {
+	OR = {
+		has_country_flag = YZ_start_ui_tab_update
+		has_country_flag = YZ_start_ui_tab_history
+		has_country_flag = YZ_start_ui_tab_guide
+		has_country_flag = YZ_start_ui_tab_credits
+	}
+}

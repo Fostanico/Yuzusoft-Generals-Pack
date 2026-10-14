@@ -65,7 +65,7 @@ country_event= {            ###宁宁的婚礼
         set_country_flag = we_marry_with_nene
         random_army_leader = {
             limit = {
-                has_trait = maid_ninging_trait
+                has_trait = yz_legacy_ninging_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -95,7 +95,7 @@ country_event= {            ###乃爱的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_noa_trait
+                has_trait = yz_legacy_noa_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -125,7 +125,7 @@ country_event= {            ###meigulu的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_meigulu_trait
+                has_trait = yz_legacy_meigulu_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -155,7 +155,7 @@ country_event= {            ###murasame的婚礼
         set_country_flag = we_marry_with_murasame
         random_army_leader = {
             limit = {
-                has_trait = maid_congyu_trait
+                has_trait = yz_legacy_congyu_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -185,7 +185,7 @@ country_event= {            ###chou的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_chou_trait
+                has_trait = yz_legacy_chou_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -214,7 +214,7 @@ country_event= {            ###mako的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_mozi_trait
+                has_trait = yz_legacy_mozi_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -241,7 +241,7 @@ country_event= {            ###yoshino的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_fangnai_trait
+                has_trait = yz_legacy_fangnai_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -270,7 +270,7 @@ country_event= {            ###cuodao的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_cuodao_trait
+                has_trait = yz_legacy_cuodao_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -300,7 +300,7 @@ country_event= {            ###nanami的婚礼
         set_country_flag = we_marry_with_nanami
         random_army_leader = {
             limit = {
-                has_trait = maid_qihai_trait
+                has_trait = yz_legacy_qihai_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -329,7 +329,7 @@ country_event= {            ###kanna的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_kanna_trait
+                has_trait = yz_legacy_kanna_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -358,7 +358,7 @@ country_event= {            ###sana的婚礼
         set_country_flag = we_marry_with_sana
         random_army_leader = {
             limit = {
-                has_trait = maid_sana_trait
+                has_trait = yz_legacy_sana_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -387,7 +387,7 @@ country_event= {            ###枣子姐的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_zaozi_trait
+                has_trait = yz_legacy_zaozi_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -414,7 +414,7 @@ country_event= {            ###公屏的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_gongping_trait
+                has_trait = yz_legacy_gongping_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -438,7 +438,7 @@ country_event= {            ###chihaya的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_chihaya_trait
+                has_trait = yz_legacy_chihaya_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -464,7 +464,7 @@ country_event= {            ###hazuki的婚礼
         set_country_flag = we_marry_with_hazuki
         random_army_leader = {
             limit = {
-                has_trait = maid_hazuki_trait
+                has_trait = yz_legacy_hazuki_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -493,7 +493,7 @@ country_event= {            ###风实花的婚礼
         set_country_flag = we_marry_with_fumika
         random_army_leader = {
             limit = {
-                has_trait = maid_fumika_trait
+                has_trait = yz_legacy_fumika_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -522,7 +522,7 @@ country_event= {            ###石墨烯的婚礼
         set_country_flag = we_marry_with_nozomi
         random_army_leader = {
             limit = {
-                has_trait = maid_nozomi_trait
+                has_trait = yz_legacy_nozomi_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -551,7 +551,7 @@ country_event= {            ###和奏的婚礼
         set_country_flag = we_marry_with_wakana
         random_army_leader = {
             limit = {
-                has_trait = maid_wakana_trait
+                has_trait = yz_legacy_wakana_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -581,7 +581,7 @@ country_event= {            ###toko的婚礼
         set_country_flag = we_marry_with_touko
         random_army_leader = {
             limit = {
-                has_trait = maid_toko_trait
+                has_trait = yz_legacy_toko_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -611,7 +611,7 @@ country_event= {            ###真咲的婚礼
         set_country_flag = we_marry_with_masaki
         random_army_leader = {
             limit = {
-                has_trait = maid_masaki_trait
+                has_trait = yz_legacy_masaki_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -641,7 +641,7 @@ country_event= {            ###美羽的婚礼
         set_country_flag = we_marry_with_miu
         random_army_leader = {
             limit = {
-                has_trait = maid_miu_trait
+                has_trait = yz_legacy_miu_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -670,7 +670,7 @@ country_event= {            ###茉优的婚礼
         set_country_flag = we_marry_with_mayu
         random_army_leader = {
             limit = {
-                has_trait = maid_Mayu_trait
+                has_trait = yz_legacy_Mayu_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -730,7 +730,7 @@ country_event= {            ###凉音的婚礼
         set_country_flag = we_marry_with_suzune
         random_army_leader = {
             limit = {
-                has_trait = maid_suzune_trait
+                has_trait = yz_legacy_suzune_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -759,7 +759,7 @@ country_event= {            ##夏莉的婚礼
         set_country_flag = we_marry_with_shaarii
         random_army_leader = {
             limit = {
-                has_trait = maid_shirley_trait
+                has_trait = yz_legacy_shirley_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -897,7 +897,7 @@ country_event= {            ##蕾娜的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_lena_trait
+                has_trait = yz_legacy_lena_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -924,7 +924,7 @@ country_event= {            ##千咲的婚礼
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_chisaki_trait
+                has_trait = yz_legacy_chisaki_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -948,7 +948,7 @@ country_event= {            ##千咲的婚礼   #<-云雀丘由贵 2025.12.17，
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_yuki_trait
+                has_trait = yz_yuki_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -972,7 +972,7 @@ country_event= {            ##千咲的婚礼 <-御影须美
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_sumi_trait
+                has_trait = yz_sumi_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -996,7 +996,7 @@ country_event= {            ##千咲的婚礼  <-今宫纪子
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_noriko_trait
+                has_trait = yz_noriko_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -1020,7 +1020,7 @@ country_event= {            ##千咲的婚礼    <-中之岛妙
         add_to_variable = { marry_love_bonus = 100 }
         random_army_leader = {
             limit = {
-                has_trait = maid_tae_trait
+                has_trait = yz_tae_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -1207,7 +1207,7 @@ country_event= {            ##乌羽紫的婚礼
         set_country_flag = we_marry_with_yukari
         random_army_leader = {
             limit = {
-                has_trait = maid_yukari_trait
+                has_trait = yz_yukari_trait
             }
             add_unit_leader_trait = married_trait
         }
@@ -1430,14 +1430,14 @@ country_event = { #辉耶的婚礼——2025.12.3，20：20，伊尔诺
         set_country_flag = we_marry_with_kaguya
         random_army_leader = {
             limit = {
-                has_trait = maid_kaguya_trait
+                has_trait = yz_legacy_kaguya_trait
             }
             add_unit_leader_trait = married_trait
             #replace_unit_leader_trait = {
-            #    trait = maid_kaguya_trait
+            #    trait = yz_legacy_kaguya_trait
             #    replace = power_of_otherworld_queen_kaguya_trait
             #}
-            remove_unit_leader_trait = maid_kaguya_trait
+            remove_unit_leader_trait = yz_legacy_kaguya_trait
             add_unit_leader_trait = power_of_otherworld_queen_kaguya_trait
         }
         random_army_leader = {
@@ -1982,8 +1982,8 @@ country_event = { # 稻丛莉音的婚礼
         random_army_leader = {
             limit = {
                 OR = {
-                    has_trait = maid_rio_trait_1
-                    has_trait = maid_rio_trait_2
+                    has_trait = yz_legacy_rio_trait_1
+                    has_trait = yz_legacy_rio_trait_2
                 }
             }
             add_unit_leader_trait = married_trait

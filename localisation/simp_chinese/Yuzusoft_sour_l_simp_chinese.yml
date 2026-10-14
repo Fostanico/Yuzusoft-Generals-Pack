@@ -1,9 +1,9 @@
 ﻿l_simp_chinese:
  #gui
  Yuzusoft_sour_recurit_tooltip: "打开§O酸柚子§!招募面板"
- parquet_tooltip: "打开parquet招募Ui"
- parquet_started_tooltip: "parquet已经开始了喵"
- parquet_story_tooltip: "启动parquet事件链（目前尚未制作完成，所以只有两个将领喵） \n获得§H城门翼§!与§0茨木梨乃§!"
+ parquet_tooltip: "打开PARQUET招募面板"
+ parquet_started_tooltip: "扫雷挑战已解锁。请在决议面板的PARQUET决议组中开局或继续。"
+ parquet_story_tooltip: "要不要来一局扫雷？选择游玩后，通过决议开启挑战；首次通关可招募梨乃与翼。也可以选择跳过。"
  #将领
  ibaraki_rino_corps_desc: "平淡的语气和外表散发的气质很容易让人以为她是个高冷的人，但实际上她非常善良，看到有困难的人总会忍不住上前帮忙。内心也有着少女的一面，喜欢一些可爱的小玩意儿。某一天在路边试图救助跪倒在地的主人公伊吹协人，两人因此相识。"
  kido_tsubasa_corps_desc: "性格天真开朗，为人表里如一。对美食毫无抵抗力，哪家店好吃她知道得一清二楚。目前在某咖啡店打工，选择这家店的理由据说也是“因为有好吃的”。偶然中救下了被街头混混缠上的主人公伊吹协人，两人因此相识。"

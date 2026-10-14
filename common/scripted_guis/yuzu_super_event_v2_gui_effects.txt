@@ -29,6 +29,12 @@ scripted_gui = {
 			Super_event_marry_grok_visible = {
 				has_country_flag = we_marry_with_grok
 			}
+			Super_event_parquet_together_visible = {
+				has_country_flag = yz_parquet_together
+			}
+			Super_event_we_have_fukai_omo_visible = {
+				has_country_flag = we_have_fukai_omo
+			}
 			Super_event_marry_airi_visible = {
 				has_country_flag = we_marry_with_airi
 			}
@@ -145,6 +151,9 @@ scripted_gui = {
 			}
 			Super_event_marry_sakuyahime_visible = {
 				has_country_flag = we_marry_with_sakuyahime
+			}
+			Super_event_marry_sana_visible = {
+				has_country_flag = we_marry_with_sana
 			}
 			Super_event_marry_sayo_visible = {
 				has_country_flag = we_marry_with_sayo

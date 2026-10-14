@@ -105,13 +105,13 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Kaguya_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_kaguya_trait
+                            yz_legacy_kaguya_trait
                         }
                         skill = 5
                         attack_skill = 5
@@ -174,13 +174,13 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Kaguya_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_kaguya_trait
+                            yz_legacy_kaguya_trait
                         }
                         skill = 5
                         attack_skill = 5
@@ -223,13 +223,13 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Sairi_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_sairi_trait_2
+                            yz_legacy_sairi_trait_2
                         }
                 # id = 100121273 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         skill = 1
@@ -277,7 +277,7 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = WeiZi_corps_desc
@@ -317,13 +317,13 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Amane_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_amane_trait
+                            yz_legacy_amane_trait
                         }
                         skill=5
                         attack_skill=6
@@ -383,7 +383,7 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Amane_corps_desc
@@ -444,7 +444,7 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Kurumi_corps_desc
@@ -480,7 +480,7 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = Kurumi_corps_desc
@@ -519,7 +519,7 @@ country_event= {
             }
             remove_unit_leader_trait = yz_kurumi_trait01
             add_unit_leader_trait = yz_kurumi_trait_2
-            # 原版的组织者、后勤大师和魅力型领袖加成已折叠进 yz_kurumi_trait_2。
+            # 旅行剧情只赋予来海的专属特质，不再加入原版统帅特质。
         }
     }
 }
@@ -619,12 +619,12 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     field_marshal = {
                         traits={
                             yz_yuzusoft_character
-                            maid_sairi_trait_1
+                            yz_legacy_sairi_trait_1
                         }
                         attack_skill = 9
                         defense_skill = 9

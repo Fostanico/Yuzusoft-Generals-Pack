@@ -54,16 +54,16 @@ spriteTypes = {
 	}
 #特质
 	spriteType = {
-		name = "GFX_trait_maid_cuodao_trait1"
-		texturefile = "gfx/traits/maid_cuodao_trait1.png"
+		name = "GFX_trait_yz_legacy_cuodao_trait1"
+		texturefile = "gfx/traits/yz_legacy_cuodao_trait1.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_cuodao_trait2"
-		texturefile = "gfx/traits/maid_cuodao_trait2.png"
+		name = "GFX_trait_yz_legacy_cuodao_trait2"
+		texturefile = "gfx/traits/yz_legacy_cuodao_trait2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_cuodao_trait3"
-		texturefile = "gfx/traits/maid_cuodao_trait3.png"
+		name = "GFX_trait_yz_legacy_cuodao_trait3"
+		texturefile = "gfx/traits/yz_legacy_cuodao_trait3.png"
 	}
 #美羽领导人
 	spriteType = {

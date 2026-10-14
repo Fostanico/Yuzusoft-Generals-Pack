@@ -8,6 +8,59 @@ spriteTypes = {
 		name = "GFX_yzleader_box"
 		texturefile = "gfx/guis/add_yz_leader_1.png"
 	}
+	# Core-circle effects have separate registrations; the military-party UI uses the original box.
+	# Display-size 2x SD texture is exclusive to Minesweeper; full original is retained under source/.
+	spriteType = {
+		name = "GFX_yz_core_minesweeper_sd"
+		texturefile = "gfx/interface/yz_core/minesweeper_sd.png"
+		noOfFrames = 1
+		transparencecheck = no
+	}
+	# Native animated button, matching the exercise-button consumer. Keep a fixed hit rectangle.
+	frameAnimatedSpriteType = {
+		name = "GFX_yz_core_murasame_animated"
+		texturefile = "gfx/interface/yz_core/murasame_animated.dds"
+		noOfFrames = 10
+		loadType = "INGAME"
+		transparencecheck = no
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	spriteType = {
+		name = "GFX_yz_core_frame"
+		texturefile = "gfx/interface/yz_core/frame.png"
+		noOfFrames = 1
+		transparencecheck = no
+		effectFile = "gfx/FX/yz_core_frame.shader"
+	}
+	spriteType = {
+		name = "GFX_yz_core_corners"
+		texturefile = "gfx/interface/yz_core/frame.png"
+		noOfFrames = 1
+		transparencecheck = no
+		effectFile = "gfx/FX/yz_core_corners.shader"
+	}
+	spriteType = {
+		name = "GFX_yz_core_panel"
+		texturefile = "gfx/interface/yz_core/panel.png"
+	}
+	spriteType = {
+		name = "GFX_yz_core_empty"
+		texturefile = "gfx/interface/yz_core/empty.png"
+	}
+	spriteType = {
+		name = "GFX_yz_core_category"
+		texturefile = "gfx/interface/yz_core/category.png"
+	}
+	spriteType = {
+		name = "GFX_yz_core_button"
+		texturefile = "gfx/interface/yz_core/button.png"
+		noOfFrames = 1
+		transparencecheck = no
+		effectFile = "gfx/FX/yz_core_button.shader"
+	}
 	spriteType = {
 		name = "GFX_yzleader_bg"
 		texturefile = "gfx/leader/portrait_leader_background.png"

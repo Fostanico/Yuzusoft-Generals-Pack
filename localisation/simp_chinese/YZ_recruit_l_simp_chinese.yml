@@ -33,12 +33,12 @@
  recruit_kanna: "§C明月栞那§!\n§Y等级:5 §!\n £trait_attack:4  £trait_defense:8 \n £trait_planning:7  £trait_logistics:5\n将解锁§Y做点心决议§!\n你可以通过此决议招募§Y凉音§!\n\n将花费 £GFX_pol_power §Y10§!"
  recruit_nozomi: "§Y墨染希§!\n§Y等级:5 §!\n £trait_attack:5  £trait_defense:3 \n £trait_planning:5  £trait_logistics:5\n将解锁§Y做点心决议§!\n你可以通过此决议招募§Y凉音§!\n\n将花费 £GFX_pol_power §Y10§!"
  recruit_zaozi: "§R四季夏目§!\n§Y等级:5 §!\n £trait_attack:7  £trait_defense:3 \n £trait_planning:3  £trait_logistics:7\n将解锁§Y做点心决议§!\n你可以通过此决议招募§Y凉音§!\n\n将花费 £GFX_pol_power §Y10§!"
- recruit_suzune: "夕山凉音\n§Y等级:5 §!\n £trait_attack:3 £trait_defense:3 \n £trait_planning:3 £trait_logistics:9\n§t特殊招募!§!\n你在招募§Y夏目§!、§Y栞那§!和§Y墨染希§!后\n通过§Y做点心决议§!招募凉音姐！\n\n将花费 £GFX_pol_power §Y10§!"
+ recruit_suzune: "夕山凉音\n§Y等级:5 §!\n £trait_attack:3 £trait_defense:3 \n £trait_planning:3 £trait_logistics:9\n§t特殊招募!§!\n你在招募§Y夏目§!、§Y栞那§!和§Y墨染希§!后\n通过§Y做点心决议§!招募凉音姐！\n如果你使用的是青春版，可以直接点击获得凉音姐\n\n将花费 £GFX_pol_power §Y10§!"
  recruit_mei: "§7火打谷爱衣§!\n§Y等级:5 §!\n £trait_attack:8 £trait_defense:2 \n £trait_planning:2 £trait_logistics:6\n\n\n将花费 £GFX_pol_power §Y10§!"
  CS_recruit_title: " 星光咖啡馆与死神之蝶!!! \n点击此标题§Y一键招募§!本作品§Y所有角色！§!\n将花费 £GFX_pol_power §Y50§!  "
  CS: " 星光咖啡馆与死神之蝶!!! "
  CS_neko: "[CS_neko_text]"
- CS_neko1: "点击有2.5%的概率掉落§Y猫粮§! (£GFX_pol_power §Y5§!) !"
+ CS_neko1: "点击有2.5%的概率掉落§Y猫粮§! (£GFX_pol_power §Y5§!) \n同时有10%的概率招募到御帝!"
  CS_neko2: "§Y猫粮§!吃完啦！"
 
  #天使纷扰#

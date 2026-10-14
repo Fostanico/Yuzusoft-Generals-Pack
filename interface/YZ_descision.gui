@@ -1,222 +1,299 @@
 guiTypes = {
 
+	# Existing character illustration under floral frames; native category owns the outer border.
 	containerWindowType = {
 		name = "Yz_leader"
 		position = { x = 0 y = -50 }
 		size = { width = 510 height = 350 }
 		clipping = no
-
+		iconType = {
+			name = "Yzleader_panel"
+			# Match the established decision background inset: 500 wide, 20 taller than the GUI.
+			position = { x = 5 y = -18 }
+			quadTextureSprite = "GFX_yz_core_panel"
+			scale = 0.5
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "Yzleader_emblem"
+			position = { x = 70 y = 10 }
+			quadTextureSprite = "GFX_yz_core_category"
+			scale = 0.4
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "open_YzMinesweeper"
+			# Prepared at twice the display size; retain detail without minifying the full original.
+			position = { x = 10 y = -6 }
+			size = { x = 110 y = 108 }
+			scale = 0.5
+			quadTextureSprite = "GFX_yz_core_minesweeper_sd"
+			pdx_tooltip = "yz_minesweeper_freeplay_tt"
+			clicksound = click_scroll
+		}
 		instantTextBoxType = {
 			name = "Yzleader_title"
-			position = { x = 150 y = -10 }
-			font = "hoi_36header"
+			position = { x = 98 y = 2 }
+			font = "hoi_24header"
 			text = "yz_gui_label_core_circle"
-			maxWidth = 200
-			maxHeight = 40
+			maxWidth = 310
+			maxHeight = 34
+			fixedsize = yes
 			alwaystransparent = yes
-			format = center
+			format = left
 		}
-
-		# 右上角保留启动/设置入口；核心圈三席按左、中、右分别对应副主席、主席、第一书记。
 		buttonType = {
 			name = "open_YzModule"
-			position = { x = 420 y = -8 }
-			size = { x = 180 y = 230 }
-			scale = 0.6
-			quadTextureSprite = "GFX_murasame_3"
+			# Animate within a fixed square; keep the original startup-UI callback name.
+			position = { x = 439 y = -9 }
+			size = { x = 162 y = 162 }
+			scale = 0.4
+			spriteType = "GFX_yz_core_murasame_animated"
 			pdx_tooltip = "open_start_ui_tt"
 		}
-
-		# 副主席（左）：人物图与空席图位于底层，透明中心边框独立承担点击与禁用反馈。
 		iconType = {
 			name = "Yzleader_portrait1_image"
-			position = { x = 74 y = 73 }
-			scale = 0.51
+			position = { x = 60 y = 68 }
 			quadTextureSprite = "GFX_yzleader_bg"
+			scale = 0.6
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "Yzleader_unknown1_image"
-			position = { x = 64 y = 60 }
-			scale = 0.55
-			quadTextureSprite = "GFX_yzleader_unknown"
+			position = { x = 50 y = 58 }
+			quadTextureSprite = "GFX_yz_core_empty"
+			scale = 0.5
 			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "Yzleader_empty1_text"
+			position = { x = 57 y = 148 }
+			font = "hoi_16mbs"
+			text = "yz_core_empty_label"
+			maxWidth = 100
+			maxHeight = 22
+			fixedsize = yes
+			alwaystransparent = yes
+			format = center
 		}
 		buttonType = {
 			name = "Yzleader_portrait1"
-			position = { x = 64 y = 63 }
-			size = { x = 180 y = 230 }
-			scale = 0.55
-			quadTextureSprite = "GFX_yzleader_box"
+			position = { x = 50 y = 58 }
+			size = { x = 228 y = 292 }
+			scale = 0.5
+			quadTextureSprite = "GFX_yz_core_frame"
 			pdx_tooltip = yz_core_group_portrait_reselection_tt
 		}
-
-		# 主席（中）：视觉层不接收输入，边框按钮保持完整矩形命中区域。
+		iconType = {
+			name = "Yzleader_active1"
+			position = { x = 50 y = 58 }
+			quadTextureSprite = "GFX_yz_core_corners"
+			scale = 0.5
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "Yzleader_title2"
+			position = { x = 43 y = 208 }
+			font = "hoi_20bs"
+			text = "yz_gui_label_vice_chair"
+			maxWidth = 128
+			maxHeight = 24
+			fixedsize = yes
+			alwaystransparent = yes
+			format = center
+		}
 		iconType = {
 			name = "Yzleader_portrait2_image"
-			position = { x = 210 y = 44 }
-			scale = 0.52
+			position = { x = 208 y = 50 }
 			quadTextureSprite = "GFX_yzleader_bg"
+			scale = 0.6
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "Yzleader_unknown2_image"
-			position = { x = 201 y = 35 }
-			scale = 0.55
-			quadTextureSprite = "GFX_yzleader_unknown"
+			position = { x = 198 y = 40 }
+			quadTextureSprite = "GFX_yz_core_empty"
+			scale = 0.5
 			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "Yzleader_empty2_text"
+			position = { x = 205 y = 130 }
+			font = "hoi_16mbs"
+			text = "yz_core_empty_label"
+			maxWidth = 100
+			maxHeight = 22
+			fixedsize = yes
+			alwaystransparent = yes
+			format = center
 		}
 		buttonType = {
 			name = "Yzleader_portrait2"
-			position = { x = 201 y = 35 }
-			size = { x = 180 y = 230 }
-			scale = 0.55
-			quadTextureSprite = "GFX_yzleader_box"
+			position = { x = 198 y = 40 }
+			size = { x = 228 y = 292 }
+			scale = 0.5
+			quadTextureSprite = "GFX_yz_core_frame"
 			pdx_tooltip = yz_core_group_portrait_reselection_tt
 		}
-
-		# 第一书记（右）：与另外两席保持相同的图像/按钮分层合同。
+		iconType = {
+			name = "Yzleader_active2"
+			position = { x = 198 y = 40 }
+			quadTextureSprite = "GFX_yz_core_corners"
+			scale = 0.5
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "Yzleader_title1"
+			position = { x = 191 y = 190 }
+			font = "hoi_20bs"
+			text = "yz_gui_label_chair"
+			maxWidth = 128
+			maxHeight = 24
+			fixedsize = yes
+			alwaystransparent = yes
+			format = center
+		}
 		iconType = {
 			name = "Yzleader_portrait3_image"
-			position = { x = 348 y = 69 }
-			scale = 0.51
+			position = { x = 356 y = 68 }
 			quadTextureSprite = "GFX_yzleader_bg"
+			scale = 0.6
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "Yzleader_unknown3_image"
-			position = { x = 338 y = 60 }
-			scale = 0.55
-			quadTextureSprite = "GFX_yzleader_unknown"
+			position = { x = 346 y = 58 }
+			quadTextureSprite = "GFX_yz_core_empty"
+			scale = 0.5
 			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "Yzleader_empty3_text"
+			position = { x = 353 y = 148 }
+			font = "hoi_16mbs"
+			text = "yz_core_empty_label"
+			maxWidth = 100
+			maxHeight = 22
+			fixedsize = yes
+			alwaystransparent = yes
+			format = center
 		}
 		buttonType = {
 			name = "Yzleader_portrait3"
-			position = { x = 338 y = 60 }
-			size = { x = 180 y = 230 }
-			scale = 0.55
-			quadTextureSprite = "GFX_yzleader_box"
+			position = { x = 346 y = 58 }
+			size = { x = 228 y = 292 }
+			scale = 0.5
+			quadTextureSprite = "GFX_yz_core_frame"
 			pdx_tooltip = yz_core_group_portrait_reselection_tt
 		}
-
-		# 职位标题保持在所有头像层之后绘制。
-		instantTextBoxType = {
-			name = "Yzleader_title1"
-			position = { x = 175 y = 160 }
-			font = "hoi_24header"
-			text = "yz_gui_label_chair"
-			maxWidth = 150
-			maxHeight = 30
+		iconType = {
+			name = "Yzleader_active3"
+			position = { x = 346 y = 58 }
+			quadTextureSprite = "GFX_yz_core_corners"
+			scale = 0.5
 			alwaystransparent = yes
-			format = center
-		}
-		instantTextBoxType = {
-			name = "Yzleader_title2"
-			position = { x = 52 y = 188 }
-			font = "hoi_24header"
-			text = "yz_gui_label_vice_chair"
-			maxWidth = 150
-			maxHeight = 30
-			alwaystransparent = yes
-			format = center
 		}
 		instantTextBoxType = {
 			name = "Yzleader_title3"
-			position = { x = 312 y = 188 }
-			font = "hoi_24header"
+			position = { x = 339 y = 208 }
+			font = "hoi_20bs"
 			text = "yz_gui_label_first_secretary"
-			maxWidth = 150
-			maxHeight = 30
+			maxWidth = 128
+			maxHeight = 24
+			fixedsize = yes
 			alwaystransparent = yes
-			format = center 
+			format = center
 		}
-
 		containerWindowType = {
 			name = "yz_money_gui"
-			position = { x = 15 y = 225 }
-			size = { width = 500 height = 200 } 
+			position = { x = 15 y = 232 }
+			size = { width = 480 height = 120 }
 			clipping = no
-
-			background = {
-				name = "ym_bg"
-				quadTextureSprite = GFX_tiled_window_transparent
-			}
-			
-			buttonType = {
-				name = "open_yz_money_btn"
-				position = { x = 240 y = 80 } 
-				size = { x = 70 y = 30 }
-				quadTextureSprite = "GFX_yz_button_long"
-				scale = 0.55
-				pdx_tooltip = yz_money_desc_tt	
-			}
 			instantTextBoxType = {
-				name = "open_yz_money_btn_text"
-				position = { x = 266 y = 88 } 
+				name = "yz_LD_title"
+				position = { x = 0 y = 2 }
 				font = "hoi_18mbs"
-				text = "yz_money_btn_text"
-				maxWidth = 120
-				maxHeight = 30
+				text = "love_LD_title"
+				maxWidth = 245
+				maxHeight = 22
+				fixedsize = yes
 				alwaystransparent = yes
-				format = center 
-			}
-			buttonType = {
-				name = "open_YzStore_btn"
-				position = { x = 30 y = 80 } 
-				size = { x = 70 y = 30 }
-				quadTextureSprite = "GFX_yz_button_long"
-				scale = 0.55
-				pdx_tooltip = open_YzStore_btn_tt
-			}
-			instantTextBoxType = {
-				name = "open_YzStore_btn_text"
-				position = { x = 62 y = 88 } 
-				font = "hoi_18mbs"
-				text = "YzStore_btn_text"
-				maxWidth = 100
-				maxHeight = 30
-				alwaystransparent = yes
-				format = center 
+				format = left
 			}
 			instantTextBoxType = {
 				name = "yz_money_title"
-				position = { x = 230 y = -0 }
-				font = "hoi_20bs"
+				position = { x = 240 y = 2 }
+				font = "hoi_18mbs"
 				text = "industry_money_category"
-				maxWidth = 150
-				maxHeight = 30
-				alwaystransparent = yes
-			}
-			instantTextBoxType = {
-				name = "yz_money_desc"
-				position = { x = 230 y = 24 }
-				font = "hoi_16mbs"
-				text = "industry_money_category_desc"
 				maxWidth = 245
-				maxHeight = 30
+				maxHeight = 22
+				fixedsize = yes
 				alwaystransparent = yes
-				pdx_tooltip = yz_money_desc_tt
-			}
-			instantTextBoxType = {
-				name = "yz_LD_title"
-				position = { x = 0 y = 0 }
-				font = "hoi_20bs"
-				text = "love_LD_title"
-				maxWidth = 150
-				maxHeight = 30
-				alwaystransparent = yes
+				format = left
 			}
 			instantTextBoxType = {
 				name = "yz_LD_desc"
 				position = { x = 0 y = 24 }
 				font = "hoi_16mbs"
-				text = "love_depth_localisation_text"
+				text = "yz_core_affection_full"
 				maxWidth = 245
-				maxHeight = 30
+				maxHeight = 48
+				fixedsize = yes
+				alwaystransparent = no
+				pdx_tooltip = love_depth_localisation_text
+			}
+			instantTextBoxType = {
+				name = "yz_money_desc"
+				position = { x = 240 y = 24 }
+				font = "hoi_16mbs"
+				text = "yz_core_funds_full"
+				maxWidth = 245
+				maxHeight = 48
+				fixedsize = yes
+				alwaystransparent = no
+				pdx_tooltip = yz_money_desc_tt
+			}
+			buttonType = {
+				name = "open_YzStore_btn"
+				position = { x = 16 y = 76 }
+				size = { x = 400 y = 80 }
+				scale = 0.5
+				quadTextureSprite = "GFX_yz_core_button"
+				clicksound = click_default
+				pdx_tooltip = open_YzStore_btn_tt
+			}
+			instantTextBoxType = {
+				name = "open_YzStore_btn_text"
+				position = { x = 34 y = 87 }
+				font = "hoi_18mbs"
+				text = "yz_core_store_button"
+				maxWidth = 164
+				maxHeight = 22
+				fixedsize = yes
 				alwaystransparent = yes
+				format = center
+			}
+			buttonType = {
+				name = "open_yz_money_btn"
+				position = { x = 264 y = 76 }
+				size = { x = 400 y = 80 }
+				scale = 0.5
+				quadTextureSprite = "GFX_yz_core_button"
+				clicksound = click_default
+				pdx_tooltip = yz_money_desc_tt
+			}
+			instantTextBoxType = {
+				name = "open_yz_money_btn_text"
+				position = { x = 282 y = 87 }
+				font = "hoi_18mbs"
+				text = "yz_core_economy_button"
+				maxWidth = 164
+				maxHeight = 22
+				fixedsize = yes
+				alwaystransparent = yes
+				format = center
 			}
 		}
-		
 	}
 
 	containerWindowType = {

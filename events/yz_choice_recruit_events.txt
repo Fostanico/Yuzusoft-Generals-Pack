@@ -1,0 +1,26 @@
+add_namespace = yz_choice_recruit
+
+country_event = {
+    id = yz_choice_recruit.1
+    title = yz_choice_recruit.1.t
+    desc = yz_choice_recruit.1.desc
+    is_triggered_only = yes
+    option = {
+        name = yz_choice_recruit.1.a
+        yzcr_choose_legacy = yes
+    }
+    option = {
+        name = yz_choice_recruit.1.b
+        yzcr_choose_routes = yes
+    }
+    option = {
+        name = yz_choice_recruit.1.c
+        set_variable = { yzcr_preference = 1 }
+        yzcr_choose_legacy = yes
+    }
+    option = {
+        name = yz_choice_recruit.1.d
+        set_variable = { yzcr_preference = 2 }
+        yzcr_choose_routes = yes
+    }
+}

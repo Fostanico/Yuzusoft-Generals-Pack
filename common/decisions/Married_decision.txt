@@ -1581,7 +1581,13 @@ general_married_decision_category = {
 				check_variable = {
 					love_depth > 98
 				}
-				has_country_flag = parquet_started
+				OR = {
+					has_country_flag = yz_parquet_tsubasa_recruited
+					AND = {
+						has_country_flag = parquet_started
+						NOT = { has_country_flag = yz_parquet_session_initialized }
+					}
+				}
 				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
@@ -1607,7 +1613,13 @@ general_married_decision_category = {
 				check_variable = {
 					love_depth > 98
 				}
-				has_country_flag = parquet_started
+				OR = {
+					has_country_flag = yz_parquet_rino_recruited
+					AND = {
+						has_country_flag = parquet_started
+						NOT = { has_country_flag = yz_parquet_session_initialized }
+					}
+				}
 				yz_can_start_another_marriage = yes
 				not = {
 					has_country_flag = amane_special_wedding
@@ -2054,7 +2066,7 @@ general_married_decision_category = {
 			}
 			random_army_leader = {
 				limit = {
-					has_trait = maid_Ukisov_trait
+					has_trait = yz_legacy_Ukisov_trait
 				}
 				add_unit_leader_trait = married_trait
 			}

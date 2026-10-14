@@ -1,4 +1,4 @@
-version="1.188"
+version="1.19"
 tags={
 	"Balance"
 	"Utilities"
@@ -27,5 +27,5 @@ dependencies={
 	"The Road to 56"
 	"Thousand Week Reich"
 }
-supported_version="1.19.2.0"
+supported_version="1.19.3.0"
 remote_file_id="3303751918"

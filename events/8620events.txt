@@ -57,7 +57,7 @@ country_event = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     field_marshal = {
                         traits={
@@ -99,7 +99,7 @@ country_event = {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     field_marshal = {
                         traits={
@@ -137,7 +137,7 @@ country_event = {
             limit = {
                 has_trait = tielurenou
             }
-            add_unit_leader_trait = maid_tielurenou1_trait
+            add_unit_leader_trait = yz_legacy_tielurenou1_trait
         }
         hidden_effect = {
             country_event = { id = ASHC_event.12 days = 8 }
@@ -156,7 +156,7 @@ country_event = {
             limit = {
                 has_trait = tielurenou
             }
-            add_unit_leader_trait = maid_tielurenou1_trait
+            add_unit_leader_trait = yz_legacy_tielurenou1_trait
         }
         hidden_effect = {
             country_event = { id = ASHC_event.12 days = 20 }

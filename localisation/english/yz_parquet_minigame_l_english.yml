@@ -1,0 +1,13 @@
+﻿l_english:
+ yz_parquet_minigame: "PARQUET · Minesweeper Challenge"
+ yz_parquet_minigame_desc: "Follow the clues and avoid ten mines. Your first victory brings Rino and Tsubasa together for a day of their own."
+ yz_parquet_open_table: "Start / Resume Minesweeper Challenge"
+ yz_parquet_open_table_desc: "Beginner: 9×9, 10 mines. Your first cell and its neighbors are safe. Reveal all 71 safe cells to win.\n\nEvery victory grants 5 political power, with no limit. Your first challenge victory in this campaign also recruits Rino and Tsubasa and plays their shared super event. Recruitment and the super event occur only once.\n\nClosing keeps your progress. Switching between this challenge and core-circle free play starts a new board."
+ yz_parquet_debug_table: "Test: Load Minesweeper Challenge Board"
+ yz_parquet_debug_finish: "Test: Finish Minesweeper Challenge"
+ yz_parquet_debug_finish_desc: "Finish through the actual reveal effects to check first-victory recruitment and the super event. Debug mode only."
+ yz_minesweeper_freeplay_tt: "Open Minesweeper"
+ yz_parquet_handover.0.t: "Shall We Play a Minigame?"
+ yz_parquet_handover.0.desc: "How about classic Minesweeper? A 9×9 board, ten mines, and a safe first move.\n\nChoose to play, then start from the PARQUET Minesweeper Challenge decisions. Every victory grants 5 political power. Your first challenge victory also recruits Rino and Tsubasa and brings their shared happy ending.\n\nYou may also skip the minigame and welcome them directly."
+ yz_parquet_handover.0.a: "Play! Start from the decisions."
+ yz_parquet_handover.0.b: "Skip this time and welcome them."

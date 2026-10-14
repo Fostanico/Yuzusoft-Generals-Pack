@@ -24,216 +24,216 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/2026_new_year.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_ninging_trait"
-		texturefile = "gfx/traits/maid_ninging_trait.png"
+		name = "GFX_trait_yz_legacy_ninging_trait"
+		texturefile = "gfx/traits/yz_legacy_ninging_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_meigulu_trait"
-		texturefile = "gfx/traits/maid_meigulu_trait.png"
+		name = "GFX_trait_yz_legacy_meigulu_trait"
+		texturefile = "gfx/traits/yz_legacy_meigulu_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_chou_trait"
-		texturefile = "gfx/traits/maid_chou_trait.png"
+		name = "GFX_trait_yz_legacy_chou_trait"
+		texturefile = "gfx/traits/yz_legacy_chou_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_congyu_trait"
-		texturefile = "gfx/traits/maid_congyu_trait.png"
+		name = "GFX_trait_yz_legacy_congyu_trait"
+		texturefile = "gfx/traits/yz_legacy_congyu_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_congyu_trait_1"
-		texturefile = "gfx/traits/maid_congyu_trait_1.png"
+		name = "GFX_trait_yz_legacy_congyu_trait_1"
+		texturefile = "gfx/traits/yz_legacy_congyu_trait_1.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_mozi_trait"
-		texturefile = "gfx/traits/maid_mozi_trait.png"
+		name = "GFX_trait_yz_legacy_mozi_trait"
+		texturefile = "gfx/traits/yz_legacy_mozi_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_fangnai_trait"
-		texturefile = "gfx/traits/maid_fangnai_trait.png"
+		name = "GFX_trait_yz_legacy_fangnai_trait"
+		texturefile = "gfx/traits/yz_legacy_fangnai_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_cuodao_trait"
-		texturefile = "gfx/traits/maid_cuodao_trait.png"
+		name = "GFX_trait_yz_legacy_cuodao_trait"
+		texturefile = "gfx/traits/yz_legacy_cuodao_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_qihai_trait"
-		texturefile = "gfx/traits/maid_qihai_trait.png"
+		name = "GFX_trait_yz_legacy_qihai_trait"
+		texturefile = "gfx/traits/yz_legacy_qihai_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_qihai_trait_1"
-		texturefile = "gfx/traits/maid_qihai_trait.png"
+		name = "GFX_trait_yz_legacy_qihai_trait_1"
+		texturefile = "gfx/traits/yz_legacy_qihai_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_kanna_trait"
-		texturefile = "gfx/traits/maid_kanna_trait.png"
+		name = "GFX_trait_yz_legacy_kanna_trait"
+		texturefile = "gfx/traits/yz_legacy_kanna_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_noa_trait"
-		texturefile = "gfx/traits/maid_noa_trait.png"
+		name = "GFX_trait_yz_legacy_noa_trait"
+		texturefile = "gfx/traits/yz_legacy_noa_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_noa1_trait"
-		texturefile = "gfx/traits/maid_noa1_trait.png"
+		name = "GFX_trait_yz_legacy_noa1_trait"
+		texturefile = "gfx/traits/yz_legacy_noa1_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_noa2_trait"
-		texturefile = "gfx/traits/maid_noa2_trait.png"
+		name = "GFX_trait_yz_legacy_noa2_trait"
+		texturefile = "gfx/traits/yz_legacy_noa2_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_noa3_trait"
-		texturefile = "gfx/traits/maid_ninging_trait.png"
+		name = "GFX_trait_yz_legacy_noa3_trait"
+		texturefile = "gfx/traits/yz_legacy_ninging_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sana_trait"
-		texturefile = "gfx/traits/maid_sana_trait.png"
+		name = "GFX_trait_yz_legacy_sana_trait"
+		texturefile = "gfx/traits/yz_legacy_sana_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_zaozi_trait"
-		texturefile = "gfx/traits/maid_zaozi_trait.png"
+		name = "GFX_trait_yz_legacy_zaozi_trait"
+		texturefile = "gfx/traits/yz_legacy_zaozi_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_gongping_trait"
-		texturefile = "gfx/traits/maid_gongping_trait.png"
+		name = "GFX_trait_yz_legacy_gongping_trait"
+		texturefile = "gfx/traits/yz_legacy_gongping_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sana_birthday_boost1"
-		texturefile = "gfx/traits/maid_sana_trait2.png"
+		name = "GFX_trait_yz_legacy_sana_birthday_boost1"
+		texturefile = "gfx/traits/yz_legacy_sana_trait2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sana_birthday_boost2"
-		texturefile = "gfx/traits/maid_sana_trait2.png"
+		name = "GFX_trait_yz_legacy_sana_birthday_boost2"
+		texturefile = "gfx/traits/yz_legacy_sana_trait2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sana_birthday_boost3"
-		texturefile = "gfx/traits/maid_sana_trait2.png"
+		name = "GFX_trait_yz_legacy_sana_birthday_boost3"
+		texturefile = "gfx/traits/yz_legacy_sana_trait2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sana_birthday_boost4"
-		texturefile = "gfx/traits/maid_sana_trait2.png"
+		name = "GFX_trait_yz_legacy_sana_birthday_boost4"
+		texturefile = "gfx/traits/yz_legacy_sana_trait2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sana_birthday_boost5"
-		texturefile = "gfx/traits/maid_sana_trait2.png"
+		name = "GFX_trait_yz_legacy_sana_birthday_boost5"
+		texturefile = "gfx/traits/yz_legacy_sana_trait2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_chihaya_trait_1"
-		texturefile = "gfx/traits/maid_chihaya_trait.png"
+		name = "GFX_trait_yz_legacy_chihaya_trait_1"
+		texturefile = "gfx/traits/yz_legacy_chihaya_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_chihaya_trait_2"
-		texturefile = "gfx/traits/maid_chihaya_trait.png"
+		name = "GFX_trait_yz_legacy_chihaya_trait_2"
+		texturefile = "gfx/traits/yz_legacy_chihaya_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_chihaya_trait_3"
-		texturefile = "gfx/traits/maid_chihaya_trait.png"
+		name = "GFX_trait_yz_legacy_chihaya_trait_3"
+		texturefile = "gfx/traits/yz_legacy_chihaya_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_chihaya_trait_4"
-		texturefile = "gfx/traits/maid_chihaya_trait.png"
+		name = "GFX_trait_yz_legacy_chihaya_trait_4"
+		texturefile = "gfx/traits/yz_legacy_chihaya_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_chihaya_trait_5"
-		texturefile = "gfx/traits/maid_chihaya_trait.png"
+		name = "GFX_trait_yz_legacy_chihaya_trait_5"
+		texturefile = "gfx/traits/yz_legacy_chihaya_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_chihaya_trait"
-		texturefile = "gfx/traits/maid_chihaya_trait.png"
+		name = "GFX_trait_yz_legacy_chihaya_trait"
+		texturefile = "gfx/traits/yz_legacy_chihaya_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_hazuki_trait"
-		texturefile = "gfx/traits/maid_hazuki_trait.png"
+		name = "GFX_trait_yz_legacy_hazuki_trait"
+		texturefile = "gfx/traits/yz_legacy_hazuki_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_rio_trait_1"
-		texturefile = "gfx/traits/maid_rio_trait.png"
+		name = "GFX_trait_yz_legacy_rio_trait_1"
+		texturefile = "gfx/traits/yz_legacy_rio_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_rio_trait_2"
-		texturefile = "gfx/traits/maid_rio_trait.png"
+		name = "GFX_trait_yz_legacy_rio_trait_2"
+		texturefile = "gfx/traits/yz_legacy_rio_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sairi_trait_1"
-		texturefile = "gfx/traits/maid_sairi_trait_1.png"
+		name = "GFX_trait_yz_legacy_sairi_trait_1"
+		texturefile = "gfx/traits/yz_legacy_sairi_trait_1.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_sairi_trait_2"
-		texturefile = "gfx/traits/maid_sairi_trait_2.png"
+		name = "GFX_trait_yz_legacy_sairi_trait_2"
+		texturefile = "gfx/traits/yz_legacy_sairi_trait_2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_fumika_trait"
-		texturefile = "gfx/traits/maid_fumika_trait.png"
+		name = "GFX_trait_yz_legacy_fumika_trait"
+		texturefile = "gfx/traits/yz_legacy_fumika_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_amane_trait"
-		texturefile = "gfx/traits/maid_amane_trait.png"
+		name = "GFX_trait_yz_legacy_amane_trait"
+		texturefile = "gfx/traits/yz_legacy_amane_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_kurumi_trait"
-		texturefile = "gfx/traits/maid_kurumi_trait.png"
+		texturefile = "gfx/traits/yz_legacy_kurumi_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_kurumi_trait0"
-		texturefile = "gfx/traits/maid_kurumi_trait.png"
+		texturefile = "gfx/traits/yz_legacy_kurumi_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_kurumi_trait01"
-		texturefile = "gfx/traits/maid_kurumi_trait.png"
+		texturefile = "gfx/traits/yz_legacy_kurumi_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_nozomi_trait"
-		texturefile = "gfx/traits/maid_nozomi_trait.png"
+		name = "GFX_trait_yz_legacy_nozomi_trait"
+		texturefile = "gfx/traits/yz_legacy_nozomi_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_nozomi_trait_1"
-		texturefile = "gfx/traits/maid_nozomi_trait.png"
+		name = "GFX_trait_yz_legacy_nozomi_trait_1"
+		texturefile = "gfx/traits/yz_legacy_nozomi_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_toko_trait"
-		texturefile = "gfx/traits/maid_toko_trait.png"
+		name = "GFX_trait_yz_legacy_toko_trait"
+		texturefile = "gfx/traits/yz_legacy_toko_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_wakana_trait"
-		texturefile = "gfx/traits/maid_wakana_trait.png"
+		name = "GFX_trait_yz_legacy_wakana_trait"
+		texturefile = "gfx/traits/yz_legacy_wakana_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_masaki_trait"
-		texturefile = "gfx/traits/maid_masaki_trait.png"
+		name = "GFX_trait_yz_legacy_masaki_trait"
+		texturefile = "gfx/traits/yz_legacy_masaki_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_miu_trait"
-		texturefile = "gfx/traits/maid_miu_trait.png"
+		name = "GFX_trait_yz_legacy_miu_trait"
+		texturefile = "gfx/traits/yz_legacy_miu_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Mayu_trait"
-		texturefile = "gfx/traits/maid_Mayu_trait.png"
+		name = "GFX_trait_yz_legacy_Mayu_trait"
+		texturefile = "gfx/traits/yz_legacy_Mayu_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_astral_boost1"
-		texturefile = "gfx/traits/maid_astral_trait1.png"
+		name = "GFX_trait_yz_legacy_astral_boost1"
+		texturefile = "gfx/traits/yz_legacy_astral_trait1.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_astral_boost2"
-		texturefile = "gfx/traits/maid_astral_trait2.png"
+		name = "GFX_trait_yz_legacy_astral_boost2"
+		texturefile = "gfx/traits/yz_legacy_astral_trait2.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_astral_boost3"
-		texturefile = "gfx/traits/maid_astral_trait3.png"
+		name = "GFX_trait_yz_legacy_astral_boost3"
+		texturefile = "gfx/traits/yz_legacy_astral_trait3.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_kotori_trait"
+		name = "GFX_trait_yz_legacy_kotori_trait"
 		texturefile = "gfx/interface/traits/trait_air_controller.dds" #原版
 	}
 	spriteType = {
-		name = "GFX_trait_maid_shirley_trait"
-		texturefile = "gfx/traits/maid_shirley_trait.png"
+		name = "GFX_trait_yz_legacy_shirley_trait"
+		texturefile = "gfx/traits/yz_legacy_shirley_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_tielurenou1_trait"
-		texturefile = "gfx/traits/maid_tielurenou1_trait.png"
+		name = "GFX_trait_yz_legacy_tielurenou1_trait"
+		texturefile = "gfx/traits/yz_legacy_tielurenou1_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_trait_maid_vampires"
-		texturefile = "gfx/traits/trait_maid_vampires.png"
+		name = "GFX_trait_yz_legacy_vampires_trait"
+		texturefile = "gfx/traits/yz_legacy_vampires_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_amane_trait_1"
@@ -348,16 +348,16 @@ spriteTypes = {
 		textureFile = "gfx/traits/yz_mei_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_suzune_trait"
-		textureFile = "gfx/traits/maid_suzune_trait.png"
+		name = "GFX_trait_yz_legacy_suzune_trait"
+		textureFile = "gfx/traits/yz_legacy_suzune_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_kaguya_trait"
-		textureFile = "gfx/traits/maid_kaguya_trait.png"
+		name = "GFX_trait_yz_legacy_kaguya_trait"
+		textureFile = "gfx/traits/yz_legacy_kaguya_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_power_of_otherworld_queen_kaguya_trait"
-		textureFile = "gfx/traits/maid_kaguya_trait.png"
+		textureFile = "gfx/traits/yz_legacy_kaguya_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_konoka_trait"
@@ -478,48 +478,48 @@ spriteTypes = {
 	}
 	#彩蛋特质
 	spriteType = {
-		name = "GFX_trait_maid_van_trait"
-		texturefile = "gfx/traits/maid_van_trait.png"
+		name = "GFX_trait_yz_legacy_van_trait"
+		texturefile = "gfx/traits/yz_legacy_van_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Weiss_trait"
-		texturefile = "gfx/traits/maid_Weiss_trait.png"
+		name = "GFX_trait_yz_legacy_Weiss_trait"
+		texturefile = "gfx/traits/yz_legacy_Weiss_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Tsukimori_trait"
-		texturefile = "gfx/traits/maid_Tsukimori_trait.png"
+		name = "GFX_trait_yz_legacy_Tsukimori_trait"
+		texturefile = "gfx/traits/yz_legacy_Tsukimori_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Ukisov_trait"
-		texturefile = "gfx/traits/maid_Ukisov_trait.png"
+		name = "GFX_trait_yz_legacy_Ukisov_trait"
+		texturefile = "gfx/traits/yz_legacy_Ukisov_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Verniy_trait"
-		texturefile = "gfx/traits/maid_Verniy_trait.png"
+		name = "GFX_trait_yz_legacy_Verniy_trait"
+		texturefile = "gfx/traits/yz_legacy_Verniy_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_Verniy_trait"
 		texturefile = "gfx/traits/yz_Verniy_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Laoba_trait"
-		texturefile = "gfx/traits/maid_Laoba_trait.png"
+		name = "GFX_trait_yz_legacy_Laoba_trait"
+		texturefile = "gfx/traits/yz_legacy_Laoba_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_Laoba_trait"
 		texturefile = "gfx/traits/yz_Laoba_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_Manbo_trait"
-		texturefile = "gfx/traits/maid_Manbo_trait.png"
+		name = "GFX_trait_yz_legacy_Manbo_trait"
+		texturefile = "gfx/traits/yz_legacy_Manbo_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_yz_Manbo_trait"
 		texturefile = "gfx/traits/yz_Manbo_trait.png"
 	}
 	spriteType = {
-		name = "GFX_trait_maid_o5j_trait"
-		texturefile = "gfx/traits/maid_sana_trait.png"
+		name = "GFX_trait_yz_legacy_o5j_trait"
+		texturefile = "gfx/traits/yz_legacy_sana_trait.png"
 	}
 	spriteType = {
 		name = "GFX_trait_A_voice_from_wonderful_future"
@@ -669,6 +669,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_oupai_nai_kenjuuna_juse"
 		textureFile = "gfx/traits/oupai_nai_kenjuuna_juse.png"
+	}
+	spriteType = {
+		name = "GFX_trait_cat_trait"
+		textureFile = "gfx/traits/cat.png"
+	}
+	spriteType = {
+		name = "GFX_trait_lucky_cat"
+		textureFile = "gfx/traits/lucky_cat.png"
 	}
 	spriteType = {
 		name = "GFX_trait_call_from_king_right"
@@ -1228,6 +1236,10 @@ spriteTypes = {
 		name = "GFX_LY_event"
 		texturefile = "gfx/event_pictures/LY_event.png"
 	}
+	spriteType = {
+		name = "GFX_capture_yudi"
+		texturefile = "gfx/event_pictures/yudi_capture.png"
+	}
 	#天音
 	spriteType = {
 		name = "GFX_amane_event1"
@@ -1507,11 +1519,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_air_yuzusoft_spirit"
-		texturefile = "gfx/ideas/Propeller with Wings.png"
+		texturefile = "gfx/ideas/propeller_with_wings.png"
 	}
 	spriteType = {
 		name = "GFX_idea_army_yuzusoft_forces"
-		texturefile = "gfx/ideas/Hat Military.png"
+		texturefile = "gfx/ideas/hat_military.png"
+	}
+	spriteType = {
+		name = "GFX_idea_dead_god_air_teach_spirit"
+		texturefile = "gfx/ideas/kanna_spirit.png"
 	}
 	spriteType = {
 		name = "GFX_idea_army_yuzusoft_spirit_special_forces"

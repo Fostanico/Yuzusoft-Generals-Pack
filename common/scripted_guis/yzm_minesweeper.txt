@@ -1,0 +1,433 @@
+# See installed common/scripted_guis/_documentation.md for right/shift click.
+scripted_gui = {
+yzm_gui = {
+window_name = "yzm_window" context_type = player_context
+visible = { is_ai = no has_country_flag = yzm_open }
+dirty = yzm_dirty ai_enabled = { always = no }
+effects = {
+yzm_close_x_click = { yzm_close_window = yes }
+yzm_close_click = { yzm_close_window = yes }
+yzm_reset_click = { yzm_new_game = yes }
+yzm_reset_face_click = { yzm_new_game = yes }
+yzm_mode_click = { yzm_toggle_mode = yes }
+yzm_cell_0_click = { set_temp_variable = { yzm_input = 0 } yzm_left = yes }
+yzm_cell_0_right_click = { set_temp_variable = { yzm_input = 0 } yzm_flag = yes }
+yzm_cell_0_shift_click = { set_temp_variable = { yzm_input = 0 } yzm_flag = yes }
+yzm_cell_1_click = { set_temp_variable = { yzm_input = 1 } yzm_left = yes }
+yzm_cell_1_right_click = { set_temp_variable = { yzm_input = 1 } yzm_flag = yes }
+yzm_cell_1_shift_click = { set_temp_variable = { yzm_input = 1 } yzm_flag = yes }
+yzm_cell_2_click = { set_temp_variable = { yzm_input = 2 } yzm_left = yes }
+yzm_cell_2_right_click = { set_temp_variable = { yzm_input = 2 } yzm_flag = yes }
+yzm_cell_2_shift_click = { set_temp_variable = { yzm_input = 2 } yzm_flag = yes }
+yzm_cell_3_click = { set_temp_variable = { yzm_input = 3 } yzm_left = yes }
+yzm_cell_3_right_click = { set_temp_variable = { yzm_input = 3 } yzm_flag = yes }
+yzm_cell_3_shift_click = { set_temp_variable = { yzm_input = 3 } yzm_flag = yes }
+yzm_cell_4_click = { set_temp_variable = { yzm_input = 4 } yzm_left = yes }
+yzm_cell_4_right_click = { set_temp_variable = { yzm_input = 4 } yzm_flag = yes }
+yzm_cell_4_shift_click = { set_temp_variable = { yzm_input = 4 } yzm_flag = yes }
+yzm_cell_5_click = { set_temp_variable = { yzm_input = 5 } yzm_left = yes }
+yzm_cell_5_right_click = { set_temp_variable = { yzm_input = 5 } yzm_flag = yes }
+yzm_cell_5_shift_click = { set_temp_variable = { yzm_input = 5 } yzm_flag = yes }
+yzm_cell_6_click = { set_temp_variable = { yzm_input = 6 } yzm_left = yes }
+yzm_cell_6_right_click = { set_temp_variable = { yzm_input = 6 } yzm_flag = yes }
+yzm_cell_6_shift_click = { set_temp_variable = { yzm_input = 6 } yzm_flag = yes }
+yzm_cell_7_click = { set_temp_variable = { yzm_input = 7 } yzm_left = yes }
+yzm_cell_7_right_click = { set_temp_variable = { yzm_input = 7 } yzm_flag = yes }
+yzm_cell_7_shift_click = { set_temp_variable = { yzm_input = 7 } yzm_flag = yes }
+yzm_cell_8_click = { set_temp_variable = { yzm_input = 8 } yzm_left = yes }
+yzm_cell_8_right_click = { set_temp_variable = { yzm_input = 8 } yzm_flag = yes }
+yzm_cell_8_shift_click = { set_temp_variable = { yzm_input = 8 } yzm_flag = yes }
+yzm_cell_9_click = { set_temp_variable = { yzm_input = 9 } yzm_left = yes }
+yzm_cell_9_right_click = { set_temp_variable = { yzm_input = 9 } yzm_flag = yes }
+yzm_cell_9_shift_click = { set_temp_variable = { yzm_input = 9 } yzm_flag = yes }
+yzm_cell_10_click = { set_temp_variable = { yzm_input = 10 } yzm_left = yes }
+yzm_cell_10_right_click = { set_temp_variable = { yzm_input = 10 } yzm_flag = yes }
+yzm_cell_10_shift_click = { set_temp_variable = { yzm_input = 10 } yzm_flag = yes }
+yzm_cell_11_click = { set_temp_variable = { yzm_input = 11 } yzm_left = yes }
+yzm_cell_11_right_click = { set_temp_variable = { yzm_input = 11 } yzm_flag = yes }
+yzm_cell_11_shift_click = { set_temp_variable = { yzm_input = 11 } yzm_flag = yes }
+yzm_cell_12_click = { set_temp_variable = { yzm_input = 12 } yzm_left = yes }
+yzm_cell_12_right_click = { set_temp_variable = { yzm_input = 12 } yzm_flag = yes }
+yzm_cell_12_shift_click = { set_temp_variable = { yzm_input = 12 } yzm_flag = yes }
+yzm_cell_13_click = { set_temp_variable = { yzm_input = 13 } yzm_left = yes }
+yzm_cell_13_right_click = { set_temp_variable = { yzm_input = 13 } yzm_flag = yes }
+yzm_cell_13_shift_click = { set_temp_variable = { yzm_input = 13 } yzm_flag = yes }
+yzm_cell_14_click = { set_temp_variable = { yzm_input = 14 } yzm_left = yes }
+yzm_cell_14_right_click = { set_temp_variable = { yzm_input = 14 } yzm_flag = yes }
+yzm_cell_14_shift_click = { set_temp_variable = { yzm_input = 14 } yzm_flag = yes }
+yzm_cell_15_click = { set_temp_variable = { yzm_input = 15 } yzm_left = yes }
+yzm_cell_15_right_click = { set_temp_variable = { yzm_input = 15 } yzm_flag = yes }
+yzm_cell_15_shift_click = { set_temp_variable = { yzm_input = 15 } yzm_flag = yes }
+yzm_cell_16_click = { set_temp_variable = { yzm_input = 16 } yzm_left = yes }
+yzm_cell_16_right_click = { set_temp_variable = { yzm_input = 16 } yzm_flag = yes }
+yzm_cell_16_shift_click = { set_temp_variable = { yzm_input = 16 } yzm_flag = yes }
+yzm_cell_17_click = { set_temp_variable = { yzm_input = 17 } yzm_left = yes }
+yzm_cell_17_right_click = { set_temp_variable = { yzm_input = 17 } yzm_flag = yes }
+yzm_cell_17_shift_click = { set_temp_variable = { yzm_input = 17 } yzm_flag = yes }
+yzm_cell_18_click = { set_temp_variable = { yzm_input = 18 } yzm_left = yes }
+yzm_cell_18_right_click = { set_temp_variable = { yzm_input = 18 } yzm_flag = yes }
+yzm_cell_18_shift_click = { set_temp_variable = { yzm_input = 18 } yzm_flag = yes }
+yzm_cell_19_click = { set_temp_variable = { yzm_input = 19 } yzm_left = yes }
+yzm_cell_19_right_click = { set_temp_variable = { yzm_input = 19 } yzm_flag = yes }
+yzm_cell_19_shift_click = { set_temp_variable = { yzm_input = 19 } yzm_flag = yes }
+yzm_cell_20_click = { set_temp_variable = { yzm_input = 20 } yzm_left = yes }
+yzm_cell_20_right_click = { set_temp_variable = { yzm_input = 20 } yzm_flag = yes }
+yzm_cell_20_shift_click = { set_temp_variable = { yzm_input = 20 } yzm_flag = yes }
+yzm_cell_21_click = { set_temp_variable = { yzm_input = 21 } yzm_left = yes }
+yzm_cell_21_right_click = { set_temp_variable = { yzm_input = 21 } yzm_flag = yes }
+yzm_cell_21_shift_click = { set_temp_variable = { yzm_input = 21 } yzm_flag = yes }
+yzm_cell_22_click = { set_temp_variable = { yzm_input = 22 } yzm_left = yes }
+yzm_cell_22_right_click = { set_temp_variable = { yzm_input = 22 } yzm_flag = yes }
+yzm_cell_22_shift_click = { set_temp_variable = { yzm_input = 22 } yzm_flag = yes }
+yzm_cell_23_click = { set_temp_variable = { yzm_input = 23 } yzm_left = yes }
+yzm_cell_23_right_click = { set_temp_variable = { yzm_input = 23 } yzm_flag = yes }
+yzm_cell_23_shift_click = { set_temp_variable = { yzm_input = 23 } yzm_flag = yes }
+yzm_cell_24_click = { set_temp_variable = { yzm_input = 24 } yzm_left = yes }
+yzm_cell_24_right_click = { set_temp_variable = { yzm_input = 24 } yzm_flag = yes }
+yzm_cell_24_shift_click = { set_temp_variable = { yzm_input = 24 } yzm_flag = yes }
+yzm_cell_25_click = { set_temp_variable = { yzm_input = 25 } yzm_left = yes }
+yzm_cell_25_right_click = { set_temp_variable = { yzm_input = 25 } yzm_flag = yes }
+yzm_cell_25_shift_click = { set_temp_variable = { yzm_input = 25 } yzm_flag = yes }
+yzm_cell_26_click = { set_temp_variable = { yzm_input = 26 } yzm_left = yes }
+yzm_cell_26_right_click = { set_temp_variable = { yzm_input = 26 } yzm_flag = yes }
+yzm_cell_26_shift_click = { set_temp_variable = { yzm_input = 26 } yzm_flag = yes }
+yzm_cell_27_click = { set_temp_variable = { yzm_input = 27 } yzm_left = yes }
+yzm_cell_27_right_click = { set_temp_variable = { yzm_input = 27 } yzm_flag = yes }
+yzm_cell_27_shift_click = { set_temp_variable = { yzm_input = 27 } yzm_flag = yes }
+yzm_cell_28_click = { set_temp_variable = { yzm_input = 28 } yzm_left = yes }
+yzm_cell_28_right_click = { set_temp_variable = { yzm_input = 28 } yzm_flag = yes }
+yzm_cell_28_shift_click = { set_temp_variable = { yzm_input = 28 } yzm_flag = yes }
+yzm_cell_29_click = { set_temp_variable = { yzm_input = 29 } yzm_left = yes }
+yzm_cell_29_right_click = { set_temp_variable = { yzm_input = 29 } yzm_flag = yes }
+yzm_cell_29_shift_click = { set_temp_variable = { yzm_input = 29 } yzm_flag = yes }
+yzm_cell_30_click = { set_temp_variable = { yzm_input = 30 } yzm_left = yes }
+yzm_cell_30_right_click = { set_temp_variable = { yzm_input = 30 } yzm_flag = yes }
+yzm_cell_30_shift_click = { set_temp_variable = { yzm_input = 30 } yzm_flag = yes }
+yzm_cell_31_click = { set_temp_variable = { yzm_input = 31 } yzm_left = yes }
+yzm_cell_31_right_click = { set_temp_variable = { yzm_input = 31 } yzm_flag = yes }
+yzm_cell_31_shift_click = { set_temp_variable = { yzm_input = 31 } yzm_flag = yes }
+yzm_cell_32_click = { set_temp_variable = { yzm_input = 32 } yzm_left = yes }
+yzm_cell_32_right_click = { set_temp_variable = { yzm_input = 32 } yzm_flag = yes }
+yzm_cell_32_shift_click = { set_temp_variable = { yzm_input = 32 } yzm_flag = yes }
+yzm_cell_33_click = { set_temp_variable = { yzm_input = 33 } yzm_left = yes }
+yzm_cell_33_right_click = { set_temp_variable = { yzm_input = 33 } yzm_flag = yes }
+yzm_cell_33_shift_click = { set_temp_variable = { yzm_input = 33 } yzm_flag = yes }
+yzm_cell_34_click = { set_temp_variable = { yzm_input = 34 } yzm_left = yes }
+yzm_cell_34_right_click = { set_temp_variable = { yzm_input = 34 } yzm_flag = yes }
+yzm_cell_34_shift_click = { set_temp_variable = { yzm_input = 34 } yzm_flag = yes }
+yzm_cell_35_click = { set_temp_variable = { yzm_input = 35 } yzm_left = yes }
+yzm_cell_35_right_click = { set_temp_variable = { yzm_input = 35 } yzm_flag = yes }
+yzm_cell_35_shift_click = { set_temp_variable = { yzm_input = 35 } yzm_flag = yes }
+yzm_cell_36_click = { set_temp_variable = { yzm_input = 36 } yzm_left = yes }
+yzm_cell_36_right_click = { set_temp_variable = { yzm_input = 36 } yzm_flag = yes }
+yzm_cell_36_shift_click = { set_temp_variable = { yzm_input = 36 } yzm_flag = yes }
+yzm_cell_37_click = { set_temp_variable = { yzm_input = 37 } yzm_left = yes }
+yzm_cell_37_right_click = { set_temp_variable = { yzm_input = 37 } yzm_flag = yes }
+yzm_cell_37_shift_click = { set_temp_variable = { yzm_input = 37 } yzm_flag = yes }
+yzm_cell_38_click = { set_temp_variable = { yzm_input = 38 } yzm_left = yes }
+yzm_cell_38_right_click = { set_temp_variable = { yzm_input = 38 } yzm_flag = yes }
+yzm_cell_38_shift_click = { set_temp_variable = { yzm_input = 38 } yzm_flag = yes }
+yzm_cell_39_click = { set_temp_variable = { yzm_input = 39 } yzm_left = yes }
+yzm_cell_39_right_click = { set_temp_variable = { yzm_input = 39 } yzm_flag = yes }
+yzm_cell_39_shift_click = { set_temp_variable = { yzm_input = 39 } yzm_flag = yes }
+yzm_cell_40_click = { set_temp_variable = { yzm_input = 40 } yzm_left = yes }
+yzm_cell_40_right_click = { set_temp_variable = { yzm_input = 40 } yzm_flag = yes }
+yzm_cell_40_shift_click = { set_temp_variable = { yzm_input = 40 } yzm_flag = yes }
+yzm_cell_41_click = { set_temp_variable = { yzm_input = 41 } yzm_left = yes }
+yzm_cell_41_right_click = { set_temp_variable = { yzm_input = 41 } yzm_flag = yes }
+yzm_cell_41_shift_click = { set_temp_variable = { yzm_input = 41 } yzm_flag = yes }
+yzm_cell_42_click = { set_temp_variable = { yzm_input = 42 } yzm_left = yes }
+yzm_cell_42_right_click = { set_temp_variable = { yzm_input = 42 } yzm_flag = yes }
+yzm_cell_42_shift_click = { set_temp_variable = { yzm_input = 42 } yzm_flag = yes }
+yzm_cell_43_click = { set_temp_variable = { yzm_input = 43 } yzm_left = yes }
+yzm_cell_43_right_click = { set_temp_variable = { yzm_input = 43 } yzm_flag = yes }
+yzm_cell_43_shift_click = { set_temp_variable = { yzm_input = 43 } yzm_flag = yes }
+yzm_cell_44_click = { set_temp_variable = { yzm_input = 44 } yzm_left = yes }
+yzm_cell_44_right_click = { set_temp_variable = { yzm_input = 44 } yzm_flag = yes }
+yzm_cell_44_shift_click = { set_temp_variable = { yzm_input = 44 } yzm_flag = yes }
+yzm_cell_45_click = { set_temp_variable = { yzm_input = 45 } yzm_left = yes }
+yzm_cell_45_right_click = { set_temp_variable = { yzm_input = 45 } yzm_flag = yes }
+yzm_cell_45_shift_click = { set_temp_variable = { yzm_input = 45 } yzm_flag = yes }
+yzm_cell_46_click = { set_temp_variable = { yzm_input = 46 } yzm_left = yes }
+yzm_cell_46_right_click = { set_temp_variable = { yzm_input = 46 } yzm_flag = yes }
+yzm_cell_46_shift_click = { set_temp_variable = { yzm_input = 46 } yzm_flag = yes }
+yzm_cell_47_click = { set_temp_variable = { yzm_input = 47 } yzm_left = yes }
+yzm_cell_47_right_click = { set_temp_variable = { yzm_input = 47 } yzm_flag = yes }
+yzm_cell_47_shift_click = { set_temp_variable = { yzm_input = 47 } yzm_flag = yes }
+yzm_cell_48_click = { set_temp_variable = { yzm_input = 48 } yzm_left = yes }
+yzm_cell_48_right_click = { set_temp_variable = { yzm_input = 48 } yzm_flag = yes }
+yzm_cell_48_shift_click = { set_temp_variable = { yzm_input = 48 } yzm_flag = yes }
+yzm_cell_49_click = { set_temp_variable = { yzm_input = 49 } yzm_left = yes }
+yzm_cell_49_right_click = { set_temp_variable = { yzm_input = 49 } yzm_flag = yes }
+yzm_cell_49_shift_click = { set_temp_variable = { yzm_input = 49 } yzm_flag = yes }
+yzm_cell_50_click = { set_temp_variable = { yzm_input = 50 } yzm_left = yes }
+yzm_cell_50_right_click = { set_temp_variable = { yzm_input = 50 } yzm_flag = yes }
+yzm_cell_50_shift_click = { set_temp_variable = { yzm_input = 50 } yzm_flag = yes }
+yzm_cell_51_click = { set_temp_variable = { yzm_input = 51 } yzm_left = yes }
+yzm_cell_51_right_click = { set_temp_variable = { yzm_input = 51 } yzm_flag = yes }
+yzm_cell_51_shift_click = { set_temp_variable = { yzm_input = 51 } yzm_flag = yes }
+yzm_cell_52_click = { set_temp_variable = { yzm_input = 52 } yzm_left = yes }
+yzm_cell_52_right_click = { set_temp_variable = { yzm_input = 52 } yzm_flag = yes }
+yzm_cell_52_shift_click = { set_temp_variable = { yzm_input = 52 } yzm_flag = yes }
+yzm_cell_53_click = { set_temp_variable = { yzm_input = 53 } yzm_left = yes }
+yzm_cell_53_right_click = { set_temp_variable = { yzm_input = 53 } yzm_flag = yes }
+yzm_cell_53_shift_click = { set_temp_variable = { yzm_input = 53 } yzm_flag = yes }
+yzm_cell_54_click = { set_temp_variable = { yzm_input = 54 } yzm_left = yes }
+yzm_cell_54_right_click = { set_temp_variable = { yzm_input = 54 } yzm_flag = yes }
+yzm_cell_54_shift_click = { set_temp_variable = { yzm_input = 54 } yzm_flag = yes }
+yzm_cell_55_click = { set_temp_variable = { yzm_input = 55 } yzm_left = yes }
+yzm_cell_55_right_click = { set_temp_variable = { yzm_input = 55 } yzm_flag = yes }
+yzm_cell_55_shift_click = { set_temp_variable = { yzm_input = 55 } yzm_flag = yes }
+yzm_cell_56_click = { set_temp_variable = { yzm_input = 56 } yzm_left = yes }
+yzm_cell_56_right_click = { set_temp_variable = { yzm_input = 56 } yzm_flag = yes }
+yzm_cell_56_shift_click = { set_temp_variable = { yzm_input = 56 } yzm_flag = yes }
+yzm_cell_57_click = { set_temp_variable = { yzm_input = 57 } yzm_left = yes }
+yzm_cell_57_right_click = { set_temp_variable = { yzm_input = 57 } yzm_flag = yes }
+yzm_cell_57_shift_click = { set_temp_variable = { yzm_input = 57 } yzm_flag = yes }
+yzm_cell_58_click = { set_temp_variable = { yzm_input = 58 } yzm_left = yes }
+yzm_cell_58_right_click = { set_temp_variable = { yzm_input = 58 } yzm_flag = yes }
+yzm_cell_58_shift_click = { set_temp_variable = { yzm_input = 58 } yzm_flag = yes }
+yzm_cell_59_click = { set_temp_variable = { yzm_input = 59 } yzm_left = yes }
+yzm_cell_59_right_click = { set_temp_variable = { yzm_input = 59 } yzm_flag = yes }
+yzm_cell_59_shift_click = { set_temp_variable = { yzm_input = 59 } yzm_flag = yes }
+yzm_cell_60_click = { set_temp_variable = { yzm_input = 60 } yzm_left = yes }
+yzm_cell_60_right_click = { set_temp_variable = { yzm_input = 60 } yzm_flag = yes }
+yzm_cell_60_shift_click = { set_temp_variable = { yzm_input = 60 } yzm_flag = yes }
+yzm_cell_61_click = { set_temp_variable = { yzm_input = 61 } yzm_left = yes }
+yzm_cell_61_right_click = { set_temp_variable = { yzm_input = 61 } yzm_flag = yes }
+yzm_cell_61_shift_click = { set_temp_variable = { yzm_input = 61 } yzm_flag = yes }
+yzm_cell_62_click = { set_temp_variable = { yzm_input = 62 } yzm_left = yes }
+yzm_cell_62_right_click = { set_temp_variable = { yzm_input = 62 } yzm_flag = yes }
+yzm_cell_62_shift_click = { set_temp_variable = { yzm_input = 62 } yzm_flag = yes }
+yzm_cell_63_click = { set_temp_variable = { yzm_input = 63 } yzm_left = yes }
+yzm_cell_63_right_click = { set_temp_variable = { yzm_input = 63 } yzm_flag = yes }
+yzm_cell_63_shift_click = { set_temp_variable = { yzm_input = 63 } yzm_flag = yes }
+yzm_cell_64_click = { set_temp_variable = { yzm_input = 64 } yzm_left = yes }
+yzm_cell_64_right_click = { set_temp_variable = { yzm_input = 64 } yzm_flag = yes }
+yzm_cell_64_shift_click = { set_temp_variable = { yzm_input = 64 } yzm_flag = yes }
+yzm_cell_65_click = { set_temp_variable = { yzm_input = 65 } yzm_left = yes }
+yzm_cell_65_right_click = { set_temp_variable = { yzm_input = 65 } yzm_flag = yes }
+yzm_cell_65_shift_click = { set_temp_variable = { yzm_input = 65 } yzm_flag = yes }
+yzm_cell_66_click = { set_temp_variable = { yzm_input = 66 } yzm_left = yes }
+yzm_cell_66_right_click = { set_temp_variable = { yzm_input = 66 } yzm_flag = yes }
+yzm_cell_66_shift_click = { set_temp_variable = { yzm_input = 66 } yzm_flag = yes }
+yzm_cell_67_click = { set_temp_variable = { yzm_input = 67 } yzm_left = yes }
+yzm_cell_67_right_click = { set_temp_variable = { yzm_input = 67 } yzm_flag = yes }
+yzm_cell_67_shift_click = { set_temp_variable = { yzm_input = 67 } yzm_flag = yes }
+yzm_cell_68_click = { set_temp_variable = { yzm_input = 68 } yzm_left = yes }
+yzm_cell_68_right_click = { set_temp_variable = { yzm_input = 68 } yzm_flag = yes }
+yzm_cell_68_shift_click = { set_temp_variable = { yzm_input = 68 } yzm_flag = yes }
+yzm_cell_69_click = { set_temp_variable = { yzm_input = 69 } yzm_left = yes }
+yzm_cell_69_right_click = { set_temp_variable = { yzm_input = 69 } yzm_flag = yes }
+yzm_cell_69_shift_click = { set_temp_variable = { yzm_input = 69 } yzm_flag = yes }
+yzm_cell_70_click = { set_temp_variable = { yzm_input = 70 } yzm_left = yes }
+yzm_cell_70_right_click = { set_temp_variable = { yzm_input = 70 } yzm_flag = yes }
+yzm_cell_70_shift_click = { set_temp_variable = { yzm_input = 70 } yzm_flag = yes }
+yzm_cell_71_click = { set_temp_variable = { yzm_input = 71 } yzm_left = yes }
+yzm_cell_71_right_click = { set_temp_variable = { yzm_input = 71 } yzm_flag = yes }
+yzm_cell_71_shift_click = { set_temp_variable = { yzm_input = 71 } yzm_flag = yes }
+yzm_cell_72_click = { set_temp_variable = { yzm_input = 72 } yzm_left = yes }
+yzm_cell_72_right_click = { set_temp_variable = { yzm_input = 72 } yzm_flag = yes }
+yzm_cell_72_shift_click = { set_temp_variable = { yzm_input = 72 } yzm_flag = yes }
+yzm_cell_73_click = { set_temp_variable = { yzm_input = 73 } yzm_left = yes }
+yzm_cell_73_right_click = { set_temp_variable = { yzm_input = 73 } yzm_flag = yes }
+yzm_cell_73_shift_click = { set_temp_variable = { yzm_input = 73 } yzm_flag = yes }
+yzm_cell_74_click = { set_temp_variable = { yzm_input = 74 } yzm_left = yes }
+yzm_cell_74_right_click = { set_temp_variable = { yzm_input = 74 } yzm_flag = yes }
+yzm_cell_74_shift_click = { set_temp_variable = { yzm_input = 74 } yzm_flag = yes }
+yzm_cell_75_click = { set_temp_variable = { yzm_input = 75 } yzm_left = yes }
+yzm_cell_75_right_click = { set_temp_variable = { yzm_input = 75 } yzm_flag = yes }
+yzm_cell_75_shift_click = { set_temp_variable = { yzm_input = 75 } yzm_flag = yes }
+yzm_cell_76_click = { set_temp_variable = { yzm_input = 76 } yzm_left = yes }
+yzm_cell_76_right_click = { set_temp_variable = { yzm_input = 76 } yzm_flag = yes }
+yzm_cell_76_shift_click = { set_temp_variable = { yzm_input = 76 } yzm_flag = yes }
+yzm_cell_77_click = { set_temp_variable = { yzm_input = 77 } yzm_left = yes }
+yzm_cell_77_right_click = { set_temp_variable = { yzm_input = 77 } yzm_flag = yes }
+yzm_cell_77_shift_click = { set_temp_variable = { yzm_input = 77 } yzm_flag = yes }
+yzm_cell_78_click = { set_temp_variable = { yzm_input = 78 } yzm_left = yes }
+yzm_cell_78_right_click = { set_temp_variable = { yzm_input = 78 } yzm_flag = yes }
+yzm_cell_78_shift_click = { set_temp_variable = { yzm_input = 78 } yzm_flag = yes }
+yzm_cell_79_click = { set_temp_variable = { yzm_input = 79 } yzm_left = yes }
+yzm_cell_79_right_click = { set_temp_variable = { yzm_input = 79 } yzm_flag = yes }
+yzm_cell_79_shift_click = { set_temp_variable = { yzm_input = 79 } yzm_flag = yes }
+yzm_cell_80_click = { set_temp_variable = { yzm_input = 80 } yzm_left = yes }
+yzm_cell_80_right_click = { set_temp_variable = { yzm_input = 80 } yzm_flag = yes }
+yzm_cell_80_shift_click = { set_temp_variable = { yzm_input = 80 } yzm_flag = yes }
+}
+triggers = {
+yzm_cell_0_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_1_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_2_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_3_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_4_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_5_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_6_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_7_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_8_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_9_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_10_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_11_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_12_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_13_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_14_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_15_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_16_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_17_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_18_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_19_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_20_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_21_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_22_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_23_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_24_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_25_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_26_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_27_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_28_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_29_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_30_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_31_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_32_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_33_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_34_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_35_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_36_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_37_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_38_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_39_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_40_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_41_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_42_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_43_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_44_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_45_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_46_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_47_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_48_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_49_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_50_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_51_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_52_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_53_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_54_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_55_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_56_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_57_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_58_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_59_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_60_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_61_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_62_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_63_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_64_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_65_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_66_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_67_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_68_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_69_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_70_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_71_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_72_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_73_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_74_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_75_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_76_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_77_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_78_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_79_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+yzm_cell_80_click_enabled = { check_variable = { var = yzm_status value = 2 compare = less_than } }
+}
+properties = {
+yzm_face = { frame = yzm_face_frame }
+yzm_mine_h = { frame = yzm_mine_h }
+yzm_mine_t = { frame = yzm_mine_t }
+yzm_mine_u = { frame = yzm_mine_u }
+yzm_step_h = { frame = yzm_step_h }
+yzm_step_t = { frame = yzm_step_t }
+yzm_step_u = { frame = yzm_step_u }
+yzm_tile_0 = { frame = yzm_tile_0 }
+yzm_tile_1 = { frame = yzm_tile_1 }
+yzm_tile_2 = { frame = yzm_tile_2 }
+yzm_tile_3 = { frame = yzm_tile_3 }
+yzm_tile_4 = { frame = yzm_tile_4 }
+yzm_tile_5 = { frame = yzm_tile_5 }
+yzm_tile_6 = { frame = yzm_tile_6 }
+yzm_tile_7 = { frame = yzm_tile_7 }
+yzm_tile_8 = { frame = yzm_tile_8 }
+yzm_tile_9 = { frame = yzm_tile_9 }
+yzm_tile_10 = { frame = yzm_tile_10 }
+yzm_tile_11 = { frame = yzm_tile_11 }
+yzm_tile_12 = { frame = yzm_tile_12 }
+yzm_tile_13 = { frame = yzm_tile_13 }
+yzm_tile_14 = { frame = yzm_tile_14 }
+yzm_tile_15 = { frame = yzm_tile_15 }
+yzm_tile_16 = { frame = yzm_tile_16 }
+yzm_tile_17 = { frame = yzm_tile_17 }
+yzm_tile_18 = { frame = yzm_tile_18 }
+yzm_tile_19 = { frame = yzm_tile_19 }
+yzm_tile_20 = { frame = yzm_tile_20 }
+yzm_tile_21 = { frame = yzm_tile_21 }
+yzm_tile_22 = { frame = yzm_tile_22 }
+yzm_tile_23 = { frame = yzm_tile_23 }
+yzm_tile_24 = { frame = yzm_tile_24 }
+yzm_tile_25 = { frame = yzm_tile_25 }
+yzm_tile_26 = { frame = yzm_tile_26 }
+yzm_tile_27 = { frame = yzm_tile_27 }
+yzm_tile_28 = { frame = yzm_tile_28 }
+yzm_tile_29 = { frame = yzm_tile_29 }
+yzm_tile_30 = { frame = yzm_tile_30 }
+yzm_tile_31 = { frame = yzm_tile_31 }
+yzm_tile_32 = { frame = yzm_tile_32 }
+yzm_tile_33 = { frame = yzm_tile_33 }
+yzm_tile_34 = { frame = yzm_tile_34 }
+yzm_tile_35 = { frame = yzm_tile_35 }
+yzm_tile_36 = { frame = yzm_tile_36 }
+yzm_tile_37 = { frame = yzm_tile_37 }
+yzm_tile_38 = { frame = yzm_tile_38 }
+yzm_tile_39 = { frame = yzm_tile_39 }
+yzm_tile_40 = { frame = yzm_tile_40 }
+yzm_tile_41 = { frame = yzm_tile_41 }
+yzm_tile_42 = { frame = yzm_tile_42 }
+yzm_tile_43 = { frame = yzm_tile_43 }
+yzm_tile_44 = { frame = yzm_tile_44 }
+yzm_tile_45 = { frame = yzm_tile_45 }
+yzm_tile_46 = { frame = yzm_tile_46 }
+yzm_tile_47 = { frame = yzm_tile_47 }
+yzm_tile_48 = { frame = yzm_tile_48 }
+yzm_tile_49 = { frame = yzm_tile_49 }
+yzm_tile_50 = { frame = yzm_tile_50 }
+yzm_tile_51 = { frame = yzm_tile_51 }
+yzm_tile_52 = { frame = yzm_tile_52 }
+yzm_tile_53 = { frame = yzm_tile_53 }
+yzm_tile_54 = { frame = yzm_tile_54 }
+yzm_tile_55 = { frame = yzm_tile_55 }
+yzm_tile_56 = { frame = yzm_tile_56 }
+yzm_tile_57 = { frame = yzm_tile_57 }
+yzm_tile_58 = { frame = yzm_tile_58 }
+yzm_tile_59 = { frame = yzm_tile_59 }
+yzm_tile_60 = { frame = yzm_tile_60 }
+yzm_tile_61 = { frame = yzm_tile_61 }
+yzm_tile_62 = { frame = yzm_tile_62 }
+yzm_tile_63 = { frame = yzm_tile_63 }
+yzm_tile_64 = { frame = yzm_tile_64 }
+yzm_tile_65 = { frame = yzm_tile_65 }
+yzm_tile_66 = { frame = yzm_tile_66 }
+yzm_tile_67 = { frame = yzm_tile_67 }
+yzm_tile_68 = { frame = yzm_tile_68 }
+yzm_tile_69 = { frame = yzm_tile_69 }
+yzm_tile_70 = { frame = yzm_tile_70 }
+yzm_tile_71 = { frame = yzm_tile_71 }
+yzm_tile_72 = { frame = yzm_tile_72 }
+yzm_tile_73 = { frame = yzm_tile_73 }
+yzm_tile_74 = { frame = yzm_tile_74 }
+yzm_tile_75 = { frame = yzm_tile_75 }
+yzm_tile_76 = { frame = yzm_tile_76 }
+yzm_tile_77 = { frame = yzm_tile_77 }
+yzm_tile_78 = { frame = yzm_tile_78 }
+yzm_tile_79 = { frame = yzm_tile_79 }
+yzm_tile_80 = { frame = yzm_tile_80 }
+}
+
+}
+
+}

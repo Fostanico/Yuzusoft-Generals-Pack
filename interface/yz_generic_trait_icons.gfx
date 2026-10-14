@@ -1,0 +1,61 @@
+# ============================================================
+# 柚子将领包：通用军官特质的图标
+#
+# 引擎查找单位将领特质的图标时用的名字是 GFX_trait_<特质id>
+# （例：特质 ATRI_trait 用 GFX_trait_ATRI_trait，见 interface/atri.gfx）。
+# 找不到对应 sprite 的特质在游戏里就是空白图标——之前 yz_infantry_officer 等
+# 8 个「通用XX特质」就是这样，所以这里补上 sprite 定义。
+#
+# 素材直接复用原版 DDS（制作组决定：通用特质一律用原版图标，不再另绘）。
+# 以后若某个通用特质的图标要换成自制图，把对应的 texturefile 换掉即可。
+# ============================================================
+spriteTypes = {
+
+	# 通用步兵特质
+	spriteType = {
+		name = "GFX_trait_yz_infantry_officer"
+		texturefile = "gfx/interface/traits/personal/trait_infantry_officer.dds"
+	}
+
+	# 通用装甲特质
+	spriteType = {
+		name = "GFX_trait_yz_armor_officer"
+		texturefile = "gfx/interface/traits/personal/trait_armor_officer.dds"
+	}
+
+	# 通用骑兵特质
+	spriteType = {
+		name = "GFX_trait_yz_cavalry_officer"
+		texturefile = "gfx/interface/traits/personal/trait_cavalry_officer.dds"
+	}
+
+	# 通用工程特质
+	spriteType = {
+		name = "GFX_trait_yz_engineer_officer"
+		texturefile = "gfx/interface/traits/personal/trait_engineer_officer.dds"
+	}
+
+	# 通用特种部队特质（借原版突击队图标）
+	spriteType = {
+		name = "GFX_trait_yz_special_officer"
+		texturefile = "gfx/interface/traits/trait_commando.dds"
+	}
+
+	# 通用后勤特质（借原版后勤专家图标）
+	spriteType = {
+		name = "GFX_trait_yz_logistic_officer"
+		texturefile = "gfx/interface/traits/trait_logistics_wizard.dds"
+	}
+
+	# 通用参谋特质（借原版「熟练参谋 / Skilled Staffer」的图标）
+	spriteType = {
+		name = "GFX_trait_yz_staff_officer"
+		texturefile = "gfx/interface/traits/trait_skilled_staffer.dds"
+	}
+
+	# 通用适应特质（借原版适应图标）
+	spriteType = {
+		name = "GFX_trait_yz_adapted"
+		texturefile = "gfx/interface/traits/trait_adaptable.dds"
+	}
+}

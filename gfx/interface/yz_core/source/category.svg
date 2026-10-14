@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58" height="32" viewBox="0 0 58 32">
+<defs>
+ <linearGradient id="ink" x2="0.3" y2="1"><stop stop-color="#343033"/><stop offset=".5" stop-color="#262326"/><stop offset="1" stop-color="#1d1c20"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2=".75" y2="1"><stop stop-color="#776569"/><stop offset=".22" stop-color="#cfb5a7"/><stop offset=".49" stop-color="#947c78"/><stop offset=".76" stop-color="#66545b"/><stop offset="1" stop-color="#bfa096"/></linearGradient>
+ <radialGradient id="well"><stop stop-color="#353034"/><stop offset="1" stop-color="#201e23"/></radialGradient>
+ <filter id="grain"><feTurbulence baseFrequency=".78" numOctaves="3" seed="17" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+</defs>
+
+ <path d="M17 24C8 18 14 5 24 3M41 24C50 18 44 5 34 3" fill="none" stroke="#a08883" stroke-width=".85"/>
+ <path d="M15 22Q8 19 10 14Q16 15 15 22ZM14 14Q10 10 14 7Q18 9 14 14ZM17 8Q16 2 22 2Q23 6 17 8ZM43 22Q50 19 48 14Q42 15 43 22ZM44 14Q48 10 44 7Q40 9 44 14ZM41 8Q42 2 36 2Q35 6 41 8Z" fill="#a08883"/>
+ <circle cx="29" cy="14" r="9.2" fill="#282529" stroke="#897370" stroke-width=".5"/>
+ <g transform="translate(29 13) scale(0.91)" opacity="1" fill="#e2d6ca"><ellipse transform="rotate(0)" cx="0" cy="-3.5" rx="2.15" ry="3.7"/><ellipse transform="rotate(72)" cx="0" cy="-3.5" rx="2.15" ry="3.7"/><ellipse transform="rotate(144)" cx="0" cy="-3.5" rx="2.15" ry="3.7"/><ellipse transform="rotate(216)" cx="0" cy="-3.5" rx="2.15" ry="3.7"/><ellipse transform="rotate(288)" cx="0" cy="-3.5" rx="2.15" ry="3.7"/><circle r="1.65" fill="#bda073"/><circle r=".65" fill="#eee3c8"/></g>
+ <path d="M22 26L24 24L26 26L24 28ZM27 27L29 24L31 27L29 30ZM32 26L34 24L36 26L34 28Z" fill="#d3bcb2"/>
+ <path d="M2 16H8M50 16H56" stroke="#a08883" stroke-width=".6"/>
+
+</svg>

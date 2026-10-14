@@ -1,0 +1,109 @@
+# Two works share one window and sound; each attempt, unlock and owned flag is country-local.
+# yzcr_work: 1 Senren, 2 Riddle. Legacy value 0 still selects Senren until next open.
+yzcr_active = {
+	OR = {
+		check_variable = { var = yzcr_work value = 0 compare = equals }
+		check_variable = { var = yzcr_work value = 1 compare = equals }
+	}
+}
+yzcr_rj_active = {
+	check_variable = { var = yzcr_work value = 2 compare = equals }
+}
+yzcr_result_owned = {
+	OR = {
+		AND = {
+			check_variable = { var = yzcr_result value = 1 compare = equals }
+			has_country_flag = have_yoshino
+		}
+
+		AND = {
+			check_variable = { var = yzcr_result value = 2 compare = equals }
+			has_country_flag = have_mako
+		}
+
+		AND = {
+			check_variable = { var = yzcr_result value = 3 compare = equals }
+			has_country_flag = have_murasame
+		}
+
+		AND = {
+			check_variable = { var = yzcr_result value = 4 compare = equals }
+			has_country_flag = have_lena
+		}
+
+		AND = {
+			check_variable = { var = yzcr_result value = 5 compare = equals }
+			has_country_flag = have_koharu
+		}
+
+		AND = {
+			check_variable = { var = yzcr_result value = 6 compare = equals }
+			has_country_flag = have_roka
+		}
+	}
+}
+yzcr_can_auto_recruit = {
+	is_ai = no
+	yzcr_active = yes
+	has_country_flag = yzcr_open
+	NOT = { has_country_flag = yzcr_help }
+	check_variable = { var = yzcr_step value = 100 compare = equals }
+	check_variable = { var = yzcr_result value = 0 compare = greater_than }
+	check_variable = { var = yzcr_result value = 7 compare = less_than }
+	yzcr_result_owned = no
+}
+yzcr_rj_result_owned = {
+	OR = {
+		AND = {
+			check_variable = { var = yzcr_rj_result value = 1 compare = equals }
+			has_country_flag = have_0nai
+		}
+
+		AND = {
+			check_variable = { var = yzcr_rj_result value = 2 compare = equals }
+			has_country_flag = have_nanami
+		}
+
+		AND = {
+			check_variable = { var = yzcr_rj_result value = 3 compare = equals }
+			has_country_flag = have_hazuki
+		}
+
+		AND = {
+			check_variable = { var = yzcr_rj_result value = 4 compare = equals }
+			has_country_flag = have_Mayu
+		}
+
+		AND = {
+			check_variable = { var = yzcr_rj_result value = 5 compare = equals }
+			has_country_flag = have_chisaki
+		}
+
+		AND = {
+			check_variable = { var = yzcr_rj_result value = 0 compare = equals }
+			has_country_flag = have_0nai
+			has_country_flag = have_hazuki
+			has_country_flag = have_Mayu
+			has_country_flag = have_chisaki
+		}
+	}
+}
+yzcr_rj_can_auto_recruit = {
+	is_ai = no
+	yzcr_rj_active = yes
+	has_country_flag = yzcr_open
+	NOT = { has_country_flag = yzcr_help }
+	check_variable = { var = yzcr_rj_step value = 100 compare = equals }
+	check_variable = { var = yzcr_rj_result value = -1 compare = greater_than }
+	check_variable = { var = yzcr_rj_result value = 6 compare = less_than }
+	yzcr_rj_result_owned = no
+}
+
+yzcr_recruitment_allowed = {
+    is_ai = no
+    OR = {
+        has_country_flag = qiyong_youzi_1
+        has_country_flag = qiyong_youzi_2
+        has_country_flag = qiyong_youzi_3
+    }
+}

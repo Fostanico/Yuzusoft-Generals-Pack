@@ -1,5 +1,6 @@
 add_namespace = LY_event
-
+add_namespace = yudi_event
+add_namespace = neko_ruarua_ayase
 country_event = { 		##
 	id = LY_event.101
 	title = LY_event.101.t
@@ -25,7 +26,7 @@ country_event = { 		##
 						}
 					}
 					allowed_civil_war = {
-						is_ai = no
+						ROOT = { is_ai = no }
 					}
 					advisor = {
 						slot = high_command
@@ -42,7 +43,8 @@ country_event = { 		##
 						desc = suzune_corps_desc
 						traits={
 						    yz_yuzusoft_character
-                            maid_suzune_trait
+                            yz_legacy_suzune_trait
+							yz_logistic_officer
 						}
 						skill=5
 						attack_skill=3
@@ -55,8 +57,8 @@ country_event = { 		##
 		}
 		random_army_leader = {
 			limit = {
-				has_trait = maid_kanna_trait
-				has_trait = maid_zaozi_trait
+				has_trait = yz_legacy_kanna_trait
+				has_trait = yz_legacy_zaozi_trait
 			}
 			add_logistics = 1
 		}
@@ -88,7 +90,7 @@ country_event = { 		##
 						}
 					}
 					allowed_civil_war = {
-						is_ai = no
+						ROOT = { is_ai = no }
 					}
 					advisor = {
 						slot = high_command
@@ -105,7 +107,8 @@ country_event = { 		##
 						desc = suzune_corps_desc
 						traits={
 						    yz_yuzusoft_character
-                            maid_suzune_trait
+                            yz_legacy_suzune_trait
+							yz_logistic_officer
 						}
 						skill=5
 						attack_skill=3
@@ -118,8 +121,8 @@ country_event = { 		##
 		}
 		random_army_leader = {
 			limit = {
-				has_trait = maid_kanna_trait
-				has_trait = maid_zaozi_trait
+				has_trait = yz_legacy_kanna_trait
+				has_trait = yz_legacy_zaozi_trait
 			}
 			add_logistics = 1
 		}
@@ -276,5 +279,67 @@ country_event = { 		##
 	}
 }
 
-
-
+country_event = {
+	id = yudi_event.1
+	title = yudi_event.1.t
+	desc = yudi_event.1.desc
+	picture = GFX_capture_yudi
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	 	set_country_flag = have_yudi
+	}
+	option = {
+		name = yudi_event.1.a
+		custom_trigger_tooltip = yudi_event.1.a.tt
+		hidden_effect = {
+		meta_effect = {
+        text = {
+            generate_character = {
+                token_base = yudi
+                name = YZ_character_name_yudi
+                can_be_captured = no
+                gender = male
+                nationality = JAP
+                portraits = {
+                    civilian = {
+                        large = "gfx/leader/yudi.png"
+                        small = "gfx/leader/yudi2.png"
+                    }
+                }
+                allowed_civil_war = {
+                    ROOT = { is_ai = no }
+                }
+                corps_commander = {
+                    desc = Yudi_corps_desc
+                    traits={
+                        cat_trait
+						lucky_cat
+						yz_staff_officer
+						yz_yuzusoft_character
+                    }
+                    skill = 7
+                    attack_skill = 6
+                    defense_skill = 4
+                    planning_skill = 8
+                    logistics_skill = 8
+                }
+            }
+        }
+    }
+	}
+}
+}
+country_event = {
+	id = neko_ruarua_ayase
+	title = yudi_event.2.t
+	desc = yudi_event.2.desc
+	picture = GFX_capture_yudi
+	is_triggered_only = yes
+	option = {
+		name = yudi_event.2.a
+		add_stability = -0.05
+		add_war_support = 0.1
+		add_political_power = 50
+        }
+}

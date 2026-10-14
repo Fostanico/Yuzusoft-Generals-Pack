@@ -1,0 +1,70 @@
+# Approved startup UI render resources; original drag surface remains in yuzu_nor_department.gfx.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_yzl_stage_home"
+		texturefile = "gfx/interface/yzl/stage.png"
+		effectFile = "gfx/FX/yzl_stage_home.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_stage_read"
+		texturefile = "gfx/interface/yzl/stage.png"
+		effectFile = "gfx/FX/yzl_stage_read.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_fx_home"
+		texturefile = "gfx/interface/yzl/stage.png"
+		effectFile = "gfx/FX/yzl_fx_home.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_fx_read"
+		texturefile = "gfx/interface/yzl/stage.png"
+		effectFile = "gfx/FX/yzl_fx_read.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_nav"
+		texturefile = "gfx/interface/yzl/nav.png"
+		effectFile = "gfx/FX/yzl_nav.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_close"
+		texturefile = "gfx/interface/yzl/nav.png"
+		effectFile = "gfx/FX/yzl_close.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_nav_glow"
+		texturefile = "gfx/interface/yzl/nav_glow.png"
+		effectFile = "gfx/FX/yzl_nav_glow.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_news"
+		texturefile = "gfx/interface/yzl/news.png"
+		effectFile = "gfx/FX/yzl_news.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_back"
+		texturefile = "gfx/interface/yzl/back.png"
+		effectFile = "gfx/FX/yzl_back.shader"
+	}
+
+	spriteType = {
+		name = "GFX_yzl_chibi_0"
+		texturefile = "gfx/interface/yzl/chibi_0.png"
+		effectFile = "gfx/FX/yzl_chibi_0.shader"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzl_chibi_1"
+		texturefile = "gfx/interface/yzl/chibi_1.png"
+		effectFile = "gfx/FX/yzl_chibi_1.shader"
+		transparencecheck = yes
+	}
+}

@@ -42,13 +42,13 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = yoshino_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_fangnai_trait
+                            yz_legacy_fangnai_trait
                         }
                 # id = 1001222 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         attack_skill = 2
@@ -94,13 +94,13 @@ country_event= {
                         }
                     }
                     allowed_civil_war = {
-                        is_ai = no
+                        ROOT = { is_ai = no }
                     }
                     corps_commander = {
                         desc = yoshino_corps_desc
                         traits={
                             yz_yuzusoft_character
-                            maid_fangnai_trait
+                            yz_legacy_fangnai_trait
                         }
                 # id = 1001221 # 当前 corps_commander 定义不支持数值 id，原代码不会生效
                         attack_skill = 6
@@ -132,9 +132,9 @@ country_event= {
         custom_effect_tooltip = yoshino_love1	#初次袱禊
         random_army_leader = {
             limit = {
-                has_trait = maid_fangnai_trait
+                has_trait = yz_legacy_fangnai_trait
             }
-            add_unit_leader_trait = maid_fangnai2_trait
+            add_unit_leader_trait = yz_legacy_fangnai2_trait
             add_skill_level = 1
             add_attack = 1
             add_logistics = 1
@@ -197,9 +197,9 @@ country_event = {
         add_stability = 0.01
         random_army_leader = {
             limit = {
-                has_trait = maid_fangnai2_trait
+                has_trait = yz_legacy_fangnai2_trait
             }
-            add_unit_leader_trait = maid_fangnai3_trait
+            add_unit_leader_trait = yz_legacy_fangnai3_trait
             add_skill_level = 2
             add_logistics = 1
             add_planning = 1
@@ -226,7 +226,7 @@ country_event = {
         add_political_power = -5
         random_army_leader = {
             limit = {
-                has_trait = maid_yoshino_trait
+                has_trait = yz_legacy_fangnai_trait
             }
         }
         hidden_effect = {

@@ -1,9 +1,9 @@
 ﻿l_english:
  # GUI
  Yuzusoft_sour_recurit_tooltip: "Open the §OYuzusoft Sour§! Recruitment Panel"
- parquet_tooltip: "Open the PARQUET Recruitment Panel"
- parquet_started_tooltip: "The PARQUET story is already underway."
- parquet_story_tooltip: "Begin the PARQUET event chain (currently still in development, so only two generals are available.)\nRecruit §HKido Tsubasa§! and §0Ibaraki Rino§!"
+ parquet_tooltip: "Open the PARQUET recruitment panel"
+ parquet_started_tooltip: "Minesweeper Challenge unlocked. Start or resume through the PARQUET decisions."
+ parquet_story_tooltip: "Play Minesweeper? Choose to play and start through the decisions. Your first victory recruits Rino and Tsubasa. You may also skip."
  # Generals
  ibaraki_rino_corps_desc: "Her curt manner and cool demeanor often make her seem aloof, but she is actually very kind and cannot help reaching out to people in need. She also has a girlish side and a fondness for cute little trinkets. One day, she found the protagonist, Ibuki Kanato, collapsed by the roadside and stopped to help him. That was how the two met."
  kido_tsubasa_corps_desc: "Cheerful, innocent, and completely genuine, she has no resistance to good food and knows all the best places to eat. She currently works part-time at a café, apparently because \"the menu is delicious.\" One day, she happened to rescue the protagonist, Ibuki Kanato, from a group of street thugs. That was how the two met."

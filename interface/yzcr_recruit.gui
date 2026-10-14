@@ -1,0 +1,471 @@
+# Shared borderless 1280x720 recruitment; original atlas text, native button lighting.
+guiTypes = {
+	containerWindowType = {
+		name = "yzcr_window"
+		position = { x = -640 y = -360 }
+		orientation = CENTER
+		size = { width = 1280 height = 720 }
+		clipping = yes
+		moveable = yes
+		click_to_front = yes
+		# One shared window; only the active work's clipped choices are visible.
+		iconType = {
+			name = "yzcr_background"
+			spriteType = "GFX_yzcr_senren_backgrounds"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "yzcr_help"
+			position = { x = 18 y = 659 }
+			quadTextureSprite = "GFX_yzcr_control"
+			clicksound = yzcr_confirm_click
+			buttonText = "yzcr_help"
+			buttonFont = "hoi_18mbs"
+			pdx_tooltip = "yzcr_help_tt"
+		}
+		buttonType = {
+			name = "yzcr_restart"
+			position = { x = 230 y = 659 }
+			quadTextureSprite = "GFX_yzcr_control"
+			clicksound = yzcr_confirm_click
+			buttonText = "yzcr_restart"
+			buttonFont = "hoi_18mbs"
+			pdx_tooltip = "yzcr_restart_tt"
+		}
+		containerWindowType = {
+			name = "yzcr_s1_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s1_o1"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s1_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s1_o2"
+				position = { x = 0 y = -64 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s2_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s2_o1"
+				position = { x = 0 y = -128 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s2_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s2_o2"
+				position = { x = 0 y = -192 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s3_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s3_o1"
+				position = { x = 0 y = -256 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s3_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s3_o2"
+				position = { x = 0 y = -320 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s4_o1_clip"
+			position = { x = 323 y = 125 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s4_o1"
+				position = { x = 0 y = -384 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s4_o2_clip"
+			position = { x = 323 y = 222 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s4_o2"
+				position = { x = 0 y = -448 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s4_o3_clip"
+			position = { x = 323 y = 319 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s4_o3"
+				position = { x = 0 y = -512 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s5_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s5_o1"
+				position = { x = 0 y = -576 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s5_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s5_o2"
+				position = { x = 0 y = -640 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s6_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s6_o1"
+				position = { x = 0 y = -704 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s6_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s6_o2"
+				position = { x = 0 y = -768 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s7_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s7_o1"
+				position = { x = 0 y = -832 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s7_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s7_o2"
+				position = { x = 0 y = -896 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s8_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s8_o1"
+				position = { x = 0 y = -960 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s8_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s8_o2"
+				position = { x = 0 y = -1024 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s9_o1_clip"
+			position = { x = 323 y = 173 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s9_o1"
+				position = { x = 0 y = -1088 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_s9_o2_clip"
+			position = { x = 323 y = 271 }
+			size = { width = 635 height = 64 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_s9_o2"
+				position = { x = 0 y = -1152 }
+				quadTextureSprite = "GFX_yzcr_senren_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s1_o1_clip"
+			position = { x = 276 y = 189 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s1_o1"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s1_o2_clip"
+			position = { x = 276 y = 265 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s1_o2"
+				position = { x = 0 y = -65 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s2_o1_clip"
+			position = { x = 276 y = 189 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s2_o1"
+				position = { x = 0 y = -130 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s2_o2_clip"
+			position = { x = 276 y = 265 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s2_o2"
+				position = { x = 0 y = -195 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s21_o1_clip"
+			position = { x = 276 y = 189 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s21_o1"
+				position = { x = 0 y = -260 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s21_o2_clip"
+			position = { x = 276 y = 265 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s21_o2"
+				position = { x = 0 y = -325 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s3_o1_clip"
+			position = { x = 276 y = 189 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s3_o1"
+				position = { x = 0 y = -390 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s3_o2_clip"
+			position = { x = 276 y = 265 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s3_o2"
+				position = { x = 0 y = -455 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s4_o1_clip"
+			position = { x = 276 y = 189 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s4_o1"
+				position = { x = 0 y = -520 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s4_o2_clip"
+			position = { x = 276 y = 265 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s4_o2"
+				position = { x = 0 y = -585 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s5_o1_clip"
+			position = { x = 276 y = 189 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s5_o1"
+				position = { x = 0 y = -650 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s5_o2_clip"
+			position = { x = 276 y = 265 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s5_o2"
+				position = { x = 0 y = -715 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s6_o1_clip"
+			position = { x = 276 y = 151 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s6_o1"
+				position = { x = 0 y = -780 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s6_o2_clip"
+			position = { x = 276 y = 227 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s6_o2"
+				position = { x = 0 y = -845 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		containerWindowType = {
+			name = "yzcr_rj_s6_o3_clip"
+			position = { x = 276 y = 303 }
+			size = { width = 728 height = 65 }
+			clipping = yes
+			buttonType = {
+				name = "yzcr_rj_s6_o3"
+				position = { x = 0 y = -910 }
+				quadTextureSprite = "GFX_yzcr_riddle_choices"
+				clicksound = yzcr_confirm_click
+			}
+		}
+		iconType = {
+			name = "yzcr_help_plate"
+			spriteType = "GFX_yzcr_help_plate"
+			position = { x = 190 y = 104 }
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "yzcr_help_heading"
+			position = { x = 218 y = 132 }
+			font = "hoi_24header"
+			text = "yzcr_help_title"
+			maxWidth = 844
+			maxHeight = 38
+			format = center
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "yzcr_help_description"
+			position = { x = 225 y = 196 }
+			font = "hoi_20b"
+			text = "[yzcr_route_help_body]"
+			maxWidth = 830
+			maxHeight = 365
+			format = center
+			alwaystransparent = yes
+		}
+	}
+}

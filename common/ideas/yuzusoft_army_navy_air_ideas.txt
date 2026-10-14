@@ -46,6 +46,28 @@ ideas = {
 			}
 		}
 	}
+	air_force_command_spirit = {
+		dead_god_air_teach = {
+			ledger = air
+			picture = dead_god_air_teach_spirit
+			cost = 100
+			visible = {
+				has_country_flag = have_kanna
+				not = {
+					has_country_flag = yz_bad_end
+				}
+			}
+			modifier = {
+				air_range_factor = 0.15
+				army_bonus_air_superiority_factor = 0.5
+				air_cas_present_factor = 0.5
+				ace_effectiveness_factor = 1
+				experience_gain_air = 0.3
+				air_training_xp_gain_factor = 1
+				air_wing_xp_loss_when_killed_factor = -0.5
+			}
+		}
+	}
 	army_spirit = {
 		army_yuzusoft_forces = {
 			ledger = army
@@ -113,7 +135,7 @@ ideas = {
 	division_command_spirit = {
 		vampire_force = {
 			ledger = army
-			picture = GFX_idea_YCG_sayo
+			picture = YCG_sayo
 			cost = 100
 			visible = {
 				has_country_flag = have_miu

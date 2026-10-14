@@ -1,0 +1,13 @@
+# The normal challenge entry is a free decision, separate from the SD free-play GUI.
+yz_parquet_minigame = {
+    yz_parquet_open_table = {
+        icon = GFX_rino
+        visible = { is_ai = no NOT = { has_country_flag = yzm_open } }
+        available = { hidden_trigger = { is_ai = no has_country_flag = parquet_started } }
+        cost = 0
+        fire_only_once = no
+        days_re_enable = 0
+        complete_effect = { yz_parquet_open_minesweeper = yes }
+        ai_will_do = { factor = 0 }
+    }
+}

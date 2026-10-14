@@ -1,6 +1,42 @@
 # 柚子核心系统的派生值统一入口。以下效果均要求国家 scope；调用方修改源变量后
 # 应立即刷新，并由既定周/月入口兜底。不要为界面即时性恢复全局 on_daily 轮询。
 
+# 国家 scope。若当前国家是玩家内战的 AI 一侧，把误分流到这里的柚子社／彩蛋陆军角色
+# 整体转回同原始 tag 的玩家国家。角色生成时的 allowed_civil_war 仍是第一层保护；本效果
+# 负责兼容特殊内战脚本、其他 Mod 的 start_civil_war 参数，以及已经分流的旧存档。
+yz_return_mod_generals_to_human_civil_war_side = {
+	if = {
+		limit = {
+			is_ai = yes
+			has_civil_war = yes
+		}
+		save_event_target_as = yz_civil_war_ai_side
+
+		every_country = {
+			limit = {
+				is_ai = no
+				has_civil_war = yes
+				has_war_with = event_target:yz_civil_war_ai_side
+				original_tag = event_target:yz_civil_war_ai_side
+			}
+			save_event_target_as = yz_human_civil_war_side
+		}
+
+		if = {
+			limit = {
+				country_exists = event_target:yz_human_civil_war_side
+			}
+			every_character = {
+				limit = {
+					is_unit_leader = yes
+					yz_general = yes
+				}
+				set_nationality = event_target:yz_human_civil_war_side
+			}
+		}
+	}
+}
+
 # 根据当前工厂数与千人人力计算新作月收入 yz_new_works（0..2000000）。
 # 两个输入必须先缩放再相乘，并在乘法前做饱和判断，避免定点数中间值溢出。
 yz_recalculate_new_works_income = {
@@ -2834,4 +2870,123 @@ yz_bond_record_monthly_snapshot = {
 		}
 		yz_bond_rebuild_graph_display = yes
 	}
+}
+
+# 国家 scope。仅由 6 月 8 日的每日入口调用；年度变量先写入，防止重复结算。
+# 自动庆祝沿用原任务的成长奖励，静态国策加成用 200 天动态修正承接。
+yz_sana_celebrate_automatic_birthday = {
+		hidden_effect = {
+			set_variable = { yz_sana_last_birthday_year = global.year }
+			play_song = youzu22
+		}
+		add_political_power = -75
+		add_to_variable = { sana_army_attack = 0.025 }
+		add_to_variable = { sana_special_forces_cap = 0.01 }
+		add_to_variable = { sana_army_org_factor = 0.025 }
+		add_to_variable = { sana_ws = 0.05 }
+		add_to_variable = { sana_st = 0.05 }
+		add_to_variable = { sana_industry = 0.05 }
+		add_to_variable = { marry_love_bonus = 5 }
+		set_country_flag = { flag = sana_birthday_succeed days = 200 }
+		add_dynamic_modifier = {
+			modifier = sana_birthday_dynamic_modifier
+		}
+		add_dynamic_modifier = {
+			modifier = sana_automatic_birthday
+			days = 200
+		}
+		set_country_flag = sana_first_birthday
+		if = {
+			limit = {
+				any_army_leader = {
+					has_trait = yz_legacy_sana_birthday_boost4
+					NOT = { has_trait = yz_legacy_sana_birthday_boost5 }
+				}
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = yz_legacy_sana_birthday_boost4
+				}
+				add_unit_leader_trait = yz_legacy_sana_birthday_boost5
+				remove_unit_leader_trait = yz_legacy_sana_birthday_boost4
+				add_skill_level = 1
+				add_logistics = 1
+				add_planning = 1
+				add_defense = 1
+				add_attack = 1
+			}
+		}
+		else_if = {
+			limit = {
+				any_army_leader = {
+					has_trait = yz_legacy_sana_birthday_boost3
+					NOT = { has_trait = yz_legacy_sana_birthday_boost4 }
+				}
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = yz_legacy_sana_birthday_boost3
+				}
+				add_unit_leader_trait = yz_legacy_sana_birthday_boost4
+				remove_unit_leader_trait = yz_legacy_sana_birthday_boost3
+			}
+		}
+		else_if = {
+			limit = {
+				any_army_leader = {
+					has_trait = yz_legacy_sana_birthday_boost2
+					NOT = { has_trait = yz_legacy_sana_birthday_boost3 }
+				}
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = yz_legacy_sana_birthday_boost2
+				}
+				add_unit_leader_trait = yz_legacy_sana_birthday_boost3
+				remove_unit_leader_trait = yz_legacy_sana_birthday_boost2
+				add_skill_level = 1
+			}
+		}
+		else_if = {
+			limit = {
+				any_army_leader = {
+					has_trait = yz_legacy_sana_birthday_boost1
+					NOT = { has_trait = yz_legacy_sana_birthday_boost2 }
+				}
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = yz_legacy_sana_birthday_boost1
+				}
+				remove_unit_leader_trait = yz_legacy_sana_birthday_boost1
+				add_unit_leader_trait = yz_legacy_sana_birthday_boost2
+				add_defense = 1
+				add_attack = 1
+			}
+		}
+		else_if = {
+			limit = {
+				any_army_leader = {
+					has_trait = yz_legacy_sana_trait
+					NOT = { has_trait = yz_legacy_sana_birthday_boost1 }
+				}
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = yz_legacy_sana_trait
+				}
+				add_unit_leader_trait = yz_legacy_sana_birthday_boost1
+				add_skill_level = 1
+				add_logistics = 1
+				add_planning = 1
+				add_defense = 1
+				add_attack = 1
+			}
+		}
+}
+cat_good_feeling_limits = {
+	clamp_variable = { var = cat_good_feeling_consumer_goods_factor min = -0.5 max = 0 }
+	clamp_variable = { var = cat_good_feeling_factor min = 0 max = 0.03 }
+	clamp_variable = { var = cat_good_feeling_stability_factor min = 0 max = 0.2 }
+	clamp_variable = { var = cat_good_feeling_army_factor min = 0 max = 0.15 }
 }

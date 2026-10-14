@@ -22,7 +22,7 @@ add_youzi_general_category = {
             }
         }
         complete_effect = {
-            set_country_flag = QL_recruit_show
+            yzcr_request_senren = yes
         }
     }
 
@@ -52,7 +52,7 @@ add_youzi_general_category = {
             }
         }
         complete_effect = {
-            set_country_flag = RJ_recruit_show
+            yzcr_request_riddle = yes
         }
     }
 
@@ -227,7 +227,7 @@ add_youzi_general_category = {
                             }
                         }
                         allowed_civil_war = {
-                            is_ai = no
+                            ROOT = { is_ai = no }
                         }
                         advisor = {
                             cost = 100
@@ -239,7 +239,7 @@ add_youzi_general_category = {
                             desc = gongping_corps_desc
                             traits={
                                 yz_yuzusoft_character
-                                maid_gongping_trait
+                                yz_legacy_gongping_trait
                             }
                             skill=5
                             attack_skill=5
@@ -351,7 +351,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/ebihara_minase2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = minase_corps_desc
                             traits = {
@@ -407,13 +407,13 @@ add_youzi_general_category = {
                                 small = "gfx/leader/aragami_sayo2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = sayo_corps_desc
                             traits = {
                                 yz_yuzusoft_character
                                 yz_aragami_sayo_trait
-                                trait_maid_vampires
+                                yz_legacy_vampires_trait
                             }
                             skill = 9
                             attack_skill = 15
@@ -457,7 +457,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/suou.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = suou_corps_desc
                             traits = {
@@ -507,7 +507,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/sanjo_makoto_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = makoto_desc
                             traits = {
@@ -556,7 +556,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/honoka_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = honoka_desc
                             traits = {
@@ -607,7 +607,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/wataru_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = wataru_desc
                             traits = {
@@ -656,7 +656,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/kotarou_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = kotarou_desc
                             traits = {
@@ -704,7 +704,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/souma_nanao_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = nanao_desc
                             traits = {
@@ -754,7 +754,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/akagi_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = akagi_desc
                             traits = {
@@ -802,7 +802,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/chiaki_minamoto_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = minamoto_desc
                             traits = {
@@ -862,7 +862,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/yuuki_noa_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = yuuki_noa_desc
                             traits = {
@@ -870,6 +870,7 @@ add_youzi_general_category = {
                                 Nival_Hue_Nival_Flake_Nival_Trace_in_Rhyme
                                 final_days_of_middle_two_ill
                                 the_order_comm
+                                yz_armor_officer
                             }
                             skill = 8
                             attack_skill = 7
@@ -920,7 +921,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/miyako_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = miyako_desc
                             traits = {
@@ -928,6 +929,9 @@ add_youzi_general_category = {
                                 nona_times_nona_days_nona_hues_divine
                                 big_sister_of_kujo
                                 call_from_king_right
+                                yz_infantry_officer
+                                yz_logistic_officer
+                                yz_adapted
                             }
                             skill = 9
                             attack_skill = 9
@@ -961,7 +965,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/sora_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = sora_desc
                             traits = {
@@ -969,6 +973,7 @@ add_youzi_general_category = {
                                 Caeli_Hue_Caeli_Song_Caeli_Voice_Sublime
                                 paper_bag_super_woman
                                 you_cannot_find_me
+                                yz_cavalry_officer
                             }
                             skill = 7
                             attack_skill = 12
@@ -1001,7 +1006,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/haruka_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = haruka_desc
                             traits = {
@@ -1009,6 +1014,7 @@ add_youzi_general_category = {
                                 Vernal_Hue_Vernal_Love_Vernal_Breeze_of_Time
                                 deadly_gari
                                 Reform_and_opening_up
+                                yz_staff_officer
                             }
                             skill = 7
                             attack_skill = 10
@@ -1053,7 +1059,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/yuna_small.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = yuna_desc
                             traits = {
@@ -1061,6 +1067,8 @@ add_youzi_general_category = {
                                 ruyu_type_sword_big_teacher
                                 kabutochi
                                 regression_star
+                                yz_engineer_officer
+                                yz_special_officer
                             }
                             skill = 9
                             attack_skill = 13
@@ -1115,7 +1123,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/van2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         advisor = {
                             slot = army_chief
                             cost = 50
@@ -1131,7 +1139,7 @@ add_youzi_general_category = {
                             desc = van_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_van_trait
+                                yz_legacy_van_trait
                             }
                             skill = 1
                             attack_skill = 1
@@ -1179,7 +1187,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/Verniy2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         advisor = {
                             slot = navy_chief
                             cost = 50
@@ -1194,7 +1202,7 @@ add_youzi_general_category = {
                             desc = Verniy_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_Verniy_trait
+                                yz_legacy_Verniy_trait
                                 yz_Verniy_trait
                             }
                             skill = 1
@@ -1243,12 +1251,12 @@ add_youzi_general_category = {
                                 small = "gfx/leader/Tsukimori2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = Tsukimori_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_Tsukimori_trait
+                                yz_legacy_Tsukimori_trait
                             }
                             skill = 1
                             attack_skill = 1
@@ -1293,12 +1301,12 @@ add_youzi_general_category = {
                                 small = "gfx/leader/o5j2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = o5j_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_o5j_trait
+                                yz_legacy_o5j_trait
                             }
                             skill = 1
                             attack_skill = 1
@@ -1343,12 +1351,12 @@ add_youzi_general_category = {
                                 small = "gfx/leader/Weiss2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = Weiss_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_Weiss_trait
+                                yz_legacy_Weiss_trait
                             }
                             skill = 1
                             attack_skill = 1
@@ -1393,7 +1401,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/Ukisov2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         advisor = {
                             slot = political_advisor
                             cost = 50
@@ -1409,7 +1417,7 @@ add_youzi_general_category = {
                             desc = Ukisov_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_Ukisov_trait
+                                yz_legacy_Ukisov_trait
                                 yz_Ukisov_trait
                             }
                             skill = 1
@@ -1460,7 +1468,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/Laoba2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         advisor = {
                             slot = political_advisor
                             cost = 50
@@ -1476,7 +1484,7 @@ add_youzi_general_category = {
                             desc = Laoba_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_Laoba_trait
+                                yz_legacy_Laoba_trait
                                 yz_Laoba_trait
                             }
                             skill = 1
@@ -1532,7 +1540,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -1602,7 +1610,7 @@ add_youzi_general_category = {
                                 small = "gfx/leader/柚子2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = yuna_desc
                             traits = {
@@ -1762,7 +1770,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -1825,7 +1833,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             advisor = {
                                 slot = navy_chief
@@ -1890,7 +1898,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -1963,7 +1971,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2139,7 +2147,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2190,7 +2198,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2239,7 +2247,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2290,7 +2298,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2340,7 +2348,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2394,7 +2402,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2456,7 +2464,7 @@ add_youzi_general_category = {
                                 }
                             }
                             allowed_civil_war = {
-                                is_ai = no
+                                ROOT = { is_ai = no }
                             }
                             corps_commander = {
                                 traits={
@@ -2517,12 +2525,12 @@ add_youzi_general_category = {
                                 small = "gfx/leader/Manbo2.png"
                             }
                         }
-                        allowed_civil_war = { is_ai = no }
+                        allowed_civil_war = { ROOT = { is_ai = no } }
                         corps_commander = {
                             desc = Manbo_corps_desc
                             traits = {
                                 yz_easter_egg_character
-                                maid_Manbo_trait
+                                yz_legacy_Manbo_trait
                                 yz_Manbo_trait
                             }
                             skill = 1
@@ -2556,7 +2564,7 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_murasame
-                        NOT = { any_army_leader = { has_trait = maid_congyu_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_congyu_trait } }
                     }
                     add_corps_commander_role = {
                         character = Murasame
@@ -2566,7 +2574,7 @@ add_youzi_general_category = {
                             inflexible_strategist
                             ranger
                             JAP_communist_sympathizer
-                            maid_congyu_trait
+                            yz_legacy_congyu_trait
                         }
                         skill=5
                         attack_skill=6
@@ -2576,7 +2584,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_yoshino NOT = { any_army_leader = { has_trait = maid_fangnai_trait } } }
+                    limit = { has_country_flag = have_yoshino NOT = { any_army_leader = { has_trait = yz_legacy_fangnai_trait } } }
                     add_corps_commander_role = {
                         character = Yoshino
                         traits={
@@ -2589,7 +2597,7 @@ add_youzi_general_category = {
                             skilled_staffer
                             war_hero
                             JAP_communist_sympathizer
-                            maid_fangnai_trait
+                            yz_legacy_fangnai_trait
                         }
                         skill=5
                         attack_skill=6
@@ -2599,7 +2607,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_mako NOT = { any_army_leader = { has_trait = maid_mozi_trait } } }
+                    limit = { has_country_flag = have_mako NOT = { any_army_leader = { has_trait = yz_legacy_mozi_trait } } }
                     add_corps_commander_role = {
                         character = Mako
                         traits={
@@ -2608,7 +2616,7 @@ add_youzi_general_category = {
                             offensive_doctrine
                             victory_through_airpower
                             trait_cautious armor_officer
-                            maid_mozi_trait
+                            yz_legacy_mozi_trait
                         }
                         skill=5
                         attack_skill=6
@@ -2618,7 +2626,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_ningning NOT = { any_army_leader = { has_trait = maid_ninging_trait } } }
+                    limit = { has_country_flag = have_ningning NOT = { any_army_leader = { has_trait = yz_legacy_ninging_trait } } }
                     add_corps_commander_role = {
                         character = Ayachi_Nene
                         traits = {
@@ -2628,7 +2636,7 @@ add_youzi_general_category = {
                             fortress_buster
                             expert_delegator
                             JAP_communist_sympathizer
-                            maid_ninging_trait
+                            yz_legacy_ninging_trait
                         }
                         skill = 5
                         attack_skill = 7
@@ -2638,11 +2646,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_chou NOT = { any_army_leader = { has_trait = maid_chou_trait } } }
+                    limit = { has_country_flag = have_chou NOT = { any_army_leader = { has_trait = yz_legacy_chou_trait } } }
                     add_corps_commander_role = {
                         character = chou
                         traits={
-                            maid_chou_trait
+                            yz_legacy_chou_trait
                             organizer trait_cautious
                             infantry_officer
                             urban_assault_specialist
@@ -2655,7 +2663,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_meigulu NOT = { any_army_leader = { has_trait = maid_meigulu_trait } } }
+                    limit = { has_country_flag = have_meigulu NOT = { any_army_leader = { has_trait = yz_legacy_meigulu_trait } } }
                     add_corps_commander_role = {
                         character = Meguru
                         traits={
@@ -2665,7 +2673,7 @@ add_youzi_general_category = {
                             camouflage_expert
                             panzer_leader
                             JAP_communist_sympathizer
-                            maid_meigulu_trait
+                            yz_legacy_meigulu_trait
                         }
                         skill=5
                         attack_skill=5
@@ -2675,11 +2683,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_toko NOT = { any_army_leader = { has_trait = maid_toko_trait } } }
+                    limit = { has_country_flag = have_toko NOT = { any_army_leader = { has_trait = yz_legacy_toko_trait } } }
                     add_corps_commander_role = {
                         character = Toko
                         traits={
-                            maid_toko_trait
+                            yz_legacy_toko_trait
                             armor_officer
                             brilliant_strategist
                             logistics_wizard
@@ -2694,11 +2702,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_wakana NOT = { any_army_leader = { has_trait = maid_wakana_trait } } }
+                    limit = { has_country_flag = have_wakana NOT = { any_army_leader = { has_trait = yz_legacy_wakana_trait } } }
                     add_corps_commander_role = {
                         character = Wakana
                         traits={
-                            maid_wakana_trait
+                            yz_legacy_wakana_trait
                             brilliant_strategist
                             adaptable
                             urban_assault_specialist
@@ -2713,7 +2721,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_nanami NOT = { any_army_leader = { has_trait = maid_qihai_trait } } }
+                    limit = { has_country_flag = have_nanami NOT = { any_army_leader = { has_trait = yz_legacy_qihai_trait } } }
                     add_corps_commander_role = {
                         character = Nanami
                         traits={
@@ -2724,7 +2732,7 @@ add_youzi_general_category = {
                             nkvd_rezident
                             JAP_communist_sympathizer
                             anti_fascist_agent
-                            maid_qihai_trait
+                            yz_legacy_qihai_trait
                         }
                         skill=5
                         attack_skill=5
@@ -2734,11 +2742,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_hazuki NOT = { any_army_leader = { has_trait = maid_hazuki_trait } } }
+                    limit = { has_country_flag = have_hazuki NOT = { any_army_leader = { has_trait = yz_legacy_hazuki_trait } } }
                     add_corps_commander_role = {
                         character = Hazuki
                         traits={
-                            maid_hazuki_trait
+                            yz_legacy_hazuki_trait
                             naval_invader
                             invader_ii
                             naval_liason
@@ -2752,7 +2760,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_idea = ayase_love_0 NOT = { any_army_leader = { has_trait = maid_cuodao_trait } } }
+                    limit = { has_idea = ayase_love_0 NOT = { any_army_leader = { has_trait = yz_legacy_cuodao_trait } } }
                     add_corps_commander_role = {
                         character = Ayase
                         traits={
@@ -2762,7 +2770,7 @@ add_youzi_general_category = {
                             hidden_sympathies
                             media_personality
                             JAP_communist_sympathizer
-                            maid_cuodao_trait
+                            yz_legacy_cuodao_trait
                         }
                         skill=5
                         attack_skill=6
@@ -2772,7 +2780,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_gongping NOT = { any_army_leader = { has_trait = maid_gongping_trait } } }
+                    limit = { has_country_flag = have_gongping NOT = { any_army_leader = { has_trait = yz_legacy_gongping_trait } } }
                     add_corps_commander_role = {
                         character = gongping
                         traits={
@@ -2781,7 +2789,7 @@ add_youzi_general_category = {
                             scavenger
                             camouflage_expert
                             fast_planner
-                            maid_gongping_trait
+                            yz_legacy_gongping_trait
                         }
                         skill=5
                         attack_skill=5
@@ -2791,7 +2799,7 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_kanna NOT = { any_army_leader = { has_trait = maid_kanna_trait } } }
+                    limit = { has_country_flag = have_kanna NOT = { any_army_leader = { has_trait = yz_legacy_kanna_trait } } }
                     add_corps_commander_role = {
                         character = kanna
                         traits={
@@ -2805,7 +2813,7 @@ add_youzi_general_category = {
                             panzer_leader
                             defensive_doctrine
                             JAP_communist_sympathizer
-                            maid_kanna_trait
+                            yz_legacy_kanna_trait
                         }
                         skill=5
                         attack_skill=4
@@ -2815,11 +2823,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_zaozi NOT = { any_army_leader = { has_trait = maid_zaozi_trait } } }
+                    limit = { has_country_flag = have_zaozi NOT = { any_army_leader = { has_trait = yz_legacy_zaozi_trait } } }
                     add_corps_commander_role = {
                         character = zaozi
                         traits={
-                            maid_zaozi_trait
+                            yz_legacy_zaozi_trait
                             harsh_leader
                             inflexible_strategist
                             inspirational_leader
@@ -2833,11 +2841,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_nozomi NOT = { any_army_leader = { has_trait = maid_nozomi_trait } } }
+                    limit = { has_country_flag = have_nozomi NOT = { any_army_leader = { has_trait = yz_legacy_nozomi_trait } } }
                     add_corps_commander_role = {
                         character = Nozomi
                         traits={
-                            maid_nozomi_trait
+                            yz_legacy_nozomi_trait
                             adaptable
                             logistics_wizard
                             trait_reckless
@@ -2852,13 +2860,13 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_noa
-                        NOT = { any_army_leader = { has_trait = maid_noa1_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_noa1_trait } }
                         has_country_flag = no_noa
                     }
                     add_corps_commander_role = {
                         character = shirayuki_Noa_1
                         traits={
-                            maid_noa_trait maid_noa1_trait JAP_communist_sympathizer Brilliant_Strategist armor_officer
+                            yz_legacy_noa_trait yz_legacy_noa1_trait JAP_communist_sympathizer Brilliant_Strategist armor_officer
                         }
                         attack_skill = 6
                         defense_skill = 3
@@ -2871,12 +2879,12 @@ add_youzi_general_category = {
                     limit = {
                         has_country_flag = have_noa
                         NOT = { has_country_flag = no_noa }
-                        NOT = { any_army_leader = { has_trait = maid_noa_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_noa_trait } }
                     }
                     add_corps_commander_role = {
                         character = shirayuki_Noa
                         traits={
-                            maid_noa_trait maid_noa1_trait maid_noa2_trait maid_noa3_trait JAP_communist_sympathizer Brilliant_Strategist armor_officer
+                            yz_legacy_noa_trait yz_legacy_noa1_trait yz_legacy_noa2_trait yz_legacy_noa3_trait JAP_communist_sympathizer Brilliant_Strategist armor_officer
                         }
                         attack_skill = 6
                         defense_skill = 3
@@ -2886,11 +2894,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_fumika NOT = { any_army_leader = { has_trait = maid_fumika_trait } } }
+                    limit = { has_country_flag = have_fumika NOT = { any_army_leader = { has_trait = yz_legacy_fumika_trait } } }
                     add_corps_commander_role = {
                         character = Fumika
                         traits={
-                            maid_fumika_trait
+                            yz_legacy_fumika_trait
                             adaptable
                             infantry_officer
                             cavalry_officer
@@ -2912,12 +2920,12 @@ add_youzi_general_category = {
                         has_country_flag = have_amane
                         NOT = { has_country_flag = amane_line }
                         has_character = Amane
-                        NOT = { any_army_leader = { has_trait = maid_amane_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_amane_trait } }
                     }
                     add_corps_commander_role = {
                         character = Amane
                         traits={
-                            maid_amane_trait
+                            yz_legacy_amane_trait
                             adaptable
                             trait_cautious
                             urban_assault_specialist
@@ -2930,11 +2938,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_sairi NOT = { any_army_leader = { has_trait = maid_sairi_trait_2 } } }
+                    limit = { has_country_flag = have_sairi NOT = { any_army_leader = { has_trait = yz_legacy_sairi_trait_2 } } }
                     add_corps_commander_role = {
                         character = Sairi
                         traits={
-                            maid_sairi_trait_2
+                            yz_legacy_sairi_trait_2
                             brilliant_strategist
                         }
                         skill = 1
@@ -2945,11 +2953,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_kurumi NOT = { any_army_leader = { has_trait = maid_kurumi_trait } } }
+                    limit = { has_country_flag = have_kurumi NOT = { any_army_leader = { has_trait = yz_legacy_kurumi_trait } } }
                     add_corps_commander_role = {
                         character = Kurumi
                         traits={
-                            maid_kurumi_trait
+                            yz_legacy_kurumi_trait
 
                         }
                         skill=5
@@ -2960,11 +2968,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_kaguya NOT = { any_army_leader = { has_trait = maid_kaguya_trait } } }
+                    limit = { has_country_flag = have_kaguya NOT = { any_army_leader = { has_trait = yz_legacy_kaguya_trait } } }
                     add_corps_commander_role = {
                         character = Kaguya
                         traits={
-                            maid_kaguya_trait
+                            yz_legacy_kaguya_trait
                             bearer_of_artillery
                             adaptable
                             brilliant_strategist
@@ -2977,11 +2985,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_chihaya NOT = { any_army_leader = { has_trait = maid_chihaya_trait } } }
+                    limit = { has_country_flag = have_chihaya NOT = { any_army_leader = { has_trait = yz_legacy_chihaya_trait } } }
                     add_corps_commander_role = {
                         character = Chihaya
                         traits={
-                            maid_chihaya_trait_5
+                            yz_legacy_chihaya_trait_5
                         }
                         skill=1
                         attack_skill=2
@@ -2991,11 +2999,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_sana NOT = { any_army_leader = { has_trait = maid_sana_trait } } }
+                    limit = { has_country_flag = have_sana NOT = { any_army_leader = { has_trait = yz_legacy_sana_trait } } }
                     add_corps_commander_role = {
                         character = sana
                         traits={
-                            maid_sana_trait trait_reckless infantry_officer
+                            yz_legacy_sana_trait trait_reckless infantry_officer
                         }
                         skill=5
                         attack_skill=2
@@ -3005,11 +3013,11 @@ add_youzi_general_category = {
                     }
                 }
                 if = {
-                    limit = { has_country_flag = have_rio NOT = { any_army_leader = { has_trait = maid_rio_trait_1 } } }
+                    limit = { has_country_flag = have_rio NOT = { any_army_leader = { has_trait = yz_legacy_rio_trait_1 } } }
                     add_corps_commander_role = {
                         character = Rio
                         traits={
-                            maid_rio_trait_1
+                            yz_legacy_rio_trait_1
                             harsh_leader
                             inflexible_strategist
                             infantry_officer
@@ -3024,12 +3032,12 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_suzune
-                        NOT = { any_army_leader = { has_trait = maid_masaki_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_masaki_trait } }
                     }
                     add_corps_commander_role = {
                         character = suzune
                         traits={
-                            maid_rio_trait_1
+                            yz_legacy_rio_trait_1
                             adaptable
                             harsh_leader
                             inflexible_strategist
@@ -3045,7 +3053,7 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_masaki
-                        NOT = { any_army_leader = { has_trait = maid_masaki_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_masaki_trait } }
                     }
                     add_corps_commander_role = {
                         character = Masaki_G
@@ -3056,7 +3064,7 @@ add_youzi_general_category = {
                             expert_delegator
                             JAP_communist_sympathizer
                             organizer
-                            maid_masaki_trait
+                            yz_legacy_masaki_trait
                             adaptable
                             ranger
                             winter_specialist
@@ -3071,15 +3079,15 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_miu
-                        NOT = { any_army_leader = { has_trait = maid_miu_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_miu_trait } }
                     }
                     add_corps_commander_role = {
                         character = miu
                         traits={
                             trait_engineer
                             JAP_communist_sympathizer
-                            maid_miu_trait
-                            trait_maid_vampires
+                            yz_legacy_miu_trait
+                            yz_legacy_vampires_trait
                             adaptable
                             ranger
                             urban_assault_specialist
@@ -3101,7 +3109,7 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_Mayu
-                        NOT = { any_army_leader = { has_trait = maid_Mayu_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_Mayu_trait } }
                     }
                     add_corps_commander_role = {
                         character = Shikibe_Mayu
@@ -3109,7 +3117,7 @@ add_youzi_general_category = {
                             brilliant_strategist
                             thorough_planner
                             organizer
-                            maid_Mayu_trait
+                            yz_legacy_Mayu_trait
                         }
                         skill = 5
                         attack_skill = 3
@@ -3161,12 +3169,12 @@ add_youzi_general_category = {
                         has_country_flag = have_amane
                         has_country_flag = amane_line
                         has_character = Amane1
-                        NOT = { any_army_leader = { has_trait = maid_kotori_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_kotori_trait } }
                     }
                     add_corps_commander_role = {
                         character = Amane1
                         traits={
-                            maid_kotori_trait
+                            yz_legacy_kotori_trait
                         }
                         skill = 2
                         attack_skill = 6
@@ -3178,12 +3186,12 @@ add_youzi_general_category = {
                 if = {
                     limit = {
                         has_country_flag = have_shirley
-                        NOT = { any_army_leader = { has_trait = maid_shirley_trait } }
+                        NOT = { any_army_leader = { has_trait = yz_legacy_shirley_trait } }
                     }
                     add_corps_commander_role = {
                         character = shirley_warwick
                         traits={
-                            maid_shirley_trait
+                            yz_legacy_shirley_trait
                         }
                         skill = 5
                         attack_skill = 1
@@ -3222,7 +3230,7 @@ add_youzi_general_category = {
                         character = elina_owen
                         traits={
                             yz_elina_owen_trait
-                            infantry_officer trait_maid_vampires
+                            infantry_officer yz_legacy_vampires_trait
 
                         }
                         skill = 5

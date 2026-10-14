@@ -42,7 +42,7 @@ ideas = {
 	country = {
 
 		xiufuhuoche = {
-			picture = BLU_market_dynamism
+			picture = GFX_idea_generic_supply_lines
 
 			allowed_civil_war = {
 				is_ai = no
@@ -55,7 +55,7 @@ ideas = {
 			}
 		}
 		xiufuhuoche1 = {
-			picture = BLU_market_dynamism
+			picture = GFX_idea_generic_economic_recovery
 
 			allowed_civil_war = {
 				is_ai = no
@@ -66,7 +66,7 @@ ideas = {
 			}
 		}
 		keyanfenxi = {
-			picture = BLU_market_dynamism
+			picture = GFX_idea_generic_research_bonus
 
 			allowed_civil_war = {
 				is_ai = no

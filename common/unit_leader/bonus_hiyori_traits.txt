@@ -32,14 +32,6 @@ leader_traits = {
         new_commander_weight = {
             factor = 0
         }
-        attack_skill = 1
-        planning_skill = 1
-        attack_skill_factor = 2
-        planning_skill_factor = 1
-        defense_skill_factor = 1
-        non_shared_modifier = {
-            reassignment_duration_factor = 1
-        }
     }
     Heart_Creation = {     #事件链特质
         type = land

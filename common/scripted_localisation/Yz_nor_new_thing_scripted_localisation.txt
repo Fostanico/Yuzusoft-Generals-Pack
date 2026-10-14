@@ -749,23 +749,96 @@ defined_text = {
 	}
 }
 
-# 要点：启动界面右侧正文只使用一个 instantTextBoxType，通过三个互斥 tab flag 在此处切换具体本地化文本。 [2026-06-20] [伊尔诺/GPT5.5]
+# Startup screen 2.0: page text and the highlighted navigation label.
 defined_text = {
 	name = YZ_start_ui_content
 	text = {
-		trigger = {
-			has_country_flag = YZ_start_ui_tab_guide
-		}
+		trigger = { has_country_flag = YZ_start_ui_tab_history }
+		localization_key = yzl_history_content
+	}
+	text = {
+		trigger = { has_country_flag = YZ_start_ui_tab_guide }
 		localization_key = YZ_start_ui_guide_content
 	}
 	text = {
-		trigger = {
-			has_country_flag = YZ_start_ui_tab_credits
-		}
+		trigger = { has_country_flag = YZ_start_ui_tab_credits }
 		localization_key = YZ_start_ui_credits_content
 	}
 	text = {
-		trigger = { }
+		trigger = { has_country_flag = YZ_start_ui_tab_update }
 		localization_key = YZ_start_ui_update_content
+	}
+	# Title page: no text, so the text box has nothing to scroll and hides its scrollbar.
+	text = {
+		localization_key = yzl_page_empty
+	}
+}
+defined_text = {
+	name = yzl_nav_update_label
+	text = {
+		trigger = { OR = { has_country_flag = YZ_start_ui_tab_update has_country_flag = YZ_start_ui_tab_history } }
+		localization_key = yzl_nav_update_on
+	}
+	text = {
+		localization_key = yzl_nav_update_off
+	}
+}
+defined_text = {
+	name = yzl_nav_guide_label
+	text = {
+		trigger = { has_country_flag = YZ_start_ui_tab_guide }
+		localization_key = yzl_nav_guide_on
+	}
+	text = {
+		localization_key = yzl_nav_guide_off
+	}
+}
+defined_text = {
+	name = yzl_nav_credits_label
+	text = {
+		trigger = { has_country_flag = this_country_in_nor_mode }
+		localization_key = yzl_nav_credits_web_label
+	}
+	text = {
+		trigger = { has_country_flag = YZ_start_ui_tab_credits }
+		localization_key = yzl_nav_credits_on
+	}
+	text = {
+		localization_key = yzl_nav_credits_off
+	}
+}
+
+# The main heading follows the reading page. Mode has a separate fixed caption.
+defined_text = {
+	name = yzl_sidebar_label
+	text = {
+		trigger = { has_country_flag = YZ_start_ui_tab_history }
+		localization_key = yzl_sidebar_history
+	}
+	text = {
+		trigger = { has_country_flag = YZ_start_ui_tab_update }
+		localization_key = yzl_nav_update_off
+	}
+	text = {
+		trigger = { has_country_flag = YZ_start_ui_tab_guide }
+		localization_key = yzl_nav_guide_off
+	}
+	text = {
+		trigger = { has_country_flag = YZ_start_ui_tab_credits }
+		localization_key = yzl_nav_credits_off
+	}
+	text = {
+		localization_key = yzl_welcome_title
+	}
+}
+
+defined_text = {
+	name = yzl_mode_text
+	text = {
+		trigger = { has_country_flag = this_country_in_nor_mode }
+		localization_key = yzl_sidebar_arno
+	}
+	text = {
+		localization_key = yzl_mode_normal
 	}
 }

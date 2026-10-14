@@ -1,0 +1,75 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_yzcr_senren_backgrounds"
+		texturefile = "gfx/interface/yzcr/senren_backgrounds.png"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_senren_choices"
+		texturefile = "gfx/interface/yzcr/senren_choices.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/yzcr_hover_senren_zh.shader"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_senren_choices_ja"
+		texturefile = "gfx/interface/yzcr/senren_choices.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/yzcr_hover_senren_ja.shader"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_senren_choices_en"
+		texturefile = "gfx/interface/yzcr/senren_choices.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/yzcr_hover_senren_en.shader"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_riddle_backgrounds"
+		texturefile = "gfx/interface/yzcr/riddle_backgrounds.png"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_riddle_choices"
+		texturefile = "gfx/interface/yzcr/riddle_choices.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/yzcr_hover_riddle_zh.shader"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_riddle_choices_ja"
+		texturefile = "gfx/interface/yzcr/riddle_choices.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/yzcr_hover_riddle_ja.shader"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_riddle_choices_en"
+		texturefile = "gfx/interface/yzcr/riddle_choices.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/yzcr_hover_riddle_en.shader"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_control"
+		texturefile = "gfx/interface/yzcr/control.png"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_yzcr_help_plate"
+		texturefile = "gfx/interface/yzcr/help_plate.png"
+		noOfFrames = 1
+	}
+}

@@ -1,0 +1,1136 @@
+# Two works share one window and sound; each attempt, unlock and owned flag is country-local.
+# yzcr_work: 1 Senren, 2 Riddle. Legacy value 0 still selects Senren until next open.
+yzcr_refresh_background = {
+	set_variable = { yzcr_background_y = 0 }
+	if = {
+		limit = { yzcr_rj_active = yes }
+		if = {
+			limit = {
+				check_variable = { var = yzcr_rj_step value = 2 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -720 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_rj_step value = 21 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -1440 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_rj_step value = 3 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -2160 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_rj_step value = 4 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -2880 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_rj_step value = 5 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -3600 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_rj_step value = 6 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -4320 }
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 2 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -720 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 3 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -1440 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 4 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -2160 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 5 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -2880 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 6 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -3600 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 7 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -4320 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 8 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -5040 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = yzcr_step value = 9 compare = equals }
+			}
+			set_variable = { yzcr_background_y = -5760 }
+		}
+	}
+}
+yzcr_close_window = {
+	clr_country_flag = yzcr_open
+	clr_country_flag = yzcr_help
+	clr_country_flag = yzcr_lang_menu
+	remove_decision = QL_recruit
+	remove_decision_on_cooldown = QL_recruit
+	remove_decision = RJ_recruit
+	remove_decision_on_cooldown = RJ_recruit
+	add_to_variable = { yzcr_dirty = 1 }
+}
+yzcr_toggle_help = {
+	clr_country_flag = yzcr_lang_menu
+	if = {
+		limit = { has_country_flag = yzcr_help }
+		clr_country_flag = yzcr_help
+	}
+	else = {
+		set_country_flag = yzcr_help
+	}
+	add_to_variable = { yzcr_dirty = 1 }
+}
+yzcr_restart_active = {
+	if = {
+		limit = { yzcr_rj_active = yes }
+		yzcr_rj_begin = yes
+	}
+	else = {
+		yzcr_begin = yes
+	}
+}
+# senren: restart resets this work only; owned/unlock flags survive.
+yzcr_begin = {
+	clr_country_flag = yzcr_lang_menu
+	clear_variable = yzcr_art_lang
+	set_variable = { yzcr_work = 1 }
+	set_country_flag = yzcr_initialized
+	set_country_flag = yzcr_open
+	clr_country_flag = yzcr_help
+	set_variable = { yzcr_step = 1 }
+	set_variable = { yzcr_result = 0 }
+	set_variable = { yzcr_q1 = 0 }
+	set_variable = { yzcr_q2 = 0 }
+	set_variable = { yzcr_q3 = 0 }
+	set_variable = { yzcr_q4 = 0 }
+	set_variable = { yzcr_q5 = 0 }
+	set_variable = { yzcr_q6 = 0 }
+	set_variable = { yzcr_q7 = 0 }
+	set_variable = { yzcr_q8 = 0 }
+	set_variable = { yzcr_q9 = 0 }
+	yzcr_refresh_background = yes
+	add_to_variable = { yzcr_dirty = 1 }
+}
+yzcr_open_window = {
+    if = {
+        limit = { OR = { has_country_flag = have_yoshino has_country_flag = have_mako has_country_flag = have_murasame has_country_flag = have_lena } }
+        set_country_flag = yzcr_main_complete
+    }
+	set_variable = { yzcr_work = 1 }
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_country_flag = yzcr_initialized }
+				check_variable = { var = yzcr_step value = 100 compare = equals }
+			}
+		}
+		yzcr_begin = yes
+	}
+	else = {
+		clr_country_flag = yzcr_lang_menu
+		clear_variable = yzcr_art_lang
+		yzcr_refresh_background = yes
+		set_country_flag = yzcr_open
+		clr_country_flag = yzcr_help
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_toggle_window = {
+	if = {
+		limit = { has_country_flag = yzcr_open yzcr_active = yes }
+		yzcr_close_window = yes
+	}
+	else = {
+		yzcr_open_window = yes
+	}
+}
+yzcr_resolve = {
+	set_variable = { yzcr_step = 100 }
+	set_variable = { yzcr_result = 0 }
+	if = {
+		limit = {
+			check_variable = { var = yzcr_q3 value = 1 compare = equals }
+			check_variable = { var = yzcr_q4 value = 1 compare = equals }
+			check_variable = { var = yzcr_q5 value = 2 compare = equals }
+		}
+		set_variable = { yzcr_result = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_q4 value = 1 compare = equals }
+			check_variable = { var = yzcr_q5 value = 1 compare = equals }
+			check_variable = { var = yzcr_q8 value = 1 compare = equals }
+		}
+		set_variable = { yzcr_result = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_q2 value = 2 compare = equals }
+			check_variable = { var = yzcr_q4 value = 2 compare = equals }
+		}
+		set_variable = { yzcr_result = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_q4 value = 3 compare = equals }
+			check_variable = { var = yzcr_q6 value = 2 compare = equals }
+		}
+		set_variable = { yzcr_result = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_q1 value = 1 compare = equals }
+			check_variable = { var = yzcr_q7 value = 2 compare = equals }
+		}
+		if = {
+			limit = { has_country_flag = yzcr_main_complete }
+			set_variable = { yzcr_step = 9 }
+		}
+		else = {
+			set_variable = { yzcr_result = -1 }
+		}
+	}
+}
+yzcr_pick_s1_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 1 compare = equals }
+		}
+		set_variable = { yzcr_q1 = 1 }
+		set_variable = { yzcr_step = 2 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s1_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 1 compare = equals }
+		}
+		set_variable = { yzcr_q1 = 2 }
+		set_variable = { yzcr_step = 2 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s2_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 2 compare = equals }
+		}
+		set_variable = { yzcr_q2 = 1 }
+		set_variable = { yzcr_step = 3 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s2_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 2 compare = equals }
+		}
+		set_variable = { yzcr_q2 = 2 }
+		set_variable = { yzcr_step = 3 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s3_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 3 compare = equals }
+		}
+		set_variable = { yzcr_q3 = 1 }
+		set_variable = { yzcr_step = 4 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s3_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 3 compare = equals }
+		}
+		set_variable = { yzcr_q3 = 2 }
+		set_variable = { yzcr_step = 4 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s4_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 4 compare = equals }
+		}
+		set_variable = { yzcr_q4 = 1 }
+		set_variable = { yzcr_step = 5 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s4_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 4 compare = equals }
+		}
+		set_variable = { yzcr_q4 = 2 }
+		set_variable = { yzcr_step = 6 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s4_o3 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 4 compare = equals }
+		}
+		set_variable = { yzcr_q4 = 3 }
+		set_variable = { yzcr_step = 6 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s5_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 5 compare = equals }
+		}
+		set_variable = { yzcr_q5 = 1 }
+		set_variable = { yzcr_step = 6 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s5_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 5 compare = equals }
+		}
+		set_variable = { yzcr_q5 = 2 }
+		set_variable = { yzcr_step = 6 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s6_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 6 compare = equals }
+		}
+		set_variable = { yzcr_q6 = 1 }
+		set_variable = { yzcr_step = 7 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s6_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 6 compare = equals }
+		}
+		set_variable = { yzcr_q6 = 2 }
+		set_variable = { yzcr_step = 7 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s7_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 7 compare = equals }
+		}
+		set_variable = { yzcr_q7 = 1 }
+		set_variable = { yzcr_step = 8 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s7_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 7 compare = equals }
+		}
+		set_variable = { yzcr_q7 = 2 }
+		set_variable = { yzcr_step = 8 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s8_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 8 compare = equals }
+		}
+		set_variable = { yzcr_q8 = 1 }
+		yzcr_resolve = yes
+		yzcr_finish_route = yes
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s8_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 8 compare = equals }
+		}
+		set_variable = { yzcr_q8 = 2 }
+		yzcr_resolve = yes
+		yzcr_finish_route = yes
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s9_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 9 compare = equals }
+			has_country_flag = yzcr_main_complete
+		}
+		set_variable = { yzcr_q9 = 1 }
+		set_variable = { yzcr_result = 5 }
+		set_variable = { yzcr_step = 100 }
+		yzcr_finish_route = yes
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_pick_s9_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 9 compare = equals }
+			has_country_flag = yzcr_main_complete
+		}
+		set_variable = { yzcr_q9 = 2 }
+		set_variable = { yzcr_result = 6 }
+		set_variable = { yzcr_step = 100 }
+		yzcr_finish_route = yes
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_recruit_result = {
+    if = {
+        limit = { yzcr_can_auto_recruit = yes }
+        if = {
+            limit = { check_variable = { var = yzcr_result value = 1 compare = equals } }
+            yzcr_recruit_yoshino = yes
+            set_country_flag = yzcr_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_result value = 2 compare = equals } }
+            yzcr_recruit_mako = yes
+            set_country_flag = yzcr_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_result value = 3 compare = equals } }
+            yzcr_recruit_murasame = yes
+            set_country_flag = yzcr_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_result value = 4 compare = equals } }
+            yzcr_recruit_lena = yes
+            set_country_flag = yzcr_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_result value = 5 compare = equals } }
+            yzcr_recruit_koharu = yes
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_result value = 6 compare = equals } }
+            yzcr_recruit_roka = yes
+        }
+    }
+}
+yzcr_finish_route = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_step value = 100 compare = equals }
+		}
+		yzcr_recruit_result = yes
+		yzcr_close_window = yes
+	}
+}
+# riddle: restart resets this work only; owned/unlock flags survive.
+yzcr_rj_begin = {
+	clr_country_flag = yzcr_lang_menu
+	clear_variable = yzcr_art_lang
+	set_variable = { yzcr_work = 2 }
+	set_country_flag = yzcr_rj_initialized
+	set_country_flag = yzcr_open
+	clr_country_flag = yzcr_help
+	set_variable = { yzcr_rj_step = 1 }
+	set_variable = { yzcr_rj_result = 0 }
+	set_variable = { yzcr_rj_q1 = 0 }
+	set_variable = { yzcr_rj_q2 = 0 }
+	set_variable = { yzcr_rj_q21 = 0 }
+	set_variable = { yzcr_rj_q3 = 0 }
+	set_variable = { yzcr_rj_q4 = 0 }
+	set_variable = { yzcr_rj_q5 = 0 }
+	set_variable = { yzcr_rj_q6 = 0 }
+	yzcr_refresh_background = yes
+	add_to_variable = { yzcr_dirty = 1 }
+}
+yzcr_rj_open_window = {
+    if = {
+        limit = { OR = { has_country_flag = have_0nai has_country_flag = have_nanami has_country_flag = have_hazuki has_country_flag = have_Mayu } }
+        set_country_flag = yzcr_rj_main_complete
+    }
+	set_variable = { yzcr_work = 2 }
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_country_flag = yzcr_rj_initialized }
+				check_variable = { var = yzcr_rj_step value = 100 compare = equals }
+			}
+		}
+		yzcr_rj_begin = yes
+	}
+	else = {
+		clr_country_flag = yzcr_lang_menu
+		clear_variable = yzcr_art_lang
+		yzcr_refresh_background = yes
+		set_country_flag = yzcr_open
+		clr_country_flag = yzcr_help
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_toggle_window = {
+	if = {
+		limit = { has_country_flag = yzcr_open yzcr_rj_active = yes }
+		yzcr_close_window = yes
+	}
+	else = {
+		yzcr_rj_open_window = yes
+	}
+}
+yzcr_rj_resolve = {
+	set_variable = { yzcr_rj_step = 100 }
+	set_variable = { yzcr_rj_result = 0 }
+	if = {
+		limit = {
+			check_variable = { var = yzcr_rj_q1 value = 1 compare = equals }
+			check_variable = { var = yzcr_rj_q2 value = 2 compare = equals }
+			check_variable = { var = yzcr_rj_q3 value = 1 compare = equals }
+			check_variable = { var = yzcr_rj_q5 value = 2 compare = equals }
+		}
+		set_variable = { yzcr_rj_result = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_rj_q2 value = 1 compare = equals }
+			check_variable = { var = yzcr_rj_q6 value = 1 compare = equals }
+		}
+		set_variable = { yzcr_rj_result = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_rj_q1 value = 2 compare = equals }
+			check_variable = { var = yzcr_rj_q4 value = 2 compare = equals }
+			check_variable = { var = yzcr_rj_q6 value = 2 compare = equals }
+		}
+		set_variable = { yzcr_rj_result = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_rj_q2 value = 2 compare = equals }
+			check_variable = { var = yzcr_rj_q21 value = 1 compare = equals }
+			check_variable = { var = yzcr_rj_q6 value = 3 compare = equals }
+			has_country_flag = yzcr_rj_main_complete
+		}
+		set_variable = { yzcr_rj_result = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = yzcr_rj_q4 value = 1 compare = equals }
+			check_variable = { var = yzcr_rj_q5 value = 1 compare = equals }
+		}
+		set_variable = { yzcr_rj_result = 1 }
+	}
+}
+yzcr_rj_pick_s1_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 1 compare = equals }
+		}
+		set_variable = { yzcr_rj_q1 = 1 }
+		set_variable = { yzcr_rj_step = 2 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s1_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 1 compare = equals }
+		}
+		set_variable = { yzcr_rj_q1 = 2 }
+		set_variable = { yzcr_rj_step = 2 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s2_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 2 compare = equals }
+		}
+		set_variable = { yzcr_rj_q2 = 1 }
+		set_variable = { yzcr_rj_q21 = 2 }
+		set_variable = { yzcr_rj_step = 3 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s2_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 2 compare = equals }
+		}
+		set_variable = { yzcr_rj_q2 = 2 }
+		set_variable = { yzcr_rj_q21 = 2 }
+		set_variable = { yzcr_rj_step = 3 }
+		if = {
+			limit = { has_country_flag = yzcr_rj_main_complete }
+			set_variable = { yzcr_rj_step = 21 }
+		}
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s21_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 21 compare = equals }
+			has_country_flag = yzcr_rj_main_complete
+			check_variable = { var = yzcr_rj_q2 value = 2 compare = equals }
+		}
+		set_variable = { yzcr_rj_q21 = 1 }
+		set_variable = { yzcr_rj_step = 3 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s21_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 21 compare = equals }
+			has_country_flag = yzcr_rj_main_complete
+			check_variable = { var = yzcr_rj_q2 value = 2 compare = equals }
+		}
+		set_variable = { yzcr_rj_q21 = 2 }
+		set_variable = { yzcr_rj_step = 3 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s3_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 3 compare = equals }
+		}
+		set_variable = { yzcr_rj_q3 = 1 }
+		set_variable = { yzcr_rj_step = 4 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s3_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 3 compare = equals }
+		}
+		set_variable = { yzcr_rj_q3 = 2 }
+		set_variable = { yzcr_rj_step = 4 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s4_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 4 compare = equals }
+		}
+		set_variable = { yzcr_rj_q4 = 1 }
+		set_variable = { yzcr_rj_step = 5 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s4_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 4 compare = equals }
+		}
+		set_variable = { yzcr_rj_q4 = 2 }
+		set_variable = { yzcr_rj_step = 6 }
+		set_variable = { yzcr_rj_q5 = 2 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s5_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 5 compare = equals }
+		}
+		set_variable = { yzcr_rj_q5 = 1 }
+		set_variable = { yzcr_rj_step = 6 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s5_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 5 compare = equals }
+		}
+		set_variable = { yzcr_rj_q5 = 2 }
+		set_variable = { yzcr_rj_step = 6 }
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s6_o1 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 6 compare = equals }
+		}
+		set_variable = { yzcr_rj_q6 = 1 }
+		yzcr_rj_resolve = yes
+		yzcr_rj_finish_route = yes
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s6_o2 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 6 compare = equals }
+		}
+		set_variable = { yzcr_rj_q6 = 2 }
+		yzcr_rj_resolve = yes
+		yzcr_rj_finish_route = yes
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_pick_s6_o3 = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 6 compare = equals }
+		}
+		set_variable = { yzcr_rj_q6 = 3 }
+		yzcr_rj_resolve = yes
+		yzcr_rj_finish_route = yes
+		yzcr_refresh_background = yes
+		add_to_variable = { yzcr_dirty = 1 }
+	}
+}
+yzcr_rj_recruit_result = {
+    if = {
+        limit = { yzcr_rj_can_auto_recruit = yes }
+        if = {
+            limit = { check_variable = { var = yzcr_rj_result value = 1 compare = equals } }
+            yzcr_recruit_ayase = yes
+            set_country_flag = yzcr_rj_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_rj_result value = 2 compare = equals } }
+            yzcr_recruit_nanami = yes
+            set_country_flag = yzcr_rj_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_rj_result value = 3 compare = equals } }
+            yzcr_recruit_hazuki = yes
+            set_country_flag = yzcr_rj_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_rj_result value = 4 compare = equals } }
+            yzcr_recruit_mayu = yes
+            set_country_flag = yzcr_rj_main_complete
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_rj_result value = 5 compare = equals } }
+            yzcr_recruit_chisaki = yes
+        }
+        else_if = {
+            limit = { check_variable = { var = yzcr_rj_result value = 0 compare = equals } }
+            yzcr_recruit_ayase = yes
+            yzcr_recruit_mayu = yes
+            yzcr_recruit_hazuki = yes
+            yzcr_recruit_chisaki = yes
+        }
+    }
+}
+yzcr_rj_finish_route = {
+	if = {
+		limit = {
+			is_ai = no
+			yzcr_rj_active = yes
+			has_country_flag = yzcr_open
+			NOT = { has_country_flag = yzcr_help }
+			check_variable = { var = yzcr_rj_step value = 100 compare = equals }
+		}
+		yzcr_rj_recruit_result = yes
+		if = {
+			limit = { check_variable = { var = yzcr_rj_result value = 0 compare = equals } }
+			set_country_flag = yzcr_rj_main_complete
+		}
+		yzcr_close_window = yes
+	}
+}
+
+# Production adapters: official have_* flags protect both recruitment methods.
+yzcr_recruit_yoshino = {
+    if = {
+        limit = { NOT = { has_country_flag = have_yoshino } }
+        yzrecruit_yoshino = yes
+    }
+}
+yzcr_recruit_mako = {
+    if = {
+        limit = { NOT = { has_country_flag = have_mako } }
+        yzrecruit_mako = yes
+    }
+}
+yzcr_recruit_murasame = {
+    if = {
+        limit = { NOT = { has_country_flag = have_murasame } }
+        yzrecruit_murasame = yes
+    }
+}
+yzcr_recruit_lena = {
+    if = {
+        limit = { NOT = { has_country_flag = have_lena } }
+        yzrecruit_lena = yes
+    }
+}
+yzcr_recruit_koharu = {
+    if = {
+        limit = { NOT = { has_country_flag = have_koharu } }
+        add_political_power = -10
+        set_country_flag = yzcr_roko_direct
+        # Direct routes end any unfinished legacy side game without starting it.
+        clr_country_flag = start_roko
+        remove_decision = Roka_Koharu_365days
+        remove_decision_on_cooldown = Roka_Koharu_365days
+        yz_create_koharu_recruit_character = yes
+        yzcr_sync_luchun_ownership = yes
+    }
+}
+yzcr_recruit_roka = {
+    if = {
+        limit = { NOT = { has_country_flag = have_roka } }
+        add_political_power = -10
+        set_country_flag = yzcr_roko_direct
+        # Direct routes end any unfinished legacy side game without starting it.
+        clr_country_flag = start_roko
+        remove_decision = Roka_Koharu_365days
+        remove_decision_on_cooldown = Roka_Koharu_365days
+        yz_create_roka_recruit_character = yes
+        yzcr_sync_luchun_ownership = yes
+    }
+}
+yzcr_recruit_ayase = {
+    if = {
+        limit = { NOT = { has_country_flag = have_0nai } }
+        yzrecruit_ayase = yes
+    }
+}
+yzcr_recruit_nanami = {
+    if = {
+        limit = { NOT = { has_country_flag = have_nanami } }
+        yzrecruit_nanami = yes
+    }
+}
+yzcr_recruit_hazuki = {
+    if = {
+        limit = { NOT = { has_country_flag = have_hazuki } }
+        yzrecruit_hazuki = yes
+    }
+}
+yzcr_recruit_mayu = {
+    if = {
+        limit = { NOT = { has_country_flag = have_Mayu } }
+        yzrecruit_mayu = yes
+    }
+}
+yzcr_recruit_chisaki = {
+    if = {
+        limit = { NOT = { has_country_flag = have_chisaki } }
+        yzrecruit_chisaki = yes
+    }
+}
+yzcr_sync_luchun_ownership = {
+    if = {
+        limit = { has_country_flag = have_koharu has_country_flag = have_roka }
+        set_country_flag = have_luchun
+    }
+    else_if = {
+        limit = { NOT = { has_country_flag = start_roko } }
+        clr_country_flag = have_luchun
+    }
+}
+# Legacy mode 2 still starts its side game when neither character is owned.
+# After a direct route, the legacy SD button only fills the missing character.
+yzcr_recruit_luchun_legacy = {
+    if = {
+        limit = { OR = { has_country_flag = have_koharu has_country_flag = have_roka } }
+        yzcr_recruit_roka = yes
+        yzcr_recruit_koharu = yes
+    }
+    else_if = {
+        limit = { NOT = { has_country_flag = have_luchun } }
+        yzrecruit_luchun = yes
+    }
+}
+
+# Shared saved preference: 0 ask, 1 SD, 2 routes; pending work is 1 Senren / 2 RJ.
+yzcr_dispatch_request = {
+    yzcr_close_window = yes
+    clr_country_flag = QL_recruit_show
+    clr_country_flag = RJ_recruit_show
+    set_country_flag = yzcr_prompt_pending
+    if = {
+        limit = { check_variable = { var = yzcr_preference value = 1 compare = equals } }
+        yzcr_choose_legacy = yes
+    }
+    else_if = {
+        limit = { check_variable = { var = yzcr_preference value = 2 compare = equals } }
+        yzcr_choose_routes = yes
+    }
+    else = {
+        country_event = { id = yz_choice_recruit.1 }
+    }
+}
+yzcr_choose_legacy = {
+    if = {
+        limit = { yzcr_recruitment_allowed = yes has_country_flag = yzcr_prompt_pending }
+        if = {
+            limit = { check_variable = { var = yzcr_pending_work value = 2 compare = equals } }
+            set_country_flag = RJ_recruit_show
+        }
+        else = { set_country_flag = QL_recruit_show }
+        clr_country_flag = yzcr_prompt_pending
+        clear_variable = yzcr_pending_work
+    }
+}
+yzcr_choose_routes = {
+    if = {
+        limit = { yzcr_recruitment_allowed = yes has_country_flag = yzcr_prompt_pending }
+        if = {
+            limit = { check_variable = { var = yzcr_pending_work value = 2 compare = equals } }
+            yzcr_rj_open_window = yes
+        }
+        else = { yzcr_open_window = yes }
+        clr_country_flag = yzcr_prompt_pending
+        clear_variable = yzcr_pending_work
+    }
+}
+yzcr_request_senren = {
+    if = {
+        limit = { yzcr_recruitment_allowed = yes NOT = { has_country_flag = yzcr_prompt_pending } }
+        if = {
+            limit = { has_country_flag = QL_recruit_show }
+            clr_country_flag = QL_recruit_show
+        }
+        else_if = {
+            limit = { has_country_flag = yzcr_open yzcr_active = yes }
+            yzcr_close_window = yes
+        }
+        else = {
+            set_variable = { yzcr_pending_work = 1 }
+            yzcr_dispatch_request = yes
+        }
+    }
+}
+yzcr_request_riddle = {
+    if = {
+        limit = { yzcr_recruitment_allowed = yes NOT = { has_country_flag = yzcr_prompt_pending } }
+        if = {
+            limit = { has_country_flag = RJ_recruit_show }
+            clr_country_flag = RJ_recruit_show
+        }
+        else_if = {
+            limit = { has_country_flag = yzcr_open yzcr_rj_active = yes }
+            yzcr_close_window = yes
+        }
+        else = {
+            set_variable = { yzcr_pending_work = 2 }
+            yzcr_dispatch_request = yes
+        }
+    }
+}

@@ -1,35 +1,21 @@
+# Production startup UI: existing window/flags/reward automata; event-driven visual refresh.
 scripted_gui = {
-	# 要点：启动 GUI 只由国家 flag 控制显示，唯一入口是启动决议；旧的开场弹窗事件已删除。 [2026-08-21] [伊尔诺/Claude]
 	YZ_start_ui_gui = {
 		window_name = "YZ_start_ui"
 		context_type = player_context
-		visible = {
-			has_country_flag = YZ_start_ui_visible
-		}
+		visible = { is_ai = no has_country_flag = YZ_start_ui_visible }
+		dirty = YZ_start_ui_dirty
+		ai_enabled = { always = no }
 		effects = {
-			# 内容：三个正文按钮通过互斥 tab flag 切换 scripted localisation 显示内容。 [2026-06-20] [伊尔诺/GPT5.5]
-			YZ_start_ui_update_button_click = {
-				set_country_flag = YZ_start_ui_tab_update
-				clr_country_flag = YZ_start_ui_tab_guide
-				clr_country_flag = YZ_start_ui_tab_credits
-			}
-			YZ_start_ui_guide_button_click = {
-				clr_country_flag = YZ_start_ui_tab_update
-				set_country_flag = YZ_start_ui_tab_guide
-				clr_country_flag = YZ_start_ui_tab_credits
-			}
-			YZ_start_ui_credits_button_click = {
-				clr_country_flag = YZ_start_ui_tab_update
-				clr_country_flag = YZ_start_ui_tab_guide
-				set_country_flag = YZ_start_ui_tab_credits
-			}
-			YZ_start_ui_close_button_click = {
-				clr_country_flag = YZ_start_ui_visible
-				clr_country_flag = YZ_start_ui_tab_update
-				clr_country_flag = YZ_start_ui_tab_guide
-				clr_country_flag = YZ_start_ui_tab_credits
-			}
-			# 要点：SD 彩蛋序列为 1001011001，其中 sd_0 代表 0；变量记录当前已经匹配到的前缀长度。 [2026-06-20] [伊尔诺/GPT5.5]
+			YZ_start_ui_update_button_click = { YZ_start_ui_show_update = yes }
+			YZ_start_ui_guide_button_click = { YZ_start_ui_show_guide = yes }
+			YZ_start_ui_credits_button_click = { YZ_start_ui_show_credits = yes }
+			YZ_start_ui_close_button_click = { YZ_start_ui_close = yes }
+			yzl_news_button_click = { YZ_start_ui_show_update = yes }
+			yzl_history_button_click = { YZ_start_ui_show_history = yes }
+			yzl_back_button_click = { YZ_start_ui_show_home = yes }
+			# Existing production prefix automata and guarded full character rewards.
+			# Upper SD is 0, lower SD is 1; successful sequence is 1001011001.
 			YZ_start_ui_sd_0_button_click = {
 				if = {
 					limit = { check_variable = { YZ_start_ui_sd_progress = 1 } }
@@ -62,8 +48,8 @@ scripted_gui = {
 				else = {
 					set_variable = { YZ_start_ui_sd_progress = 0 }
 				}
+				add_to_variable = { YZ_start_ui_dirty = 1 }
 			}
-			# 要点：sd_1 代表 1；完整匹配后设置 global flag mod_in_nor_mode 和 country flag this_country_in_nor_mode，并把进度停在 10。 [2026-06-22] [伊尔诺/GPT5.5]
 			YZ_start_ui_sd_1_button_click = {
 				if = {
 					limit = { check_variable = { YZ_start_ui_sd_progress = 3 } }
@@ -100,16 +86,30 @@ scripted_gui = {
 				else = {
 					set_variable = { YZ_start_ui_sd_progress = 1 }
 				}
+				add_to_variable = { YZ_start_ui_dirty = 1 }
 			}
 		}
-		# 内容：普通模式下鸣谢按钮切换本地正文；阿诺模式下同位置按钮改为打开公开 Yuzuture 网站。右侧正文不再被静态截图覆盖。 [2026-07-15] [伊尔诺/GPT5]
 		triggers = {
-			YZ_start_ui_credits_button_visible = {
-				not = { has_country_flag = this_country_in_nor_mode }
-			}
-			YZ_start_ui_credits_web_button_visible = {
-				has_country_flag = this_country_in_nor_mode
-			}
+			yzl_stage_home_visible = { NOT = { YZ_start_ui_on_page = yes } }
+			yzl_fx_home_visible = { NOT = { YZ_start_ui_on_page = yes } }
+			yzl_news_button_visible = { NOT = { YZ_start_ui_on_page = yes } }
+			yzl_news_eyebrow_visible = { NOT = { YZ_start_ui_on_page = yes } }
+			yzl_news_line_visible = { NOT = { YZ_start_ui_on_page = yes } }
+			yzl_history_button_visible = { NOT = { YZ_start_ui_on_page = yes } }
+			yzl_history_eyebrow_visible = { NOT = { YZ_start_ui_on_page = yes } }
+			yzl_history_line_visible = { NOT = { YZ_start_ui_on_page = yes } }
+
+			yzl_stage_read_visible = { YZ_start_ui_on_page = yes }
+			yzl_fx_read_visible = { YZ_start_ui_on_page = yes }
+			yzl_back_button_visible = { YZ_start_ui_on_page = yes }
+			yzl_page_text_visible = { YZ_start_ui_on_page = yes }
+
+			yzl_nav_update_on_visible = { OR = { has_country_flag = YZ_start_ui_tab_update has_country_flag = YZ_start_ui_tab_history } }
+			yzl_nav_guide_on_visible = { has_country_flag = YZ_start_ui_tab_guide }
+			yzl_nav_credits_on_visible = { has_country_flag = YZ_start_ui_tab_credits }
+
+			YZ_start_ui_credits_button_visible = { NOT = { has_country_flag = this_country_in_nor_mode } }
+			YZ_start_ui_credits_web_button_visible = { has_country_flag = this_country_in_nor_mode }
 		}
 	}
 }

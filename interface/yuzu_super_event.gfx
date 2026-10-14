@@ -94,7 +94,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_super_event_marry_sana"
-		textureFile = "gfx/super_event/Super_event_marry_sana.dds"
+		textureFile = "gfx/super_event/Super_event_marry_sana_720x610.png"
 	}
 	spriteType = {
 		name = "GFX_super_event_marry_sayo"
@@ -314,7 +314,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_super_event_we_have_fukai_omo"
-		textureFile = "gfx/super_event/Super_event_we_have_fukai_omo.png"
+		textureFile = "gfx/super_event/Super_event_we_have_fukai_omo_720x610.png"
 	}
 	spriteType = {
 		name = "GFX_super_event_restore_8620"
@@ -337,5 +337,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_super_event_marry_grok"
 		textureFile = "gfx/super_event/Super_event_marry_grok_720x610.png"
+	}
+	# PARQUET good ending uses the production 720x610 super-event frame.
+	spriteType = {
+		name = "GFX_super_event_parquet_together"
+		textureFile = "gfx/super_event/Super_event_parquet_together_720x610.png"
 	}
 }

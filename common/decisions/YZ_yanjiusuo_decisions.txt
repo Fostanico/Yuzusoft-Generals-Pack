@@ -497,8 +497,8 @@ YZS_scientist_category = {
         visible = {
             NOT = {
                 any_army_leader = {
-                    has_trait = maid_qihai_trait
-                    has_trait = maid_astral_boost3
+                    has_trait = yz_legacy_qihai_trait
+                    has_trait = yz_legacy_astral_boost3
                 }
             }
             has_country_flag = have_nanami
@@ -518,62 +518,62 @@ YZS_scientist_category = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_qihai_trait
-                            has_trait = maid_astral_boost1
+                            has_trait = yz_legacy_qihai_trait
+                            has_trait = yz_legacy_astral_boost1
                         }
                         any_army_leader = {
-                            has_trait = maid_qihai_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_qihai_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_qihai_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_qihai_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_qihai_trait
+                        has_trait = yz_legacy_qihai_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_qihai_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_qihai_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_qihai_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_qihai_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_qihai_trait
+                        has_trait = yz_legacy_qihai_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost2
-                    remove_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost2
+                    remove_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_qihai_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_qihai_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_qihai_trait
+                        has_trait = yz_legacy_qihai_trait
                     }
-                    remove_unit_leader_trait = maid_astral_boost2
-                    add_unit_leader_trait = maid_astral_boost3
+                    remove_unit_leader_trait = yz_legacy_astral_boost2
+                    add_unit_leader_trait = yz_legacy_astral_boost3
                 }
             }
         }
@@ -583,12 +583,12 @@ YZS_scientist_category = {
         visible = {
             NOT = {
                 any_army_leader = {
-                    has_trait = maid_Mayu_trait
-                    has_trait = maid_astral_boost3
+                    has_trait = yz_legacy_Mayu_trait
+                    has_trait = yz_legacy_astral_boost3
                 }
             }
             any_army_leader = {
-                has_trait = maid_Mayu_trait
+                has_trait = yz_legacy_Mayu_trait
             }
         }
         available = {
@@ -606,62 +606,62 @@ YZS_scientist_category = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_Mayu_trait
-                            has_trait = maid_astral_boost1
+                            has_trait = yz_legacy_Mayu_trait
+                            has_trait = yz_legacy_astral_boost1
                         }
                         any_army_leader = {
-                            has_trait = maid_Mayu_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_Mayu_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_Mayu_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_Mayu_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_Mayu_trait
+                        has_trait = yz_legacy_Mayu_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_Mayu_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_Mayu_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_Mayu_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_Mayu_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_Mayu_trait
+                        has_trait = yz_legacy_Mayu_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost2
-                    remove_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost2
+                    remove_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_Mayu_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_Mayu_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_Mayu_trait
+                        has_trait = yz_legacy_Mayu_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost3
-                    remove_unit_leader_trait = maid_astral_boost2
+                    add_unit_leader_trait = yz_legacy_astral_boost3
+                    remove_unit_leader_trait = yz_legacy_astral_boost2
                 }
             }
         }
@@ -671,12 +671,12 @@ YZS_scientist_category = {
         visible = {
             NOT = {
                 any_army_leader = {
-                    has_trait = maid_hazuki_trait
-                    has_trait = maid_astral_boost3
+                    has_trait = yz_legacy_hazuki_trait
+                    has_trait = yz_legacy_astral_boost3
                 }
             }
             any_army_leader = {
-                has_trait = maid_hazuki_trait
+                has_trait = yz_legacy_hazuki_trait
             }
         }
         available = {
@@ -694,62 +694,62 @@ YZS_scientist_category = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_hazuki_trait
-                            has_trait = maid_astral_boost1
+                            has_trait = yz_legacy_hazuki_trait
+                            has_trait = yz_legacy_astral_boost1
                         }
                         any_army_leader = {
-                            has_trait = maid_hazuki_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_hazuki_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_hazuki_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_hazuki_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_hazuki_trait
+                        has_trait = yz_legacy_hazuki_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_hazuki_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_hazuki_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_hazuki_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_hazuki_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_hazuki_trait
+                        has_trait = yz_legacy_hazuki_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost2
-                    remove_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost2
+                    remove_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_hazuki_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_hazuki_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_hazuki_trait
+                        has_trait = yz_legacy_hazuki_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost3
-                    remove_unit_leader_trait = maid_astral_boost2
+                    add_unit_leader_trait = yz_legacy_astral_boost3
+                    remove_unit_leader_trait = yz_legacy_astral_boost2
                 }
             }
         }
@@ -759,12 +759,12 @@ YZS_scientist_category = {
         visible = {
             NOT = {
                 any_army_leader = {
-                    has_trait = maid_kotori_trait
-                    has_trait = maid_astral_boost3
+                    has_trait = yz_legacy_kotori_trait
+                    has_trait = yz_legacy_astral_boost3
                 }
             }
             any_army_leader = {
-                has_trait = maid_kotori_trait
+                has_trait = yz_legacy_kotori_trait
             }
         }
         available = {
@@ -785,62 +785,62 @@ YZS_scientist_category = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_kotori_trait
-                            has_trait = maid_astral_boost1
+                            has_trait = yz_legacy_kotori_trait
+                            has_trait = yz_legacy_astral_boost1
                         }
                         any_army_leader = {
-                            has_trait = maid_kotori_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_kotori_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_kotori_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_kotori_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_kotori_trait
+                        has_trait = yz_legacy_kotori_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_kotori_trait
-                            has_trait = maid_astral_boost2
+                            has_trait = yz_legacy_kotori_trait
+                            has_trait = yz_legacy_astral_boost2
                         }
                         any_army_leader = {
-                            has_trait = maid_kotori_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_kotori_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_kotori_trait
+                        has_trait = yz_legacy_kotori_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost2
-                    remove_unit_leader_trait = maid_astral_boost1
+                    add_unit_leader_trait = yz_legacy_astral_boost2
+                    remove_unit_leader_trait = yz_legacy_astral_boost1
                 }
             }
             else_if = {
                 limit = {
                     NOT = {
                         any_army_leader = {
-                            has_trait = maid_kotori_trait
-                            has_trait = maid_astral_boost3
+                            has_trait = yz_legacy_kotori_trait
+                            has_trait = yz_legacy_astral_boost3
                         }
                     }
                 }
                 random_army_leader = {
                     limit = {
-                        has_trait = maid_kotori_trait
+                        has_trait = yz_legacy_kotori_trait
                     }
-                    add_unit_leader_trait = maid_astral_boost3
-                    remove_unit_leader_trait = maid_astral_boost2
+                    add_unit_leader_trait = yz_legacy_astral_boost3
+                    remove_unit_leader_trait = yz_legacy_astral_boost2
                 }
             }
         }
@@ -1218,7 +1218,7 @@ YZS_scientist_category = {
                             }
                         }
                         allowed_civil_war = {
-                            is_ai = no
+                            ROOT = { is_ai = no }
                         }
                         corps_commander = {
                             traits = {

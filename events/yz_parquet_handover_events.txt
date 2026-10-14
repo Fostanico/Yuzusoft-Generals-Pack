@@ -1,0 +1,20 @@
+add_namespace = yz_parquet_handover
+
+# Preserve the optional minigame choice. Playing unlocks the decision group;
+# skipping uses the same single campaign reward as winning the challenge.
+country_event = {
+    id = yz_parquet_handover.0
+    title = yz_parquet_handover.0.t
+    desc = yz_parquet_handover.0.desc
+    is_triggered_only = yes
+
+    option = {
+        name = yz_parquet_handover.0.a
+        yz_parquet_start_minesweeper = yes
+    }
+    option = {
+        name = yz_parquet_handover.0.b
+        yz_parquet_start_minesweeper = yes
+        yz_parquet_grant_good_end = yes
+    }
+}
