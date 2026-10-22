@@ -16,6 +16,8 @@
   ·
   <a href="https://github.com/Fostanico/Yuzusoft-Generals-Pack">GitHub Release Repository</a>
   ·
+  <a href="https://fostanico.github.io/Yuzusoft-Generals-Pack/">制作组鸣谢页</a>
+  ·
   <a href="https://docs.qq.com/doc/DZVpkdWRBQ2hITFV2">Bug Report / Suggestions</a>
 </p>
 
@@ -47,8 +49,8 @@
 | 项目 | 信息 |
 |---|---|
 | Mod 名称 | 柚子社将领包 |
-| Mod Version | `1.188` |
-| HOI4 `supported_version` | `1.19.2.0` |
+| Mod Version | `1.19` |
+| HOI4 `supported_version` | `1.19.3.0` |
 | Steam Workshop ID | `3303751918` |
 | GitHub 分支 | `main` |
 
@@ -75,9 +77,16 @@
 - 塔罗牌与其他随机增益内容；
 - 特殊单位、特殊装备与角色相关强化；
 - 多套自定义 GUI；
+- 初级扫雷（9×9、10 颗雷），包含 PARQUET 挑战和核心圈自由游玩两个入口；
 - 旧作角色与早期机制持续重制中。
 
 完整玩法说明、角色清单与最新更新内容请以 Steam Workshop 页面为准。
+
+### 开始游玩
+
+进入游戏后，在决议栏的“启用柚子将领包”中选择模式：青春版以将领内容为主，完整版开启大多数机制与剧情，联机削弱版减少部分高强度功能。选择后会打开启动 UI，可在其中查看游玩指南与鸣谢。
+
+PARQUET 入口仍会询问是否游玩小游戏；选择游玩后，通过“PARQUET · 扫雷挑战”决议开始或继续。挑战首胜会招募茨木梨乃、城门翼并播放双人超事件；选择跳过也可直接获得这份剧情奖励。核心圈左上角的 SD 小人可以打开自由游玩，不触发这份剧情奖励。两个入口每盘扫雷胜利均给予 5 政治点，次数不限；关闭棋盘后可继续当前进度。
 
 ---
 
@@ -93,15 +102,17 @@ Steam 会自动完成下载与更新，适合绝大多数玩家。
 
 ### 方法二：GitHub 手动安装
 
-你可以：
+1. 下载本仓库 ZIP，将内容解压到 HOI4 用户目录下的 `mod/Yuzusoft-Generals-Pack/`。该目录内应直接包含 `descriptor.mod`、`common`、`events` 等文件与文件夹，避免多套一层目录。
+2. 将其中的 `descriptor.mod` 复制到上一级 `mod` 目录，命名为 `Yuzusoft-Generals-Pack.mod`。这是启动器使用的外部描述符；仓库内的原文件保留。
+3. 编辑外部 `Yuzusoft-Generals-Pack.mod`：保留原有字段，删除 `remote_file_id` 一行，并添加以下相对路径：
 
-1. 下载本仓库 ZIP；
-2. 解压至本地；
-3. 将模组文件放入 Hearts of Iron IV 的本地模组目录；
-4. 确认 `.mod` 描述文件中的本地路径正确；
-5. 在 Paradox Launcher 中启用模组。
+   ```text
+   path="mod/Yuzusoft-Generals-Pack"
+   ```
 
-也可以使用：
+4. 重开 Paradox Launcher，将本地模组加入播放集并启用。同一播放集中只启用本地版或 Workshop 版中的一个，避免重复加载。
+
+如果使用 Git 克隆，也需要按上述步骤创建外部描述符：
 
 ```bash
 git clone https://github.com/Fostanico/Yuzusoft-Generals-Pack.git
@@ -143,7 +154,7 @@ git clone https://github.com/Fostanico/Yuzusoft-Generals-Pack.git
 当前 `descriptor.mod` 声明支持：
 
 ```text
-Hearts of Iron IV 1.19.2.0
+Hearts of Iron IV 1.19.3.0
 ```
 
 模组包含较多角色、决议、事件、自定义 GUI 与公共脚本，因此与大型 HOI4 模组共同使用时，可能出现：
@@ -197,7 +208,7 @@ QQ 群：
 
 ## AI 使用声明 / AI Use Statement
 
-本项目使用 OpenAI Codex、ChatGPT、Claude、Grok、Gemini 与 DeepSeek 辅助开发。AI 输出均经人类制作组审查后采用，最终责任由制作组承担。
+本项目使用 OpenAI Codex、ChatGPT、Claude、Grok、Gemini 与 DeepSeek 参与代码实现、素材处理、文案整理、检查与调试。制作组提出需求、决定取舍并进行验收，对最终发布内容负责。
 
 ---
 

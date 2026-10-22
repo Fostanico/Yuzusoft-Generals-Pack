@@ -16,6 +16,8 @@
   ·
   <a href="https://github.com/Fostanico/Yuzusoft-Generals-Pack">GitHub公開リポジトリ</a>
   ·
+  <a href="https://fostanico.github.io/Yuzusoft-Generals-Pack/">制作チーム謝辞ページ</a>
+  ·
   <a href="https://docs.qq.com/doc/DZVpkdWRBQ2hITFV2">不具合報告 / ご意見</a>
 </p>
 
@@ -47,8 +49,8 @@
 | 項目 | 情報 |
 |---|---|
 | Mod名 | ゆずソフト将軍パック |
-| Mod Version | `1.188` |
-| HOI4 `supported_version` | `1.19.2.0` |
+| Mod Version | `1.19` |
+| HOI4 `supported_version` | `1.19.3.0` |
 | Steam Workshop ID | `3303751918` |
 | GitHubブランチ | `main` |
 
@@ -75,9 +77,16 @@
 - タロットカードなどのランダムボーナス
 - 特殊部隊、特殊装備、キャラクター関連の強化
 - 複数のカスタムGUI
+- 初級マインスイーパ（9×9、地雷10個）。PARQUETの挑戦と中核サークルのフリープレイから起動可能
 - 旧作キャラクターと初期システムの継続的なリメイク
 
 完全なプレイガイド、キャラクター一覧、最新の更新内容については、Steam Workshopページをご確認ください。
+
+### 遊び始めるには
+
+ゲーム開始後、Modを有効にするディシジョンカテゴリーからモードを選択してください。軽量版は将軍を中心とした内容、完全版は大半のシステムと物語、マルチプレイ向け弱体化版は一部の強力な機能を削減した内容です。選択すると起動UIが開き、プレイガイドや謝辞を確認できます。
+
+PARQUETの入口では、ミニゲームで遊ぶかどうかを選べます。遊ぶ場合は、解放されるPARQUETのマインスイーパ挑戦ディシジョンから開始・再開してください。挑戦の初回クリアでイバラキ・リノとキド・ツバサが加入し、二人のスーパーイベントが再生されます。ミニゲームをスキップしても、この物語上の報酬を直接受け取れます。中核サークル左上のSDキャラクターはフリープレイの入口で、物語上の報酬は発生しません。どちらの入口でも、マインスイーパをクリアするたびに政治力を5獲得でき、回数制限はありません。盤面を閉じても現在の進行状況は保存されます。
 
 ---
 
@@ -93,15 +102,17 @@ Steamが自動的にダウンロードと更新を行うため、ほとんどの
 
 ### 方法2：GitHubから手動導入
 
-次の手順で導入できます。
+1. このリポジトリをZIP形式でダウンロードし、HOI4のユーザーディレクトリー内の `mod/Yuzusoft-Generals-Pack/` に内容を展開してください。このフォルダーの直下に `descriptor.mod`、`common`、`events` などを配置し、余分な親フォルダーを挟まないようにします。
+2. `descriptor.mod` を一つ上の `mod` フォルダーへコピーし、コピーを `Yuzusoft-Generals-Pack.mod` に改名してください。これがランチャー用の外部記述ファイルです。Modフォルダー内の元ファイルは残します。
+3. 外部の `Yuzusoft-Generals-Pack.mod` を編集し、既存の項目は保持したまま `remote_file_id` の行を削除して、次の相対パスを追加してください。
 
-1. このリポジトリをZIP形式でダウンロードする
-2. ローカルに展開する
-3. ModファイルをHearts of Iron IVのローカルModフォルダーへ配置する
-4. `.mod` 記述ファイル内のローカルパスが正しいことを確認する
-5. Paradox LauncherでModを有効にする
+   ```text
+   path="mod/Yuzusoft-Generals-Pack"
+   ```
 
-次のコマンドも利用できます。
+4. Paradox Launcherを開き直し、ローカルModをプレイセットへ追加して有効にしてください。同じプレイセットでは、ローカル版とWorkshop版のどちらか一方だけを有効にします。
+
+Gitでクローンする場合も、上記の手順で外部記述ファイルを作成する必要があります。
 
 ```bash
 git clone https://github.com/Fostanico/Yuzusoft-Generals-Pack.git
@@ -142,7 +153,7 @@ git clone https://github.com/Fostanico/Yuzusoft-Generals-Pack.git
 現在の `descriptor.mod` は次のバージョンへの対応を宣言しています。
 
 ```text
-Hearts of Iron IV 1.19.2.0
+Hearts of Iron IV 1.19.3.0
 ```
 
 本Modには多数のキャラクター、ディシジョン、イベント、カスタムGUI、共通スクリプトが含まれています。そのため、大型HOI4 Modと同時に使用すると、次のような問題が発生する可能性があります。
@@ -196,7 +207,7 @@ QQグループ：
 
 ## AI使用声明 / AI Use Statement
 
-本プロジェクトでは、OpenAI Codex、ChatGPT、Claude、Grok、Gemini、DeepSeek を開発補助に使用しています。AIの出力は人間の制作チームが確認したうえで採用し、最終的な責任は制作チームが負います。
+本プロジェクトでは、OpenAI Codex、ChatGPT、Claude、Grok、Gemini、DeepSeek をコード実装、素材処理、文章作成、確認、デバッグに使用しています。制作チームが要件を定め、採否を判断し、受け入れ確認を行い、最終的な公開内容に責任を負います。
 
 ---
 

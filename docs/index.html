@@ -391,7 +391,7 @@
         <div class="article-meta">
           <span class="article-type">Article</span>
           <span class="rule"></span>
-          <span>更新日期：<span class="project-value" id="update-date">—</span></span>
+          <span>资料更新日期：<span class="project-value" id="update-date">—</span></span>
         </div>
 
         <h1>
@@ -427,7 +427,7 @@
         </div>
 
         <div class="metrics">
-          <span class="metric"><strong>17</strong>&nbsp;Authors</span>
+          <span class="metric"><strong id="author-count">16</strong>&nbsp;Authors</span>
           <span class="metric"><a href="#statements">Statements</a></span>
           <span class="metric"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3303751918" target="_self" title="请不要短时间多次点击，钢铁雄心四内置浏览器跳转需要时间">Metrics</a></span>
         </div>
@@ -439,7 +439,7 @@
             <span>3303751918</span>
           </div>
           <div class="info-row">
-            <span class="info-label">当前支持版本</span>
+            <span class="info-label">声明支持的游戏版本</span>
             <span class="project-value" id="supported-version">—</span>
           </div>
           <div class="info-row">
@@ -491,6 +491,7 @@
 <script>
 (() => {
   const siteData = window.YUZUTURE_SITE_DATA || {};
+  document.getElementById("author-count").textContent = document.querySelectorAll(".authors .author").length;
   const projectFields = {
     "update-date": siteData.updateDate,
     "supported-version": siteData.supportedVersion,

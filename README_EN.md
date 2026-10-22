@@ -16,6 +16,8 @@
   ·
   <a href="https://github.com/Fostanico/Yuzusoft-Generals-Pack">GitHub Release Repository</a>
   ·
+  <a href="https://fostanico.github.io/Yuzusoft-Generals-Pack/">Team Acknowledgements Page</a>
+  ·
   <a href="https://docs.qq.com/doc/DZVpkdWRBQ2hITFV2">Bug Reports / Suggestions</a>
 </p>
 
@@ -47,8 +49,8 @@ If you simply want to play the mod, Steam Workshop is recommended. Use this repo
 | Item | Information |
 |---|---|
 | Mod name | Yuzusoft Generals Pack |
-| Mod Version | `1.188` |
-| HOI4 `supported_version` | `1.19.2.0` |
+| Mod Version | `1.19` |
+| HOI4 `supported_version` | `1.19.3.0` |
 | Steam Workshop ID | `3303751918` |
 | GitHub branch | `main` |
 
@@ -75,9 +77,16 @@ Current highlights include:
 - tarot cards and other randomized bonuses;
 - special units, equipment, and character-related enhancements;
 - multiple custom GUIs;
+- beginner Minesweeper (9×9, 10 mines), accessible through the PARQUET challenge and core-circle free play;
 - ongoing remakes of characters and mechanics from older versions.
 
 For the complete gameplay guide, character list, and latest update notes, please refer to the Steam Workshop page.
+
+### Getting Started
+
+After entering a game, choose a mode under the mod-enabling decision category. The lightweight mode focuses on generals, the full mode enables most mechanics and story content, and the reduced-power multiplayer mode removes some of the strongest features. Your choice opens the startup UI, where you can read the gameplay guide and acknowledgements.
+
+The PARQUET entry still asks whether you want to play a minigame. Accept to unlock the PARQUET Minesweeper challenge decisions, then use them to start or resume. Your first challenge victory recruits Ibaraki Rino and Kido Tsubasa and plays their joint super event; choosing to skip the minigame also grants this story reward directly. The SD character at the top left of the core-circle panel opens free play and does not grant the story reward. Every Minesweeper victory through either entry awards 5 political power, with no limit on the number of rewards. Closing the board preserves your current progress.
 
 ---
 
@@ -93,15 +102,17 @@ Steam automatically downloads and updates the mod, making this the best option f
 
 ### Method 2: Manual Installation from GitHub
 
-You can:
+1. Download this repository as a ZIP file and extract its contents into `mod/Yuzusoft-Generals-Pack/` under your HOI4 user directory. This folder should directly contain `descriptor.mod`, `common`, `events`, and the other mod files, without an extra enclosing folder.
+2. Copy `descriptor.mod` into the parent `mod` directory and rename the copy to `Yuzusoft-Generals-Pack.mod`. This is the external descriptor used by the launcher; keep the original file inside the mod folder.
+3. Edit the external `Yuzusoft-Generals-Pack.mod`: retain its existing fields, remove the `remote_file_id` line, and add this relative path:
 
-1. download this repository as a ZIP file;
-2. extract it locally;
-3. place the mod files in the Hearts of Iron IV local mod directory;
-4. make sure the local path in the `.mod` descriptor is correct;
-5. enable the mod in Paradox Launcher.
+   ```text
+   path="mod/Yuzusoft-Generals-Pack"
+   ```
 
-You can also use:
+4. Reopen Paradox Launcher, add the local mod to your playset, and enable it. Enable only one copy in a playset: either the local version or the Workshop version.
+
+If you clone the repository with Git, you must still create the external descriptor as described above:
 
 ```bash
 git clone https://github.com/Fostanico/Yuzusoft-Generals-Pack.git
@@ -142,7 +153,7 @@ This GitHub repository **is not used for the full development workflow**. Do not
 The current `descriptor.mod` declares support for:
 
 ```text
-Hearts of Iron IV 1.19.2.0
+Hearts of Iron IV 1.19.3.0
 ```
 
 The mod contains many characters, decisions, events, custom GUIs, and shared scripts. When used alongside large HOI4 mods, possible conflicts include:
@@ -196,7 +207,7 @@ You can also use the group to:
 
 ## AI Use Statement
 
-This project uses OpenAI Codex, ChatGPT, Claude, Grok, Gemini, and DeepSeek to assist development. All AI output is reviewed by the human team before use, and the team remains responsible for the project.
+This project uses OpenAI Codex, ChatGPT, Claude, Grok, Gemini, and DeepSeek for code implementation, asset processing, writing, checks, and debugging. The development team sets requirements, makes project decisions, and performs acceptance checks, and remains responsible for the published content.
 
 ---
 
